@@ -1,0 +1,6 @@
+Makefile
+Makefile.in
+kmousedlg.h
+kmousedlg.cpp
+kcminput
+kcminput.all_cpp.cpp

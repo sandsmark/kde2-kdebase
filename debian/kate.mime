@@ -1,0 +1,2 @@
+text/plain; kate %s;test=test "$DISPLAY" != ""; priority=5
+text/plain; kwrite %s;test=test "$DISPLAY" != ""; priority=3

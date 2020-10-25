@@ -1,0 +1,6 @@
+Makefile
+Makefile.in
+kaddressbook
+entries.txt
+kaddressbookiface_skel.cpp
+kaddressbookiface.kidl

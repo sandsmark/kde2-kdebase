@@ -1,0 +1,1107 @@
+# KDE tags expanded automatically by am_edit - $Revision: 1.265.2.2 $ 
+# Makefile.in generated automatically by automake 1.4-p5 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999, 2001 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# $Id: Makefile.am,v 1.9 2001/05/23 00:09:36 waba Exp $
+# Makefile.am for kscreensave.
+#
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+#>- 
+bindir = @bindir@
+#>+ 3
+DEPDIR = .deps
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ../..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+build_alias = @build_alias@
+build_triplet = @build@
+host_alias = @host_alias@
+host_triplet = @host@
+target_alias = @target_alias@
+target_triplet = @target@
+ACCESS_SUBDIR = @ACCESS_SUBDIR@
+ARTSCCONFIG = @ARTSCCONFIG@
+AS = @AS@
+AUDIOCD_SUBDIR = @AUDIOCD_SUBDIR@
+AUTODIRS = @AUTODIRS@
+BZIP2FILES = @BZIP2FILES@
+CC = @CC@
+CDPARANOIA_INCS = @CDPARANOIA_INCS@
+CDPARANOIA_LIBS = @CDPARANOIA_LIBS@
+CDPARANOIA_RPATH = @CDPARANOIA_RPATH@
+CONF_FILES = @CONF_FILES@
+CPP = @CPP@
+CUPSSUBDIR = @CUPSSUBDIR@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DCOPIDL = @DCOPIDL@
+DCOPIDL2CPP = @DCOPIDL2CPP@
+DCOP_DEPENDENCIES = @DCOP_DEPENDENCIES@
+DLLTOOL = @DLLTOOL@
+DPMSINC = @DPMSINC@
+DPMSLIB = @DPMSLIB@
+EXEEXT = @EXEEXT@
+GCJ = @GCJ@
+GCJFLAGS = @GCJFLAGS@
+GLINC = @GLINC@
+GLLIB = @GLLIB@
+GL_SAVERS = @GL_SAVERS@
+GMSGFMT = @GMSGFMT@
+IDL = @IDL@
+IDL_DEPENDENCIES = @IDL_DEPENDENCIES@
+JAR = @JAR@
+JAVAC = @JAVAC@
+JAVAH = @JAVAH@
+JVMLIBS = @JVMLIBS@
+KCM_AUDIOCD = @KCM_AUDIOCD@
+KDECONFIG = @KDECONFIG@
+KDEDB_INCLUDES = @KDEDB_INCLUDES@
+KDEDB_LIBS = @KDEDB_LIBS@
+KDEDB_SUBDIR = @KDEDB_SUBDIR@
+KDE_BINDIR = @KDE_BINDIR@
+KDE_CONFDIR = @KDE_CONFDIR@
+KDE_CXXFLAGS = @KDE_CXXFLAGS@
+KDE_EXTRA_RPATH = @KDE_EXTRA_RPATH@
+KDE_INCLUDES = @KDE_INCLUDES@
+KDE_LDFLAGS = @KDE_LDFLAGS@
+KDE_PLUGIN = @KDE_PLUGIN@
+KDE_RPATH = @KDE_RPATH@
+KDE_USE_CLOSURE_FALSE = @KDE_USE_CLOSURE_FALSE@
+KDE_USE_CLOSURE_TRUE = @KDE_USE_CLOSURE_TRUE@
+KDE_USE_FINAL_FALSE = @KDE_USE_FINAL_FALSE@
+KDE_USE_FINAL_TRUE = @KDE_USE_FINAL_TRUE@
+KDE_XSL_STYLESHEET = @KDE_XSL_STYLESHEET@
+KERBEROS_INCS = @KERBEROS_INCS@
+KERBEROS_LIBS = @KERBEROS_LIBS@
+KERBEROS_ROOT = @KERBEROS_ROOT@
+KRB_RPATH = @KRB_RPATH@
+LAME_INCS = @LAME_INCS@
+LAME_LIBS = @LAME_LIBS@
+LAME_RPATH = @LAME_RPATH@
+LDAP_INCS = @LDAP_INCS@
+LDAP_LIBS = @LDAP_LIBS@
+LDAP_RPATH = @LDAP_RPATH@
+LDAP_SUBDIR = @LDAP_SUBDIR@
+LIBALIB = @LIBALIB@
+LIBCFG = @LIBCFG@
+LIBCOMPAT = @LIBCOMPAT@
+LIBCRYPT = @LIBCRYPT@
+LIBCURSES = @LIBCURSES@
+LIBDEVINFO = @LIBDEVINFO@
+LIBDL = @LIBDL@
+LIBGEN = @LIBGEN@
+LIBJPEG = @LIBJPEG@
+LIBKSTAT = @LIBKSTAT@
+LIBMICO = @LIBMICO@
+LIBOBJS = @LIBOBJS@
+LIBODM = @LIBODM@
+LIBOSSAUDIO = @LIBOSSAUDIO@
+LIBPNG = @LIBPNG@
+LIBPTHREAD = @LIBPTHREAD@
+LIBPYTHON = @LIBPYTHON@
+LIBQIMGIO = @LIBQIMGIO@
+LIBRESOLV = @LIBRESOLV@
+LIBSENSORS = @LIBSENSORS@
+LIBSHADOW = @LIBSHADOW@
+LIBSM = @LIBSM@
+LIBSOCKET = @LIBSOCKET@
+LIBSSL = @LIBSSL@
+LIBTIFF = @LIBTIFF@
+LIBTOOL = @LIBTOOL@
+LIBUCB = @LIBUCB@
+LIBUTEMPTER = @LIBUTEMPTER@
+LIBUTIL = @LIBUTIL@
+LIBXDMCP = @LIBXDMCP@
+LIBXINERAMA = @LIBXINERAMA@
+LIBZ = @LIBZ@
+LIB_CUPS = @LIB_CUPS@
+LIB_KAB = @LIB_KAB@
+LIB_KDB = @LIB_KDB@
+LIB_KDBCORE = @LIB_KDBCORE@
+LIB_KDBUI = @LIB_KDBUI@
+LIB_KDECORE = @LIB_KDECORE@
+LIB_KDEUI = @LIB_KDEUI@
+LIB_KFILE = @LIB_KFILE@
+LIB_KFM = @LIB_KFM@
+LIB_KFORMULA = @LIB_KFORMULA@
+LIB_KHTML = @LIB_KHTML@
+LIB_KIMGIO = @LIB_KIMGIO@
+LIB_KIO = @LIB_KIO@
+LIB_KPARTS = @LIB_KPARTS@
+LIB_KSPELL = @LIB_KSPELL@
+LIB_KSYCOCA = @LIB_KSYCOCA@
+LIB_KWRITE = @LIB_KWRITE@
+LIB_LIBS = @LIB_LIBS@
+LIB_QT = @LIB_QT@
+LIB_SMB = @LIB_SMB@
+LIB_TRU64_MACH = @LIB_TRU64_MACH@
+LIB_X11 = @LIB_X11@
+LN_S = @LN_S@
+MAKEINFO = @MAKEINFO@
+MCOPIDL = @MCOPIDL@
+MEINPROC = @MEINPROC@
+MICO_INCLUDES = @MICO_INCLUDES@
+MICO_LDFLAGS = @MICO_LDFLAGS@
+MOC = @MOC@
+MOTIF_CFLAGS = @MOTIF_CFLAGS@
+MOTIF_LIBS = @MOTIF_LIBS@
+MSGFMT = @MSGFMT@
+NOOPT_CXXFLAGS = @NOOPT_CXXFLAGS@
+NOREPO = @NOREPO@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+PAMLIBS = @PAMLIBS@
+PASSWDLIBS = @PASSWDLIBS@
+PYTHONINC = @PYTHONINC@
+PYTHONLIB = @PYTHONLIB@
+PYTHONMODDIR = @PYTHONMODDIR@
+QT_INCLUDES = @QT_INCLUDES@
+QT_LDFLAGS = @QT_LDFLAGS@
+RANLIB = @RANLIB@
+REPO = @REPO@
+RUN_KAPPFINDER = @RUN_KAPPFINDER@
+SETUIDFLAGS = @SETUIDFLAGS@
+SMB_SUBDIR = @SMB_SUBDIR@
+SSL_INCLUDES = @SSL_INCLUDES@
+SSL_LDFLAGS = @SSL_LDFLAGS@
+STRIP = @STRIP@
+TOPSUBDIRS = @TOPSUBDIRS@
+UIC = @UIC@
+UIC_TR = @UIC_TR@
+UNAME = @UNAME@
+USER_INCLUDES = @USER_INCLUDES@
+USER_LDFLAGS = @USER_LDFLAGS@
+USE_EXCEPTIONS = @USE_EXCEPTIONS@
+USE_RTTI = @USE_RTTI@
+USE_THREADS = @USE_THREADS@
+VERSION = @VERSION@
+VORBISENC_LIBS = @VORBISENC_LIBS@
+VORBISFILE_LIBS = @VORBISFILE_LIBS@
+VORBIS_INCS = @VORBIS_INCS@
+VORBIS_LIBS = @VORBIS_LIBS@
+VORBIS_RPATH = @VORBIS_RPATH@
+XDM_CFLAGS = @XDM_CFLAGS@
+XGETTEXT = @XGETTEXT@
+XMKMF = @XMKMF@
+XPMINC = @XPMINC@
+XPMLIB = @XPMLIB@
+XTESTLIB = @XTESTLIB@
+X_EXTRA_LIBS = @X_EXTRA_LIBS@
+X_INCLUDES = @X_INCLUDES@
+X_LDFLAGS = @X_LDFLAGS@
+X_PRE_LIBS = @X_PRE_LIBS@
+all_includes = @all_includes@
+all_libraries = @all_libraries@
+idldir = @idldir@
+include_motif = @include_motif@
+jni_includes = @jni_includes@
+kde_appsdir = @kde_appsdir@
+kde_bindir = @kde_bindir@
+kde_confdir = @kde_confdir@
+kde_datadir = @kde_datadir@
+kde_htmldir = @kde_htmldir@
+kde_icondir = @kde_icondir@
+kde_includes = @kde_includes@
+kde_libraries = @kde_libraries@
+kde_libs_htmldir = @kde_libs_htmldir@
+kde_libs_prefix = @kde_libs_prefix@
+kde_locale = @kde_locale@
+kde_mimedir = @kde_mimedir@
+kde_moduledir = @kde_moduledir@
+kde_qtver = @kde_qtver@
+kde_servicesdir = @kde_servicesdir@
+kde_servicetypesdir = @kde_servicetypesdir@
+kde_sounddir = @kde_sounddir@
+kde_templatesdir = @kde_templatesdir@
+kde_wallpaperdir = @kde_wallpaperdir@
+kdmchooserdir = @kdmchooserdir@
+link_motif = @link_motif@
+micodir = @micodir@
+nogroup = @nogroup@
+qt_includes = @qt_includes@
+qt_libraries = @qt_libraries@
+x_includes = @x_includes@
+x_libraries = @x_libraries@
+
+AM_CPPFLAGS = -UQT_NO_ASCII_CAST
+
+INCLUDES = $(all_includes) $(GLINC)
+LDFLAGS = $(all_libraries) $(KDE_RPATH)
+LDADD = $(LIB_KDEUI) -lkscreensaver -lm
+
+bin_PROGRAMS = kbanner.kss kblankscrn.kss kpolygon.kss kslideshow.kss                 klines.kss klorenz.kss kblob.kss kvm.kss kmatrix.kss                 kscience.kss
+
+
+kbanner_kss_SOURCES = banner.cpp
+kblankscrn_kss_SOURCES = blankscrn.cpp
+kpolygon_kss_SOURCES = polygon.cpp
+kslideshow_kss_SOURCES = slideshow.cpp
+kslideshow_kss_LDADD = $(LIB_KFILE) $(LDADD) $(LIB_KSYCOCA)
+klines_kss_SOURCES = lines.cpp
+klorenz_kss_SOURCES = lorenz.cpp
+kblob_kss_SOURCES = blob.cpp
+kvm_kss_SOURCES = kvm.cpp vm.c vm_random.c
+kmatrix_kss_SOURCES = matrix.cpp
+kscience_kss_SOURCES = science.cpp
+
+#>- METASOURCES = banner.moc blankscrn.moc polygon.moc slideshow.moc lines.moc               lorenz.moc blob.moc kvm.moc matrix.moc science.moc
+
+
+noinst_HEADERS = banner.h blankscrn.h polygon.h slideshow.h lines.h                  lorenz.h blob.h kvm.h vm.h vm_random.h matrix.h science.h
+
+
+########## Meta objects ##########
+
+data_DATA = kscience.png
+datadir = $(kde_datadir)/kscreensaver
+
+desktop_DATA = KBanner.desktop KBlankscreen.desktop KPolygon.desktop                 KSlideshow.desktop KLines.desktop KLorenz.desktop                 KBlob.desktop KVm.desktop KMatrix.desktop KScience.desktop
+
+desktopdir = $(kde_appsdir)/System/ScreenSavers
+
+EXTRA_DIST = $(desktop_DATA) vm.xpm vm.xbm kscience.png
+mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
+CONFIG_HEADER = ../../config.h
+CONFIG_CLEAN_FILES = 
+bin_PROGRAMS =  kbanner.kss kblankscrn.kss kpolygon.kss kslideshow.kss \
+	klines.kss klorenz.kss kblob.kss kvm.kss kmatrix.kss kscience.kss
+PROGRAMS =  $(bin_PROGRAMS)
+
+
+DEFS = @DEFS@ -I. -I$(srcdir) -I../..
+CPPFLAGS = @CPPFLAGS@
+LIBS = @LIBS@
+X_CFLAGS = @X_CFLAGS@
+X_LIBS = @X_LIBS@
+#>- kbanner_kss_OBJECTS =  banner.$(OBJEXT)
+#>+ 5
+kbanner_kss_final_OBJECTS = kbanner_kss.all_cpp.o 
+kbanner_kss_nofinal_OBJECTS = banner.$(OBJEXT) \
+	kbanner_kss_meta_unload.o 
+@KDE_USE_FINAL_FALSE@kbanner_kss_OBJECTS = $(kbanner_kss_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@kbanner_kss_OBJECTS = $(kbanner_kss_final_OBJECTS)
+kbanner_kss_LDADD = $(LDADD)
+kbanner_kss_DEPENDENCIES = 
+kbanner_kss_LDFLAGS = 
+#>- kblankscrn_kss_OBJECTS =  blankscrn.$(OBJEXT)
+#>+ 5
+kblankscrn_kss_final_OBJECTS = kblankscrn_kss.all_cpp.o 
+kblankscrn_kss_nofinal_OBJECTS = blankscrn.$(OBJEXT) \
+	kblankscrn_kss_meta_unload.o 
+@KDE_USE_FINAL_FALSE@kblankscrn_kss_OBJECTS = $(kblankscrn_kss_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@kblankscrn_kss_OBJECTS = $(kblankscrn_kss_final_OBJECTS)
+kblankscrn_kss_LDADD = $(LDADD)
+kblankscrn_kss_DEPENDENCIES = 
+kblankscrn_kss_LDFLAGS = 
+#>- kpolygon_kss_OBJECTS =  polygon.$(OBJEXT)
+#>+ 5
+kpolygon_kss_final_OBJECTS = kpolygon_kss.all_cpp.o 
+kpolygon_kss_nofinal_OBJECTS = polygon.$(OBJEXT) \
+	kpolygon_kss_meta_unload.o 
+@KDE_USE_FINAL_FALSE@kpolygon_kss_OBJECTS = $(kpolygon_kss_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@kpolygon_kss_OBJECTS = $(kpolygon_kss_final_OBJECTS)
+kpolygon_kss_LDADD = $(LDADD)
+kpolygon_kss_DEPENDENCIES = 
+kpolygon_kss_LDFLAGS = 
+#>- kslideshow_kss_OBJECTS =  slideshow.$(OBJEXT)
+#>+ 5
+kslideshow_kss_final_OBJECTS = kslideshow_kss.all_cpp.o 
+kslideshow_kss_nofinal_OBJECTS = slideshow.$(OBJEXT) \
+	kslideshow_kss_meta_unload.o 
+@KDE_USE_FINAL_FALSE@kslideshow_kss_OBJECTS = $(kslideshow_kss_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@kslideshow_kss_OBJECTS = $(kslideshow_kss_final_OBJECTS)
+kslideshow_kss_DEPENDENCIES = 
+kslideshow_kss_LDFLAGS = 
+#>- klines_kss_OBJECTS =  lines.$(OBJEXT)
+#>+ 5
+klines_kss_final_OBJECTS = klines_kss.all_cpp.o 
+klines_kss_nofinal_OBJECTS = lines.$(OBJEXT) \
+	klines_kss_meta_unload.o 
+@KDE_USE_FINAL_FALSE@klines_kss_OBJECTS = $(klines_kss_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@klines_kss_OBJECTS = $(klines_kss_final_OBJECTS)
+klines_kss_LDADD = $(LDADD)
+klines_kss_DEPENDENCIES = 
+klines_kss_LDFLAGS = 
+#>- klorenz_kss_OBJECTS =  lorenz.$(OBJEXT)
+#>+ 5
+klorenz_kss_final_OBJECTS = klorenz_kss.all_cpp.o 
+klorenz_kss_nofinal_OBJECTS = lorenz.$(OBJEXT) \
+	klorenz_kss_meta_unload.o 
+@KDE_USE_FINAL_FALSE@klorenz_kss_OBJECTS = $(klorenz_kss_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@klorenz_kss_OBJECTS = $(klorenz_kss_final_OBJECTS)
+klorenz_kss_LDADD = $(LDADD)
+klorenz_kss_DEPENDENCIES = 
+klorenz_kss_LDFLAGS = 
+#>- kblob_kss_OBJECTS =  blob.$(OBJEXT)
+#>+ 5
+kblob_kss_final_OBJECTS = kblob_kss.all_cpp.o 
+kblob_kss_nofinal_OBJECTS = blob.$(OBJEXT) \
+	kblob_kss_meta_unload.o 
+@KDE_USE_FINAL_FALSE@kblob_kss_OBJECTS = $(kblob_kss_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@kblob_kss_OBJECTS = $(kblob_kss_final_OBJECTS)
+kblob_kss_LDADD = $(LDADD)
+kblob_kss_DEPENDENCIES = 
+kblob_kss_LDFLAGS = 
+#>- kvm_kss_OBJECTS =  kvm.$(OBJEXT) vm.$(OBJEXT) vm_random.$(OBJEXT)
+#>+ 5
+kvm_kss_final_OBJECTS = kvm_kss.all_cpp.o vm.o vm_random.o 
+kvm_kss_nofinal_OBJECTS = kvm.$(OBJEXT) vm.$(OBJEXT) vm_random.$(OBJEXT) \
+	kvm_kss_meta_unload.o 
+@KDE_USE_FINAL_FALSE@kvm_kss_OBJECTS = $(kvm_kss_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@kvm_kss_OBJECTS = $(kvm_kss_final_OBJECTS)
+kvm_kss_LDADD = $(LDADD)
+kvm_kss_DEPENDENCIES = 
+kvm_kss_LDFLAGS = 
+#>- kmatrix_kss_OBJECTS =  matrix.$(OBJEXT)
+#>+ 5
+kmatrix_kss_final_OBJECTS = kmatrix_kss.all_cpp.o 
+kmatrix_kss_nofinal_OBJECTS = matrix.$(OBJEXT) \
+	kmatrix_kss_meta_unload.o 
+@KDE_USE_FINAL_FALSE@kmatrix_kss_OBJECTS = $(kmatrix_kss_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@kmatrix_kss_OBJECTS = $(kmatrix_kss_final_OBJECTS)
+kmatrix_kss_LDADD = $(LDADD)
+kmatrix_kss_DEPENDENCIES = 
+kmatrix_kss_LDFLAGS = 
+#>- kscience_kss_OBJECTS =  science.$(OBJEXT)
+#>+ 5
+kscience_kss_final_OBJECTS = kscience_kss.all_cpp.o 
+kscience_kss_nofinal_OBJECTS = science.$(OBJEXT) \
+	kscience_kss_meta_unload.o 
+@KDE_USE_FINAL_FALSE@kscience_kss_OBJECTS = $(kscience_kss_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@kscience_kss_OBJECTS = $(kscience_kss_final_OBJECTS)
+kscience_kss_LDADD = $(LDADD)
+kscience_kss_DEPENDENCIES = 
+kscience_kss_LDFLAGS = 
+CXXFLAGS = @CXXFLAGS@
+#>- CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+#>+ 1
+CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS)
+#>- LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+#>+ 1
+LTCXXCOMPILE = $(LIBTOOL) --mode=compile --tag=CXX $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS)
+CXXLD = $(CXX)
+#>- CXXLINK = $(LIBTOOL) --mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(LDFLAGS) -o $@
+#>+ 1
+CXXLINK = $(LIBTOOL) --mode=link --tag=CXX $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS) $(LDFLAGS) -o $@
+CFLAGS = @CFLAGS@
+COMPILE = $(CC) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+LTCOMPILE = $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+CCLD = $(CC)
+LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(LDFLAGS) -o $@
+DATA =  $(data_DATA) $(desktop_DATA)
+
+HEADERS =  $(noinst_HEADERS)
+
+DIST_COMMON =  README Makefile.am Makefile.in
+
+
+#>- DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+#>+ 4
+KDE_DIST=KBanner.desktop KMatrix.desktop matrix_font.xpm KPolygon.desktop KLines.desktop KBlob.desktop KBlankscreen.desktop KSlideshow.desktop KLorenz.desktop KVm.desktop KScience.desktop 
+
+DISTFILES= $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+
+
+TAR = tar
+GZIP_ENV = --best
+SOURCES = $(kbanner_kss_SOURCES) $(kblankscrn_kss_SOURCES) $(kpolygon_kss_SOURCES) $(kslideshow_kss_SOURCES) $(klines_kss_SOURCES) $(klorenz_kss_SOURCES) $(kblob_kss_SOURCES) $(kvm_kss_SOURCES) $(kmatrix_kss_SOURCES) $(kscience_kss_SOURCES)
+OBJECTS = $(kbanner_kss_OBJECTS) $(kblankscrn_kss_OBJECTS) $(kpolygon_kss_OBJECTS) $(kslideshow_kss_OBJECTS) $(klines_kss_OBJECTS) $(klorenz_kss_OBJECTS) $(kblob_kss_OBJECTS) $(kvm_kss_OBJECTS) $(kmatrix_kss_OBJECTS) $(kscience_kss_OBJECTS)
+
+#>- all: all-redirect
+#>+ 1
+all: docs-am  all-redirect
+.SUFFIXES:
+.SUFFIXES: .S .c .cpp .lo .o .obj .s
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+#>- 	cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps kscreensaver/kdesavers/Makefile
+#>+ 2
+	cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps kscreensaver/kdesavers/Makefile
+	cd $(top_srcdir) && perl admin/am_edit kscreensaver/kdesavers/Makefile.in
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	&& CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+
+mostlyclean-binPROGRAMS:
+
+clean-binPROGRAMS:
+	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
+
+distclean-binPROGRAMS:
+
+maintainer-clean-binPROGRAMS:
+
+install-binPROGRAMS: $(bin_PROGRAMS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(bindir)
+	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+	if test -f $$p; then \
+	echo " $(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`"; \
+	$(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	else :; fi; \
+	done
+
+uninstall-binPROGRAMS:
+	@$(NORMAL_UNINSTALL)
+	list='$(bin_PROGRAMS)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	done
+
+.c.o:
+	$(COMPILE) -c $<
+
+# FIXME: We should only use cygpath when building on Windows,
+# and only if it is available.
+.c.obj:
+	$(COMPILE) -c `cygpath -w $<`
+
+.s.o:
+	$(COMPILE) -c $<
+
+.S.o:
+	$(COMPILE) -c $<
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+	-rm -f *.$(OBJEXT)
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+.c.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.s.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.S.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+kbanner.kss: $(kbanner_kss_OBJECTS) $(kbanner_kss_DEPENDENCIES)
+	@rm -f kbanner.kss
+	$(CXXLINK) $(kbanner_kss_LDFLAGS) $(kbanner_kss_OBJECTS) $(kbanner_kss_LDADD) $(LIBS)
+
+kblankscrn.kss: $(kblankscrn_kss_OBJECTS) $(kblankscrn_kss_DEPENDENCIES)
+	@rm -f kblankscrn.kss
+	$(CXXLINK) $(kblankscrn_kss_LDFLAGS) $(kblankscrn_kss_OBJECTS) $(kblankscrn_kss_LDADD) $(LIBS)
+
+kpolygon.kss: $(kpolygon_kss_OBJECTS) $(kpolygon_kss_DEPENDENCIES)
+	@rm -f kpolygon.kss
+	$(CXXLINK) $(kpolygon_kss_LDFLAGS) $(kpolygon_kss_OBJECTS) $(kpolygon_kss_LDADD) $(LIBS)
+
+kslideshow.kss: $(kslideshow_kss_OBJECTS) $(kslideshow_kss_DEPENDENCIES)
+	@rm -f kslideshow.kss
+	$(CXXLINK) $(kslideshow_kss_LDFLAGS) $(kslideshow_kss_OBJECTS) $(kslideshow_kss_LDADD) $(LIBS)
+
+klines.kss: $(klines_kss_OBJECTS) $(klines_kss_DEPENDENCIES)
+	@rm -f klines.kss
+	$(CXXLINK) $(klines_kss_LDFLAGS) $(klines_kss_OBJECTS) $(klines_kss_LDADD) $(LIBS)
+
+klorenz.kss: $(klorenz_kss_OBJECTS) $(klorenz_kss_DEPENDENCIES)
+	@rm -f klorenz.kss
+	$(CXXLINK) $(klorenz_kss_LDFLAGS) $(klorenz_kss_OBJECTS) $(klorenz_kss_LDADD) $(LIBS)
+
+kblob.kss: $(kblob_kss_OBJECTS) $(kblob_kss_DEPENDENCIES)
+	@rm -f kblob.kss
+	$(CXXLINK) $(kblob_kss_LDFLAGS) $(kblob_kss_OBJECTS) $(kblob_kss_LDADD) $(LIBS)
+
+kvm.kss: $(kvm_kss_OBJECTS) $(kvm_kss_DEPENDENCIES)
+	@rm -f kvm.kss
+	$(CXXLINK) $(kvm_kss_LDFLAGS) $(kvm_kss_OBJECTS) $(kvm_kss_LDADD) $(LIBS)
+
+kmatrix.kss: $(kmatrix_kss_OBJECTS) $(kmatrix_kss_DEPENDENCIES)
+	@rm -f kmatrix.kss
+	$(CXXLINK) $(kmatrix_kss_LDFLAGS) $(kmatrix_kss_OBJECTS) $(kmatrix_kss_LDADD) $(LIBS)
+
+kscience.kss: $(kscience_kss_OBJECTS) $(kscience_kss_DEPENDENCIES)
+	@rm -f kscience.kss
+	$(CXXLINK) $(kscience_kss_LDFLAGS) $(kscience_kss_OBJECTS) $(kscience_kss_LDADD) $(LIBS)
+.cpp.o:
+	$(CXXCOMPILE) -c $<
+.cpp.obj:
+	$(CXXCOMPILE) -c `cygpath -w $<`
+.cpp.lo:
+	$(LTCXXCOMPILE) -c $<
+
+install-dataDATA: $(data_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(datadir)
+	@list='$(data_DATA)'; for p in $$list; do \
+	if test -f $(srcdir)/$$p; then \
+	echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(datadir)/$$p"; \
+	$(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(datadir)/$$p; \
+	else if test -f $$p; then \
+	echo " $(INSTALL_DATA) $$p $(DESTDIR)$(datadir)/$$p"; \
+	$(INSTALL_DATA) $$p $(DESTDIR)$(datadir)/$$p; \
+	fi; fi; \
+	done
+
+uninstall-dataDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(data_DATA)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(datadir)/$$p; \
+	done
+
+install-desktopDATA: $(desktop_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(desktopdir)
+	@list='$(desktop_DATA)'; for p in $$list; do \
+	if test -f $(srcdir)/$$p; then \
+	echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(desktopdir)/$$p"; \
+	$(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(desktopdir)/$$p; \
+	else if test -f $$p; then \
+	echo " $(INSTALL_DATA) $$p $(DESTDIR)$(desktopdir)/$$p"; \
+	$(INSTALL_DATA) $$p $(DESTDIR)$(desktopdir)/$$p; \
+	fi; fi; \
+	done
+
+uninstall-desktopDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(desktop_DATA)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(desktopdir)/$$p; \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	awk '    { files[$$0] = 1; } \
+	END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	&& mkid -f$$here/ID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	awk '    { files[$$0] = 1; } \
+	END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	|| (cd $(srcdir) && etags $(ETAGS_ARGS) $$tags  $$unique $(LISP) -o $$here/TAGS)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = kscreensaver/kdesavers
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	d=$(srcdir); \
+	if test -d $$d/$$file; then \
+	cp -pr $$d/$$file $(distdir)/$$file; \
+	else \
+	test -f $(distdir)/$$file \
+	|| ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	|| cp -p $$d/$$file $(distdir)/$$file || :; \
+	fi; \
+	done
+info-am:
+info: info-am
+dvi-am:
+dvi: dvi-am
+check-am: all-am
+check: check-am
+installcheck-am:
+installcheck: installcheck-am
+install-exec-am: install-binPROGRAMS
+install-exec: install-exec-am
+
+install-data-am: install-dataDATA install-desktopDATA
+install-data: install-data-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-am
+uninstall-am: uninstall-binPROGRAMS uninstall-dataDATA \
+	uninstall-desktopDATA
+uninstall: uninstall-am
+all-am: Makefile $(PROGRAMS) $(DATA) $(HEADERS)
+all-redirect: all-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs:
+	$(mkinstalldirs)  $(DESTDIR)$(bindir) $(DESTDIR)$(datadir) \
+	$(DESTDIR)$(desktopdir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-binPROGRAMS mostlyclean-compile \
+	mostlyclean-libtool mostlyclean-tags \
+	mostlyclean-generic
+
+mostlyclean: mostlyclean-am
+
+#>- clean-am:  clean-binPROGRAMS clean-compile clean-libtool clean-tags \
+#>- clean-generic mostlyclean-am
+#>+ 2
+clean-am: clean-metasources clean-moc-classes clean-final   clean-binPROGRAMS clean-compile clean-libtool clean-tags \
+	clean-generic mostlyclean-am
+
+#>- clean: clean-am
+#>+ 1
+clean: kde-rpo-clean  clean-am
+
+distclean-am:  distclean-binPROGRAMS distclean-compile distclean-libtool \
+	distclean-tags distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-am
+
+maintainer-clean-am:  maintainer-clean-binPROGRAMS \
+	maintainer-clean-compile maintainer-clean-libtool \
+	maintainer-clean-tags maintainer-clean-generic \
+	distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-am
+
+.PHONY: mostlyclean-binPROGRAMS distclean-binPROGRAMS clean-binPROGRAMS \
+	maintainer-clean-binPROGRAMS uninstall-binPROGRAMS install-binPROGRAMS \
+	mostlyclean-compile distclean-compile clean-compile \
+	maintainer-clean-compile mostlyclean-libtool distclean-libtool \
+	clean-libtool maintainer-clean-libtool uninstall-dataDATA \
+	install-dataDATA uninstall-desktopDATA install-desktopDATA tags \
+	mostlyclean-tags distclean-tags clean-tags maintainer-clean-tags \
+	distdir info-am info dvi-am dvi check check-am installcheck-am \
+	installcheck install-exec-am install-exec install-data-am install-data \
+	install-am install uninstall-am uninstall all-redirect all-am all \
+	installdirs mostlyclean-generic distclean-generic clean-generic \
+	maintainer-clean-generic clean mostlyclean distclean maintainer-clean
+
+
+messages:
+	$(XGETTEXT) *.cpp *.h -o $(podir)/klock.pot
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
+
+#>+ 3
+banner.moc: $(srcdir)/banner.h
+	$(MOC) $(srcdir)/banner.h -o banner.moc
+
+#>+ 3
+slideshow.moc: $(srcdir)/slideshow.h
+	$(MOC) $(srcdir)/slideshow.h -o slideshow.moc
+
+#>+ 3
+polygon.moc: $(srcdir)/polygon.h
+	$(MOC) $(srcdir)/polygon.h -o polygon.moc
+
+#>+ 3
+science.moc: $(srcdir)/science.h
+	$(MOC) $(srcdir)/science.h -o science.moc
+
+#>+ 3
+lorenz.moc: $(srcdir)/lorenz.h
+	$(MOC) $(srcdir)/lorenz.h -o lorenz.moc
+
+#>+ 3
+kvm.moc: $(srcdir)/kvm.h
+	$(MOC) $(srcdir)/kvm.h -o kvm.moc
+
+#>+ 3
+lines.moc: $(srcdir)/lines.h
+	$(MOC) $(srcdir)/lines.h -o lines.moc
+
+#>+ 3
+matrix.moc: $(srcdir)/matrix.h
+	$(MOC) $(srcdir)/matrix.h -o matrix.moc
+
+#>+ 3
+blankscrn.moc: $(srcdir)/blankscrn.h
+	$(MOC) $(srcdir)/blankscrn.h -o blankscrn.moc
+
+#>+ 3
+blob.moc: $(srcdir)/blob.h
+	$(MOC) $(srcdir)/blob.h -o blob.moc
+
+#>+ 3
+clean-metasources:
+	-rm -f  banner.moc slideshow.moc polygon.moc science.moc lorenz.moc kvm.moc lines.moc matrix.moc blankscrn.moc blob.moc
+
+#>+ 2
+docs-am:
+
+#>+ 5
+force-reedit:
+		cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps kscreensaver/kdesavers/Makefile
+	cd $(top_srcdir) && perl admin/am_edit kscreensaver/kdesavers/Makefile.in
+
+
+#>+ 12
+kbanner_kss_meta_unload.cpp:  banner.moc
+	@echo 'creating kbanner_kss_meta_unload.cpp'
+	@-rm -f kbanner_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kbanner_kss[] = {' > kbanner_kss_meta_unload.cpp ;\
+		cat  banner.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kbanner_kss_meta_unload.cpp ;\
+		echo '0};' >> kbanner_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kbanner_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kbanner_kss)' >> kbanner_kss_meta_unload.cpp ;\
+	else echo > kbanner_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+kblankscrn_kss_meta_unload.cpp:  blankscrn.moc
+	@echo 'creating kblankscrn_kss_meta_unload.cpp'
+	@-rm -f kblankscrn_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kblankscrn_kss[] = {' > kblankscrn_kss_meta_unload.cpp ;\
+		cat  blankscrn.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kblankscrn_kss_meta_unload.cpp ;\
+		echo '0};' >> kblankscrn_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kblankscrn_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kblankscrn_kss)' >> kblankscrn_kss_meta_unload.cpp ;\
+	else echo > kblankscrn_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+kpolygon_kss_meta_unload.cpp:  polygon.moc
+	@echo 'creating kpolygon_kss_meta_unload.cpp'
+	@-rm -f kpolygon_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kpolygon_kss[] = {' > kpolygon_kss_meta_unload.cpp ;\
+		cat  polygon.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kpolygon_kss_meta_unload.cpp ;\
+		echo '0};' >> kpolygon_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kpolygon_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kpolygon_kss)' >> kpolygon_kss_meta_unload.cpp ;\
+	else echo > kpolygon_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+kslideshow_kss_meta_unload.cpp:  slideshow.moc
+	@echo 'creating kslideshow_kss_meta_unload.cpp'
+	@-rm -f kslideshow_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kslideshow_kss[] = {' > kslideshow_kss_meta_unload.cpp ;\
+		cat  slideshow.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kslideshow_kss_meta_unload.cpp ;\
+		echo '0};' >> kslideshow_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kslideshow_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kslideshow_kss)' >> kslideshow_kss_meta_unload.cpp ;\
+	else echo > kslideshow_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+klines_kss_meta_unload.cpp:  lines.moc
+	@echo 'creating klines_kss_meta_unload.cpp'
+	@-rm -f klines_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_klines_kss[] = {' > klines_kss_meta_unload.cpp ;\
+		cat  lines.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> klines_kss_meta_unload.cpp ;\
+		echo '0};' >> klines_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> klines_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(klines_kss)' >> klines_kss_meta_unload.cpp ;\
+	else echo > klines_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+klorenz_kss_meta_unload.cpp:  lorenz.moc
+	@echo 'creating klorenz_kss_meta_unload.cpp'
+	@-rm -f klorenz_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_klorenz_kss[] = {' > klorenz_kss_meta_unload.cpp ;\
+		cat  lorenz.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> klorenz_kss_meta_unload.cpp ;\
+		echo '0};' >> klorenz_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> klorenz_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(klorenz_kss)' >> klorenz_kss_meta_unload.cpp ;\
+	else echo > klorenz_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+kblob_kss_meta_unload.cpp:  blob.moc
+	@echo 'creating kblob_kss_meta_unload.cpp'
+	@-rm -f kblob_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kblob_kss[] = {' > kblob_kss_meta_unload.cpp ;\
+		cat  blob.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kblob_kss_meta_unload.cpp ;\
+		echo '0};' >> kblob_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kblob_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kblob_kss)' >> kblob_kss_meta_unload.cpp ;\
+	else echo > kblob_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+kvm_kss_meta_unload.cpp:  kvm.moc
+	@echo 'creating kvm_kss_meta_unload.cpp'
+	@-rm -f kvm_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kvm_kss[] = {' > kvm_kss_meta_unload.cpp ;\
+		cat  kvm.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kvm_kss_meta_unload.cpp ;\
+		echo '0};' >> kvm_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kvm_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kvm_kss)' >> kvm_kss_meta_unload.cpp ;\
+	else echo > kvm_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+kmatrix_kss_meta_unload.cpp:  matrix.moc
+	@echo 'creating kmatrix_kss_meta_unload.cpp'
+	@-rm -f kmatrix_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kmatrix_kss[] = {' > kmatrix_kss_meta_unload.cpp ;\
+		cat  matrix.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kmatrix_kss_meta_unload.cpp ;\
+		echo '0};' >> kmatrix_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kmatrix_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kmatrix_kss)' >> kmatrix_kss_meta_unload.cpp ;\
+	else echo > kmatrix_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+kscience_kss_meta_unload.cpp:  science.moc
+	@echo 'creating kscience_kss_meta_unload.cpp'
+	@-rm -f kscience_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kscience_kss[] = {' > kscience_kss_meta_unload.cpp ;\
+		cat  science.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kscience_kss_meta_unload.cpp ;\
+		echo '0};' >> kscience_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kscience_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kscience_kss)' >> kscience_kss_meta_unload.cpp ;\
+	else echo > kscience_kss_meta_unload.cpp; fi
+
+
+#>+ 3
+clean-moc-classes:
+	-rm -f  kbanner_kss_meta_unload.cpp kblankscrn_kss_meta_unload.cpp kpolygon_kss_meta_unload.cpp kslideshow_kss_meta_unload.cpp klines_kss_meta_unload.cpp klorenz_kss_meta_unload.cpp kblob_kss_meta_unload.cpp kvm_kss_meta_unload.cpp kmatrix_kss_meta_unload.cpp kscience_kss_meta_unload.cpp
+
+#>+ 11
+kbanner_kss.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/banner.cpp kbanner_kss_meta_unload.cpp   banner.moc slideshow.moc polygon.moc science.moc lorenz.moc kvm.moc lines.moc matrix.moc blankscrn.moc blob.moc 
+	@echo 'creating kbanner_kss.all_cpp.cpp ...'; \
+	rm -f kbanner_kss.all_cpp.files kbanner_kss.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> kbanner_kss.all_cpp.final; \
+	for file in banner.cpp kbanner_kss_meta_unload.cpp ; do \
+	  echo "#include \"$$file\"" >> kbanner_kss.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> kbanner_kss.all_cpp.final; \
+	done; \
+	cat kbanner_kss.all_cpp.final kbanner_kss.all_cpp.files  > kbanner_kss.all_cpp.cpp; \
+	rm -f kbanner_kss.all_cpp.final kbanner_kss.all_cpp.files
+
+#>+ 11
+kblankscrn_kss.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/blankscrn.cpp kblankscrn_kss_meta_unload.cpp  
+	@echo 'creating kblankscrn_kss.all_cpp.cpp ...'; \
+	rm -f kblankscrn_kss.all_cpp.files kblankscrn_kss.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> kblankscrn_kss.all_cpp.final; \
+	for file in blankscrn.cpp kblankscrn_kss_meta_unload.cpp ; do \
+	  echo "#include \"$$file\"" >> kblankscrn_kss.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> kblankscrn_kss.all_cpp.final; \
+	done; \
+	cat kblankscrn_kss.all_cpp.final kblankscrn_kss.all_cpp.files  > kblankscrn_kss.all_cpp.cpp; \
+	rm -f kblankscrn_kss.all_cpp.final kblankscrn_kss.all_cpp.files
+
+#>+ 11
+kpolygon_kss.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/polygon.cpp kpolygon_kss_meta_unload.cpp  
+	@echo 'creating kpolygon_kss.all_cpp.cpp ...'; \
+	rm -f kpolygon_kss.all_cpp.files kpolygon_kss.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> kpolygon_kss.all_cpp.final; \
+	for file in polygon.cpp kpolygon_kss_meta_unload.cpp ; do \
+	  echo "#include \"$$file\"" >> kpolygon_kss.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> kpolygon_kss.all_cpp.final; \
+	done; \
+	cat kpolygon_kss.all_cpp.final kpolygon_kss.all_cpp.files  > kpolygon_kss.all_cpp.cpp; \
+	rm -f kpolygon_kss.all_cpp.final kpolygon_kss.all_cpp.files
+
+#>+ 11
+kslideshow_kss.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/slideshow.cpp kslideshow_kss_meta_unload.cpp  
+	@echo 'creating kslideshow_kss.all_cpp.cpp ...'; \
+	rm -f kslideshow_kss.all_cpp.files kslideshow_kss.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> kslideshow_kss.all_cpp.final; \
+	for file in slideshow.cpp kslideshow_kss_meta_unload.cpp ; do \
+	  echo "#include \"$$file\"" >> kslideshow_kss.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> kslideshow_kss.all_cpp.final; \
+	done; \
+	cat kslideshow_kss.all_cpp.final kslideshow_kss.all_cpp.files  > kslideshow_kss.all_cpp.cpp; \
+	rm -f kslideshow_kss.all_cpp.final kslideshow_kss.all_cpp.files
+
+#>+ 11
+klines_kss.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/lines.cpp klines_kss_meta_unload.cpp  
+	@echo 'creating klines_kss.all_cpp.cpp ...'; \
+	rm -f klines_kss.all_cpp.files klines_kss.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> klines_kss.all_cpp.final; \
+	for file in lines.cpp klines_kss_meta_unload.cpp ; do \
+	  echo "#include \"$$file\"" >> klines_kss.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> klines_kss.all_cpp.final; \
+	done; \
+	cat klines_kss.all_cpp.final klines_kss.all_cpp.files  > klines_kss.all_cpp.cpp; \
+	rm -f klines_kss.all_cpp.final klines_kss.all_cpp.files
+
+#>+ 11
+klorenz_kss.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/lorenz.cpp klorenz_kss_meta_unload.cpp  
+	@echo 'creating klorenz_kss.all_cpp.cpp ...'; \
+	rm -f klorenz_kss.all_cpp.files klorenz_kss.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> klorenz_kss.all_cpp.final; \
+	for file in lorenz.cpp klorenz_kss_meta_unload.cpp ; do \
+	  echo "#include \"$$file\"" >> klorenz_kss.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> klorenz_kss.all_cpp.final; \
+	done; \
+	cat klorenz_kss.all_cpp.final klorenz_kss.all_cpp.files  > klorenz_kss.all_cpp.cpp; \
+	rm -f klorenz_kss.all_cpp.final klorenz_kss.all_cpp.files
+
+#>+ 11
+kblob_kss.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/blob.cpp kblob_kss_meta_unload.cpp  
+	@echo 'creating kblob_kss.all_cpp.cpp ...'; \
+	rm -f kblob_kss.all_cpp.files kblob_kss.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> kblob_kss.all_cpp.final; \
+	for file in blob.cpp kblob_kss_meta_unload.cpp ; do \
+	  echo "#include \"$$file\"" >> kblob_kss.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> kblob_kss.all_cpp.final; \
+	done; \
+	cat kblob_kss.all_cpp.final kblob_kss.all_cpp.files  > kblob_kss.all_cpp.cpp; \
+	rm -f kblob_kss.all_cpp.final kblob_kss.all_cpp.files
+
+#>+ 11
+kvm_kss.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/kvm.cpp kvm_kss_meta_unload.cpp  
+	@echo 'creating kvm_kss.all_cpp.cpp ...'; \
+	rm -f kvm_kss.all_cpp.files kvm_kss.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> kvm_kss.all_cpp.final; \
+	for file in kvm.cpp kvm_kss_meta_unload.cpp ; do \
+	  echo "#include \"$$file\"" >> kvm_kss.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> kvm_kss.all_cpp.final; \
+	done; \
+	cat kvm_kss.all_cpp.final kvm_kss.all_cpp.files  > kvm_kss.all_cpp.cpp; \
+	rm -f kvm_kss.all_cpp.final kvm_kss.all_cpp.files
+
+#>+ 11
+kmatrix_kss.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/matrix.cpp kmatrix_kss_meta_unload.cpp  
+	@echo 'creating kmatrix_kss.all_cpp.cpp ...'; \
+	rm -f kmatrix_kss.all_cpp.files kmatrix_kss.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> kmatrix_kss.all_cpp.final; \
+	for file in matrix.cpp kmatrix_kss_meta_unload.cpp ; do \
+	  echo "#include \"$$file\"" >> kmatrix_kss.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> kmatrix_kss.all_cpp.final; \
+	done; \
+	cat kmatrix_kss.all_cpp.final kmatrix_kss.all_cpp.files  > kmatrix_kss.all_cpp.cpp; \
+	rm -f kmatrix_kss.all_cpp.final kmatrix_kss.all_cpp.files
+
+#>+ 11
+kscience_kss.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/science.cpp kscience_kss_meta_unload.cpp  
+	@echo 'creating kscience_kss.all_cpp.cpp ...'; \
+	rm -f kscience_kss.all_cpp.files kscience_kss.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> kscience_kss.all_cpp.final; \
+	for file in science.cpp kscience_kss_meta_unload.cpp ; do \
+	  echo "#include \"$$file\"" >> kscience_kss.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> kscience_kss.all_cpp.final; \
+	done; \
+	cat kscience_kss.all_cpp.final kscience_kss.all_cpp.files  > kscience_kss.all_cpp.cpp; \
+	rm -f kscience_kss.all_cpp.final kscience_kss.all_cpp.files
+
+#>+ 3
+clean-final:
+	-rm -f kbanner_kss.all_cpp.cpp kblankscrn_kss.all_cpp.cpp kpolygon_kss.all_cpp.cpp kslideshow_kss.all_cpp.cpp klines_kss.all_cpp.cpp klorenz_kss.all_cpp.cpp kblob_kss.all_cpp.cpp kvm_kss.all_cpp.cpp kmatrix_kss.all_cpp.cpp kscience_kss.all_cpp.cpp
+
+#>+ 2
+final:
+	$(MAKE) kbanner_kss_OBJECTS="$(kbanner_kss_final_OBJECTS)" kblankscrn_kss_OBJECTS="$(kblankscrn_kss_final_OBJECTS)" kpolygon_kss_OBJECTS="$(kpolygon_kss_final_OBJECTS)" kslideshow_kss_OBJECTS="$(kslideshow_kss_final_OBJECTS)" klines_kss_OBJECTS="$(klines_kss_final_OBJECTS)" klorenz_kss_OBJECTS="$(klorenz_kss_final_OBJECTS)" kblob_kss_OBJECTS="$(kblob_kss_final_OBJECTS)" kvm_kss_OBJECTS="$(kvm_kss_final_OBJECTS)" kmatrix_kss_OBJECTS="$(kmatrix_kss_final_OBJECTS)" kscience_kss_OBJECTS="$(kscience_kss_final_OBJECTS)" all-am
+#>+ 2
+final-install:
+	$(MAKE) kbanner_kss_OBJECTS="$(kbanner_kss_final_OBJECTS)" kblankscrn_kss_OBJECTS="$(kblankscrn_kss_final_OBJECTS)" kpolygon_kss_OBJECTS="$(kpolygon_kss_final_OBJECTS)" kslideshow_kss_OBJECTS="$(kslideshow_kss_final_OBJECTS)" klines_kss_OBJECTS="$(klines_kss_final_OBJECTS)" klorenz_kss_OBJECTS="$(klorenz_kss_final_OBJECTS)" kblob_kss_OBJECTS="$(kblob_kss_final_OBJECTS)" kvm_kss_OBJECTS="$(kvm_kss_final_OBJECTS)" kmatrix_kss_OBJECTS="$(kmatrix_kss_final_OBJECTS)" kscience_kss_OBJECTS="$(kscience_kss_final_OBJECTS)" install-am
+#>+ 2
+no-final:
+	$(MAKE) kbanner_kss_OBJECTS="$(kbanner_kss_nofinal_OBJECTS)" kblankscrn_kss_OBJECTS="$(kblankscrn_kss_nofinal_OBJECTS)" kpolygon_kss_OBJECTS="$(kpolygon_kss_nofinal_OBJECTS)" kslideshow_kss_OBJECTS="$(kslideshow_kss_nofinal_OBJECTS)" klines_kss_OBJECTS="$(klines_kss_nofinal_OBJECTS)" klorenz_kss_OBJECTS="$(klorenz_kss_nofinal_OBJECTS)" kblob_kss_OBJECTS="$(kblob_kss_nofinal_OBJECTS)" kvm_kss_OBJECTS="$(kvm_kss_nofinal_OBJECTS)" kmatrix_kss_OBJECTS="$(kmatrix_kss_nofinal_OBJECTS)" kscience_kss_OBJECTS="$(kscience_kss_nofinal_OBJECTS)" all-am
+#>+ 2
+no-final-install:
+	$(MAKE) kbanner_kss_OBJECTS="$(kbanner_kss_nofinal_OBJECTS)" kblankscrn_kss_OBJECTS="$(kblankscrn_kss_nofinal_OBJECTS)" kpolygon_kss_OBJECTS="$(kpolygon_kss_nofinal_OBJECTS)" kslideshow_kss_OBJECTS="$(kslideshow_kss_nofinal_OBJECTS)" klines_kss_OBJECTS="$(klines_kss_nofinal_OBJECTS)" klorenz_kss_OBJECTS="$(klorenz_kss_nofinal_OBJECTS)" kblob_kss_OBJECTS="$(kblob_kss_nofinal_OBJECTS)" kvm_kss_OBJECTS="$(kvm_kss_nofinal_OBJECTS)" kmatrix_kss_OBJECTS="$(kmatrix_kss_nofinal_OBJECTS)" kscience_kss_OBJECTS="$(kscience_kss_nofinal_OBJECTS)" install-am
+#>+ 3
+cvs-clean:
+	$(MAKE) -f $(top_srcdir)/admin/Makefile.common cvs-clean
+
+#>+ 3
+kde-rpo-clean:
+	-rm -f *.rpo
+
+#>+ 11
+$(srcdir)/science.cpp: science.moc 
+$(srcdir)/lines.cpp: lines.moc 
+$(srcdir)/banner.cpp: banner.moc 
+$(srcdir)/matrix.cpp: matrix.moc 
+$(srcdir)/kvm.cpp: kvm.moc 
+$(srcdir)/slideshow.cpp: slideshow.moc 
+$(srcdir)/lorenz.cpp: lorenz.moc 
+$(srcdir)/blob.cpp: blob.moc 
+$(srcdir)/polygon.cpp: polygon.moc 
+$(srcdir)/blankscrn.cpp: blankscrn.moc 

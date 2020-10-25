@@ -1,0 +1,9 @@
+D/kcmaudiocd////
+/.cvsignore/1.1/Sat Nov 25 10:19:32 2000//TKDE_2_2_BRANCH
+/Makefile.am/1.7/Mon May 21 13:08:54 2001//TKDE_2_2_BRANCH
+/audiocd.cpp/1.23.2.1/Tue Sep  4 23:16:12 2001//TKDE_2_2_BRANCH
+/audiocd.h/1.7/Sun Jul 29 04:56:35 2001//TKDE_2_2_BRANCH
+/audiocd.protocol/1.1/Thu Nov 23 20:11:58 2000//TKDE_2_2_BRANCH
+/cddb.cpp/1.7/Sun Jul 29 04:56:35 2001//TKDE_2_2_BRANCH
+/cddb.h/1.1/Wed Dec  6 09:30:20 2000//TKDE_2_2_BRANCH
+/configure.in.in/1.9.2.2/Tue Sep  4 23:16:12 2001//TKDE_2_2_BRANCH

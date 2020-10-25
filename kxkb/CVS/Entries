@@ -1,0 +1,22 @@
+/.cvsignore/1.3/Sat Sep 23 15:02:00 2000//TKDE_2_2_BRANCH
+/LICENSE/1.1/Sat Aug  5 12:56:16 2000//TKDE_2_2_BRANCH
+/Makefile.am/1.10/Tue May 15 21:36:28 2001//TKDE_2_2_BRANCH
+/configure.in.in/1.1/Sun Jul 16 15:30:40 2000//TKDE_2_2_BRANCH
+/extension.cpp/1.6/Wed Jun 13 08:39:42 2001//TKDE_2_2_BRANCH
+/extension.h/1.4/Thu Feb  8 20:56:13 2001//TKDE_2_2_BRANCH
+/kcmlayout.cpp/1.23/Sun Jul 29 04:56:49 2001//TKDE_2_2_BRANCH
+/kcmlayout.h/1.8/Tue May 15 21:36:28 2001//TKDE_2_2_BRANCH
+/kcmmisc.cpp/1.1/Tue May 15 21:36:28 2001//TKDE_2_2_BRANCH
+/kcmmisc.h/1.1/Tue May 15 21:36:28 2001//TKDE_2_2_BRANCH
+/keyboard.desktop/1.21.2.5/Tue Sep  4 23:17:22 2001//TKDE_2_2_BRANCH
+/kxkb.cpp/1.17/Fri Jun  1 04:04:36 2001//TKDE_2_2_BRANCH
+/kxkb.desktop/1.64.2.2/Tue Sep  4 23:17:22 2001//TKDE_2_2_BRANCH
+/kxkb.h/1.5/Thu Feb  8 20:56:13 2001//TKDE_2_2_BRANCH
+/kxkbbindings.cpp/1.4/Sun Jun 10 04:10:42 2001//TKDE_2_2_BRANCH
+/pixmap.cpp/1.14/Tue Jun 12 09:59:15 2001//TKDE_2_2_BRANCH
+/pixmap.h/1.1/Fri Aug 11 14:01:02 2000//TKDE_2_2_BRANCH
+/rules.cpp/1.7/Sun Jul 29 04:56:49 2001//TKDE_2_2_BRANCH
+/rules.h/1.3/Thu Feb  8 20:56:13 2001//TKDE_2_2_BRANCH
+/test.cpp/1.2/Wed Nov 15 19:59:05 2000//TKDE_2_2_BRANCH
+/uninstall.desktop/1.1/Tue May 15 21:36:28 2001//TKDE_2_2_BRANCH
+D

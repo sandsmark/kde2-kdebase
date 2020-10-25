@@ -1,0 +1,13 @@
+/.cvsignore/1.1/Tue Dec  5 17:03:40 2000//TKDE_2_2_BRANCH
+/Makefile.am/1.4/Tue Feb 20 00:26:21 2001//TKDE_2_2_BRANCH
+/configure.in.in/1.1/Tue Dec  5 17:03:40 2000//TKDE_2_2_BRANCH
+/connectionconfig.cpp/1.1/Tue Dec  5 17:03:40 2000//TKDE_2_2_BRANCH
+/connectionconfig.h/1.1/Tue Dec  5 17:03:40 2000//TKDE_2_2_BRANCH
+/connectionlist.cpp/1.1/Tue Dec  5 17:03:40 2000//TKDE_2_2_BRANCH
+/connectionlist.h/1.1/Tue Dec  5 17:03:40 2000//TKDE_2_2_BRANCH
+/kcmkdb.cpp/1.2/Mon Apr  2 19:41:02 2001//TKDE_2_2_BRANCH
+/kcmkdb.desktop/1.47.2.5/Tue Sep  4 23:12:07 2001//TKDE_2_2_BRANCH
+/kcmkdb.h/1.1/Tue Dec  5 17:03:40 2000//TKDE_2_2_BRANCH
+/pluginconfig.cpp/1.2/Mon Apr  2 19:41:02 2001//TKDE_2_2_BRANCH
+/pluginconfig.h/1.2/Mon Apr  2 19:41:02 2001//TKDE_2_2_BRANCH
+D

@@ -1,0 +1,6 @@
+Makefile.in
+Makefile
+khotkeys
+khotkeys.kidl
+khotkeys_skel.cpp
+dummy.cpp

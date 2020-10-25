@@ -1,0 +1,6 @@
+Makefile
+Makefile.in
+kcmdisplay
+kcmdisplay.all_cpp.cpp
+test
+test.cpp

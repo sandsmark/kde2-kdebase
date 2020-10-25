@@ -1,0 +1,4 @@
+Makefile
+Makefile.in
+kdmconfig
+kdmconfig.all_cpp.cpp

@@ -1,0 +1,16 @@
+image/gif; konqueror %s;test=test "$DISPLAY" != ""; priority=5
+image/jpeg; konqueror %s;test=test "$DISPLAY" != ""; priority=5
+image/pjpeg; konqueror %s;test=test "$DISPLAY" != ""; priority=5
+image/png; konqueror %s;test=test "$DISPLAY" != ""; priority=5
+image/x-xbitmap; konqueror %s;test=test "$DISPLAY" != ""; priority=5
+image/x-tiff; konqueror %s;test=test "$DISPLAY" != ""; priority=5
+image/x-xbm; konqueror %s;test=test "$DISPLAY" != ""; priority=5
+image/xbm; konqueror %s;test=test "$DISPLAY" != ""; priority=5
+video/x-mng; konqueror %s;test=test "$DISPLAY" != ""; priority=5
+image/x-jng; konqueror %s;test=test "$DISPLAY" != ""; priority=5
+text/plain; konqueror %s;test=test "$DISPLAY" != ""; priority=5
+text/html; konqueror %s;test=test "$DISPLAY" != ""; priority=5
+image/ps; konqueror %s; test=test "$DISPLAY" != "" &&  test=expr `gs --version` ">=" 3.51 >/dev/null 2>&1; priority=5
+image/pdf; konqueror %s; test=test "$DISPLAY" != "" && test=expr `gs --version` ">=" 3.51 >/dev/null 2>&1; priority=5
+application/pdf; konqueror %s; test=test "$DISPLAY" != "" && test=expr `gs --version` ">=" 3.51 >/dev/null 2>&1; priority=5
+application/postscript; konqueror %s; test=test "$DISPLAY" != "" && test=expr `gs --version` ">=" 3.51 >/dev/null 2>&1; priority=5

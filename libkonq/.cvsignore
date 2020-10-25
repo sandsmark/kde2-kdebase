@@ -1,0 +1,10 @@
+Makefile
+Makefile.in
+*.lo
+*.moc
+.deps
+.libs
+*.kidl
+*_stub.*
+*_skel.*
+libkonq_la.all_cc.cc

@@ -1,0 +1,5 @@
+Makefile
+Makefile.in
+AppStarting.kidl
+AppStarting_skel.cpp
+*.closure

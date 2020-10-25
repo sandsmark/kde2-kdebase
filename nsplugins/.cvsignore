@@ -1,0 +1,9 @@
+Makefile
+Makefile.in
+nspluginscan
+test
+NSPluginClassIface.kidl
+NSPluginClassIface_stub.h
+NSPluginClassIface_stub.cpp
+NSPluginCallbackIface.kidl
+NSPluginCallbackIface_skel.cpp

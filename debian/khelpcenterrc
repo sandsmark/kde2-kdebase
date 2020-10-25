@@ -1,0 +1,13 @@
+[Locale]
+Language=C
+ 
+[Scope]
+Info=false
+KDE=true
+Man=false
+Paths=
+ 
+[htdig]
+htdig=/usr/bin/htdig
+htmerge=/usr/bin/htmerge
+htsearch=/usr/lib/cgi-bin/htsearch

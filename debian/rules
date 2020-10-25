@@ -1,0 +1,170 @@
+#!/usr/bin/make -f
+# Made with the aid of debmake, by Christoph Lameter,
+# based on the sample debian/rules file for GNU hello by Ian Jackson.
+#export DH_VERBOSE=1
+ 
+# This is the debhelper compatability version to use.
+export DH_COMPAT=3
+tmp = $(shell pwd)/debian/kdebase
+ARCH = $(shell dpkg-architecture -qDEB_BUILD_ARCH)
+ifeq ($(ARCH),alpha)
+  COMPILER_FLAGS=CFLAGS="-O0 -mieee" CXXFLAGS="-O0 -mieee"
+endif
+
+build: build-stamp
+
+-include debian/debiandirs
+
+debian/debiandirs: admin/debianrules
+	perl -w admin/debianrules echodirs > debian/debiandirs
+
+build-stamp:
+	dh_testdir
+	if test ! -f configure; then \
+	  $(MAKE) -f admin/Makefile.common ;\
+	fi 
+	-chmod 755 configure
+	RUN_KAPPFINDER="no" $(COMPILER_FLAGS) GL_LDFLAGS="-lpthread" \
+	./configure $(configkde) --without-shadow --with-pam=kde \
+	--with-ldap --with-cdparanoia --with-vorbis \
+	--libdir=$(kde_libdir) --includedir=$(kde_includedir) \
+	--with-extra-includes=/usr/X11R6/include
+
+	$(MAKE)
+
+	touch build-stamp
+
+debian-clean:
+	dh_testdir
+	-rm -f build-stamp
+	dh_clean
+
+clean: debian-clean
+	-rm -f debian/debiandirs
+	if test -d CVS; then \
+	  $(MAKE) -f admin/Makefile.common cvs-clean ;\
+	fi
+	-$(MAKE) distclean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean 
+	dh_installdirs
+	$(MAKE) RUN_KAPPFINDER="no" DESTDIR=$(tmp)/ install
+	-rm -rf `find $(tmp)/ -name "CVS"`
+	-rm -f `find $(tmp)/ -name "gvim.*"
+	-rm -f $(tmp)/etc/kde2/kdm/README
+	cp debian/*.override $(tmp)/usr/share/lintian/overrides/
+	-rm -f $(tmp)/usr/share/lintian/overrides/kdm-krb.override
+	-rm -f $(tmp)/usr/share/lintian/overrides/kdebase-crypto.override
+	cp debian/kscreensaver.pamd $(tmp)/etc/pam.d/kscreensaver
+	for i in `ls $(tmp)/usr/share/lintian/overrides/`; do \
+		mv $(tmp)/usr/share/lintian/overrides/$$i $(tmp)/usr/share/lintian/overrides/`echo $$i | sed -e 's#.override##'`; \
+	done
+	cp startkde $(tmp)/etc/kde2/kde2.sh
+	cp debian/kdm.init.d debian/kdm/etc/init.d/kdm
+	cp debian/kdm-update-menu.sh debian/kdm/usr/bin/kdm-update-menu
+	cp debian/KDE-gdm-session $(tmp)/etc/gdm/Sessions/KDE
+	cp debian/khelpcenterrc $(tmp)/etc/kde2/
+	echo -e "#!/bin/sh\n\nexec /usr/bin/kde2\n" > $(tmp)/usr/bin/startkde
+	cp debian/desktop/*.desktop $(tmp)/etc/kde2/desktop/
+	cp debian/kickerrc $(tmp)/etc/kde2/
+	cp debian/Debian.jpg $(tmp)/usr/share/wallpapers/
+	cp debian/debian.html $(tmp)/etc/kde2
+	cp debian/kdesktop.debian $(tmp)/usr/share/apps/kdesktop/DesktopLinks/Debian.desktop
+	for i in `find debian/ -type l -name "common"`; do \
+		rm $$i ;\
+		ln -s ../common $$i ;\
+	done
+	dh_movefiles --sourcedir=debian/kdebase -pkdm
+	-cp debian/xdm/* debian/kdm/etc/kde2/kdm
+	-cp debian/xdm/pixmaps/* debian/kdm/usr/share/apps/kdm/pics/
+	cp debian/kdmrc debian/kdm/etc/kde2/kdm
+	dh_movefiles --sourcedir=debian/kdebase -pkate
+	-rm -f debian/kate/usr/bin/testor
+	dh_movefiles --sourcedir=debian/kdebase -pkdewallpapers
+	dh_movefiles --sourcedir=debian/kdebase -pkscreensaver
+	dh_movefiles --sourcedir=debian/kdebase -plibkonq-dev
+	dh_movefiles --sourcedir=debian/kdebase -pkonqueror
+	-rm -f debian/konqueror/usr/share/icons/locolor/16x16/actions/bookmark_folder.png
+	cp debian/pics/powered-debian.png debian/konqueror/usr/share/apps/konqueror/about/debian.png
+	dh_movefiles --sourcedir=debian/kdebase -pkonsole
+	dh_movefiles --sourcedir=debian/kdebase -pkdebase-doc
+
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	-mv debian/kdm/usr/share/apps/kdm/pics/kdelogo.png debian/kdm/usr/share/apps/kdm/pics/kdelogo-orig.png
+	-cp debian/pics/debian-kdm.png debian/kdm/usr/share/apps/kdm/pics/kdelogo.png
+	dh_movefiles --sourcedir=debian/kdebase -plibkonq3
+	dh_movefiles --sourcedir=debian/kdebase -pkdebase-dev
+	dh_movefiles --sourcedir=debian/kdebase -pkdebase-audiolibs
+	dh_movefiles --sourcedir=debian/kdebase -pkdebase-libs
+	cp konsole/tests/utf8.sh debian/konsole/usr/bin/konsole-utf8
+	cp debian/kde-update-menu.sh debian/kdebase/etc/kde2/kde-update-menu.sh
+	dh_installdebconf -a
+	dh_installdocs -a
+	dh_installmenu -a
+	dh_installmime -a
+	dh_installman -a
+	dh_undocumented -a
+	dh_installchangelogs -pkdebase 
+	dh_installchangelogs -pkdebase-audiolibs 
+	dh_installchangelogs -pkdebase-libs 
+	dh_installchangelogs -pkdebase-dev 
+	dh_installchangelogs -pkonqueror konqueror/ChangeLog
+	dh_installchangelogs -pkonsole konsole/ChangeLog
+	dh_installchangelogs -plibkonq3 konqueror/ChangeLog
+	dh_installchangelogs -plibkonq-dev konqueror/ChangeLog
+	dh_installchangelogs -pkdm kdm/ChangeLog
+	dh_installchangelogs -pkate kate/ChangeLog
+	dh_installchangelogs -pkscreensaver kscreensaver/ChangeLog
+	dh_strip -a
+	dh_link -a
+	dh_compress -a -X.docbook -X.css -X-license -X.dcl -X.bz2
+	dh_fixperms -a
+	chown root.nogroup debian/kdebase-libs/usr/bin/kdesud
+	chmod 2755 debian/kdebase-libs/usr/bin/kdesud
+	chown root.shadow debian/kdebase-libs/usr/bin/kcheckpass
+	chmod 2755 debian/kdebase-libs/usr/bin/kcheckpass 
+	chmod 4755 debian/konsole/usr/bin/konsole_grantpty 
+	chown root.root debian/kdm/var/lib/kdm
+	chmod 755 debian/kdebase-libs/usr/share/apps/kio_info/kde-info2html \
+		debian/kdebase/etc/gdm/Sessions/KDE \
+		debian/konsole/usr/bin/konsole-utf8 \
+		debian/kdebase/etc/kde2/kde-update-menu.sh \
+		debian/kdm/usr/bin/kdm-update-menu \
+		debian/kdm/etc/kde2/kdm/Xreset debian/kdm/etc/init.d/kdm \
+		debian/kdm/etc/kde2/kdm/Xsetup debian/kdebase/etc/kde2/kde2.sh \
+		debian/kdm/etc/kde2/kdm/Xstartup \
+		debian/kdm/etc/kde2/kdm/Xsession \
+		debian/kdebase/usr/share/apps/kconf_update/klipper-1-2.pl
+	chmod 644 debian/kdebase/etc/kde2/debian.html
+	dh_makeshlibs -a -V -plibkonq3
+	dh_makeshlibs -a -V -pkdebase-libs
+	dh_installdeb -a
+	dh_perl -a
+	dh_shlibdeps -a -l`pwd`/debian/kdebase-libs/usr/lib:`pwd`/debian/libkonq3/usr/lib:`pwd`/debian/kdebase-audiolibs/usr/lib
+	dh_gencontrol
+	dh_md5sums -a
+	dh_builddeb -a
+
+binary-indep:   build install
+	dh_testroot
+	dh_testdir
+	dh_installdocs -i
+	dh_installchangelogs -i
+	dh_compress -i -X.docbook -X.css -X-license -X.dcl -X.bz2
+	dh_fixperms -i
+	dh_installdeb -i
+	dh_shlibdeps -i
+	dh_gencontrol -i
+	dh_md5sums -i
+	dh_builddeb -i
+
+# Below here is fairly generic really
+
+binary:		binary-arch binary-indep
+
+.PHONY: binary binary-indep binary-arch clean

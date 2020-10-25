@@ -1,0 +1,17 @@
+Makefile
+Makefile.in
+konqueror
+linktest
+konqueror.all_cc.cc
+KonquerorIface.kidl
+KonquerorIface_skel.cc
+KonqMainWindowIface.kidl
+KonqMainWindowIface_skel.cc
+KonqViewIface.kidl
+KonqViewIface_skel.cc
+konq_mainview.kidl
+konq_mainview_skel.cc
+browser.cc
+konqueror.h
+konqueror.cc
+dummy.cc

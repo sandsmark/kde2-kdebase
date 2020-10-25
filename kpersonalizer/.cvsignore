@@ -1,0 +1,15 @@
+Makefile
+Makefile.in
+keyecandypagedlg.h
+keyecandypagedlg.cpp
+kospagedlg.h
+kospagedlg.cpp
+kcountrypagedlg.h
+kcountrypagedlg.cpp
+kstylepagedlg.h
+kstylepagedlg.cpp
+krefinepagedlg.h
+krefinepagedlg.cpp
+kpersonalizer
+kpersonalizerdlg.cpp
+kpersonalizerdlg.h

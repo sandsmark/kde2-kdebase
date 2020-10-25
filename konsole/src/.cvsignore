@@ -1,0 +1,8 @@
+Makefile
+Makefile.in
+kwrited
+konsole
+konsole_grantpty
+kcmkonsole
+*.all_C.C
+dummy.C

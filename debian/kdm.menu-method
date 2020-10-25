@@ -1,0 +1,28 @@
+#!/usr/sbin/install-menu
+compat="menu-1"
+
+!include menu.h
+rootprefix="/var/lib/kdm/wm"
+onlyrunasroot=true
+
+function default($var,$com)= \
+	"[Desktop Entry]\n" \
+        "Type=WindowManager\n" \
+        "Exec=" $command "\n" \
+        "Name=" title() "\n" \
+        $var  \
+        "Comment=" ifelse($longtitle,$longtitle,$title) "\n" 
+
+supported
+  kdm=  ifelsefile($desktop,catfile($desktop),default("",$command))
+endsupported
+genmenu= "/" stripdir($command) ".desktop"
+startmenu=""
+endmenu=""
+#submenutitle=""
+rootsection=""
+prerun="test -n \""prefix()"\" && rm -rf " prefix() "/ "
+postrun="/usr/bin/kdm-update-menu;"
+#treewalk="c()"
+treewalk="M"
+preoutput=""

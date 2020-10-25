@@ -1,0 +1,10 @@
+*.kidl
+*_skel.cc
+Makefile.in
+Makefile
+kdesktop
+kdesktop.all_cc.cc
+kdmdesktop
+kdesktop.cc
+kdesktop.h
+dummy.cc

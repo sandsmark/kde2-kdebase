@@ -1,0 +1,3 @@
+#
+kdm: no-shlibs-control-file usr/lib/kde2/libkcm_kdm.so
+

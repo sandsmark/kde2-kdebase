@@ -1,0 +1,69 @@
+D/about////
+D/client////
+D/dirtree////
+D/history////
+D/iconview////
+D/keditbookmarks////
+D/kfindpart////
+D/kfmexec////
+D/listview////
+D/pics////
+D/shellcmdplugin////
+D/sidebar////
+/.cvsignore/1.14/Sat May 20 21:08:59 2000//TKDE_2_2_BRANCH
+/AUTHORS/1.6/Mon Jul 24 14:11:44 2000//TKDE_2_2_BRANCH
+/ChangeLog/1.74/Thu May 10 16:20:19 2001//TKDE_2_2_BRANCH
+/DESIGN/1.11/Fri Sep 29 12:45:12 2000//TKDE_2_2_BRANCH
+/DESIGN_config/1.1/Sun Apr  9 00:31:37 2000//TKDE_2_2_BRANCH
+/Home.desktop/1.114.2.5/Tue Sep  4 23:16:55 2001//TKDE_2_2_BRANCH
+/KonqMainWindowIface.cc/1.10/Thu Nov 23 16:15:46 2000//TKDE_2_2_BRANCH
+/KonqMainWindowIface.h/1.4/Tue Jul 18 20:35:41 2000//TKDE_2_2_BRANCH
+/KonqViewIface.cc/1.6/Tue May 15 16:04:39 2001//TKDE_2_2_BRANCH
+/KonqViewIface.h/1.4/Tue May 15 16:04:39 2001//TKDE_2_2_BRANCH
+/KonquerorIface.cc/1.23.2.1/Tue Sep  4 23:16:55 2001//TKDE_2_2_BRANCH
+/KonquerorIface.h/1.23/Sun Jul 29 04:56:39 2001//TKDE_2_2_BRANCH
+/Makefile.am/1.197/Fri Jun 15 08:36:56 2001//TKDE_2_2_BRANCH
+/TODO/1.69/Tue Dec 12 16:27:19 2000//TKDE_2_2_BRANCH
+/convert_kdelnk.sh/1.2/Sat Nov 13 13:23:44 1999//TKDE_2_2_BRANCH
+/kfmclient.desktop/1.49.2.1/Tue Sep  4 23:16:55 2001//TKDE_2_2_BRANCH
+/kfmclient_dir.desktop/1.12.2.1/Tue Sep  4 23:16:55 2001//TKDE_2_2_BRANCH
+/kfmclient_html.desktop/1.12.2.1/Tue Sep  4 23:16:55 2001//TKDE_2_2_BRANCH
+/konq_actions.cc/1.77/Tue Jul 31 19:11:45 2001//TKDE_2_2_BRANCH
+/konq_actions.h/1.36/Sat Apr 28 08:21:23 2001//TKDE_2_2_BRANCH
+/konq_browseriface.cc/1.1/Fri Mar  2 22:51:39 2001//TKDE_2_2_BRANCH
+/konq_browseriface.h/1.1/Fri Mar  2 22:51:39 2001//TKDE_2_2_BRANCH
+/konq_combo.cc/1.19/Sun Jul 29 04:56:40 2001//TKDE_2_2_BRANCH
+/konq_combo.h/1.6/Sun Jul 29 04:56:40 2001//TKDE_2_2_BRANCH
+/konq_factory.cc/1.91/Sun Jul 29 04:56:40 2001//TKDE_2_2_BRANCH
+/konq_factory.h/1.29/Tue May  8 13:15:26 2001//TKDE_2_2_BRANCH
+/konq_frame.h/1.66/Wed May 16 18:27:30 2001//TKDE_2_2_BRANCH
+/konq_guiclients.cc/1.41/Sun Jul 29 04:56:40 2001//TKDE_2_2_BRANCH
+/konq_guiclients.h/1.10/Sun Jul 29 04:56:40 2001//TKDE_2_2_BRANCH
+/konq_main.cc/1.109/Wed Jun 20 08:35:50 2001//TKDE_2_2_BRANCH
+/konq_main.h/1.12/Tue Sep 19 19:58:32 2000//TKDE_2_2_BRANCH
+/konq_mainwindow.h/1.333/Fri May 11 12:13:54 2001//TKDE_2_2_BRANCH
+/konq_misc.cc/1.32/Sat May  5 13:05:03 2001//TKDE_2_2_BRANCH
+/konq_misc.h/1.12/Thu Oct 26 03:52:14 2000//TKDE_2_2_BRANCH
+/konq_openurlrequest.h/1.4/Tue Aug 29 07:35:23 2000//TKDE_2_2_BRANCH
+/konq_profiledlg.h/1.11/Sun Jul 29 04:56:40 2001//TKDE_2_2_BRANCH
+/konq_run.cc/1.59/Sun Jul 29 04:56:40 2001//TKDE_2_2_BRANCH
+/konq_run.h/1.20/Sun Jul 29 04:56:40 2001//TKDE_2_2_BRANCH
+/konq_view.cc/1.270/Wed Jun 20 20:21:06 2001//TKDE_2_2_BRANCH
+/konq_view.h/1.140/Wed Jun 13 20:39:59 2001//TKDE_2_2_BRANCH
+/konq_viewmgr.cc/1.167.2.1/Tue Sep  4 23:16:55 2001//TKDE_2_2_BRANCH
+/konq_viewmgr.h/1.55/Sun Jul 29 04:56:40 2001//TKDE_2_2_BRANCH
+/konqfilemgr.desktop/1.70.2.5/Tue Sep  4 23:16:55 2001//TKDE_2_2_BRANCH
+/konqueror.desktop/1.167.2.5/Tue Sep  4 23:16:55 2001//TKDE_2_2_BRANCH
+/konqueror.rc/1.89/Sun Jul 29 04:56:40 2001//TKDE_2_2_BRANCH
+/konqueror_config.desktop/1.49.2.5/Tue Sep  4 23:16:55 2001//TKDE_2_2_BRANCH
+/konquerorsu.desktop/1.111.2.5/Tue Sep  4 23:16:55 2001//TKDE_2_2_BRANCH
+/profile_filemanagement.desktop/1.87.2.5/Tue Sep  4 23:16:55 2001//TKDE_2_2_BRANCH
+/profile_filepreview.desktop/1.43.2.5/Tue Sep  4 23:16:55 2001//TKDE_2_2_BRANCH
+/profile_midnightcommander.desktop/1.9.2.2/Tue Sep  4 23:16:55 2001//TKDE_2_2_BRANCH
+/profile_webbrowsing.desktop/1.95.2.4/Tue Sep  4 23:16:55 2001//TKDE_2_2_BRANCH
+/IDEAS/1.2.6.1/Tue Nov  6 02:40:29 2001//TKDE_2_2_BRANCH
+/konq_frame.cc/1.131.2.1/Tue Nov  6 02:40:29 2001//TKDE_2_2_BRANCH
+/konq_mainwindow.cc/1.910.2.1/Tue Nov  6 02:40:29 2001//TKDE_2_2_BRANCH
+/konq_profiledlg.cc/1.24.2.3/Tue Nov  6 02:40:29 2001//TKDE_2_2_BRANCH
+/konqbrowser.desktop/1.88.2.6/Tue Nov  6 02:40:29 2001//TKDE_2_2_BRANCH
+/version.h/1.13.2.2/Tue Nov  6 05:27:52 2001//TKDE_2_2_BRANCH

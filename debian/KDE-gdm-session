@@ -1,0 +1,60 @@
+#!/bin/bash -login
+# Error file finding borrowed from Xsession stuff
+
+# Turn on debugging
+set -x
+
+# Set the name of this file
+WM=kde2
+
+# redirect errors to a file in user's home directory if we can
+for errfile in "$HOME/.$WM-errors" "${TMPDIR-/tmp}/$WM-$USER" "/tmp/$WM-$USER"
+do
+	if ( cp /dev/null "$errfile" 2> /dev/null )
+	then
+		chmod 600 "$errfile"
+		exec > "$errfile" 2>&1
+		break
+	fi
+done
+
+sysmodmap=/etc/X11/Xmodmap
+usrmodmap=$HOME/.Xmodmap
+startup=$HOME/.${WM}rc
+resources=$HOME/.Xresources
+
+startssh=
+sshagent=/usr/bin/ssh-agent
+
+if [ -x $sshagent -a -z "$SSH_AUTH_SOCK" ]; then
+	startssh=yes
+fi
+
+if [ -x /usr/bin/X11/xmodmap ]; then
+	if [ -f $sysmodmap ]; then
+		xmodmap $sysmodmap
+	fi
+	if [ -f $usrmodmap ]; then
+		xmodmap $usrmodmap
+	fi
+fi
+
+if [ -x "$startup" ]; then
+	. $startup
+fi
+
+if [ -f "$resources" ]; then
+	xrdb -load "$resources"
+fi
+
+if [ ! -n "`which $WM`" ]; then
+   echo "$WM: $WM not found. Quiting."
+   exit 1
+fi
+
+if [ -n "$startssh" ]; then
+  exec $sshagent -- $WM
+else
+  exec $WM
+fi
+

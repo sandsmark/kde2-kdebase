@@ -1,0 +1,6 @@
+Makefile.in
+Makefile
+kuriikwsfilter.kidl
+kurisearchfilter.kidl
+kurisearchfilter_skel.cpp
+kuriikwsfilter_skel.cpp

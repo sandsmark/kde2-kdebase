@@ -1,0 +1,4 @@
+Makefile
+Makefile.in
+emailbase.h
+emailbase.cpp

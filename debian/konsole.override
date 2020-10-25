@@ -1,0 +1,6 @@
+# modules
+konsole: setuid-binary usr/bin/konsole_grantpty 4755 root/root
+konsole: no-shlibs-control-file usr/lib/libkonsolepart.so
+konsole: no-shlibs-control-file usr/lib/konsole.so
+konsole: no-shlibs-control-file usr/lib/kwrited.so
+konsole: postinst-must-call-ldconfig usr/lib/konsole.so

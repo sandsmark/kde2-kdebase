@@ -1,0 +1,5 @@
+Makefile
+Makefile.in
+taskmanager.kidl
+taskmanager_skel.cpp
+*.closure

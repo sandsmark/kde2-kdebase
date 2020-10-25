@@ -1,0 +1,17 @@
+etc/kde2/kdm*
+usr/share/apps/kdm/*
+usr/share/wallpapers/kdm_bg.jpg
+usr/bin/kdm*
+usr/bin/chooser
+usr/share/man/man1/kdm*
+usr/share/man/man1/chooser*
+usr/share/man/man1/kdmdesktop*
+usr/share/man/man5/kdm.options*
+usr/share/doc/kde/HTML/en/kdm/*
+usr/share/applnk/Settings/System/kdm.desktop
+usr/share/icons/hicolor/*/apps/kdmconfig.*
+usr/share/icons/locolor/*/apps/kdmconfig.*
+usr/lib/kde2/libkcm_kdm.so
+usr/lib/kde2/libkcm_kdm.la
+usr/share/lintian/overrides/kdm
+var/lib/kdm/*

@@ -1,0 +1,7 @@
+Makefile
+Makefile.in
+kcmkonsoledialog.cpp
+schemadialog.h
+schemadialog.cpp
+kcmkonsoledialog.h
+

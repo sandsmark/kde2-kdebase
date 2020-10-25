@@ -1,0 +1,22 @@
+#!/bin/sh
+#
+# /etc/kde2/kdm/Xreset
+#
+# This script is run as root after the X session ends.
+
+hostserver=$(echo $DISPLAY | cut -d. -f1)
+
+if [ -e /var/run/xconsole.$hostserver.pid ]; then
+  pid=$(cat /var/run/xconsole.$hostserver.pid 2> /dev/null)
+  if [ "$pid" ]; then
+    kill $pid 2> /dev/null
+  fi
+  rm /var/run/xconsole.$hostserver.pid
+fi
+
+# remove the utmp entry for the session
+if grep -qs ^use-sessreg /etc/kde2/kdm/kdm.options; then
+  sessreg -d -l $DISPLAY -u /var/run/utmp -x /etc/kde2/kdm/Xservers $USER
+fi
+
+exit 0

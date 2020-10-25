@@ -1,0 +1,13 @@
+Makefile
+Makefile.in
+lib_kcmkicker.la
+positiontab.cpp
+positiontab.h
+hidingtab.cpp
+hidingtab.h
+lookandfeeltab.cpp
+lookandfeeltab.h
+menutab.cpp
+menutab.h
+extensionstab.cpp
+extensionstab.h

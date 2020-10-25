@@ -1,0 +1,6 @@
+Makefile
+Makefile.in
+history_dlg.cpp
+history_dlg.h
+history_settings.kidl
+history_settings_skel.cpp

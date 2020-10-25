@@ -1,0 +1,28 @@
+D/htmlsearch////
+D/pics////
+D/plugins////
+/.cvsignore/1.10/Fri Apr 21 10:49:43 2000//TKDE_2_2_BRANCH
+/COPYING/1.1.1.1/Wed Mar 10 19:44:57 1999//TKDE_2_2_BRANCH
+/Help.desktop/1.117.2.5/Tue Sep  4 23:16:10 2001//TKDE_2_2_BRANCH
+/Makefile.am/1.79/Sun Jul 29 04:56:31 2001//TKDE_2_2_BRANCH
+/README.htdig/1.2/Fri May 26 12:00:56 2000//TKDE_2_2_BRANCH
+/glossary.html.in/1.2/Sun Jul 29 04:56:31 2001//TKDE_2_2_BRANCH
+/intro.html.in/1.4/Mon Jul 30 22:12:39 2001//TKDE_2_2_BRANCH
+/khc_factory.cc/1.6/Fri Mar 30 23:51:46 2001//TKDE_2_2_BRANCH
+/khc_factory.h/1.1/Thu Nov 18 16:33:53 1999//TKDE_2_2_BRANCH
+/khc_main.h/1.11/Sun Jul 29 04:56:31 2001//TKDE_2_2_BRANCH
+/khc_navigator.cc/1.52/Sun Jul 29 04:56:31 2001//TKDE_2_2_BRANCH
+/khc_navigator.h/1.27/Sun Jul 29 04:56:31 2001//TKDE_2_2_BRANCH
+/khc_navigatoritem.cc/1.14/Tue May 15 09:23:17 2001//TKDE_2_2_BRANCH
+/khc_navigatoritem.h/1.4/Tue Jul  4 16:33:28 2000//TKDE_2_2_BRANCH
+/khc_searchwidget.cc/1.7/Sun Jul 29 04:56:31 2001//TKDE_2_2_BRANCH
+/khc_searchwidget.h/1.5/Sun Jul 29 04:56:31 2001//TKDE_2_2_BRANCH
+/khc_view.cc/1.2/Mon Jul 30 22:12:39 2001//TKDE_2_2_BRANCH
+/khc_view.h/1.1/Mon Jul 23 14:52:32 2001//TKDE_2_2_BRANCH
+/khelpcenter.desktop/1.164.2.5/Tue Sep  4 23:16:10 2001//TKDE_2_2_BRANCH
+/khelpcenterui.rc/1.6/Sun Jul 29 04:56:31 2001//TKDE_2_2_BRANCH
+/klanguagebutton.cpp/1.2/Fri Jul 27 12:02:08 2001//TKDE_2_2_BRANCH
+/klanguagebutton.h/1.1/Sat Jul 21 15:24:10 2001//TKDE_2_2_BRANCH
+/main.cpp/1.8/Fri Mar 30 22:37:27 2001//TKDE_2_2_BRANCH
+/version.h/1.1/Sat Jul  3 14:57:11 1999//TKDE_2_2_BRANCH
+/khc_main.cc/1.43.2.2/Tue Nov  6 02:40:03 2001//TKDE_2_2_BRANCH

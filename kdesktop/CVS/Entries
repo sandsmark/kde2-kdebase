@@ -1,0 +1,44 @@
+D/init////
+D/kwebdesktop////
+D/patterns////
+D/pics////
+D/programs////
+/.cvsignore/1.12/Tue Feb 29 00:51:38 2000//TKDE_2_2_BRANCH
+/AUTHORS/1.3/Sun Oct 24 17:00:35 1999//TKDE_2_2_BRANCH
+/DESIGN/1.8/Sun Nov  7 12:40:52 1999//TKDE_2_2_BRANCH
+/KBackgroundIface.h/1.8/Tue Sep 26 00:25:41 2000//TKDE_2_2_BRANCH
+/KDesktopIface.h/1.20/Sun Jul 29 04:56:25 2001//TKDE_2_2_BRANCH
+/KScreensaverIface.h/1.4/Wed Apr 11 09:56:51 2001//TKDE_2_2_BRANCH
+/Makefile.am/1.69/Sun Jul 29 04:56:25 2001//TKDE_2_2_BRANCH
+/bgmanager.h/1.22/Thu Oct 26 05:57:38 2000//TKDE_2_2_BRANCH
+/desktop.cc/1.233.2.1/Tue Sep  4 23:12:48 2001//TKDE_2_2_BRANCH
+/desktop.h/1.111.2.1/Tue Sep  4 23:12:48 2001//TKDE_2_2_BRANCH
+/init.cc/1.18.2.1/Tue Sep  4 23:12:48 2001//TKDE_2_2_BRANCH
+/init.h/1.1/Sun Oct 31 22:53:12 1999//TKDE_2_2_BRANCH
+/kcustommenu.cc/1.2/Thu Jan 18 19:15:45 2001//TKDE_2_2_BRANCH
+/kcustommenu.h/1.1/Thu Jan 18 07:10:29 2001//TKDE_2_2_BRANCH
+/kdeeject/1.7/Sat May  5 20:05:58 2001//TKDE_2_2_BRANCH
+/kdesktop.desktop/1.42.2.4/Tue Sep  4 23:12:48 2001//TKDE_2_2_BRANCH
+/kdesktop_custom_menu1/1.2/Thu Jan 18 20:08:00 2001//TKDE_2_2_BRANCH
+/kdesktop_custom_menu2/1.2/Thu Jan 18 20:08:01 2001//TKDE_2_2_BRANCH
+/kdesktopbindings.cpp/1.8/Sun Jul 29 04:56:27 2001//TKDE_2_2_BRANCH
+/kdiconview.h/1.1.2.1/Tue Sep  4 23:12:48 2001//TKDE_2_2_BRANCH
+/kdmdesktop.cpp/1.9/Tue Jun 12 10:40:08 2001//TKDE_2_2_BRANCH
+/kdmdesktop.h/1.2/Wed Jan 12 14:49:04 2000//TKDE_2_2_BRANCH
+/krootwm.h/1.41/Sun Jul 29 04:56:28 2001//TKDE_2_2_BRANCH
+/lockdlg.cc/1.8/Tue Jan 16 18:30:46 2001//TKDE_2_2_BRANCH
+/lockdlg.h/1.3/Mon Jun 26 07:56:47 2000//TKDE_2_2_BRANCH
+/lockeng.cc/1.42/Fri Aug  3 20:14:27 2001//TKDE_2_2_BRANCH
+/lockeng.h/1.16/Mon Jun 25 01:47:54 2001//TKDE_2_2_BRANCH
+/main.cc/1.75/Sun Jul 29 04:56:28 2001//TKDE_2_2_BRANCH
+/pixmapserver.cc/1.3/Wed Aug 16 00:55:22 2000//TKDE_2_2_BRANCH
+/pixmapserver.h/1.1/Sat Dec 18 14:58:06 1999//TKDE_2_2_BRANCH
+/startupid.cpp/1.13/Fri Jun 15 09:33:25 2001//TKDE_2_2_BRANCH
+/startupid.h/1.8/Fri Jun 15 09:33:25 2001//TKDE_2_2_BRANCH
+/xautolock.cc/1.6/Wed Aug 16 00:55:22 2000//TKDE_2_2_BRANCH
+/xautolock.h/1.2/Wed Jan 26 03:52:49 2000//TKDE_2_2_BRANCH
+/bgmanager.cc/1.60.2.1/Tue Nov  6 02:40:03 2001//TKDE_2_2_BRANCH
+/kdiconview.cc/1.4.2.7/Tue Nov  6 02:40:03 2001//TKDE_2_2_BRANCH
+/krootwm.cc/1.122.2.1/Tue Nov  6 02:40:03 2001//TKDE_2_2_BRANCH
+/minicli.cpp/1.88.2.2/Tue Nov  6 02:40:03 2001//TKDE_2_2_BRANCH
+/minicli.h/1.20.2.2/Tue Nov  6 02:40:03 2001//TKDE_2_2_BRANCH

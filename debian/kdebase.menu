@@ -1,0 +1,48 @@
+?package(kdebase):\
+	needs=x11\
+	section=Apps/System\
+	hints="KDE"\
+	kderemove="y"\
+	title="KDE System Guard"\
+	command=/usr/bin/ksysguard
+
+?package(kdebase):\
+	needs=x11\
+	section=Apps/Tools\
+	hints="KDE"\
+	kderemove="y"\
+	title="KDE Cut & Paste History (klipper)"\
+	command=/usr/bin/klipper
+
+?package(kdebase):\
+	needs=x11\
+	section=Apps/Tools\
+	hints="KDE"\
+	kderemove="y"\
+	title="KPager"\
+	command=/usr/bin/kpager
+
+?package(kdebase):\
+	needs=x11\
+	section=Apps/Tools\
+	hints="KDE"\
+	kderemove="y"\
+	title="Kandalf's tips"\
+	command=/usr/bin/ktip
+
+?package(kdebase):\
+	needs=x11\
+	section=Apps/System\
+	hints="KDE"\
+	kderemove="y"\
+	title="KDE Control Center"\
+	command=/usr/bin/kcontrol
+
+?package(kdebase):\
+	needs=wm\
+	section=WindowManagers\
+	hints="KDE"\
+	kderemove="y"\
+	title="KDE"\
+	command=/usr/bin/kde2
+

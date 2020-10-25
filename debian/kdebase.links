@@ -1,0 +1,2 @@
+/etc/kde2/kde2.sh /usr/bin/kde2
+/etc/kde2/kde-update-menu.sh /usr/bin/kde-update-menu

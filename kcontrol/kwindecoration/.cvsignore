@@ -1,0 +1,4 @@
+Makefile
+kwindecorationIface.kidl
+kwindecorationIface_skel.cpp
+Makefile.in

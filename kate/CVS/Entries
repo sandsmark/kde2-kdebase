@@ -1,0 +1,24 @@
+D/app////
+D/console////
+D/data////
+D/document////
+D/factory////
+D/filelist////
+D/fileselector////
+D/interfaces////
+D/main////
+D/mainwindow////
+D/pics////
+D/pluginmanager////
+D/qt3back////
+D/view////
+D/kdevelop////
+/.cvsignore/1.8/Wed Apr  4 20:20:09 2001//TKDE_2_2_BRANCH
+/AUTHORS/1.6/Tue Apr 10 10:12:16 2001//TKDE_2_2_BRANCH
+/COPYING/1.1/Mon Feb 26 10:33:35 2001//TKDE_2_2_BRANCH
+/COPYING.LIB/1.1/Tue May 15 18:34:39 2001//TKDE_2_2_BRANCH
+/ChangeLog/1.36/Sun May 13 14:29:41 2001//TKDE_2_2_BRANCH
+/Makefile.am/1.37/Sun May 27 16:27:19 2001//TKDE_2_2_BRANCH
+/NEWS/1.6/Mon Jun 11 22:02:01 2001//TKDE_2_2_BRANCH
+/README/1.14/Mon Jun 11 22:02:01 2001//TKDE_2_2_BRANCH
+/TODO/1.17/Mon Jun 11 22:02:01 2001//TKDE_2_2_BRANCH

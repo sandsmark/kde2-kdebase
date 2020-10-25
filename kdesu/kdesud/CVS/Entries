@@ -1,0 +1,12 @@
+/.cvsignore/1.1/Tue Sep 28 18:36:09 1999//TKDE_2_2_BRANCH
+/Makefile.am/1.14/Sun Feb 25 18:51:00 2001//TKDE_2_2_BRANCH
+/handler.cpp/1.13.4.1/Tue Sep  4 23:16:09 2001//TKDE_2_2_BRANCH
+/handler.h/1.7/Wed May 31 17:41:23 2000//TKDE_2_2_BRANCH
+/kdesud.cpp/1.21/Fri Feb  9 18:08:07 2001//TKDE_2_2_BRANCH
+/lexer.cpp/1.8/Sun Nov 19 11:59:42 2000//TKDE_2_2_BRANCH
+/lexer.h/1.8/Sun Nov 19 11:59:42 2000//TKDE_2_2_BRANCH
+/repo.cpp/1.8/Thu Dec 28 23:06:59 2000//TKDE_2_2_BRANCH
+/repo.h/1.5/Sun Nov 19 11:59:42 2000//TKDE_2_2_BRANCH
+/secure.cpp/1.6/Thu Mar 29 08:46:32 2001//TKDE_2_2_BRANCH
+/secure.h/1.3/Sat May 20 16:12:58 2000//TKDE_2_2_BRANCH
+D

@@ -1,0 +1,23 @@
+?package(konqueror):\
+	needs=x11\
+	section=Apps/Net\
+	hints="KDE,Web browsers"\
+	kderemove="y"\
+	title="Konqueror"\
+	command="/usr/bin/kfmclient openProfile webbrowsing"
+
+?package(konqueror):\
+        needs=x11\
+        section=Apps/System\
+	hints="KDE,File managers"\
+        kderemove="y"\
+	title="Konqueror"\
+        command="/usr/bin/kfmclient openProfile filemanagement"
+        
+?package(konqueror):\
+        needs=x11\
+        section=Help\
+        hints="KDE"\
+        kderemove="y"\
+        title="KDE Help Center"\
+        command=/usr/bin/khelpcenter

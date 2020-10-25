@@ -1,0 +1,1056 @@
+# KDE tags expanded automatically by am_edit - $Revision: 1.265.2.2 $ 
+# Makefile.in generated automatically by automake 1.4-p5 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999, 2001 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+#>- 
+bindir = @bindir@
+#>+ 3
+DEPDIR = .deps
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+build_alias = @build_alias@
+build_triplet = @build@
+host_alias = @host_alias@
+host_triplet = @host@
+target_alias = @target_alias@
+target_triplet = @target@
+ACCESS_SUBDIR = @ACCESS_SUBDIR@
+ARTSCCONFIG = @ARTSCCONFIG@
+AS = @AS@
+AUDIOCD_SUBDIR = @AUDIOCD_SUBDIR@
+AUTODIRS = @AUTODIRS@
+BZIP2FILES = @BZIP2FILES@
+CC = @CC@
+CDPARANOIA_INCS = @CDPARANOIA_INCS@
+CDPARANOIA_LIBS = @CDPARANOIA_LIBS@
+CDPARANOIA_RPATH = @CDPARANOIA_RPATH@
+CONF_FILES = @CONF_FILES@
+CPP = @CPP@
+CUPSSUBDIR = @CUPSSUBDIR@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DCOPIDL = @DCOPIDL@
+DCOPIDL2CPP = @DCOPIDL2CPP@
+DCOP_DEPENDENCIES = @DCOP_DEPENDENCIES@
+DLLTOOL = @DLLTOOL@
+DPMSINC = @DPMSINC@
+DPMSLIB = @DPMSLIB@
+EXEEXT = @EXEEXT@
+GCJ = @GCJ@
+GCJFLAGS = @GCJFLAGS@
+GLINC = @GLINC@
+GLLIB = @GLLIB@
+GL_SAVERS = @GL_SAVERS@
+GMSGFMT = @GMSGFMT@
+IDL = @IDL@
+IDL_DEPENDENCIES = @IDL_DEPENDENCIES@
+JAR = @JAR@
+JAVAC = @JAVAC@
+JAVAH = @JAVAH@
+JVMLIBS = @JVMLIBS@
+KCM_AUDIOCD = @KCM_AUDIOCD@
+KDECONFIG = @KDECONFIG@
+KDEDB_INCLUDES = @KDEDB_INCLUDES@
+KDEDB_LIBS = @KDEDB_LIBS@
+KDEDB_SUBDIR = @KDEDB_SUBDIR@
+KDE_BINDIR = @KDE_BINDIR@
+KDE_CONFDIR = @KDE_CONFDIR@
+KDE_CXXFLAGS = @KDE_CXXFLAGS@
+KDE_EXTRA_RPATH = @KDE_EXTRA_RPATH@
+KDE_INCLUDES = @KDE_INCLUDES@
+KDE_LDFLAGS = @KDE_LDFLAGS@
+KDE_PLUGIN = @KDE_PLUGIN@
+KDE_RPATH = @KDE_RPATH@
+KDE_USE_CLOSURE_FALSE = @KDE_USE_CLOSURE_FALSE@
+KDE_USE_CLOSURE_TRUE = @KDE_USE_CLOSURE_TRUE@
+KDE_USE_FINAL_FALSE = @KDE_USE_FINAL_FALSE@
+KDE_USE_FINAL_TRUE = @KDE_USE_FINAL_TRUE@
+KDE_XSL_STYLESHEET = @KDE_XSL_STYLESHEET@
+KERBEROS_INCS = @KERBEROS_INCS@
+KERBEROS_LIBS = @KERBEROS_LIBS@
+KERBEROS_ROOT = @KERBEROS_ROOT@
+KRB_RPATH = @KRB_RPATH@
+LAME_INCS = @LAME_INCS@
+LAME_LIBS = @LAME_LIBS@
+LAME_RPATH = @LAME_RPATH@
+LDAP_INCS = @LDAP_INCS@
+LDAP_LIBS = @LDAP_LIBS@
+LDAP_RPATH = @LDAP_RPATH@
+LDAP_SUBDIR = @LDAP_SUBDIR@
+LIBALIB = @LIBALIB@
+LIBCFG = @LIBCFG@
+LIBCOMPAT = @LIBCOMPAT@
+LIBCRYPT = @LIBCRYPT@
+LIBCURSES = @LIBCURSES@
+LIBDEVINFO = @LIBDEVINFO@
+LIBDL = @LIBDL@
+LIBGEN = @LIBGEN@
+LIBJPEG = @LIBJPEG@
+LIBKSTAT = @LIBKSTAT@
+LIBMICO = @LIBMICO@
+LIBOBJS = @LIBOBJS@
+LIBODM = @LIBODM@
+LIBOSSAUDIO = @LIBOSSAUDIO@
+LIBPNG = @LIBPNG@
+LIBPTHREAD = @LIBPTHREAD@
+LIBPYTHON = @LIBPYTHON@
+LIBQIMGIO = @LIBQIMGIO@
+LIBRESOLV = @LIBRESOLV@
+LIBSENSORS = @LIBSENSORS@
+LIBSHADOW = @LIBSHADOW@
+LIBSM = @LIBSM@
+LIBSOCKET = @LIBSOCKET@
+LIBSSL = @LIBSSL@
+LIBTIFF = @LIBTIFF@
+LIBTOOL = @LIBTOOL@
+LIBUCB = @LIBUCB@
+LIBUTEMPTER = @LIBUTEMPTER@
+LIBUTIL = @LIBUTIL@
+LIBXDMCP = @LIBXDMCP@
+LIBXINERAMA = @LIBXINERAMA@
+LIBZ = @LIBZ@
+LIB_CUPS = @LIB_CUPS@
+LIB_KAB = @LIB_KAB@
+LIB_KDB = @LIB_KDB@
+LIB_KDBCORE = @LIB_KDBCORE@
+LIB_KDBUI = @LIB_KDBUI@
+LIB_KDECORE = @LIB_KDECORE@
+LIB_KDEUI = @LIB_KDEUI@
+LIB_KFILE = @LIB_KFILE@
+LIB_KFM = @LIB_KFM@
+LIB_KFORMULA = @LIB_KFORMULA@
+LIB_KHTML = @LIB_KHTML@
+LIB_KIMGIO = @LIB_KIMGIO@
+LIB_KIO = @LIB_KIO@
+LIB_KPARTS = @LIB_KPARTS@
+LIB_KSPELL = @LIB_KSPELL@
+LIB_KSYCOCA = @LIB_KSYCOCA@
+LIB_KWRITE = @LIB_KWRITE@
+LIB_LIBS = @LIB_LIBS@
+LIB_QT = @LIB_QT@
+LIB_SMB = @LIB_SMB@
+LIB_TRU64_MACH = @LIB_TRU64_MACH@
+LIB_X11 = @LIB_X11@
+LN_S = @LN_S@
+MAKEINFO = @MAKEINFO@
+MCOPIDL = @MCOPIDL@
+MEINPROC = @MEINPROC@
+MICO_INCLUDES = @MICO_INCLUDES@
+MICO_LDFLAGS = @MICO_LDFLAGS@
+MOC = @MOC@
+MOTIF_CFLAGS = @MOTIF_CFLAGS@
+MOTIF_LIBS = @MOTIF_LIBS@
+MSGFMT = @MSGFMT@
+NOOPT_CXXFLAGS = @NOOPT_CXXFLAGS@
+NOREPO = @NOREPO@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+PAMLIBS = @PAMLIBS@
+PASSWDLIBS = @PASSWDLIBS@
+PYTHONINC = @PYTHONINC@
+PYTHONLIB = @PYTHONLIB@
+PYTHONMODDIR = @PYTHONMODDIR@
+QT_INCLUDES = @QT_INCLUDES@
+QT_LDFLAGS = @QT_LDFLAGS@
+RANLIB = @RANLIB@
+REPO = @REPO@
+RUN_KAPPFINDER = @RUN_KAPPFINDER@
+SETUIDFLAGS = @SETUIDFLAGS@
+SMB_SUBDIR = @SMB_SUBDIR@
+SSL_INCLUDES = @SSL_INCLUDES@
+SSL_LDFLAGS = @SSL_LDFLAGS@
+STRIP = @STRIP@
+TOPSUBDIRS = @TOPSUBDIRS@
+UIC = @UIC@
+UIC_TR = @UIC_TR@
+UNAME = @UNAME@
+USER_INCLUDES = @USER_INCLUDES@
+USER_LDFLAGS = @USER_LDFLAGS@
+USE_EXCEPTIONS = @USE_EXCEPTIONS@
+USE_RTTI = @USE_RTTI@
+USE_THREADS = @USE_THREADS@
+VERSION = @VERSION@
+VORBISENC_LIBS = @VORBISENC_LIBS@
+VORBISFILE_LIBS = @VORBISFILE_LIBS@
+VORBIS_INCS = @VORBIS_INCS@
+VORBIS_LIBS = @VORBIS_LIBS@
+VORBIS_RPATH = @VORBIS_RPATH@
+XDM_CFLAGS = @XDM_CFLAGS@
+XGETTEXT = @XGETTEXT@
+XMKMF = @XMKMF@
+XPMINC = @XPMINC@
+XPMLIB = @XPMLIB@
+XTESTLIB = @XTESTLIB@
+X_EXTRA_LIBS = @X_EXTRA_LIBS@
+X_INCLUDES = @X_INCLUDES@
+X_LDFLAGS = @X_LDFLAGS@
+X_PRE_LIBS = @X_PRE_LIBS@
+all_includes = @all_includes@
+all_libraries = @all_libraries@
+idldir = @idldir@
+include_motif = @include_motif@
+jni_includes = @jni_includes@
+kde_appsdir = @kde_appsdir@
+kde_bindir = @kde_bindir@
+kde_confdir = @kde_confdir@
+kde_datadir = @kde_datadir@
+kde_htmldir = @kde_htmldir@
+kde_icondir = @kde_icondir@
+kde_includes = @kde_includes@
+kde_libraries = @kde_libraries@
+kde_libs_htmldir = @kde_libs_htmldir@
+kde_libs_prefix = @kde_libs_prefix@
+kde_locale = @kde_locale@
+kde_mimedir = @kde_mimedir@
+kde_moduledir = @kde_moduledir@
+kde_qtver = @kde_qtver@
+kde_servicesdir = @kde_servicesdir@
+kde_servicetypesdir = @kde_servicetypesdir@
+kde_sounddir = @kde_sounddir@
+kde_templatesdir = @kde_templatesdir@
+kde_wallpaperdir = @kde_wallpaperdir@
+kdmchooserdir = @kdmchooserdir@
+link_motif = @link_motif@
+micodir = @micodir@
+nogroup = @nogroup@
+qt_includes = @qt_includes@
+qt_libraries = @qt_libraries@
+x_includes = @x_includes@
+x_libraries = @x_libraries@
+
+INCLUDES = -I$(top_srcdir)/libkonq -I$(top_srcdir)/kcontrol/input $(all_includes)
+
+SUBDIRS = . kfmexec client iconview dirtree listview keditbookmarks kfindpart shellcmdplugin about pics sidebar
+
+lib_LTLIBRARIES = konqueror.la
+
+konqdatadir = $(kde_datadir)/konqueror
+konqdata_DATA = konqueror.rc
+
+kdelnkdir = $(kde_servicesdir)
+kdelnk_DATA = konqueror.desktop konqueror_config.desktop
+
+# servicetypedir = $(kde_servicetypesdir)
+# servicetype_DATA = konq_metaview.desktop
+
+#>- METASOURCES = AUTO
+
+include_HEADERS = KonquerorIface.h
+
+bin_PROGRAMS = konqueror
+
+#>- konqueror_la_SOURCES = konq_main.cc 	    KonquerorIface.cc KonquerorIface.skel 	    KonqMainWindowIface.cc KonqMainWindowIface.skel 	    KonqViewIface.cc KonqViewIface.skel 	    konq_mainwindow.cc konq_guiclients.cc 	    konq_run.cc konq_view.cc konq_viewmgr.cc 	    konq_misc.cc 	    konq_frame.cc 	    konq_actions.cc 	    konq_profiledlg.cc 	    konq_factory.cc 		konq_combo.cc		    konq_browseriface.cc
+#>+ 1
+konqueror_la_SOURCES=konq_main.cc 	    KonquerorIface.cc  	    KonqMainWindowIface.cc  	    KonqViewIface.cc  	    konq_mainwindow.cc konq_guiclients.cc 	    konq_run.cc konq_view.cc konq_viewmgr.cc 	    konq_misc.cc 	    konq_frame.cc 	    konq_actions.cc 	    konq_profiledlg.cc 	    konq_factory.cc 		konq_combo.cc		    konq_browseriface.cc KonquerorIface_skel.cc KonqMainWindowIface_skel.cc KonqViewIface_skel.cc
+
+
+konqueror_la_LDFLAGS = $(all_libraries) -module -avoid-version
+konqueror_la_LIBADD = ../libkonq/libkonq.la
+
+konqueror_SOURCES = dummy.cc
+konqueror_LDADD = konqueror.la
+konqueror_LDFLAGS = $(KDE_RPATH) $(all_libraries)
+
+data_DATA = konquerorsu.desktop kfmclient.desktop kfmclient_dir.desktop kfmclient_html.desktop
+datadir = $(kde_appsdir)/System
+
+data2_DATA = Home.desktop
+data2dir = $(kde_appsdir)
+
+data3_DATA = konqbrowser.desktop
+data3dir = $(kde_appsdir)/Internet
+
+data4_DATA = konqfilemgr.desktop
+data4dir = $(kde_appsdir)/.hidden
+
+# Use a hand-made rule for profiles because they are renamed upon installation
+profiledir = $(kde_datadir)/konqueror/profiles
+mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
+CONFIG_HEADER = ../config.h
+CONFIG_CLEAN_FILES = 
+LTLIBRARIES =  $(lib_LTLIBRARIES)
+
+
+DEFS = @DEFS@ -I. -I$(srcdir) -I..
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+X_CFLAGS = @X_CFLAGS@
+X_LIBS = @X_LIBS@
+konqueror_la_DEPENDENCIES =  ../libkonq/libkonq.la
+#>- konqueror_la_OBJECTS =  konq_main.lo KonquerorIface.lo \
+#>- KonqMainWindowIface.lo KonqViewIface.lo konq_mainwindow.lo \
+#>- konq_guiclients.lo konq_run.lo konq_view.lo konq_viewmgr.lo \
+#>- konq_misc.lo konq_frame.lo konq_actions.lo konq_profiledlg.lo \
+#>- konq_factory.lo konq_combo.lo konq_browseriface.lo
+#>+ 9
+konqueror_la_final_OBJECTS = konqueror_la.all_cc.lo 
+konqueror_la_nofinal_OBJECTS = konq_main.lo KonquerorIface.lo \
+	KonqMainWindowIface.lo KonqViewIface.lo konq_mainwindow.lo \
+	konq_guiclients.lo konq_run.lo konq_view.lo konq_viewmgr.lo \
+	konq_misc.lo konq_frame.lo konq_actions.lo konq_profiledlg.lo \
+	konq_factory.lo konq_combo.lo konq_browseriface.lo KonquerorIface_skel.lo KonqMainWindowIface_skel.lo KonqViewIface_skel.lo \
+	konqueror_la_meta_unload.lo 
+@KDE_USE_FINAL_FALSE@konqueror_la_OBJECTS = $(konqueror_la_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@konqueror_la_OBJECTS = $(konqueror_la_final_OBJECTS)
+bin_PROGRAMS =  konqueror$(EXEEXT)
+PROGRAMS =  $(bin_PROGRAMS)
+
+#>- konqueror_OBJECTS =  dummy.$(OBJEXT)
+#>+ 1
+konqueror_OBJECTS = dummy.$(OBJEXT)
+konqueror_DEPENDENCIES =  konqueror.la
+CXXFLAGS = @CXXFLAGS@
+#>- CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+#>+ 1
+CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS)
+#>- LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+#>+ 1
+LTCXXCOMPILE = $(LIBTOOL) --mode=compile --tag=CXX $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS)
+CXXLD = $(CXX)
+#>- CXXLINK = $(LIBTOOL) --mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(LDFLAGS) -o $@
+#>+ 1
+CXXLINK = $(LIBTOOL) --mode=link --tag=CXX $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS) $(LDFLAGS) -o $@
+DATA =  $(data_DATA) $(data2_DATA) $(data3_DATA) $(data4_DATA) \
+	$(kdelnk_DATA) $(konqdata_DATA)
+
+HEADERS =  $(include_HEADERS)
+
+DIST_COMMON =  AUTHORS ChangeLog Makefile.am Makefile.in TODO
+
+
+#>- DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+#>+ 4
+KDE_DIST=konq_misc.h konq_browseriface.h DESIGN_config konq_viewmgr.h konq_mainwindow.h kfmclient_dir.desktop kfmclient_html.desktop kfmclient.desktop konq_view.h konq_actions.h Home.desktop konq_profiledlg.h DESIGN convert_kdelnk.sh profile_midnightcommander.desktop konqueror.rc profile_filemanagement.desktop IDEAS konqueror.desktop konq_run.h konq_main.h konquerorsu.desktop konqfilemgr.desktop konqbrowser.desktop profile_filepreview.desktop profile_webbrowsing.desktop konq_openurlrequest.h konqueror_config.desktop konq_guiclients.h KonqMainWindowIface.h konq_frame.h konq_factory.h version.h konq_combo.h KonqViewIface.h 
+
+DISTFILES= $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+
+
+TAR = tar
+GZIP_ENV = --best
+SOURCES = $(konqueror_la_SOURCES) $(konqueror_SOURCES)
+OBJECTS = $(konqueror_la_OBJECTS) $(konqueror_OBJECTS)
+
+#>- all: all-redirect
+#>+ 1
+all: docs-am  all-redirect
+.SUFFIXES:
+.SUFFIXES: .S .c .cc .lo .o .obj .s
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+#>- 	cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps konqueror/Makefile
+#>+ 2
+	cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps konqueror/Makefile
+	cd $(top_srcdir) && perl admin/am_edit konqueror/Makefile.in
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	&& CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+
+mostlyclean-libLTLIBRARIES:
+
+clean-libLTLIBRARIES:
+	-test -z "$(lib_LTLIBRARIES)" || rm -f $(lib_LTLIBRARIES)
+
+distclean-libLTLIBRARIES:
+
+maintainer-clean-libLTLIBRARIES:
+
+install-libLTLIBRARIES: $(lib_LTLIBRARIES)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(libdir)
+	@list='$(lib_LTLIBRARIES)'; for p in $$list; do \
+	if test -f $$p; then \
+	echo "$(LIBTOOL)  --mode=install $(INSTALL) $$p $(DESTDIR)$(libdir)/$$p"; \
+	$(LIBTOOL)  --mode=install $(INSTALL) $$p $(DESTDIR)$(libdir)/$$p; \
+	else :; fi; \
+	done
+
+uninstall-libLTLIBRARIES:
+	@$(NORMAL_UNINSTALL)
+	list='$(lib_LTLIBRARIES)'; for p in $$list; do \
+	$(LIBTOOL)  --mode=uninstall rm -f $(DESTDIR)$(libdir)/$$p; \
+	done
+
+.c.o:
+	$(COMPILE) -c $<
+
+# FIXME: We should only use cygpath when building on Windows,
+# and only if it is available.
+.c.obj:
+	$(COMPILE) -c `cygpath -w $<`
+
+.s.o:
+	$(COMPILE) -c $<
+
+.S.o:
+	$(COMPILE) -c $<
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+	-rm -f *.$(OBJEXT)
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+.c.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.s.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.S.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+konqueror.la: $(konqueror_la_OBJECTS) $(konqueror_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(libdir) $(konqueror_la_LDFLAGS) $(konqueror_la_OBJECTS) $(konqueror_la_LIBADD) $(LIBS)
+
+mostlyclean-binPROGRAMS:
+
+clean-binPROGRAMS:
+	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
+
+distclean-binPROGRAMS:
+
+maintainer-clean-binPROGRAMS:
+
+install-binPROGRAMS: $(bin_PROGRAMS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(bindir)
+	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+	if test -f $$p; then \
+	echo " $(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`"; \
+	$(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	else :; fi; \
+	done
+
+uninstall-binPROGRAMS:
+	@$(NORMAL_UNINSTALL)
+	list='$(bin_PROGRAMS)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	done
+
+konqueror$(EXEEXT): $(konqueror_OBJECTS) $(konqueror_DEPENDENCIES)
+	@rm -f konqueror$(EXEEXT)
+	$(CXXLINK) $(konqueror_LDFLAGS) $(konqueror_OBJECTS) $(konqueror_LDADD) $(LIBS)
+.cc.o:
+	$(CXXCOMPILE) -c $<
+.cc.obj:
+	$(CXXCOMPILE) -c `cygpath -w $<`
+.cc.lo:
+	$(LTCXXCOMPILE) -c $<
+
+install-dataDATA: $(data_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(datadir)
+	@list='$(data_DATA)'; for p in $$list; do \
+	if test -f $(srcdir)/$$p; then \
+	echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(datadir)/$$p"; \
+	$(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(datadir)/$$p; \
+	else if test -f $$p; then \
+	echo " $(INSTALL_DATA) $$p $(DESTDIR)$(datadir)/$$p"; \
+	$(INSTALL_DATA) $$p $(DESTDIR)$(datadir)/$$p; \
+	fi; fi; \
+	done
+
+uninstall-dataDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(data_DATA)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(datadir)/$$p; \
+	done
+
+install-data2DATA: $(data2_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(data2dir)
+	@list='$(data2_DATA)'; for p in $$list; do \
+	if test -f $(srcdir)/$$p; then \
+	echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(data2dir)/$$p"; \
+	$(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(data2dir)/$$p; \
+	else if test -f $$p; then \
+	echo " $(INSTALL_DATA) $$p $(DESTDIR)$(data2dir)/$$p"; \
+	$(INSTALL_DATA) $$p $(DESTDIR)$(data2dir)/$$p; \
+	fi; fi; \
+	done
+
+uninstall-data2DATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(data2_DATA)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(data2dir)/$$p; \
+	done
+
+install-data3DATA: $(data3_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(data3dir)
+	@list='$(data3_DATA)'; for p in $$list; do \
+	if test -f $(srcdir)/$$p; then \
+	echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(data3dir)/$$p"; \
+	$(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(data3dir)/$$p; \
+	else if test -f $$p; then \
+	echo " $(INSTALL_DATA) $$p $(DESTDIR)$(data3dir)/$$p"; \
+	$(INSTALL_DATA) $$p $(DESTDIR)$(data3dir)/$$p; \
+	fi; fi; \
+	done
+
+uninstall-data3DATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(data3_DATA)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(data3dir)/$$p; \
+	done
+
+install-data4DATA: $(data4_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(data4dir)
+	@list='$(data4_DATA)'; for p in $$list; do \
+	if test -f $(srcdir)/$$p; then \
+	echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(data4dir)/$$p"; \
+	$(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(data4dir)/$$p; \
+	else if test -f $$p; then \
+	echo " $(INSTALL_DATA) $$p $(DESTDIR)$(data4dir)/$$p"; \
+	$(INSTALL_DATA) $$p $(DESTDIR)$(data4dir)/$$p; \
+	fi; fi; \
+	done
+
+uninstall-data4DATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(data4_DATA)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(data4dir)/$$p; \
+	done
+
+install-kdelnkDATA: $(kdelnk_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(kdelnkdir)
+	@list='$(kdelnk_DATA)'; for p in $$list; do \
+	if test -f $(srcdir)/$$p; then \
+	echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(kdelnkdir)/$$p"; \
+	$(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(kdelnkdir)/$$p; \
+	else if test -f $$p; then \
+	echo " $(INSTALL_DATA) $$p $(DESTDIR)$(kdelnkdir)/$$p"; \
+	$(INSTALL_DATA) $$p $(DESTDIR)$(kdelnkdir)/$$p; \
+	fi; fi; \
+	done
+
+uninstall-kdelnkDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(kdelnk_DATA)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(kdelnkdir)/$$p; \
+	done
+
+install-konqdataDATA: $(konqdata_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(konqdatadir)
+	@list='$(konqdata_DATA)'; for p in $$list; do \
+	if test -f $(srcdir)/$$p; then \
+	echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(konqdatadir)/$$p"; \
+	$(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(konqdatadir)/$$p; \
+	else if test -f $$p; then \
+	echo " $(INSTALL_DATA) $$p $(DESTDIR)$(konqdatadir)/$$p"; \
+	$(INSTALL_DATA) $$p $(DESTDIR)$(konqdatadir)/$$p; \
+	fi; fi; \
+	done
+
+uninstall-konqdataDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(konqdata_DATA)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(konqdatadir)/$$p; \
+	done
+
+install-includeHEADERS: $(include_HEADERS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(includedir)
+	@list='$(include_HEADERS)'; for p in $$list; do \
+	if test -f "$$p"; then d= ; else d="$(srcdir)/"; fi; \
+	echo " $(INSTALL_DATA) $$d$$p $(DESTDIR)$(includedir)/$$p"; \
+	$(INSTALL_DATA) $$d$$p $(DESTDIR)$(includedir)/$$p; \
+	done
+
+uninstall-includeHEADERS:
+	@$(NORMAL_UNINSTALL)
+	list='$(include_HEADERS)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(includedir)/$$p; \
+	done
+
+# This directory's subdirectories are mostly independent; you can cd
+# into them and run `make' without going through this Makefile.
+# To change the values of `make' variables: instead of editing Makefiles,
+# (1) if the variable is set in `config.status', edit `config.status'
+#     (which will cause the Makefiles to be regenerated when you run `make');
+# (2) otherwise, pass the desired values on the `make' command line.
+
+@SET_MAKE@
+
+all-recursive install-data-recursive install-exec-recursive \
+	installdirs-recursive install-recursive uninstall-recursive  \
+	check-recursive installcheck-recursive info-recursive dvi-recursive:
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	dot_seen=no; \
+	target=`echo $@ | sed s/-recursive//`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	echo "Making $$target in $$subdir"; \
+	if test "$$subdir" = "."; then \
+	dot_seen=yes; \
+	local_target="$$target-am"; \
+	else \
+	local_target="$$target"; \
+	fi; \
+	(cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
+	|| case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done; \
+	if test "$$dot_seen" = "no"; then \
+	$(MAKE) $(AM_MAKEFLAGS) "$$target-am" || exit 1; \
+	fi; test -z "$$fail"
+
+mostlyclean-recursive clean-recursive distclean-recursive \
+	maintainer-clean-recursive:
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	dot_seen=no; \
+	rev=''; list='$(SUBDIRS)'; for subdir in $$list; do \
+	rev="$$subdir $$rev"; \
+	test "$$subdir" != "." || dot_seen=yes; \
+	done; \
+	test "$$dot_seen" = "no" && rev=". $$rev"; \
+	target=`echo $@ | sed s/-recursive//`; \
+	for subdir in $$rev; do \
+	echo "Making $$target in $$subdir"; \
+	if test "$$subdir" = "."; then \
+	local_target="$$target-am"; \
+	else \
+	local_target="$$target"; \
+	fi; \
+	(cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
+	|| case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done && test -z "$$fail"
+tags-recursive:
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	test "$$subdir" = . || (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) tags); \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	awk '    { files[$$0] = 1; } \
+	END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	&& mkid -f$$here/ID $$unique $(LISP)
+
+TAGS: tags-recursive $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	if test "$$subdir" = .; then :; else \
+	test -f $$subdir/TAGS && tags="$$tags -i $$here/$$subdir/TAGS"; \
+	fi; \
+	done; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	awk '    { files[$$0] = 1; } \
+	END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	|| (cd $(srcdir) && etags $(ETAGS_ARGS) $$tags  $$unique $(LISP) -o $$here/TAGS)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = konqueror
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	d=$(srcdir); \
+	if test -d $$d/$$file; then \
+	cp -pr $$d/$$file $(distdir)/$$file; \
+	else \
+	test -f $(distdir)/$$file \
+	|| ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	|| cp -p $$d/$$file $(distdir)/$$file || :; \
+	fi; \
+	done
+	for subdir in $(SUBDIRS); do \
+	if test "$$subdir" = .; then :; else \
+	test -d $(distdir)/$$subdir \
+	|| mkdir $(distdir)/$$subdir \
+	|| exit 1; \
+	chmod 777 $(distdir)/$$subdir; \
+	(cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) top_distdir=../$(top_distdir) distdir=../$(distdir)/$$subdir distdir) \
+	|| exit 1; \
+	fi; \
+	done
+info-am:
+info: info-recursive
+dvi-am:
+dvi: dvi-recursive
+check-am: all-am
+check: check-recursive
+installcheck-am:
+installcheck: installcheck-recursive
+install-exec-am: install-libLTLIBRARIES install-binPROGRAMS
+install-exec: install-exec-recursive
+
+install-data-am: install-dataDATA install-data2DATA install-data3DATA \
+	install-data4DATA install-kdelnkDATA \
+	install-konqdataDATA install-includeHEADERS \
+	install-data-local
+install-data: install-data-recursive
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-recursive
+uninstall-am: uninstall-libLTLIBRARIES uninstall-binPROGRAMS \
+	uninstall-dataDATA uninstall-data2DATA \
+	uninstall-data3DATA uninstall-data4DATA \
+	uninstall-kdelnkDATA uninstall-konqdataDATA \
+	uninstall-includeHEADERS uninstall-local
+uninstall: uninstall-recursive
+all-am: Makefile $(LTLIBRARIES) $(PROGRAMS) $(DATA) $(HEADERS)
+all-redirect: all-recursive
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs: installdirs-recursive
+installdirs-am:
+	$(mkinstalldirs)  $(DESTDIR)$(libdir) $(DESTDIR)$(bindir) \
+	$(DESTDIR)$(datadir) $(DESTDIR)$(data2dir) \
+	$(DESTDIR)$(data3dir) $(DESTDIR)$(data4dir) \
+	$(DESTDIR)$(kdelnkdir) $(DESTDIR)$(konqdatadir) \
+	$(DESTDIR)$(includedir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-libLTLIBRARIES mostlyclean-compile \
+	mostlyclean-libtool mostlyclean-binPROGRAMS \
+	mostlyclean-tags mostlyclean-generic
+
+mostlyclean: mostlyclean-recursive
+
+#>- clean-am:  clean-libLTLIBRARIES clean-compile clean-libtool \
+#>- clean-binPROGRAMS clean-tags clean-generic \
+#>- mostlyclean-am
+#>+ 3
+clean-am: clean-metasources clean-idl clean-moc-classes clean-final   clean-libLTLIBRARIES clean-compile clean-libtool \
+	clean-binPROGRAMS clean-tags clean-generic \
+	mostlyclean-am
+
+#>- clean: clean-recursive
+#>+ 1
+clean: kde-rpo-clean  clean-recursive
+
+distclean-am:  distclean-libLTLIBRARIES distclean-compile \
+	distclean-libtool distclean-binPROGRAMS distclean-tags \
+	distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-recursive
+
+maintainer-clean-am:  maintainer-clean-libLTLIBRARIES \
+	maintainer-clean-compile maintainer-clean-libtool \
+	maintainer-clean-binPROGRAMS maintainer-clean-tags \
+	maintainer-clean-generic distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-recursive
+
+.PHONY: mostlyclean-libLTLIBRARIES distclean-libLTLIBRARIES \
+	clean-libLTLIBRARIES maintainer-clean-libLTLIBRARIES \
+	uninstall-libLTLIBRARIES install-libLTLIBRARIES mostlyclean-compile \
+	distclean-compile clean-compile maintainer-clean-compile \
+	mostlyclean-libtool distclean-libtool clean-libtool \
+	maintainer-clean-libtool mostlyclean-binPROGRAMS distclean-binPROGRAMS \
+	clean-binPROGRAMS maintainer-clean-binPROGRAMS uninstall-binPROGRAMS \
+	install-binPROGRAMS uninstall-dataDATA install-dataDATA \
+	uninstall-data2DATA install-data2DATA uninstall-data3DATA \
+	install-data3DATA uninstall-data4DATA install-data4DATA \
+	uninstall-kdelnkDATA install-kdelnkDATA uninstall-konqdataDATA \
+	install-konqdataDATA uninstall-includeHEADERS install-includeHEADERS \
+	install-data-recursive uninstall-data-recursive install-exec-recursive \
+	uninstall-exec-recursive installdirs-recursive uninstalldirs-recursive \
+	all-recursive check-recursive installcheck-recursive info-recursive \
+	dvi-recursive mostlyclean-recursive distclean-recursive clean-recursive \
+	maintainer-clean-recursive tags tags-recursive mostlyclean-tags \
+	distclean-tags clean-tags maintainer-clean-tags distdir info-am info \
+	dvi-am dvi check check-am installcheck-am installcheck install-exec-am \
+	install-exec install-data-local install-data-am install-data install-am \
+	install uninstall-local uninstall-am uninstall all-redirect all-am all \
+	installdirs-am installdirs mostlyclean-generic distclean-generic \
+	clean-generic maintainer-clean-generic clean mostlyclean distclean \
+	maintainer-clean
+
+
+# Hmm, this experiment of a static konq failed, don't trust it...
+# (but feel free to fix it :)
+
+# Note that you need to --enable-debug in kdelibs and kdebase,
+# then make clean ; make install in kdelibs and libkonq,
+# and make clean ; make konqueror_static in here.
+#check_PROGRAMS = konqueror_static
+#
+#konqueror_static_SOURCES = dummy.cc
+#konqueror_static_LDADD = konqueror.la *view/*.la dirtree/*.la $(libdir)/libkhtml.la
+#konqueror_static_LDFLAGS = $(all_libraries) -static
+
+dummy.cc:
+	echo > dummy.cc
+
+messages: rc.cpp
+	$(EXTRACTRC) */*.rc >> rc.cpp
+	$(EXTRACTRC) dirtree/history_module/*.ui >> rc.cpp
+	$(EXTRACTRC) sidebar/trees/history_module/history_dlg.ui >> rc.cpp
+	$(XGETTEXT) -kaliasLocal rc.cpp *.h *.cc *view/*h *view/*cc dirtree/*.cpp dirtree/*h dirtree/*/*.cpp dirtree/*/*.h kedit*/*.cpp about/*.h about/*.cc shellcmdplugin/*.cpp -o `find sidebar -name "*.cpp"` `find sidebar -name "*.h"` -o $(podir)/konqueror.pot
+install-data-local:
+#>- 	$(mkinstalldirs) $(profiledir)
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(profiledir)
+#>- 	$(INSTALL_DATA) $(srcdir)/profile_webbrowsing.desktop $(profiledir)/webbrowsing
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/profile_webbrowsing.desktop $(DESTDIR)$(profiledir)/webbrowsing
+#>- 	$(INSTALL_DATA) $(srcdir)/profile_filemanagement.desktop $(profiledir)/filemanagement
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/profile_filemanagement.desktop $(DESTDIR)$(profiledir)/filemanagement
+#>- 	$(INSTALL_DATA) $(srcdir)/profile_midnightcommander.desktop $(profiledir)/midnightcommander
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/profile_midnightcommander.desktop $(DESTDIR)$(profiledir)/midnightcommander
+#>- 	$(INSTALL_DATA) $(srcdir)/profile_filepreview.desktop $(profiledir)/filepreview
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/profile_filepreview.desktop $(DESTDIR)$(profiledir)/filepreview
+uninstall-local:
+#>- 	-rm -f $(profiledir)/webbrowsing $(profiledir)/filemanagement $(profiledir)/midnightcommander $(profiledir)/filepreview
+#>+ 1
+	-rm -f $(profiledir)/webbrowsing $(profiledir)/filemanagement $(profiledir)/midnightcommander $(DESTDIR)$(profiledir)/filepreview
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
+
+#>+ 13
+KonquerorIface.kidl: $(srcdir)/KonquerorIface.h $(DCOPIDL_DEPENDENCIES)
+	$(DCOPIDL) $(srcdir)/KonquerorIface.h > KonquerorIface.kidl || ( rm -f KonquerorIface.kidl ; /bin/false )
+KonquerorIface_skel.cc: KonquerorIface.kidl
+	$(DCOPIDL2CPP) --c++-suffix cc --no-stub KonquerorIface.kidl
+KonqMainWindowIface.kidl: $(srcdir)/KonqMainWindowIface.h $(DCOPIDL_DEPENDENCIES)
+	$(DCOPIDL) $(srcdir)/KonqMainWindowIface.h > KonqMainWindowIface.kidl || ( rm -f KonqMainWindowIface.kidl ; /bin/false )
+KonqMainWindowIface_skel.cc: KonqMainWindowIface.kidl
+	$(DCOPIDL2CPP) --c++-suffix cc --no-stub KonqMainWindowIface.kidl
+KonqViewIface.kidl: $(srcdir)/KonqViewIface.h $(DCOPIDL_DEPENDENCIES)
+	$(DCOPIDL) $(srcdir)/KonqViewIface.h > KonqViewIface.kidl || ( rm -f KonqViewIface.kidl ; /bin/false )
+KonqViewIface_skel.cc: KonqViewIface.kidl
+	$(DCOPIDL2CPP) --c++-suffix cc --no-stub KonqViewIface.kidl
+
+#>+ 3
+konq_view.moc: $(srcdir)/konq_view.h
+	$(MOC) $(srcdir)/konq_view.h -o konq_view.moc
+
+#>+ 3
+konq_browseriface.moc: $(srcdir)/konq_browseriface.h
+	$(MOC) $(srcdir)/konq_browseriface.h -o konq_browseriface.moc
+
+#>+ 3
+konq_profiledlg.moc: $(srcdir)/konq_profiledlg.h
+	$(MOC) $(srcdir)/konq_profiledlg.h -o konq_profiledlg.moc
+
+#>+ 3
+konq_mainwindow.moc: $(srcdir)/konq_mainwindow.h
+	$(MOC) $(srcdir)/konq_mainwindow.h -o konq_mainwindow.moc
+
+#>+ 3
+konq_viewmgr.moc: $(srcdir)/konq_viewmgr.h
+	$(MOC) $(srcdir)/konq_viewmgr.h -o konq_viewmgr.moc
+
+#>+ 3
+konq_actions.moc: $(srcdir)/konq_actions.h
+	$(MOC) $(srcdir)/konq_actions.h -o konq_actions.moc
+
+#>+ 3
+konq_combo.moc: $(srcdir)/konq_combo.h
+	$(MOC) $(srcdir)/konq_combo.h -o konq_combo.moc
+
+#>+ 3
+konq_guiclients.moc: $(srcdir)/konq_guiclients.h
+	$(MOC) $(srcdir)/konq_guiclients.h -o konq_guiclients.moc
+
+#>+ 3
+konq_frame.moc: $(srcdir)/konq_frame.h
+	$(MOC) $(srcdir)/konq_frame.h -o konq_frame.moc
+
+#>+ 3
+konq_run.moc: $(srcdir)/konq_run.h
+	$(MOC) $(srcdir)/konq_run.h -o konq_run.moc
+
+#>+ 3
+clean-metasources:
+	-rm -f  konq_view.moc konq_browseriface.moc konq_profiledlg.moc konq_mainwindow.moc konq_viewmgr.moc konq_actions.moc konq_combo.moc konq_guiclients.moc konq_frame.moc konq_run.moc
+
+#>+ 6
+clean-idl:
+	-rm -f \
+	KonquerorIface_skel.cc KonquerorIface_skel.h KonquerorIface.kidl \
+	KonqMainWindowIface_skel.cc KonqMainWindowIface_skel.h KonqMainWindowIface.kidl \
+	KonqViewIface_skel.cc KonqViewIface_skel.h KonqViewIface.kidl 
+
+#>+ 2
+docs-am:
+
+#>+ 5
+force-reedit:
+		cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps konqueror/Makefile
+	cd $(top_srcdir) && perl admin/am_edit konqueror/Makefile.in
+
+
+#>+ 12
+konqueror_la_meta_unload.cc:  konq_view.moc konq_browseriface.moc konq_mainwindow.moc konq_profiledlg.moc konq_viewmgr.moc konq_actions.moc konq_combo.moc konq_guiclients.moc konq_run.moc konq_frame.moc
+	@echo 'creating konqueror_la_meta_unload.cc'
+	@-rm -f konqueror_la_meta_unload.cc
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_konqueror_la[] = {' > konqueror_la_meta_unload.cc ;\
+		cat  konq_view.moc konq_browseriface.moc konq_mainwindow.moc konq_profiledlg.moc konq_viewmgr.moc konq_actions.moc konq_combo.moc konq_guiclients.moc konq_run.moc konq_frame.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> konqueror_la_meta_unload.cc ;\
+		echo '0};' >> konqueror_la_meta_unload.cc ;\
+		echo '#include <kunload.h>' >> konqueror_la_meta_unload.cc ;\
+		echo '_UNLOAD(konqueror_la)' >> konqueror_la_meta_unload.cc ;\
+	else echo > konqueror_la_meta_unload.cc; fi
+
+
+#>+ 3
+clean-moc-classes:
+	-rm -f  konqueror_la_meta_unload.cc
+
+#>+ 11
+konqueror_la.all_cc.cc: $(srcdir)/Makefile.in $(srcdir)/konq_main.cc $(srcdir)/KonquerorIface.cc $(srcdir)/KonqMainWindowIface.cc $(srcdir)/KonqViewIface.cc $(srcdir)/konq_mainwindow.cc $(srcdir)/konq_guiclients.cc $(srcdir)/konq_run.cc $(srcdir)/konq_view.cc $(srcdir)/konq_viewmgr.cc $(srcdir)/konq_misc.cc $(srcdir)/konq_frame.cc $(srcdir)/konq_actions.cc $(srcdir)/konq_profiledlg.cc $(srcdir)/konq_factory.cc $(srcdir)/konq_combo.cc $(srcdir)/konq_browseriface.cc KonquerorIface_skel.cc KonqMainWindowIface_skel.cc KonqViewIface_skel.cc konqueror_la_meta_unload.cc   konq_view.moc konq_browseriface.moc konq_profiledlg.moc konq_mainwindow.moc konq_viewmgr.moc konq_actions.moc konq_combo.moc konq_guiclients.moc konq_frame.moc konq_run.moc 
+	@echo 'creating konqueror_la.all_cc.cc ...'; \
+	rm -f konqueror_la.all_cc.files konqueror_la.all_cc.final; \
+	echo "#define KDE_USE_FINAL 1" >> konqueror_la.all_cc.final; \
+	for file in konq_main.cc KonquerorIface.cc KonqMainWindowIface.cc KonqViewIface.cc konq_mainwindow.cc konq_guiclients.cc konq_run.cc konq_view.cc konq_viewmgr.cc konq_misc.cc konq_frame.cc konq_actions.cc konq_profiledlg.cc konq_factory.cc konq_combo.cc konq_browseriface.cc KonquerorIface_skel.cc KonqMainWindowIface_skel.cc KonqViewIface_skel.cc konqueror_la_meta_unload.cc ; do \
+	  echo "#include \"$$file\"" >> konqueror_la.all_cc.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> konqueror_la.all_cc.final; \
+	done; \
+	cat konqueror_la.all_cc.final konqueror_la.all_cc.files  > konqueror_la.all_cc.cc; \
+	rm -f konqueror_la.all_cc.final konqueror_la.all_cc.files
+
+#>+ 11
+konqueror.all_cc.cc: $(srcdir)/Makefile.in dummy.cc  
+	@echo 'creating konqueror.all_cc.cc ...'; \
+	rm -f konqueror.all_cc.files konqueror.all_cc.final; \
+	echo "#define KDE_USE_FINAL 1" >> konqueror.all_cc.final; \
+	for file in dummy.cc ; do \
+	  echo "#include \"$$file\"" >> konqueror.all_cc.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> konqueror.all_cc.final; \
+	done; \
+	cat konqueror.all_cc.final konqueror.all_cc.files  > konqueror.all_cc.cc; \
+	rm -f konqueror.all_cc.final konqueror.all_cc.files
+
+#>+ 3
+clean-final:
+	-rm -f konqueror_la.all_cc.cc konqueror.all_cc.cc
+
+#>+ 2
+final:
+	$(MAKE) konqueror_la_OBJECTS="$(konqueror_la_final_OBJECTS)" all-am
+#>+ 2
+final-install:
+	$(MAKE) konqueror_la_OBJECTS="$(konqueror_la_final_OBJECTS)" install-am
+#>+ 2
+no-final:
+	$(MAKE) konqueror_la_OBJECTS="$(konqueror_la_nofinal_OBJECTS)" all-am
+#>+ 2
+no-final-install:
+	$(MAKE) konqueror_la_OBJECTS="$(konqueror_la_nofinal_OBJECTS)" install-am
+#>+ 3
+cvs-clean:
+	$(MAKE) -f $(top_srcdir)/admin/Makefile.common cvs-clean
+
+#>+ 3
+kde-rpo-clean:
+	-rm -f *.rpo
+
+#>+ 11
+$(srcdir)/konq_frame.cc: konq_frame.moc 
+$(srcdir)/konq_viewmgr.cc: konq_viewmgr.moc 
+$(srcdir)/konq_mainwindow.cc: konq_mainwindow.moc 
+$(srcdir)/konq_profiledlg.cc: konq_profiledlg.moc 
+$(srcdir)/konq_actions.cc: konq_actions.moc 
+$(srcdir)/konq_browseriface.cc: konq_browseriface.moc 
+$(srcdir)/konq_view.cc: konq_view.moc 
+$(srcdir)/konq_run.cc: konq_run.moc 
+$(srcdir)/konq_guiclients.cc: konq_guiclients.moc 
+$(srcdir)/konq_combo.cc: konq_combo.moc 

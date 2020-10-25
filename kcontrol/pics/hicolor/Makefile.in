@@ -1,0 +1,732 @@
+# KDE tags expanded automatically by am_edit - $Revision: 1.265.2.2 $ 
+# Makefile.in generated automatically by automake 1.4-p5 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999, 2001 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+#>- 
+bindir = @bindir@
+#>+ 3
+DEPDIR = .deps
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ../../..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+build_alias = @build_alias@
+build_triplet = @build@
+host_alias = @host_alias@
+host_triplet = @host@
+target_alias = @target_alias@
+target_triplet = @target@
+ACCESS_SUBDIR = @ACCESS_SUBDIR@
+ARTSCCONFIG = @ARTSCCONFIG@
+AS = @AS@
+AUDIOCD_SUBDIR = @AUDIOCD_SUBDIR@
+AUTODIRS = @AUTODIRS@
+BZIP2FILES = @BZIP2FILES@
+CC = @CC@
+CDPARANOIA_INCS = @CDPARANOIA_INCS@
+CDPARANOIA_LIBS = @CDPARANOIA_LIBS@
+CDPARANOIA_RPATH = @CDPARANOIA_RPATH@
+CONF_FILES = @CONF_FILES@
+CPP = @CPP@
+CUPSSUBDIR = @CUPSSUBDIR@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DCOPIDL = @DCOPIDL@
+DCOPIDL2CPP = @DCOPIDL2CPP@
+DCOP_DEPENDENCIES = @DCOP_DEPENDENCIES@
+DLLTOOL = @DLLTOOL@
+DPMSINC = @DPMSINC@
+DPMSLIB = @DPMSLIB@
+EXEEXT = @EXEEXT@
+GCJ = @GCJ@
+GCJFLAGS = @GCJFLAGS@
+GLINC = @GLINC@
+GLLIB = @GLLIB@
+GL_SAVERS = @GL_SAVERS@
+GMSGFMT = @GMSGFMT@
+IDL = @IDL@
+IDL_DEPENDENCIES = @IDL_DEPENDENCIES@
+JAR = @JAR@
+JAVAC = @JAVAC@
+JAVAH = @JAVAH@
+JVMLIBS = @JVMLIBS@
+KCM_AUDIOCD = @KCM_AUDIOCD@
+KDECONFIG = @KDECONFIG@
+KDEDB_INCLUDES = @KDEDB_INCLUDES@
+KDEDB_LIBS = @KDEDB_LIBS@
+KDEDB_SUBDIR = @KDEDB_SUBDIR@
+KDE_BINDIR = @KDE_BINDIR@
+KDE_CONFDIR = @KDE_CONFDIR@
+KDE_CXXFLAGS = @KDE_CXXFLAGS@
+KDE_EXTRA_RPATH = @KDE_EXTRA_RPATH@
+KDE_INCLUDES = @KDE_INCLUDES@
+KDE_LDFLAGS = @KDE_LDFLAGS@
+KDE_PLUGIN = @KDE_PLUGIN@
+KDE_RPATH = @KDE_RPATH@
+KDE_USE_CLOSURE_FALSE = @KDE_USE_CLOSURE_FALSE@
+KDE_USE_CLOSURE_TRUE = @KDE_USE_CLOSURE_TRUE@
+KDE_USE_FINAL_FALSE = @KDE_USE_FINAL_FALSE@
+KDE_USE_FINAL_TRUE = @KDE_USE_FINAL_TRUE@
+KDE_XSL_STYLESHEET = @KDE_XSL_STYLESHEET@
+KERBEROS_INCS = @KERBEROS_INCS@
+KERBEROS_LIBS = @KERBEROS_LIBS@
+KERBEROS_ROOT = @KERBEROS_ROOT@
+KRB_RPATH = @KRB_RPATH@
+LAME_INCS = @LAME_INCS@
+LAME_LIBS = @LAME_LIBS@
+LAME_RPATH = @LAME_RPATH@
+LDAP_INCS = @LDAP_INCS@
+LDAP_LIBS = @LDAP_LIBS@
+LDAP_RPATH = @LDAP_RPATH@
+LDAP_SUBDIR = @LDAP_SUBDIR@
+LIBALIB = @LIBALIB@
+LIBCFG = @LIBCFG@
+LIBCOMPAT = @LIBCOMPAT@
+LIBCRYPT = @LIBCRYPT@
+LIBCURSES = @LIBCURSES@
+LIBDEVINFO = @LIBDEVINFO@
+LIBDL = @LIBDL@
+LIBGEN = @LIBGEN@
+LIBJPEG = @LIBJPEG@
+LIBKSTAT = @LIBKSTAT@
+LIBMICO = @LIBMICO@
+LIBOBJS = @LIBOBJS@
+LIBODM = @LIBODM@
+LIBOSSAUDIO = @LIBOSSAUDIO@
+LIBPNG = @LIBPNG@
+LIBPTHREAD = @LIBPTHREAD@
+LIBPYTHON = @LIBPYTHON@
+LIBQIMGIO = @LIBQIMGIO@
+LIBRESOLV = @LIBRESOLV@
+LIBSENSORS = @LIBSENSORS@
+LIBSHADOW = @LIBSHADOW@
+LIBSM = @LIBSM@
+LIBSOCKET = @LIBSOCKET@
+LIBSSL = @LIBSSL@
+LIBTIFF = @LIBTIFF@
+LIBTOOL = @LIBTOOL@
+LIBUCB = @LIBUCB@
+LIBUTEMPTER = @LIBUTEMPTER@
+LIBUTIL = @LIBUTIL@
+LIBXDMCP = @LIBXDMCP@
+LIBXINERAMA = @LIBXINERAMA@
+LIBZ = @LIBZ@
+LIB_CUPS = @LIB_CUPS@
+LIB_KAB = @LIB_KAB@
+LIB_KDB = @LIB_KDB@
+LIB_KDBCORE = @LIB_KDBCORE@
+LIB_KDBUI = @LIB_KDBUI@
+LIB_KDECORE = @LIB_KDECORE@
+LIB_KDEUI = @LIB_KDEUI@
+LIB_KFILE = @LIB_KFILE@
+LIB_KFM = @LIB_KFM@
+LIB_KFORMULA = @LIB_KFORMULA@
+LIB_KHTML = @LIB_KHTML@
+LIB_KIMGIO = @LIB_KIMGIO@
+LIB_KIO = @LIB_KIO@
+LIB_KPARTS = @LIB_KPARTS@
+LIB_KSPELL = @LIB_KSPELL@
+LIB_KSYCOCA = @LIB_KSYCOCA@
+LIB_KWRITE = @LIB_KWRITE@
+LIB_LIBS = @LIB_LIBS@
+LIB_QT = @LIB_QT@
+LIB_SMB = @LIB_SMB@
+LIB_TRU64_MACH = @LIB_TRU64_MACH@
+LIB_X11 = @LIB_X11@
+LN_S = @LN_S@
+MAKEINFO = @MAKEINFO@
+MCOPIDL = @MCOPIDL@
+MEINPROC = @MEINPROC@
+MICO_INCLUDES = @MICO_INCLUDES@
+MICO_LDFLAGS = @MICO_LDFLAGS@
+MOC = @MOC@
+MOTIF_CFLAGS = @MOTIF_CFLAGS@
+MOTIF_LIBS = @MOTIF_LIBS@
+MSGFMT = @MSGFMT@
+NOOPT_CXXFLAGS = @NOOPT_CXXFLAGS@
+NOREPO = @NOREPO@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+PAMLIBS = @PAMLIBS@
+PASSWDLIBS = @PASSWDLIBS@
+PYTHONINC = @PYTHONINC@
+PYTHONLIB = @PYTHONLIB@
+PYTHONMODDIR = @PYTHONMODDIR@
+QT_INCLUDES = @QT_INCLUDES@
+QT_LDFLAGS = @QT_LDFLAGS@
+RANLIB = @RANLIB@
+REPO = @REPO@
+RUN_KAPPFINDER = @RUN_KAPPFINDER@
+SETUIDFLAGS = @SETUIDFLAGS@
+SMB_SUBDIR = @SMB_SUBDIR@
+SSL_INCLUDES = @SSL_INCLUDES@
+SSL_LDFLAGS = @SSL_LDFLAGS@
+STRIP = @STRIP@
+TOPSUBDIRS = @TOPSUBDIRS@
+UIC = @UIC@
+UIC_TR = @UIC_TR@
+UNAME = @UNAME@
+USER_INCLUDES = @USER_INCLUDES@
+USER_LDFLAGS = @USER_LDFLAGS@
+USE_EXCEPTIONS = @USE_EXCEPTIONS@
+USE_RTTI = @USE_RTTI@
+USE_THREADS = @USE_THREADS@
+VERSION = @VERSION@
+VORBISENC_LIBS = @VORBISENC_LIBS@
+VORBISFILE_LIBS = @VORBISFILE_LIBS@
+VORBIS_INCS = @VORBIS_INCS@
+VORBIS_LIBS = @VORBIS_LIBS@
+VORBIS_RPATH = @VORBIS_RPATH@
+XDM_CFLAGS = @XDM_CFLAGS@
+XGETTEXT = @XGETTEXT@
+XMKMF = @XMKMF@
+XPMINC = @XPMINC@
+XPMLIB = @XPMLIB@
+XTESTLIB = @XTESTLIB@
+X_EXTRA_LIBS = @X_EXTRA_LIBS@
+X_INCLUDES = @X_INCLUDES@
+X_LDFLAGS = @X_LDFLAGS@
+X_PRE_LIBS = @X_PRE_LIBS@
+all_includes = @all_includes@
+all_libraries = @all_libraries@
+idldir = @idldir@
+include_motif = @include_motif@
+jni_includes = @jni_includes@
+kde_appsdir = @kde_appsdir@
+kde_bindir = @kde_bindir@
+kde_confdir = @kde_confdir@
+kde_datadir = @kde_datadir@
+kde_htmldir = @kde_htmldir@
+kde_icondir = @kde_icondir@
+kde_includes = @kde_includes@
+kde_libraries = @kde_libraries@
+kde_libs_htmldir = @kde_libs_htmldir@
+kde_libs_prefix = @kde_libs_prefix@
+kde_locale = @kde_locale@
+kde_mimedir = @kde_mimedir@
+kde_moduledir = @kde_moduledir@
+kde_qtver = @kde_qtver@
+kde_servicesdir = @kde_servicesdir@
+kde_servicetypesdir = @kde_servicetypesdir@
+kde_sounddir = @kde_sounddir@
+kde_templatesdir = @kde_templatesdir@
+kde_wallpaperdir = @kde_wallpaperdir@
+kdmchooserdir = @kdmchooserdir@
+link_motif = @link_motif@
+micodir = @micodir@
+nogroup = @nogroup@
+qt_includes = @qt_includes@
+qt_libraries = @qt_libraries@
+x_includes = @x_includes@
+x_libraries = @x_libraries@
+
+KDE_ICON = AUTO
+mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
+CONFIG_HEADER = ../../../config.h
+CONFIG_CLEAN_FILES = 
+DIST_COMMON =  Makefile.am Makefile.in
+
+
+#>- DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+#>+ 4
+KDE_DIST=hi32-app-winprops.png hi48-app-help_index.png hi16-app-stylesheet.png hi32-app-email.png hi32-app-colors.png hi16-app-locale.png hi48-app-fonts.png hi16-app-kcmpci.png hi48-app-multimedia.png hi48-app-iconthemes.png hi16-app-knotify.png hi48-app-clock.png hi32-app-kdmconfig.png hi48-app-energy_star.png hi48-app-kcmsystem.png hi16-app-keyboard_layout.png hi16-app-key_bindings.png hi32-app-energy_star.png hi48-app-looknfeel.png hi48-app-agent.png hi32-app-usb.png hi32-app-background.png hi16-app-mouse.png hi16-app-colors.png hi32-app-cookie.png hi48-app-kcmkwm.png hi48-app-filetypes.png hi32-app-keyboard_layout.png hi32-app-kcmdrkonqi.png hi48-app-key_bindings.png hi32-app-kscreensaver.png hi32-app-knotify.png hi16-app-kcmprocessor.png hi48-app-email.png hi16-app-kcmx.png hi16-app-kdmconfig.png hi48-app-keyboard.png hi48-app-energy.png hi32-app-bell.png hi32-app-enhanced_browsing.png hi16-app-kcmsound.png hi48-app-kcmprocessor.png hi16-app-panel_settings.png hi16-app-cookie.png hi48-app-kcmdevices.png hi16-app-proxy.png hi48-app-access.png hi16-app-style.png hi48-app-kcmscsi.png hi16-app-samba.png hi32-app-kcmmemory.png hi16-app-date.png hi48-app-usb.png hi32-app-kcmsound.png hi48-app-locale.png hi48-app-kcmpci.png hi32-app-icons.png hi16-app-help_index.png hi32-app-stylesheet.png hi16-app-multimedia.png hi16-app-iconthemes.png hi16-app-kcmpartitions.png hi32-app-kthememgr.png hi16-app-enhanced_browsing.png hi16-app-usb.png hi48-app-colors.png hi48-app-kcmdrkonqi.png hi48-app-input_devices_settings.png hi16-app-kcmmemory.png hi48-app-keyboard_layout.png hi48-app-enhanced_browsing.png hi16-app-fonts.png hi16-app-keyboard.png hi16-app-clock.png hi32-app-mouse.png hi32-app-hwinfo.png hi16-app-energy_star.png hi48-app-personal.png hi48-app-icons.png hi48-app-password.png hi32-app-kcmsystem.png hi16-app-agent.png hi48-app-kcmmidi.png hi16-app-kthememgr.png hi48-app-kdmconfig.png hi16-app-bell.png hi16-app-kscreensaver.png hi48-app-cookie.png hi32-app-input_devices_settings.png hi32-app-looknfeel.png hi16-app-kcmscsi.png hi32-app-keyboard.png hi16-app-arts.png hi48-app-kcmpartitions.png hi16-app-kcmdevices.png hi48-app-winprops.png hi16-app-email.png hi32-app-filetypes.png hi16-app-hwinfo.png hi48-app-kscreensaver.png hi32-app-kcmkicker.png hi48-app-stylesheet.png hi48-app-mouse.png hi32-app-proxy.png hi32-app-key_bindings.png hi16-app-kcmsystem.png hi32-app-style.png hi32-app-kcmkwm.png hi32-app-samba.png hi32-app-help_index.png hi32-app-kcmscsi.png hi16-app-looknfeel.png hi32-app-kcmpartitions.png hi48-app-date.png hi32-app-multimedia.png hi32-app-iconthemes.png hi32-app-kcmprocessor.png hi16-app-background.png hi48-app-knotify.png hi16-app-filetypes.png hi32-app-energy.png hi16-app-personal.png hi16-app-kcmkicker.png hi16-app-password.png hi16-app-kcmkwm.png hi16-app-input_devices_settings.png hi32-app-kcmx.png hi16-app-kcmmidi.png hi48-app-proxy.png hi48-app-kcmmemory.png hi32-app-access.png hi48-app-style.png hi32-app-fonts.png hi48-app-samba.png hi16-app-winprops.png hi32-app-clock.png hi32-app-personal.png hi16-app-energy.png hi32-app-password.png hi32-app-locale.png hi32-app-kcmpci.png hi32-app-agent.png hi48-app-kthememgr.png hi48-app-hwinfo.png hi32-app-kcmmidi.png hi32-app-kcmdevices.png hi16-app-icons.png hi16-app-access.png hi32-app-date.png hi48-app-bell.png 
+
+DISTFILES= $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+
+
+TAR = tar
+GZIP_ENV = --best
+#>- all: all-redirect
+#>+ 1
+all: docs-am  all-redirect
+.SUFFIXES:
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+#>- 	cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps kcontrol/pics/hicolor/Makefile
+#>+ 2
+	cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps kcontrol/pics/hicolor/Makefile
+	cd $(top_srcdir) && perl admin/am_edit kcontrol/pics/hicolor/Makefile.in
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	&& CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+tags: TAGS
+TAGS:
+
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = kcontrol/pics/hicolor
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	d=$(srcdir); \
+	if test -d $$d/$$file; then \
+	cp -pr $$d/$$file $(distdir)/$$file; \
+	else \
+	test -f $(distdir)/$$file \
+	|| ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	|| cp -p $$d/$$file $(distdir)/$$file || :; \
+	fi; \
+	done
+info-am:
+info: info-am
+dvi-am:
+dvi: dvi-am
+check-am: all-am
+check: check-am
+installcheck-am:
+installcheck: installcheck-am
+install-exec-am:
+install-exec: install-exec-am
+
+#>- install-data-am:
+#>+ 1
+install-data-am: install-kde-icons 
+install-data: install-data-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-am
+#>- uninstall-am:
+#>+ 1
+uninstall-am: uninstall-kde-icons 
+uninstall: uninstall-am
+all-am: Makefile
+all-redirect: all-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs:
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-generic
+
+mostlyclean: mostlyclean-am
+
+clean-am:  clean-generic mostlyclean-am
+
+#>- clean: clean-am
+#>+ 1
+clean: kde-rpo-clean  clean-am
+
+distclean-am:  distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-am
+
+maintainer-clean-am:  maintainer-clean-generic distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-am
+
+.PHONY: tags distdir info-am info dvi-am dvi check check-am \
+	installcheck-am installcheck install-exec-am install-exec \
+	install-data-am install-data install-am install uninstall-am uninstall \
+	all-redirect all-am all installdirs mostlyclean-generic \
+	distclean-generic clean-generic maintainer-clean-generic clean \
+	mostlyclean distclean maintainer-clean
+
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
+
+#>+ 2
+docs-am:
+
+#>+ 307
+install-kde-icons:
+	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps
+	$(INSTALL_DATA) $(srcdir)/hi16-app-access.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/access.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-agent.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/agent.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-arts.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/arts.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-background.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/background.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-bell.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/bell.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-clock.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/clock.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-colors.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/colors.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-cookie.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/cookie.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-date.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/date.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-email.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/email.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-energy.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/energy.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-energy_star.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/energy_star.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-enhanced_browsing.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/enhanced_browsing.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-filetypes.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/filetypes.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-fonts.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/fonts.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-help_index.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/help_index.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-hwinfo.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/hwinfo.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-icons.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/icons.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-iconthemes.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/iconthemes.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-input_devices_settings.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/input_devices_settings.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kcmdevices.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmdevices.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kcmkicker.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmkicker.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kcmkwm.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmkwm.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kcmmemory.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmmemory.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kcmmidi.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmmidi.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kcmpartitions.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmpartitions.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kcmpci.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmpci.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kcmprocessor.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmprocessor.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kcmscsi.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmscsi.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kcmsound.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmsound.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kcmsystem.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmsystem.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kcmx.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmx.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kdmconfig.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kdmconfig.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-key_bindings.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/key_bindings.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-keyboard.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/keyboard.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-keyboard_layout.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/keyboard_layout.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-knotify.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/knotify.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kscreensaver.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kscreensaver.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-kthememgr.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kthememgr.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-locale.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/locale.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-looknfeel.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/looknfeel.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-mouse.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/mouse.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-multimedia.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/multimedia.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-panel_settings.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/panel_settings.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-password.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/password.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-personal.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/personal.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-proxy.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/proxy.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-samba.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/samba.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-style.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/style.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-stylesheet.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/stylesheet.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-winprops.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/winprops.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps
+	$(INSTALL_DATA) $(srcdir)/hi32-app-access.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/access.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-agent.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/agent.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-background.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/background.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-bell.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/bell.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-clock.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/clock.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-colors.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/colors.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-cookie.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/cookie.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-date.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/date.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-email.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/email.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-energy.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/energy.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-energy_star.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/energy_star.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-enhanced_browsing.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/enhanced_browsing.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-filetypes.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/filetypes.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-fonts.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/fonts.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-help_index.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/help_index.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-hwinfo.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/hwinfo.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-icons.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/icons.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-iconthemes.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/iconthemes.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-input_devices_settings.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/input_devices_settings.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kcmdevices.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmdevices.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kcmdrkonqi.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmdrkonqi.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kcmkicker.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmkicker.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kcmkwm.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmkwm.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kcmmemory.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmmemory.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kcmmidi.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmmidi.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kcmpartitions.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmpartitions.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kcmpci.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmpci.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kcmprocessor.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmprocessor.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kcmscsi.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmscsi.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kcmsound.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmsound.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kcmsystem.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmsystem.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kcmx.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmx.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kdmconfig.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kdmconfig.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-key_bindings.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/key_bindings.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-keyboard_layout.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/keyboard_layout.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-knotify.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/knotify.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kscreensaver.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kscreensaver.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-kthememgr.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kthememgr.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-locale.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/locale.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-looknfeel.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/looknfeel.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-mouse.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/mouse.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-multimedia.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/multimedia.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-password.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/password.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-personal.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/personal.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-proxy.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/proxy.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-samba.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/samba.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-style.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/style.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-stylesheet.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/stylesheet.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-winprops.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/winprops.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps
+	$(INSTALL_DATA) $(srcdir)/hi48-app-access.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/access.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-agent.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/agent.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-bell.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/bell.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-clock.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/clock.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-colors.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/colors.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-cookie.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/cookie.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-date.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/date.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-email.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/email.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-energy.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/energy.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-energy_star.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/energy_star.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-enhanced_browsing.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/enhanced_browsing.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-filetypes.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/filetypes.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-fonts.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/fonts.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-help_index.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/help_index.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-hwinfo.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/hwinfo.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-icons.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/icons.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-iconthemes.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/iconthemes.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-input_devices_settings.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/input_devices_settings.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-kcmdevices.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmdevices.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-kcmdrkonqi.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmdrkonqi.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-kcmkwm.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmkwm.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-kcmmemory.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmmemory.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-kcmmidi.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmmidi.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-kcmpartitions.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmpartitions.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-kcmpci.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmpci.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-kcmprocessor.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmprocessor.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-kcmscsi.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmscsi.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-kcmsystem.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmsystem.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-kdmconfig.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kdmconfig.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-keyboard.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/keyboard.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-key_bindings.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/key_bindings.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-keyboard_layout.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/keyboard_layout.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-knotify.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/knotify.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-kscreensaver.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kscreensaver.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-kthememgr.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kthememgr.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-locale.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/locale.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-looknfeel.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/looknfeel.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-mouse.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/mouse.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-multimedia.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/multimedia.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-password.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/password.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-personal.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/personal.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-proxy.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/proxy.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-samba.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/samba.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-style.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/style.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-stylesheet.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/stylesheet.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-winprops.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/winprops.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-usb.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/usb.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-keyboard.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/keyboard.png
+	$(INSTALL_DATA) $(srcdir)/hi32-app-usb.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/usb.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-usb.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/usb.png
+
+uninstall-kde-icons:
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/access.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/agent.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/arts.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/background.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/bell.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/clock.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/colors.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/cookie.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/date.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/email.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/energy.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/energy_star.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/enhanced_browsing.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/filetypes.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/fonts.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/help_index.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/hwinfo.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/icons.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/iconthemes.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/input_devices_settings.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmdevices.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmkicker.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmkwm.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmmemory.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmmidi.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmpartitions.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmpci.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmprocessor.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmscsi.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmsound.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmsystem.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kcmx.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kdmconfig.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/key_bindings.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/keyboard.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/keyboard_layout.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/knotify.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kscreensaver.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/kthememgr.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/locale.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/looknfeel.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/mouse.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/multimedia.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/panel_settings.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/password.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/personal.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/proxy.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/samba.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/style.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/stylesheet.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/winprops.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/access.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/agent.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/background.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/bell.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/clock.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/colors.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/cookie.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/date.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/email.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/energy.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/energy_star.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/enhanced_browsing.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/filetypes.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/fonts.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/help_index.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/hwinfo.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/icons.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/iconthemes.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/input_devices_settings.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmdevices.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmdrkonqi.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmkicker.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmkwm.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmmemory.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmmidi.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmpartitions.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmpci.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmprocessor.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmscsi.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmsound.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmsystem.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kcmx.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kdmconfig.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/key_bindings.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/keyboard_layout.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/knotify.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kscreensaver.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/kthememgr.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/locale.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/looknfeel.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/mouse.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/multimedia.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/password.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/personal.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/proxy.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/samba.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/style.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/stylesheet.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/winprops.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/access.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/agent.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/bell.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/clock.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/colors.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/cookie.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/date.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/email.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/energy.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/energy_star.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/enhanced_browsing.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/filetypes.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/fonts.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/help_index.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/hwinfo.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/icons.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/iconthemes.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/input_devices_settings.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmdevices.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmdrkonqi.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmkwm.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmmemory.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmmidi.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmpartitions.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmpci.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmprocessor.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmscsi.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kcmsystem.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kdmconfig.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/keyboard.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/key_bindings.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/keyboard_layout.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/knotify.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kscreensaver.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/kthememgr.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/locale.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/looknfeel.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/mouse.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/multimedia.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/password.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/personal.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/proxy.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/samba.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/style.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/stylesheet.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/winprops.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/usb.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/keyboard.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/usb.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/usb.png
+
+#>+ 5
+force-reedit:
+		cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps kcontrol/pics/hicolor/Makefile
+	cd $(top_srcdir) && perl admin/am_edit kcontrol/pics/hicolor/Makefile.in
+
+
+#>+ 2
+final:
+	$(MAKE) all-am
+#>+ 2
+final-install:
+	$(MAKE) install-am
+#>+ 2
+no-final:
+	$(MAKE) all-am
+#>+ 2
+no-final-install:
+	$(MAKE) install-am
+#>+ 3
+cvs-clean:
+	$(MAKE) -f $(top_srcdir)/admin/Makefile.common cvs-clean
+
+#>+ 3
+kde-rpo-clean:
+	-rm -f *.rpo

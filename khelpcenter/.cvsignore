@@ -1,0 +1,6 @@
+Makefile
+Makefile.in
+khelpcenter
+*.kidl
+*_stub.cc
+*_stub.h

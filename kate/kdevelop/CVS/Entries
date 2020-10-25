@@ -1,0 +1,23 @@
+/.cvsignore/1.1/Wed Jul 18 20:14:24 2001//TKDE_2_2_BRANCH
+/Makefile.am/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/clipboard_iface_impl.cpp/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/clipboard_iface_impl.h/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/cursor_iface_impl.cpp/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/cursor_iface_impl.h/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/debug_iface_impl.cpp/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/debug_iface_impl.h/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/document_impl.cpp/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/document_impl.h/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/edit_iface_impl.cpp/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/edit_iface_impl.h/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/kate_factory.cpp/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/kate_factory.h/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/kate_part.cpp/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/kate_part.desktop/1.8.2.5/Tue Sep  4 23:11:11 2001//TKDE_2_2_BRANCH
+/kate_part.h/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/kate_part.rc/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/status_iface_impl.cpp/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/status_iface_impl.h/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/undo_iface_impl.cpp/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+/undo_iface_impl.h/1.1/Tue Jul 10 11:32:13 2001//TKDE_2_2_BRANCH
+D

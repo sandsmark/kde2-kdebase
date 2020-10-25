@@ -1,0 +1,732 @@
+# KDE tags expanded automatically by am_edit - $Revision: 1.265.2.2 $ 
+# Makefile.in generated automatically by automake 1.4-p5 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999, 2001 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+#>- 
+bindir = @bindir@
+#>+ 3
+DEPDIR = .deps
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ../..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+build_alias = @build_alias@
+build_triplet = @build@
+host_alias = @host_alias@
+host_triplet = @host@
+target_alias = @target_alias@
+target_triplet = @target@
+ACCESS_SUBDIR = @ACCESS_SUBDIR@
+ARTSCCONFIG = @ARTSCCONFIG@
+AS = @AS@
+AUDIOCD_SUBDIR = @AUDIOCD_SUBDIR@
+AUTODIRS = @AUTODIRS@
+BZIP2FILES = @BZIP2FILES@
+CC = @CC@
+CDPARANOIA_INCS = @CDPARANOIA_INCS@
+CDPARANOIA_LIBS = @CDPARANOIA_LIBS@
+CDPARANOIA_RPATH = @CDPARANOIA_RPATH@
+CONF_FILES = @CONF_FILES@
+CPP = @CPP@
+CUPSSUBDIR = @CUPSSUBDIR@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DCOPIDL = @DCOPIDL@
+DCOPIDL2CPP = @DCOPIDL2CPP@
+DCOP_DEPENDENCIES = @DCOP_DEPENDENCIES@
+DLLTOOL = @DLLTOOL@
+DPMSINC = @DPMSINC@
+DPMSLIB = @DPMSLIB@
+EXEEXT = @EXEEXT@
+GCJ = @GCJ@
+GCJFLAGS = @GCJFLAGS@
+GLINC = @GLINC@
+GLLIB = @GLLIB@
+GL_SAVERS = @GL_SAVERS@
+GMSGFMT = @GMSGFMT@
+IDL = @IDL@
+IDL_DEPENDENCIES = @IDL_DEPENDENCIES@
+JAR = @JAR@
+JAVAC = @JAVAC@
+JAVAH = @JAVAH@
+JVMLIBS = @JVMLIBS@
+KCM_AUDIOCD = @KCM_AUDIOCD@
+KDECONFIG = @KDECONFIG@
+KDEDB_INCLUDES = @KDEDB_INCLUDES@
+KDEDB_LIBS = @KDEDB_LIBS@
+KDEDB_SUBDIR = @KDEDB_SUBDIR@
+KDE_BINDIR = @KDE_BINDIR@
+KDE_CONFDIR = @KDE_CONFDIR@
+KDE_CXXFLAGS = @KDE_CXXFLAGS@
+KDE_EXTRA_RPATH = @KDE_EXTRA_RPATH@
+KDE_INCLUDES = @KDE_INCLUDES@
+KDE_LDFLAGS = @KDE_LDFLAGS@
+KDE_PLUGIN = @KDE_PLUGIN@
+KDE_RPATH = @KDE_RPATH@
+KDE_USE_CLOSURE_FALSE = @KDE_USE_CLOSURE_FALSE@
+KDE_USE_CLOSURE_TRUE = @KDE_USE_CLOSURE_TRUE@
+KDE_USE_FINAL_FALSE = @KDE_USE_FINAL_FALSE@
+KDE_USE_FINAL_TRUE = @KDE_USE_FINAL_TRUE@
+KDE_XSL_STYLESHEET = @KDE_XSL_STYLESHEET@
+KERBEROS_INCS = @KERBEROS_INCS@
+KERBEROS_LIBS = @KERBEROS_LIBS@
+KERBEROS_ROOT = @KERBEROS_ROOT@
+KRB_RPATH = @KRB_RPATH@
+LAME_INCS = @LAME_INCS@
+LAME_LIBS = @LAME_LIBS@
+LAME_RPATH = @LAME_RPATH@
+LDAP_INCS = @LDAP_INCS@
+LDAP_LIBS = @LDAP_LIBS@
+LDAP_RPATH = @LDAP_RPATH@
+LDAP_SUBDIR = @LDAP_SUBDIR@
+LIBALIB = @LIBALIB@
+LIBCFG = @LIBCFG@
+LIBCOMPAT = @LIBCOMPAT@
+LIBCRYPT = @LIBCRYPT@
+LIBCURSES = @LIBCURSES@
+LIBDEVINFO = @LIBDEVINFO@
+LIBDL = @LIBDL@
+LIBGEN = @LIBGEN@
+LIBJPEG = @LIBJPEG@
+LIBKSTAT = @LIBKSTAT@
+LIBMICO = @LIBMICO@
+LIBOBJS = @LIBOBJS@
+LIBODM = @LIBODM@
+LIBOSSAUDIO = @LIBOSSAUDIO@
+LIBPNG = @LIBPNG@
+LIBPTHREAD = @LIBPTHREAD@
+LIBPYTHON = @LIBPYTHON@
+LIBQIMGIO = @LIBQIMGIO@
+LIBRESOLV = @LIBRESOLV@
+LIBSENSORS = @LIBSENSORS@
+LIBSHADOW = @LIBSHADOW@
+LIBSM = @LIBSM@
+LIBSOCKET = @LIBSOCKET@
+LIBSSL = @LIBSSL@
+LIBTIFF = @LIBTIFF@
+LIBTOOL = @LIBTOOL@
+LIBUCB = @LIBUCB@
+LIBUTEMPTER = @LIBUTEMPTER@
+LIBUTIL = @LIBUTIL@
+LIBXDMCP = @LIBXDMCP@
+LIBXINERAMA = @LIBXINERAMA@
+LIBZ = @LIBZ@
+LIB_CUPS = @LIB_CUPS@
+LIB_KAB = @LIB_KAB@
+LIB_KDB = @LIB_KDB@
+LIB_KDBCORE = @LIB_KDBCORE@
+LIB_KDBUI = @LIB_KDBUI@
+LIB_KDECORE = @LIB_KDECORE@
+LIB_KDEUI = @LIB_KDEUI@
+LIB_KFILE = @LIB_KFILE@
+LIB_KFM = @LIB_KFM@
+LIB_KFORMULA = @LIB_KFORMULA@
+LIB_KHTML = @LIB_KHTML@
+LIB_KIMGIO = @LIB_KIMGIO@
+LIB_KIO = @LIB_KIO@
+LIB_KPARTS = @LIB_KPARTS@
+LIB_KSPELL = @LIB_KSPELL@
+LIB_KSYCOCA = @LIB_KSYCOCA@
+LIB_KWRITE = @LIB_KWRITE@
+LIB_LIBS = @LIB_LIBS@
+LIB_QT = @LIB_QT@
+LIB_SMB = @LIB_SMB@
+LIB_TRU64_MACH = @LIB_TRU64_MACH@
+LIB_X11 = @LIB_X11@
+LN_S = @LN_S@
+MAKEINFO = @MAKEINFO@
+MCOPIDL = @MCOPIDL@
+MEINPROC = @MEINPROC@
+MICO_INCLUDES = @MICO_INCLUDES@
+MICO_LDFLAGS = @MICO_LDFLAGS@
+MOC = @MOC@
+MOTIF_CFLAGS = @MOTIF_CFLAGS@
+MOTIF_LIBS = @MOTIF_LIBS@
+MSGFMT = @MSGFMT@
+NOOPT_CXXFLAGS = @NOOPT_CXXFLAGS@
+NOREPO = @NOREPO@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+PAMLIBS = @PAMLIBS@
+PASSWDLIBS = @PASSWDLIBS@
+PYTHONINC = @PYTHONINC@
+PYTHONLIB = @PYTHONLIB@
+PYTHONMODDIR = @PYTHONMODDIR@
+QT_INCLUDES = @QT_INCLUDES@
+QT_LDFLAGS = @QT_LDFLAGS@
+RANLIB = @RANLIB@
+REPO = @REPO@
+RUN_KAPPFINDER = @RUN_KAPPFINDER@
+SETUIDFLAGS = @SETUIDFLAGS@
+SMB_SUBDIR = @SMB_SUBDIR@
+SSL_INCLUDES = @SSL_INCLUDES@
+SSL_LDFLAGS = @SSL_LDFLAGS@
+STRIP = @STRIP@
+TOPSUBDIRS = @TOPSUBDIRS@
+UIC = @UIC@
+UIC_TR = @UIC_TR@
+UNAME = @UNAME@
+USER_INCLUDES = @USER_INCLUDES@
+USER_LDFLAGS = @USER_LDFLAGS@
+USE_EXCEPTIONS = @USE_EXCEPTIONS@
+USE_RTTI = @USE_RTTI@
+USE_THREADS = @USE_THREADS@
+VERSION = @VERSION@
+VORBISENC_LIBS = @VORBISENC_LIBS@
+VORBISFILE_LIBS = @VORBISFILE_LIBS@
+VORBIS_INCS = @VORBIS_INCS@
+VORBIS_LIBS = @VORBIS_LIBS@
+VORBIS_RPATH = @VORBIS_RPATH@
+XDM_CFLAGS = @XDM_CFLAGS@
+XGETTEXT = @XGETTEXT@
+XMKMF = @XMKMF@
+XPMINC = @XPMINC@
+XPMLIB = @XPMLIB@
+XTESTLIB = @XTESTLIB@
+X_EXTRA_LIBS = @X_EXTRA_LIBS@
+X_INCLUDES = @X_INCLUDES@
+X_LDFLAGS = @X_LDFLAGS@
+X_PRE_LIBS = @X_PRE_LIBS@
+all_includes = @all_includes@
+all_libraries = @all_libraries@
+idldir = @idldir@
+include_motif = @include_motif@
+jni_includes = @jni_includes@
+kde_appsdir = @kde_appsdir@
+kde_bindir = @kde_bindir@
+kde_confdir = @kde_confdir@
+kde_datadir = @kde_datadir@
+kde_htmldir = @kde_htmldir@
+kde_icondir = @kde_icondir@
+kde_includes = @kde_includes@
+kde_libraries = @kde_libraries@
+kde_libs_htmldir = @kde_libs_htmldir@
+kde_libs_prefix = @kde_libs_prefix@
+kde_locale = @kde_locale@
+kde_mimedir = @kde_mimedir@
+kde_moduledir = @kde_moduledir@
+kde_qtver = @kde_qtver@
+kde_servicesdir = @kde_servicesdir@
+kde_servicetypesdir = @kde_servicetypesdir@
+kde_sounddir = @kde_sounddir@
+kde_templatesdir = @kde_templatesdir@
+kde_wallpaperdir = @kde_wallpaperdir@
+kdmchooserdir = @kdmchooserdir@
+link_motif = @link_motif@
+micodir = @micodir@
+nogroup = @nogroup@
+qt_includes = @qt_includes@
+qt_libraries = @qt_libraries@
+x_includes = @x_includes@
+x_libraries = @x_libraries@
+
+INCLUDES = $(all_includes)
+
+template_DATA = template.css
+templatedir = $(kde_datadir)/kcmcss
+
+kde_module_LTLIBRARIES = libkcm_css.la
+#>- libkcm_css_la_SOURCES = template.cpp cssconfig.ui kcmcss.cpp preview.ui
+#>+ 1
+libkcm_css_la_SOURCES=template.cpp  kcmcss.cpp  cssconfig.cpp preview.cpp
+libkcm_css_la_LDFLAGS = $(all_libraries) -module -avoid-version -no-undefined
+libkcm_css_la_LIBADD = -lkdeui -lkfile
+
+#>- libkcm_css_la_METASOURCES = AUTO
+
+data_DATA = kcmcss.desktop
+datadir = $(kde_appsdir)/Settings/WebBrowsing
+mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
+CONFIG_HEADER = ../../config.h
+CONFIG_CLEAN_FILES = 
+LTLIBRARIES =  $(kde_module_LTLIBRARIES)
+
+
+DEFS = @DEFS@ -I. -I$(srcdir) -I../..
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+X_CFLAGS = @X_CFLAGS@
+X_LIBS = @X_LIBS@
+libkcm_css_la_DEPENDENCIES = 
+#>- libkcm_css_la_OBJECTS =  template.lo kcmcss.lo
+#>+ 5
+libkcm_css_la_final_OBJECTS = libkcm_css_la.all_cpp.lo 
+libkcm_css_la_nofinal_OBJECTS = template.lo kcmcss.lo cssconfig.lo preview.lo \
+	libkcm_css_la_meta_unload.lo 
+@KDE_USE_FINAL_FALSE@libkcm_css_la_OBJECTS = $(libkcm_css_la_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@libkcm_css_la_OBJECTS = $(libkcm_css_la_final_OBJECTS)
+CXXFLAGS = @CXXFLAGS@
+#>- CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+#>+ 1
+CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS)
+#>- LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+#>+ 1
+LTCXXCOMPILE = $(LIBTOOL) --mode=compile --tag=CXX $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS)
+CXXLD = $(CXX)
+#>- CXXLINK = $(LIBTOOL) --mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(LDFLAGS) -o $@
+#>+ 1
+CXXLINK = $(LIBTOOL) --mode=link --tag=CXX $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS) $(LDFLAGS) -o $@
+DATA =  $(data_DATA) $(template_DATA)
+
+DIST_COMMON =  Makefile.am Makefile.in
+
+
+#>- DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+#>+ 4
+KDE_DIST=kcmcss.h preview.ui cssconfig.ui template.h template.css kcmcss.desktop 
+
+DISTFILES= $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+
+
+TAR = tar
+GZIP_ENV = --best
+SOURCES = $(libkcm_css_la_SOURCES)
+OBJECTS = $(libkcm_css_la_OBJECTS)
+
+#>- all: all-redirect
+#>+ 1
+all: docs-am  all-redirect
+.SUFFIXES:
+.SUFFIXES: .S .c .cpp .lo .o .obj .s
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+#>- 	cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps kcontrol/css/Makefile
+#>+ 2
+	cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps kcontrol/css/Makefile
+	cd $(top_srcdir) && perl admin/am_edit kcontrol/css/Makefile.in
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	&& CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+
+mostlyclean-kde_moduleLTLIBRARIES:
+
+clean-kde_moduleLTLIBRARIES:
+	-test -z "$(kde_module_LTLIBRARIES)" || rm -f $(kde_module_LTLIBRARIES)
+
+distclean-kde_moduleLTLIBRARIES:
+
+maintainer-clean-kde_moduleLTLIBRARIES:
+
+install-kde_moduleLTLIBRARIES: $(kde_module_LTLIBRARIES)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(kde_moduledir)
+	@list='$(kde_module_LTLIBRARIES)'; for p in $$list; do \
+	if test -f $$p; then \
+	echo "$(LIBTOOL)  --mode=install $(INSTALL) $$p $(DESTDIR)$(kde_moduledir)/$$p"; \
+	$(LIBTOOL)  --mode=install $(INSTALL) $$p $(DESTDIR)$(kde_moduledir)/$$p; \
+	else :; fi; \
+	done
+
+uninstall-kde_moduleLTLIBRARIES:
+	@$(NORMAL_UNINSTALL)
+	list='$(kde_module_LTLIBRARIES)'; for p in $$list; do \
+	$(LIBTOOL)  --mode=uninstall rm -f $(DESTDIR)$(kde_moduledir)/$$p; \
+	done
+
+.c.o:
+	$(COMPILE) -c $<
+
+# FIXME: We should only use cygpath when building on Windows,
+# and only if it is available.
+.c.obj:
+	$(COMPILE) -c `cygpath -w $<`
+
+.s.o:
+	$(COMPILE) -c $<
+
+.S.o:
+	$(COMPILE) -c $<
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+	-rm -f *.$(OBJEXT)
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+.c.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.s.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.S.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+#>- libkcm_css.la: $(libkcm_css_la_OBJECTS) $(libkcm_css_la_DEPENDENCIES)
+#>+ 2
+@KDE_USE_CLOSURE_TRUE@libkcm_css.la: libkcm_css.la.closure $(libkcm_css_la_OBJECTS) $(libkcm_css_la_DEPENDENCIES)
+@KDE_USE_CLOSURE_FALSE@libkcm_css.la: $(libkcm_css_la_OBJECTS) $(libkcm_css_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(kde_moduledir) $(libkcm_css_la_LDFLAGS) $(libkcm_css_la_OBJECTS) $(libkcm_css_la_LIBADD) $(LIBS)
+.cpp.o:
+	$(CXXCOMPILE) -c $<
+.cpp.obj:
+	$(CXXCOMPILE) -c `cygpath -w $<`
+.cpp.lo:
+	$(LTCXXCOMPILE) -c $<
+
+install-dataDATA: $(data_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(datadir)
+	@list='$(data_DATA)'; for p in $$list; do \
+	if test -f $(srcdir)/$$p; then \
+	echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(datadir)/$$p"; \
+	$(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(datadir)/$$p; \
+	else if test -f $$p; then \
+	echo " $(INSTALL_DATA) $$p $(DESTDIR)$(datadir)/$$p"; \
+	$(INSTALL_DATA) $$p $(DESTDIR)$(datadir)/$$p; \
+	fi; fi; \
+	done
+
+uninstall-dataDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(data_DATA)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(datadir)/$$p; \
+	done
+
+install-templateDATA: $(template_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(templatedir)
+	@list='$(template_DATA)'; for p in $$list; do \
+	if test -f $(srcdir)/$$p; then \
+	echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(templatedir)/$$p"; \
+	$(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(templatedir)/$$p; \
+	else if test -f $$p; then \
+	echo " $(INSTALL_DATA) $$p $(DESTDIR)$(templatedir)/$$p"; \
+	$(INSTALL_DATA) $$p $(DESTDIR)$(templatedir)/$$p; \
+	fi; fi; \
+	done
+
+uninstall-templateDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(template_DATA)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(templatedir)/$$p; \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	awk '    { files[$$0] = 1; } \
+	END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	&& mkid -f$$here/ID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	awk '    { files[$$0] = 1; } \
+	END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	|| (cd $(srcdir) && etags $(ETAGS_ARGS) $$tags  $$unique $(LISP) -o $$here/TAGS)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = kcontrol/css
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	d=$(srcdir); \
+	if test -d $$d/$$file; then \
+	cp -pr $$d/$$file $(distdir)/$$file; \
+	else \
+	test -f $(distdir)/$$file \
+	|| ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	|| cp -p $$d/$$file $(distdir)/$$file || :; \
+	fi; \
+	done
+info-am:
+info: info-am
+dvi-am:
+dvi: dvi-am
+check-am: all-am
+check: check-am
+installcheck-am:
+installcheck: installcheck-am
+#>- install-exec-am:
+#>+ 1
+install-exec-am: install-kde_moduleLTLIBRARIES
+install-exec: install-exec-am
+
+#>- install-data-am: install-kde_moduleLTLIBRARIES install-dataDATA \
+#>- install-templateDATA
+#>+ 2
+install-data-am:  install-dataDATA \
+	install-templateDATA
+install-data: install-data-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-am
+uninstall-am: uninstall-kde_moduleLTLIBRARIES uninstall-dataDATA \
+	uninstall-templateDATA
+uninstall: uninstall-am
+all-am: Makefile $(LTLIBRARIES) $(DATA)
+all-redirect: all-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs:
+	$(mkinstalldirs)  $(DESTDIR)$(kde_moduledir) $(DESTDIR)$(datadir) \
+	$(DESTDIR)$(templatedir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-kde_moduleLTLIBRARIES mostlyclean-compile \
+	mostlyclean-libtool mostlyclean-tags \
+	mostlyclean-generic
+
+mostlyclean: mostlyclean-am
+
+#>- clean-am:  clean-kde_moduleLTLIBRARIES clean-compile clean-libtool \
+#>- clean-tags clean-generic mostlyclean-am
+#>+ 2
+clean-am: clean-metasources clean-ui clean-closures clean-moc-classes clean-final   clean-kde_moduleLTLIBRARIES clean-compile clean-libtool \
+	clean-tags clean-generic mostlyclean-am
+
+#>- clean: clean-am
+#>+ 1
+clean: kde-rpo-clean  clean-am
+
+distclean-am:  distclean-kde_moduleLTLIBRARIES distclean-compile \
+	distclean-libtool distclean-tags distclean-generic \
+	clean-am
+	-rm -f libtool
+
+distclean: distclean-am
+
+maintainer-clean-am:  maintainer-clean-kde_moduleLTLIBRARIES \
+	maintainer-clean-compile maintainer-clean-libtool \
+	maintainer-clean-tags maintainer-clean-generic \
+	distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-am
+
+.PHONY: mostlyclean-kde_moduleLTLIBRARIES \
+	distclean-kde_moduleLTLIBRARIES clean-kde_moduleLTLIBRARIES \
+	maintainer-clean-kde_moduleLTLIBRARIES uninstall-kde_moduleLTLIBRARIES \
+	install-kde_moduleLTLIBRARIES mostlyclean-compile distclean-compile \
+	clean-compile maintainer-clean-compile mostlyclean-libtool \
+	distclean-libtool clean-libtool maintainer-clean-libtool \
+	uninstall-dataDATA install-dataDATA uninstall-templateDATA \
+	install-templateDATA tags mostlyclean-tags distclean-tags clean-tags \
+	maintainer-clean-tags distdir info-am info dvi-am dvi check check-am \
+	installcheck-am installcheck install-exec-am install-exec \
+	install-data-am install-data install-am install uninstall-am uninstall \
+	all-redirect all-am all installdirs mostlyclean-generic \
+	distclean-generic clean-generic maintainer-clean-generic clean \
+	mostlyclean distclean maintainer-clean
+
+
+messages: rc.cpp
+	$(XGETTEXT) *.cpp -o $(podir)/kcmcss.pot
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
+
+#>+ 8
+libkcm_css.la.closure: $(libkcm_css_la_OBJECTS) $(libkcm_css_la_DEPENDENCIES)
+	@echo "int main() {return 0;}" > libkcm_css_la_closure.cpp
+	@$(LTCXXCOMPILE) -c libkcm_css_la_closure.cpp
+	$(CXXLINK) libkcm_css_la_closure.lo $(libkcm_css_la_LDFLAGS) $(libkcm_css_la_OBJECTS) $(libkcm_css_la_LIBADD) $(LIBS)
+	@rm -f libkcm_css_la_closure.* libkcm_css.la.closure
+	@echo "timestamp" > libkcm_css.la.closure
+
+
+#>+ 23
+cssconfig.cpp: $(srcdir)/cssconfig.ui cssconfig.h cssconfig.moc
+	rm -f cssconfig.cpp
+	echo '#include <klocale.h>' > cssconfig.cpp
+	$(UIC) -tr ${UIC_TR} -i cssconfig.h $(srcdir)/cssconfig.ui | sed -e "s,${UIC_TR}( \"\" ),QString::null,g" | sed -e "s,${UIC_TR}( \"\"\, \"\" ),QString::null,g" >> cssconfig.cpp || rm -f cssconfig.cpp
+	echo '#include "cssconfig.moc"' >> cssconfig.cpp
+
+cssconfig.h: $(srcdir)/cssconfig.ui
+	$(UIC) -o cssconfig.h $(srcdir)/cssconfig.ui
+
+cssconfig.moc: cssconfig.h
+	$(MOC) cssconfig.h -o cssconfig.moc
+preview.cpp: $(srcdir)/preview.ui preview.h preview.moc
+	rm -f preview.cpp
+	echo '#include <klocale.h>' > preview.cpp
+	$(UIC) -tr ${UIC_TR} -i preview.h $(srcdir)/preview.ui | sed -e "s,${UIC_TR}( \"\" ),QString::null,g" | sed -e "s,${UIC_TR}( \"\"\, \"\" ),QString::null,g" >> preview.cpp || rm -f preview.cpp
+	echo '#include "preview.moc"' >> preview.cpp
+
+preview.h: $(srcdir)/preview.ui
+	$(UIC) -o preview.h $(srcdir)/preview.ui
+
+preview.moc: preview.h
+	$(MOC) preview.h -o preview.moc
+
+#>+ 3
+kcmcss.moc: $(srcdir)/kcmcss.h
+	$(MOC) $(srcdir)/kcmcss.h -o kcmcss.moc
+
+#>+ 3
+clean-metasources:
+	-rm -f  kcmcss.moc
+
+#>+ 5
+clean-ui:
+	-rm -f \
+	cssconfig.cpp cssconfig.h cssconfig.moc \
+	preview.cpp preview.h preview.moc 
+
+#>+ 3
+clean-closures:
+	-rm -f  libkcm_css.la.closure
+
+#>+ 2
+docs-am:
+
+#>+ 5
+force-reedit:
+		cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps kcontrol/css/Makefile
+	cd $(top_srcdir) && perl admin/am_edit kcontrol/css/Makefile.in
+
+
+#>+ 12
+libkcm_css_la_meta_unload.cpp:  preview.moc kcmcss.moc cssconfig.moc
+	@echo 'creating libkcm_css_la_meta_unload.cpp'
+	@-rm -f libkcm_css_la_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_libkcm_css_la[] = {' > libkcm_css_la_meta_unload.cpp ;\
+		cat  preview.moc kcmcss.moc cssconfig.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> libkcm_css_la_meta_unload.cpp ;\
+		echo '0};' >> libkcm_css_la_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> libkcm_css_la_meta_unload.cpp ;\
+		echo '_UNLOAD(libkcm_css_la)' >> libkcm_css_la_meta_unload.cpp ;\
+	else echo > libkcm_css_la_meta_unload.cpp; fi
+
+
+#>+ 3
+clean-moc-classes:
+	-rm -f  libkcm_css_la_meta_unload.cpp
+
+#>+ 11
+libkcm_css_la.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/template.cpp $(srcdir)/kcmcss.cpp cssconfig.cpp preview.cpp libkcm_css_la_meta_unload.cpp   cssconfig.moc preview.moc kcmcss.moc 
+	@echo 'creating libkcm_css_la.all_cpp.cpp ...'; \
+	rm -f libkcm_css_la.all_cpp.files libkcm_css_la.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> libkcm_css_la.all_cpp.final; \
+	for file in template.cpp kcmcss.cpp cssconfig.cpp preview.cpp libkcm_css_la_meta_unload.cpp ; do \
+	  echo "#include \"$$file\"" >> libkcm_css_la.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> libkcm_css_la.all_cpp.final; \
+	done; \
+	cat libkcm_css_la.all_cpp.final libkcm_css_la.all_cpp.files  > libkcm_css_la.all_cpp.cpp; \
+	rm -f libkcm_css_la.all_cpp.final libkcm_css_la.all_cpp.files
+
+#>+ 3
+clean-final:
+	-rm -f libkcm_css_la.all_cpp.cpp
+
+#>+ 2
+final:
+	$(MAKE) libkcm_css_la_OBJECTS="$(libkcm_css_la_final_OBJECTS)" all-am
+#>+ 2
+final-install:
+	$(MAKE) libkcm_css_la_OBJECTS="$(libkcm_css_la_final_OBJECTS)" install-am
+#>+ 2
+no-final:
+	$(MAKE) libkcm_css_la_OBJECTS="$(libkcm_css_la_nofinal_OBJECTS)" all-am
+#>+ 2
+no-final-install:
+	$(MAKE) libkcm_css_la_OBJECTS="$(libkcm_css_la_nofinal_OBJECTS)" install-am
+#>+ 3
+cvs-clean:
+	$(MAKE) -f $(top_srcdir)/admin/Makefile.common cvs-clean
+
+#>+ 3
+kde-rpo-clean:
+	-rm -f *.rpo
+
+#>+ 3
+$(srcdir)/template.cpp: cssconfig.h preview.h 
+$(srcdir)/kcmcss.cpp: kcmcss.moc cssconfig.h preview.h 

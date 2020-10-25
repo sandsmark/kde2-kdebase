@@ -1,0 +1,9 @@
+usr/share/apps/kdm/pics/
+usr/bin
+etc/init.d
+etc/kde2/kdm
+usr/share/lintian/overrides
+usr/share/doc/kdm
+usr/share/man/man5
+usr/share/man/man1
+var/lib/kdm        

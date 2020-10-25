@@ -1,0 +1,4 @@
+Makefile
+Makefile.in
+kateappIface.kidl
+kateappIface_skel.cpp

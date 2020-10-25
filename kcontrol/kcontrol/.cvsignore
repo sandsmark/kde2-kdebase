@@ -1,0 +1,8 @@
+Makefile
+Makefile.in
+kcontrol
+kcmshell
+kcminit
+dummy.cpp
+kcdialog.kidl
+kcdialog_skel.cpp

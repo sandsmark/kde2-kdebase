@@ -1,0 +1,6 @@
+kwin
+Makefile.in
+Makefile
+dummy.cpp
+KWinInterface.kidl
+KWinInterface_skel.cpp

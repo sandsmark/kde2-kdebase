@@ -1,0 +1,46 @@
+#! /bin/sh
+
+if test -z "$1"; then
+    echo "Usage: $0 <service>"
+    exit 1
+fi
+
+if test -r /etc/pam.d/$1 || grep "^$1" /etc/pam.conf >/dev/null 2>&1; then
+    echo "PAM service \"$1\" already configured."
+    exit 0
+fi
+
+if test -d /etc/pam.d; then
+    if test ! -w /etc/pam.d; then
+	echo "Error: need write access to /etc/pam.d/ to install PAM service definition!"
+	exit 1
+    fi
+    for sv in kde login; do
+	if test -r /etc/pam.d/$sv; then
+	    echo "Copying PAM service definition file \"$sv\" to \"$1\"."
+	    cp /etc/pam.d/"$sv" /etc/pam.d/$1
+	    exit 0
+	fi
+    done
+    echo "No template PAM service file for \"$1\" found!"
+    exit 1
+elif test -f /etc/pam.conf; then
+    if test ! -w /etc/pam.conf; then
+	echo "Error: need write access to /etc/pam.conf to install PAM service definition!"
+	exit 1
+    fi
+    for sv in kde login; do
+	serv=`grep "^$sv[ 	]" /etc/pam.conf`
+	if test -n "$serv"; then
+	    echo "Copying service definition entry \"$sv\" to \"$1\"."
+	    echo >>/etc/pam.conf
+	    echo "$serv" | sed -e "s/^$sv\\([ 	]\\)/$1\\1/" >>/etc/pam.conf
+	    exit 0
+	fi
+    done
+    echo "No template PAM service entry for \"$1\" found!"
+    exit 1
+else
+    echo "Error: don't know where to store the PAM service definition for \"$1\"!"
+    exit 1
+fi

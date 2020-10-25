@@ -1,0 +1,932 @@
+# KDE tags expanded automatically by am_edit - $Revision: 1.265.2.2 $ 
+# Makefile.in generated automatically by automake 1.4-p5 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999, 2001 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# $Id: Makefile.am,v 1.2 2001/05/23 00:09:36 waba Exp $
+# Makefile.am for kscreensave.
+#
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+#>- 
+bindir = @bindir@
+#>+ 3
+DEPDIR = .deps
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ../..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+build_alias = @build_alias@
+build_triplet = @build@
+host_alias = @host_alias@
+host_triplet = @host@
+target_alias = @target_alias@
+target_triplet = @target@
+ACCESS_SUBDIR = @ACCESS_SUBDIR@
+ARTSCCONFIG = @ARTSCCONFIG@
+AS = @AS@
+AUDIOCD_SUBDIR = @AUDIOCD_SUBDIR@
+AUTODIRS = @AUTODIRS@
+BZIP2FILES = @BZIP2FILES@
+CC = @CC@
+CDPARANOIA_INCS = @CDPARANOIA_INCS@
+CDPARANOIA_LIBS = @CDPARANOIA_LIBS@
+CDPARANOIA_RPATH = @CDPARANOIA_RPATH@
+CONF_FILES = @CONF_FILES@
+CPP = @CPP@
+CUPSSUBDIR = @CUPSSUBDIR@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DCOPIDL = @DCOPIDL@
+DCOPIDL2CPP = @DCOPIDL2CPP@
+DCOP_DEPENDENCIES = @DCOP_DEPENDENCIES@
+DLLTOOL = @DLLTOOL@
+DPMSINC = @DPMSINC@
+DPMSLIB = @DPMSLIB@
+EXEEXT = @EXEEXT@
+GCJ = @GCJ@
+GCJFLAGS = @GCJFLAGS@
+GLINC = @GLINC@
+GLLIB = @GLLIB@
+GL_SAVERS = @GL_SAVERS@
+GMSGFMT = @GMSGFMT@
+IDL = @IDL@
+IDL_DEPENDENCIES = @IDL_DEPENDENCIES@
+JAR = @JAR@
+JAVAC = @JAVAC@
+JAVAH = @JAVAH@
+JVMLIBS = @JVMLIBS@
+KCM_AUDIOCD = @KCM_AUDIOCD@
+KDECONFIG = @KDECONFIG@
+KDEDB_INCLUDES = @KDEDB_INCLUDES@
+KDEDB_LIBS = @KDEDB_LIBS@
+KDEDB_SUBDIR = @KDEDB_SUBDIR@
+KDE_BINDIR = @KDE_BINDIR@
+KDE_CONFDIR = @KDE_CONFDIR@
+KDE_CXXFLAGS = @KDE_CXXFLAGS@
+KDE_EXTRA_RPATH = @KDE_EXTRA_RPATH@
+KDE_INCLUDES = @KDE_INCLUDES@
+KDE_LDFLAGS = @KDE_LDFLAGS@
+KDE_PLUGIN = @KDE_PLUGIN@
+KDE_RPATH = @KDE_RPATH@
+KDE_USE_CLOSURE_FALSE = @KDE_USE_CLOSURE_FALSE@
+KDE_USE_CLOSURE_TRUE = @KDE_USE_CLOSURE_TRUE@
+KDE_USE_FINAL_FALSE = @KDE_USE_FINAL_FALSE@
+KDE_USE_FINAL_TRUE = @KDE_USE_FINAL_TRUE@
+KDE_XSL_STYLESHEET = @KDE_XSL_STYLESHEET@
+KERBEROS_INCS = @KERBEROS_INCS@
+KERBEROS_LIBS = @KERBEROS_LIBS@
+KERBEROS_ROOT = @KERBEROS_ROOT@
+KRB_RPATH = @KRB_RPATH@
+LAME_INCS = @LAME_INCS@
+LAME_LIBS = @LAME_LIBS@
+LAME_RPATH = @LAME_RPATH@
+LDAP_INCS = @LDAP_INCS@
+LDAP_LIBS = @LDAP_LIBS@
+LDAP_RPATH = @LDAP_RPATH@
+LDAP_SUBDIR = @LDAP_SUBDIR@
+LIBALIB = @LIBALIB@
+LIBCFG = @LIBCFG@
+LIBCOMPAT = @LIBCOMPAT@
+LIBCRYPT = @LIBCRYPT@
+LIBCURSES = @LIBCURSES@
+LIBDEVINFO = @LIBDEVINFO@
+LIBDL = @LIBDL@
+LIBGEN = @LIBGEN@
+LIBJPEG = @LIBJPEG@
+LIBKSTAT = @LIBKSTAT@
+LIBMICO = @LIBMICO@
+LIBOBJS = @LIBOBJS@
+LIBODM = @LIBODM@
+LIBOSSAUDIO = @LIBOSSAUDIO@
+LIBPNG = @LIBPNG@
+LIBPTHREAD = @LIBPTHREAD@
+LIBPYTHON = @LIBPYTHON@
+LIBQIMGIO = @LIBQIMGIO@
+LIBRESOLV = @LIBRESOLV@
+LIBSENSORS = @LIBSENSORS@
+LIBSHADOW = @LIBSHADOW@
+LIBSM = @LIBSM@
+LIBSOCKET = @LIBSOCKET@
+LIBSSL = @LIBSSL@
+LIBTIFF = @LIBTIFF@
+LIBTOOL = @LIBTOOL@
+LIBUCB = @LIBUCB@
+LIBUTEMPTER = @LIBUTEMPTER@
+LIBUTIL = @LIBUTIL@
+LIBXDMCP = @LIBXDMCP@
+LIBXINERAMA = @LIBXINERAMA@
+LIBZ = @LIBZ@
+LIB_CUPS = @LIB_CUPS@
+LIB_KAB = @LIB_KAB@
+LIB_KDB = @LIB_KDB@
+LIB_KDBCORE = @LIB_KDBCORE@
+LIB_KDBUI = @LIB_KDBUI@
+LIB_KDECORE = @LIB_KDECORE@
+LIB_KDEUI = @LIB_KDEUI@
+LIB_KFILE = @LIB_KFILE@
+LIB_KFM = @LIB_KFM@
+LIB_KFORMULA = @LIB_KFORMULA@
+LIB_KHTML = @LIB_KHTML@
+LIB_KIMGIO = @LIB_KIMGIO@
+LIB_KIO = @LIB_KIO@
+LIB_KPARTS = @LIB_KPARTS@
+LIB_KSPELL = @LIB_KSPELL@
+LIB_KSYCOCA = @LIB_KSYCOCA@
+LIB_KWRITE = @LIB_KWRITE@
+LIB_LIBS = @LIB_LIBS@
+LIB_QT = @LIB_QT@
+LIB_SMB = @LIB_SMB@
+LIB_TRU64_MACH = @LIB_TRU64_MACH@
+LIB_X11 = @LIB_X11@
+LN_S = @LN_S@
+MAKEINFO = @MAKEINFO@
+MCOPIDL = @MCOPIDL@
+MEINPROC = @MEINPROC@
+MICO_INCLUDES = @MICO_INCLUDES@
+MICO_LDFLAGS = @MICO_LDFLAGS@
+MOC = @MOC@
+MOTIF_CFLAGS = @MOTIF_CFLAGS@
+MOTIF_LIBS = @MOTIF_LIBS@
+MSGFMT = @MSGFMT@
+NOOPT_CXXFLAGS = @NOOPT_CXXFLAGS@
+NOREPO = @NOREPO@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+PAMLIBS = @PAMLIBS@
+PASSWDLIBS = @PASSWDLIBS@
+PYTHONINC = @PYTHONINC@
+PYTHONLIB = @PYTHONLIB@
+PYTHONMODDIR = @PYTHONMODDIR@
+QT_INCLUDES = @QT_INCLUDES@
+QT_LDFLAGS = @QT_LDFLAGS@
+RANLIB = @RANLIB@
+REPO = @REPO@
+RUN_KAPPFINDER = @RUN_KAPPFINDER@
+SETUIDFLAGS = @SETUIDFLAGS@
+SMB_SUBDIR = @SMB_SUBDIR@
+SSL_INCLUDES = @SSL_INCLUDES@
+SSL_LDFLAGS = @SSL_LDFLAGS@
+STRIP = @STRIP@
+TOPSUBDIRS = @TOPSUBDIRS@
+UIC = @UIC@
+UIC_TR = @UIC_TR@
+UNAME = @UNAME@
+USER_INCLUDES = @USER_INCLUDES@
+USER_LDFLAGS = @USER_LDFLAGS@
+USE_EXCEPTIONS = @USE_EXCEPTIONS@
+USE_RTTI = @USE_RTTI@
+USE_THREADS = @USE_THREADS@
+VERSION = @VERSION@
+VORBISENC_LIBS = @VORBISENC_LIBS@
+VORBISFILE_LIBS = @VORBISFILE_LIBS@
+VORBIS_INCS = @VORBIS_INCS@
+VORBIS_LIBS = @VORBIS_LIBS@
+VORBIS_RPATH = @VORBIS_RPATH@
+XDM_CFLAGS = @XDM_CFLAGS@
+XGETTEXT = @XGETTEXT@
+XMKMF = @XMKMF@
+XPMINC = @XPMINC@
+XPMLIB = @XPMLIB@
+XTESTLIB = @XTESTLIB@
+X_EXTRA_LIBS = @X_EXTRA_LIBS@
+X_INCLUDES = @X_INCLUDES@
+X_LDFLAGS = @X_LDFLAGS@
+X_PRE_LIBS = @X_PRE_LIBS@
+all_includes = @all_includes@
+all_libraries = @all_libraries@
+idldir = @idldir@
+include_motif = @include_motif@
+jni_includes = @jni_includes@
+kde_appsdir = @kde_appsdir@
+kde_bindir = @kde_bindir@
+kde_confdir = @kde_confdir@
+kde_datadir = @kde_datadir@
+kde_htmldir = @kde_htmldir@
+kde_icondir = @kde_icondir@
+kde_includes = @kde_includes@
+kde_libraries = @kde_libraries@
+kde_libs_htmldir = @kde_libs_htmldir@
+kde_libs_prefix = @kde_libs_prefix@
+kde_locale = @kde_locale@
+kde_mimedir = @kde_mimedir@
+kde_moduledir = @kde_moduledir@
+kde_qtver = @kde_qtver@
+kde_servicesdir = @kde_servicesdir@
+kde_servicetypesdir = @kde_servicetypesdir@
+kde_sounddir = @kde_sounddir@
+kde_templatesdir = @kde_templatesdir@
+kde_wallpaperdir = @kde_wallpaperdir@
+kdmchooserdir = @kdmchooserdir@
+link_motif = @link_motif@
+micodir = @micodir@
+nogroup = @nogroup@
+qt_includes = @qt_includes@
+qt_libraries = @qt_libraries@
+x_includes = @x_includes@
+x_libraries = @x_libraries@
+
+AM_CPPFLAGS = -UQT_NO_ASCII_CAST
+
+INCLUDES = $(all_includes) $(GLINC)
+LDFLAGS = $(all_libraries) $(KDE_RPATH)
+LDADD = $(LIB_KDEUI) -lm
+
+bin_PROGRAMS = kswarm.kss krock.kss 	kpyro.kss $(GL_SAVERS) kbouboule.kss kslidescreen.kss
+
+
+EXTRA_PROGRAMS = kmorph3d.kss kspace.kss kpipes.kss
+
+BASE_SRCS = main.cpp demowin.cpp saver.cpp helpers.cpp
+
+XS_SRCS = xs_colors.c xs_hsv.c xs_visual.c
+XL_SRCS = xlock.cpp
+
+kswarm_kss_SOURCES = $(BASE_SRCS) $(XL_SRCS) swarm.cpp
+
+krock_kss_SOURCES = $(BASE_SRCS) $(XL_SRCS) rock.cpp
+
+kslidescreen_kss_SOURCES = $(BASE_SRCS) $(XL_SRCS) $(XS_SRCS) slidescreen.cpp
+
+kpyro_kss_SOURCES = $(BASE_SRCS) $(XL_SRCS) pyro.cpp
+
+kbouboule_kss_SOURCES = $(BASE_SRCS) $(XL_SRCS) bouboule.cpp
+kmorph3d_kss_SOURCES = $(BASE_SRCS) $(XL_SRCS) morph3d.cpp
+kmorph3d_kss_LDADD = $(LDADD) $(GLLIB)
+kpipes_kss_SOURCES = $(BASE_SRCS) $(XL_SRCS) pipes.cpp
+kpipes_kss_LDADD = $(LDADD) $(GLLIB)
+kspace_kss_SOURCES = $(BASE_SRCS) $(XL_SRCS) space.cpp
+kspace_kss_LDADD = $(LDADD) $(GLLIB)
+
+#>- METASOURCES = saver.moc demowin.moc rock.moc 		pyro.moc swarm.moc morph3d.moc space.moc bouboule.moc 		pipes.moc slidescreen.moc
+
+
+noinst_HEADERS = saver.h demowin.h xlock.h rock.h 		pyro.h swarm.h space.h bouboule.h 		xlockmore.h mode.h helpers.h morph3d.h pipes.h 		xs_colors.h xs_hsv.h xs_yarandom.h xs_utils.h 		slidescreen.h xs_visual.h
+
+
+########## Meta objects ##########
+
+data_DATA = 
+datadir = $(kde_datadir)/kscreensaver
+
+desktop_DATA = KBouboule.desktop KMorph3D.desktop KPipes.desktop 	KPyro.desktop KRock.desktop KSlidescreen.desktop KSpace.desktop     KSwarm.desktop
+
+desktopdir = $(kde_appsdir)/System/ScreenSavers
+
+EXTRA_DIST = $(desktop_DATA)
+mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
+CONFIG_HEADER = ../../config.h
+CONFIG_CLEAN_FILES = 
+bin_PROGRAMS =  kswarm.kss krock.kss kpyro.kss @GL_SAVERS@ kbouboule.kss \
+	kslidescreen.kss
+PROGRAMS =  $(bin_PROGRAMS)
+
+
+DEFS = @DEFS@ -I. -I$(srcdir) -I../..
+CPPFLAGS = @CPPFLAGS@
+LIBS = @LIBS@
+X_CFLAGS = @X_CFLAGS@
+X_LIBS = @X_LIBS@
+#>- kmorph3d_kss_OBJECTS =  main.$(OBJEXT) demowin.$(OBJEXT) saver.$(OBJEXT) \
+#>- helpers.$(OBJEXT) xlock.$(OBJEXT) morph3d.$(OBJEXT)
+#>+ 3
+kmorph3d_kss_OBJECTS = main.$(OBJEXT) demowin.$(OBJEXT) saver.$(OBJEXT) \
+	helpers.$(OBJEXT) xlock.$(OBJEXT) morph3d.$(OBJEXT) \
+	kmorph3d_kss_meta_unload.o 
+kmorph3d_kss_DEPENDENCIES = 
+kmorph3d_kss_LDFLAGS = 
+#>- kspace_kss_OBJECTS =  main.$(OBJEXT) demowin.$(OBJEXT) saver.$(OBJEXT) \
+#>- helpers.$(OBJEXT) xlock.$(OBJEXT) space.$(OBJEXT)
+#>+ 3
+kspace_kss_OBJECTS = main.$(OBJEXT) demowin.$(OBJEXT) saver.$(OBJEXT) \
+	helpers.$(OBJEXT) xlock.$(OBJEXT) space.$(OBJEXT) \
+	kspace_kss_meta_unload.o 
+kspace_kss_DEPENDENCIES = 
+kspace_kss_LDFLAGS = 
+#>- kpipes_kss_OBJECTS =  main.$(OBJEXT) demowin.$(OBJEXT) saver.$(OBJEXT) \
+#>- helpers.$(OBJEXT) xlock.$(OBJEXT) pipes.$(OBJEXT)
+#>+ 3
+kpipes_kss_OBJECTS = main.$(OBJEXT) demowin.$(OBJEXT) saver.$(OBJEXT) \
+	helpers.$(OBJEXT) xlock.$(OBJEXT) pipes.$(OBJEXT) \
+	kpipes_kss_meta_unload.o 
+kpipes_kss_DEPENDENCIES = 
+kpipes_kss_LDFLAGS = 
+#>- kswarm_kss_OBJECTS =  main.$(OBJEXT) demowin.$(OBJEXT) saver.$(OBJEXT) \
+#>- helpers.$(OBJEXT) xlock.$(OBJEXT) swarm.$(OBJEXT)
+#>+ 3
+kswarm_kss_OBJECTS = main.$(OBJEXT) demowin.$(OBJEXT) saver.$(OBJEXT) \
+	helpers.$(OBJEXT) xlock.$(OBJEXT) swarm.$(OBJEXT) \
+	kswarm_kss_meta_unload.o 
+kswarm_kss_LDADD = $(LDADD)
+kswarm_kss_DEPENDENCIES = 
+kswarm_kss_LDFLAGS = 
+#>- krock_kss_OBJECTS =  main.$(OBJEXT) demowin.$(OBJEXT) saver.$(OBJEXT) \
+#>- helpers.$(OBJEXT) xlock.$(OBJEXT) rock.$(OBJEXT)
+#>+ 3
+krock_kss_OBJECTS = main.$(OBJEXT) demowin.$(OBJEXT) saver.$(OBJEXT) \
+	helpers.$(OBJEXT) xlock.$(OBJEXT) rock.$(OBJEXT) \
+	krock_kss_meta_unload.o 
+krock_kss_LDADD = $(LDADD)
+krock_kss_DEPENDENCIES = 
+krock_kss_LDFLAGS = 
+#>- kpyro_kss_OBJECTS =  main.$(OBJEXT) demowin.$(OBJEXT) saver.$(OBJEXT) \
+#>- helpers.$(OBJEXT) xlock.$(OBJEXT) pyro.$(OBJEXT)
+#>+ 3
+kpyro_kss_OBJECTS = main.$(OBJEXT) demowin.$(OBJEXT) saver.$(OBJEXT) \
+	helpers.$(OBJEXT) xlock.$(OBJEXT) pyro.$(OBJEXT) \
+	kpyro_kss_meta_unload.o 
+kpyro_kss_LDADD = $(LDADD)
+kpyro_kss_DEPENDENCIES = 
+kpyro_kss_LDFLAGS = 
+#>- kbouboule_kss_OBJECTS =  main.$(OBJEXT) demowin.$(OBJEXT) \
+#>- saver.$(OBJEXT) helpers.$(OBJEXT) xlock.$(OBJEXT) bouboule.$(OBJEXT)
+#>+ 3
+kbouboule_kss_OBJECTS = main.$(OBJEXT) demowin.$(OBJEXT) \
+	saver.$(OBJEXT) helpers.$(OBJEXT) xlock.$(OBJEXT) bouboule.$(OBJEXT) \
+	kbouboule_kss_meta_unload.o 
+kbouboule_kss_LDADD = $(LDADD)
+kbouboule_kss_DEPENDENCIES = 
+kbouboule_kss_LDFLAGS = 
+#>- kslidescreen_kss_OBJECTS =  main.$(OBJEXT) demowin.$(OBJEXT) \
+#>- saver.$(OBJEXT) helpers.$(OBJEXT) xlock.$(OBJEXT) xs_colors.$(OBJEXT) \
+#>- xs_hsv.$(OBJEXT) xs_visual.$(OBJEXT) slidescreen.$(OBJEXT)
+#>+ 4
+kslidescreen_kss_OBJECTS = main.$(OBJEXT) demowin.$(OBJEXT) \
+	saver.$(OBJEXT) helpers.$(OBJEXT) xlock.$(OBJEXT) xs_colors.$(OBJEXT) \
+	xs_hsv.$(OBJEXT) xs_visual.$(OBJEXT) slidescreen.$(OBJEXT) \
+	kslidescreen_kss_meta_unload.o 
+kslidescreen_kss_LDADD = $(LDADD)
+kslidescreen_kss_DEPENDENCIES = 
+kslidescreen_kss_LDFLAGS = 
+CXXFLAGS = @CXXFLAGS@
+#>- CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+#>+ 1
+CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS)
+#>- LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+#>+ 1
+LTCXXCOMPILE = $(LIBTOOL) --mode=compile --tag=CXX $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS)
+CXXLD = $(CXX)
+#>- CXXLINK = $(LIBTOOL) --mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(LDFLAGS) -o $@
+#>+ 1
+CXXLINK = $(LIBTOOL) --mode=link --tag=CXX $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS) $(LDFLAGS) -o $@
+CFLAGS = @CFLAGS@
+COMPILE = $(CC) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+LTCOMPILE = $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+CCLD = $(CC)
+LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(LDFLAGS) -o $@
+DATA =  $(data_DATA) $(desktop_DATA)
+
+HEADERS =  $(noinst_HEADERS)
+
+DIST_COMMON =  README Makefile.am Makefile.in
+
+
+#>- DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+#>+ 4
+KDE_DIST=KSlidescreen.desktop xs_visual.c main.cpp helpers.cpp configure.in.in KSpace.desktop KMorph3D.desktop xs_hsv.c KPipes.desktop saver.cpp KPyro.desktop KSwarm.desktop xs_colors.c xlock.cpp demowin.cpp KRock.desktop KBouboule.desktop 
+
+DISTFILES= $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+
+
+TAR = tar
+GZIP_ENV = --best
+SOURCES = $(kmorph3d_kss_SOURCES) $(kspace_kss_SOURCES) $(kpipes_kss_SOURCES) $(kswarm_kss_SOURCES) $(krock_kss_SOURCES) $(kpyro_kss_SOURCES) $(kbouboule_kss_SOURCES) $(kslidescreen_kss_SOURCES)
+OBJECTS = $(kmorph3d_kss_OBJECTS) $(kspace_kss_OBJECTS) $(kpipes_kss_OBJECTS) $(kswarm_kss_OBJECTS) $(krock_kss_OBJECTS) $(kpyro_kss_OBJECTS) $(kbouboule_kss_OBJECTS) $(kslidescreen_kss_OBJECTS)
+
+#>- all: all-redirect
+#>+ 1
+all: docs-am  all-redirect
+.SUFFIXES:
+.SUFFIXES: .S .c .cpp .lo .o .obj .s
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+#>- 	cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps kscreensaver/xsavers/Makefile
+#>+ 2
+	cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps kscreensaver/xsavers/Makefile
+	cd $(top_srcdir) && perl admin/am_edit kscreensaver/xsavers/Makefile.in
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	&& CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+
+mostlyclean-binPROGRAMS:
+
+clean-binPROGRAMS:
+	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
+
+distclean-binPROGRAMS:
+
+maintainer-clean-binPROGRAMS:
+
+install-binPROGRAMS: $(bin_PROGRAMS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(bindir)
+	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+	if test -f $$p; then \
+	echo " $(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`"; \
+	$(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	else :; fi; \
+	done
+
+uninstall-binPROGRAMS:
+	@$(NORMAL_UNINSTALL)
+	list='$(bin_PROGRAMS)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	done
+
+.c.o:
+	$(COMPILE) -c $<
+
+# FIXME: We should only use cygpath when building on Windows,
+# and only if it is available.
+.c.obj:
+	$(COMPILE) -c `cygpath -w $<`
+
+.s.o:
+	$(COMPILE) -c $<
+
+.S.o:
+	$(COMPILE) -c $<
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+	-rm -f *.$(OBJEXT)
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+.c.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.s.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.S.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+kmorph3d.kss: $(kmorph3d_kss_OBJECTS) $(kmorph3d_kss_DEPENDENCIES)
+	@rm -f kmorph3d.kss
+	$(CXXLINK) $(kmorph3d_kss_LDFLAGS) $(kmorph3d_kss_OBJECTS) $(kmorph3d_kss_LDADD) $(LIBS)
+
+kspace.kss: $(kspace_kss_OBJECTS) $(kspace_kss_DEPENDENCIES)
+	@rm -f kspace.kss
+	$(CXXLINK) $(kspace_kss_LDFLAGS) $(kspace_kss_OBJECTS) $(kspace_kss_LDADD) $(LIBS)
+
+kpipes.kss: $(kpipes_kss_OBJECTS) $(kpipes_kss_DEPENDENCIES)
+	@rm -f kpipes.kss
+	$(CXXLINK) $(kpipes_kss_LDFLAGS) $(kpipes_kss_OBJECTS) $(kpipes_kss_LDADD) $(LIBS)
+
+kswarm.kss: $(kswarm_kss_OBJECTS) $(kswarm_kss_DEPENDENCIES)
+	@rm -f kswarm.kss
+	$(CXXLINK) $(kswarm_kss_LDFLAGS) $(kswarm_kss_OBJECTS) $(kswarm_kss_LDADD) $(LIBS)
+
+krock.kss: $(krock_kss_OBJECTS) $(krock_kss_DEPENDENCIES)
+	@rm -f krock.kss
+	$(CXXLINK) $(krock_kss_LDFLAGS) $(krock_kss_OBJECTS) $(krock_kss_LDADD) $(LIBS)
+
+kpyro.kss: $(kpyro_kss_OBJECTS) $(kpyro_kss_DEPENDENCIES)
+	@rm -f kpyro.kss
+	$(CXXLINK) $(kpyro_kss_LDFLAGS) $(kpyro_kss_OBJECTS) $(kpyro_kss_LDADD) $(LIBS)
+
+kbouboule.kss: $(kbouboule_kss_OBJECTS) $(kbouboule_kss_DEPENDENCIES)
+	@rm -f kbouboule.kss
+	$(CXXLINK) $(kbouboule_kss_LDFLAGS) $(kbouboule_kss_OBJECTS) $(kbouboule_kss_LDADD) $(LIBS)
+
+kslidescreen.kss: $(kslidescreen_kss_OBJECTS) $(kslidescreen_kss_DEPENDENCIES)
+	@rm -f kslidescreen.kss
+	$(CXXLINK) $(kslidescreen_kss_LDFLAGS) $(kslidescreen_kss_OBJECTS) $(kslidescreen_kss_LDADD) $(LIBS)
+.cpp.o:
+	$(CXXCOMPILE) -c $<
+.cpp.obj:
+	$(CXXCOMPILE) -c `cygpath -w $<`
+.cpp.lo:
+	$(LTCXXCOMPILE) -c $<
+
+install-dataDATA: $(data_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(datadir)
+	@list='$(data_DATA)'; for p in $$list; do \
+	if test -f $(srcdir)/$$p; then \
+	echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(datadir)/$$p"; \
+	$(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(datadir)/$$p; \
+	else if test -f $$p; then \
+	echo " $(INSTALL_DATA) $$p $(DESTDIR)$(datadir)/$$p"; \
+	$(INSTALL_DATA) $$p $(DESTDIR)$(datadir)/$$p; \
+	fi; fi; \
+	done
+
+uninstall-dataDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(data_DATA)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(datadir)/$$p; \
+	done
+
+install-desktopDATA: $(desktop_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(desktopdir)
+	@list='$(desktop_DATA)'; for p in $$list; do \
+	if test -f $(srcdir)/$$p; then \
+	echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(desktopdir)/$$p"; \
+	$(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(desktopdir)/$$p; \
+	else if test -f $$p; then \
+	echo " $(INSTALL_DATA) $$p $(DESTDIR)$(desktopdir)/$$p"; \
+	$(INSTALL_DATA) $$p $(DESTDIR)$(desktopdir)/$$p; \
+	fi; fi; \
+	done
+
+uninstall-desktopDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(desktop_DATA)'; for p in $$list; do \
+	rm -f $(DESTDIR)$(desktopdir)/$$p; \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	awk '    { files[$$0] = 1; } \
+	END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	&& mkid -f$$here/ID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	awk '    { files[$$0] = 1; } \
+	END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	|| (cd $(srcdir) && etags $(ETAGS_ARGS) $$tags  $$unique $(LISP) -o $$here/TAGS)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = kscreensaver/xsavers
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	d=$(srcdir); \
+	if test -d $$d/$$file; then \
+	cp -pr $$d/$$file $(distdir)/$$file; \
+	else \
+	test -f $(distdir)/$$file \
+	|| ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	|| cp -p $$d/$$file $(distdir)/$$file || :; \
+	fi; \
+	done
+info-am:
+info: info-am
+dvi-am:
+dvi: dvi-am
+check-am: all-am
+check: check-am
+installcheck-am:
+installcheck: installcheck-am
+install-exec-am: install-binPROGRAMS
+install-exec: install-exec-am
+
+install-data-am: install-dataDATA install-desktopDATA
+install-data: install-data-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-am
+uninstall-am: uninstall-binPROGRAMS uninstall-dataDATA \
+	uninstall-desktopDATA
+uninstall: uninstall-am
+all-am: Makefile $(PROGRAMS) $(DATA) $(HEADERS)
+all-redirect: all-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs:
+	$(mkinstalldirs)  $(DESTDIR)$(bindir) $(DESTDIR)$(datadir) \
+	$(DESTDIR)$(desktopdir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-binPROGRAMS mostlyclean-compile \
+	mostlyclean-libtool mostlyclean-tags \
+	mostlyclean-generic
+
+mostlyclean: mostlyclean-am
+
+#>- clean-am:  clean-binPROGRAMS clean-compile clean-libtool clean-tags \
+#>- clean-generic mostlyclean-am
+#>+ 2
+clean-am: clean-metasources clean-moc-classes   clean-binPROGRAMS clean-compile clean-libtool clean-tags \
+	clean-generic mostlyclean-am
+
+#>- clean: clean-am
+#>+ 1
+clean: kde-rpo-clean  clean-am
+
+distclean-am:  distclean-binPROGRAMS distclean-compile distclean-libtool \
+	distclean-tags distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-am
+
+maintainer-clean-am:  maintainer-clean-binPROGRAMS \
+	maintainer-clean-compile maintainer-clean-libtool \
+	maintainer-clean-tags maintainer-clean-generic \
+	distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-am
+
+.PHONY: mostlyclean-binPROGRAMS distclean-binPROGRAMS clean-binPROGRAMS \
+	maintainer-clean-binPROGRAMS uninstall-binPROGRAMS install-binPROGRAMS \
+	mostlyclean-compile distclean-compile clean-compile \
+	maintainer-clean-compile mostlyclean-libtool distclean-libtool \
+	clean-libtool maintainer-clean-libtool uninstall-dataDATA \
+	install-dataDATA uninstall-desktopDATA install-desktopDATA tags \
+	mostlyclean-tags distclean-tags clean-tags maintainer-clean-tags \
+	distdir info-am info dvi-am dvi check check-am installcheck-am \
+	installcheck install-exec-am install-exec install-data-am install-data \
+	install-am install uninstall-am uninstall all-redirect all-am all \
+	installdirs mostlyclean-generic distclean-generic clean-generic \
+	maintainer-clean-generic clean mostlyclean distclean maintainer-clean
+
+
+messages:
+	$(XGETTEXT) *.cpp *.h -o $(podir)/klock.pot
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
+
+#>+ 3
+swarm.moc: $(srcdir)/swarm.h
+	$(MOC) $(srcdir)/swarm.h -o swarm.moc
+
+#>+ 3
+slidescreen.moc: $(srcdir)/slidescreen.h
+	$(MOC) $(srcdir)/slidescreen.h -o slidescreen.moc
+
+#>+ 3
+saver.moc: $(srcdir)/saver.h
+	$(MOC) $(srcdir)/saver.h -o saver.moc
+
+#>+ 3
+pipes.moc: $(srcdir)/pipes.h
+	$(MOC) $(srcdir)/pipes.h -o pipes.moc
+
+#>+ 3
+demowin.moc: $(srcdir)/demowin.h
+	$(MOC) $(srcdir)/demowin.h -o demowin.moc
+
+#>+ 3
+rock.moc: $(srcdir)/rock.h
+	$(MOC) $(srcdir)/rock.h -o rock.moc
+
+#>+ 3
+bouboule.moc: $(srcdir)/bouboule.h
+	$(MOC) $(srcdir)/bouboule.h -o bouboule.moc
+
+#>+ 3
+morph3d.moc: $(srcdir)/morph3d.h
+	$(MOC) $(srcdir)/morph3d.h -o morph3d.moc
+
+#>+ 3
+pyro.moc: $(srcdir)/pyro.h
+	$(MOC) $(srcdir)/pyro.h -o pyro.moc
+
+#>+ 3
+space.moc: $(srcdir)/space.h
+	$(MOC) $(srcdir)/space.h -o space.moc
+
+#>+ 3
+clean-metasources:
+	-rm -f  swarm.moc slidescreen.moc saver.moc pipes.moc demowin.moc rock.moc bouboule.moc morph3d.moc pyro.moc space.moc
+
+#>+ 2
+docs-am:
+
+#>+ 5
+force-reedit:
+		cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps kscreensaver/xsavers/Makefile
+	cd $(top_srcdir) && perl admin/am_edit kscreensaver/xsavers/Makefile.in
+
+
+#>+ 12
+kmorph3d_kss_meta_unload.cpp:  morph3d.moc
+	@echo 'creating kmorph3d_kss_meta_unload.cpp'
+	@-rm -f kmorph3d_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kmorph3d_kss[] = {' > kmorph3d_kss_meta_unload.cpp ;\
+		cat  morph3d.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kmorph3d_kss_meta_unload.cpp ;\
+		echo '0};' >> kmorph3d_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kmorph3d_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kmorph3d_kss)' >> kmorph3d_kss_meta_unload.cpp ;\
+	else echo > kmorph3d_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+kspace_kss_meta_unload.cpp:  space.moc
+	@echo 'creating kspace_kss_meta_unload.cpp'
+	@-rm -f kspace_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kspace_kss[] = {' > kspace_kss_meta_unload.cpp ;\
+		cat  space.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kspace_kss_meta_unload.cpp ;\
+		echo '0};' >> kspace_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kspace_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kspace_kss)' >> kspace_kss_meta_unload.cpp ;\
+	else echo > kspace_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+kpipes_kss_meta_unload.cpp:  pipes.moc
+	@echo 'creating kpipes_kss_meta_unload.cpp'
+	@-rm -f kpipes_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kpipes_kss[] = {' > kpipes_kss_meta_unload.cpp ;\
+		cat  pipes.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kpipes_kss_meta_unload.cpp ;\
+		echo '0};' >> kpipes_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kpipes_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kpipes_kss)' >> kpipes_kss_meta_unload.cpp ;\
+	else echo > kpipes_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+kswarm_kss_meta_unload.cpp:  swarm.moc
+	@echo 'creating kswarm_kss_meta_unload.cpp'
+	@-rm -f kswarm_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kswarm_kss[] = {' > kswarm_kss_meta_unload.cpp ;\
+		cat  swarm.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kswarm_kss_meta_unload.cpp ;\
+		echo '0};' >> kswarm_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kswarm_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kswarm_kss)' >> kswarm_kss_meta_unload.cpp ;\
+	else echo > kswarm_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+krock_kss_meta_unload.cpp:  rock.moc
+	@echo 'creating krock_kss_meta_unload.cpp'
+	@-rm -f krock_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_krock_kss[] = {' > krock_kss_meta_unload.cpp ;\
+		cat  rock.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> krock_kss_meta_unload.cpp ;\
+		echo '0};' >> krock_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> krock_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(krock_kss)' >> krock_kss_meta_unload.cpp ;\
+	else echo > krock_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+kpyro_kss_meta_unload.cpp:  pyro.moc
+	@echo 'creating kpyro_kss_meta_unload.cpp'
+	@-rm -f kpyro_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kpyro_kss[] = {' > kpyro_kss_meta_unload.cpp ;\
+		cat  pyro.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kpyro_kss_meta_unload.cpp ;\
+		echo '0};' >> kpyro_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kpyro_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kpyro_kss)' >> kpyro_kss_meta_unload.cpp ;\
+	else echo > kpyro_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+kbouboule_kss_meta_unload.cpp:  bouboule.moc
+	@echo 'creating kbouboule_kss_meta_unload.cpp'
+	@-rm -f kbouboule_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kbouboule_kss[] = {' > kbouboule_kss_meta_unload.cpp ;\
+		cat  bouboule.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kbouboule_kss_meta_unload.cpp ;\
+		echo '0};' >> kbouboule_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kbouboule_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kbouboule_kss)' >> kbouboule_kss_meta_unload.cpp ;\
+	else echo > kbouboule_kss_meta_unload.cpp; fi
+
+
+#>+ 12
+kslidescreen_kss_meta_unload.cpp:  slidescreen.moc
+	@echo 'creating kslidescreen_kss_meta_unload.cpp'
+	@-rm -f kslidescreen_kss_meta_unload.cpp
+	@if test ${kde_qtver} = 2; then \
+		echo 'static const char * _metalist_kslidescreen_kss[] = {' > kslidescreen_kss_meta_unload.cpp ;\
+		cat  slidescreen.moc | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> kslidescreen_kss_meta_unload.cpp ;\
+		echo '0};' >> kslidescreen_kss_meta_unload.cpp ;\
+		echo '#include <kunload.h>' >> kslidescreen_kss_meta_unload.cpp ;\
+		echo '_UNLOAD(kslidescreen_kss)' >> kslidescreen_kss_meta_unload.cpp ;\
+	else echo > kslidescreen_kss_meta_unload.cpp; fi
+
+
+#>+ 3
+clean-moc-classes:
+	-rm -f  kmorph3d_kss_meta_unload.cpp kspace_kss_meta_unload.cpp kpipes_kss_meta_unload.cpp kswarm_kss_meta_unload.cpp krock_kss_meta_unload.cpp kpyro_kss_meta_unload.cpp kbouboule_kss_meta_unload.cpp kslidescreen_kss_meta_unload.cpp
+
+#>+ 2
+final:
+	$(MAKE) all-am
+#>+ 2
+final-install:
+	$(MAKE) install-am
+#>+ 2
+no-final:
+	$(MAKE) all-am
+#>+ 2
+no-final-install:
+	$(MAKE) install-am
+#>+ 3
+cvs-clean:
+	$(MAKE) -f $(top_srcdir)/admin/Makefile.common cvs-clean
+
+#>+ 3
+kde-rpo-clean:
+	-rm -f *.rpo
+
+#>+ 11
+$(srcdir)/morph3d.cpp: morph3d.moc 
+$(srcdir)/rock.cpp: rock.moc 
+$(srcdir)/demowin.cpp: demowin.moc 
+$(srcdir)/pipes.cpp: pipes.moc 
+$(srcdir)/saver.cpp: saver.moc 
+$(srcdir)/slidescreen.cpp: slidescreen.moc 
+$(srcdir)/swarm.cpp: swarm.moc 
+$(srcdir)/bouboule.cpp: bouboule.moc 
+$(srcdir)/pyro.cpp: pyro.moc 
+$(srcdir)/space.cpp: space.moc 

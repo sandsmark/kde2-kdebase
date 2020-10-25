@@ -1,0 +1,6 @@
+Makefile
+Makefile.in
+kcmlocale
+kcmlocale.all_cpp.cpp
+test
+test.cpp
