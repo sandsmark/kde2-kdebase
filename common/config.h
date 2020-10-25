@@ -1,0 +1,55 @@
+#pragma once
+
+#define HAVE_SETPRIORITY 1
+
+
+#define HAVE_ALIGNED_DOUBLES
+#define HAVE_ALIGNED_LONGLONGS
+#define HAVE_CONFIG_H
+#define HAVE_CRYPT_H
+#define HAVE_DPMS
+#define HAVE_FSTAB_H
+#define HAVE_GL
+#define HAVE_GL_GLUT_H
+#define HAVE_GL_XMESA_H
+#define HAVE__ICETRANSNOLISTEN
+#define HAVE_KSTAT
+#define HAVE_LAME
+#define HAVE_LIBDEVINFO_H
+#define HAVE_LIBUTIL_H
+#define HAVE_LIMITS_H
+#define HAVE_LONG_LONG
+#define HAVE_MINI_STL
+#define HAVE_MKSTEMP
+#define HAVE_MMAP
+#define HAVE_MOTIF
+#define HAVE_OSF_C2_PASSWD
+#define HAVE_PAM
+#define HAVE_PATHS_H
+#define HAVE_SENSORS_SENSORS_H
+#define HAVE_SETPRIORITY
+#define HAVE_SHADOW
+#define HAVE_SSL
+#define HAVE_STRING_H
+#define HAVE_SYS_SELECT_H
+#define HAVE_SYS_SOCKET_H
+#define HAVE_SYS_SOCKIO_H
+#define HAVE_SYS_STREAM_H
+#define HAVE_SYS_STROPTS_H
+#define HAVE_SYS_TIME_H
+#define HAVE_SYS_WAIT_H
+#define HAVE_TERMIO_H
+#define HAVE_TERMIOS_H
+#define HAVE_TM_ZONE
+#define HAVE_UNLOCKPT
+#define HAVE_USLEEP
+#define HAVE_UTEMPTER
+#define HAVE_VFORK_H
+#define HAVE_VORBIS
+#define HAVE_VSNPRINTF
+#define HAVE_VSYSLOG
+#define HAVE_WAITPID
+#define HAVE_XINERAMA
+#define HAVE_XKB
+#define HAVE_XKBSETPERCLIENTCONTROLS
+#define HAVE_XTEST

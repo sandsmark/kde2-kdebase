@@ -43,6 +43,20 @@ set(LIBKONQ_SRCS
     konq_faviconmgr.cc
 )
 
+set(LIBKONQ_HEADERS
+    konq_popupmenu.h knewmenu.h
+    kbookmark.h kbookmarkmenu.h kbookmarkbar.h kbookmarkimporter.h
+    kbookmarkexporter.h kbookmarkmanager.h kbookmarkdrag.h
+    konq_dirlister.h konq_fileitem.h konq_mimetyperesolver.h
+    kfileivi.h konq_drag.h konq_iconviewwidget.h konq_imagepreviewjob.h
+    konq_defaults.h konq_settings.h
+    konq_operations.h
+    konq_dirpart.h konq_propsview.h konq_events.h konq_bgnddlg.h
+    konq_undo.h konq_historymgr.h konq_historycomm.h
+    konq_pixmapprovider.h
+    konq_faviconmgr.h
+    )
+
 qt2_wrap_cpp(moc_SRCS
     SOURCES
     kbookmarkbar.h
@@ -67,22 +81,20 @@ qt2_wrap_cpp(moc_SRCS
     konq_undo.h
     )
 
-add_library(konq
-    ${moc_SRCS}
-    ${LIBKONQ_SRCS}
-    ${UI_RESOURCES}
+kde2_library(libkonq
+    SOURCES
+        ${moc_SRCS}
+        ${LIBKONQ_SRCS}
+    LIBS
+        kde2::kdecore
+        kde2::kdeui
+        kde2::kio
+        kde2::kfile
+        kde2::kparts
+        ZLIB::ZLIB
+        Threads::Threads
+    VERSION
+        2.2.2
     )
 
-target_compile_definitions(konq PUBLIC
-    PACKAGE="libkonq"
-    VERSION="${PROJECT_VERSION}"
-    )
-
-target_link_libraries(konq
-    kde2::kdecore
-    kde2::kdeui
-    kde2::kio
-    kde2::kfile
-    ZLIB::ZLIB
-    Threads::Threads
-    )
+install(FILES ${LIBKONQ_HEADERS} DESTINATION ${KDE2_INCLUDEDIR}/konq)

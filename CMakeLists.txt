@@ -25,6 +25,7 @@ set(OpenGL_GL_PREFERENCE "LEGACY")
 
 find_package(Qt2 REQUIRED)
 find_package(DCOP REQUIRED)
+find_package(kdelibs2 REQUIRED)
 find_package(kdecore REQUIRED)
 find_package(kdeui REQUIRED)
 find_package(kdesu REQUIRED)
@@ -32,9 +33,13 @@ find_package(kssl REQUIRED)
 find_package(kio REQUIRED)
 find_package(ksycoca REQUIRED)
 find_package(kfile REQUIRED)
+find_package(kparts REQUIRED)
 find_package(ZLIB REQUIRED)
 find_package(Threads REQUIRED)
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/common/)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 add_subdirectory(libkonq)
+add_subdirectory(kdesktop)
