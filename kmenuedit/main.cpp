@@ -17,7 +17,7 @@
  *
  */
 
-#include <iostream.h>
+#include <iostream>
 #include <unistd.h>
 
 #include <kuniqueapp.h>
@@ -26,6 +26,7 @@
 #include <kaboutdata.h>
 
 #include "kmenuedit.h"
+using namespace std;
 
 static const char *description = I18N_NOOP("KDE Menu editor");
 static const char *version = "0.3";

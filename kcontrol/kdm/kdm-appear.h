@@ -26,6 +26,7 @@
 #include <qimage.h>
 #include <qfileinfo.h>
 #include <qpushbutton.h>
+#include <qcombobox.h>
 
 #include <kcolorbtn.h>
 #include <kurl.h>

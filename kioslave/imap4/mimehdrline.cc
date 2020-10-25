@@ -16,7 +16,7 @@
  ***************************************************************************/
 
 #include <time.h>
-#include <iostream.h>
+#include <iostream>
 #include <ctype.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -26,6 +26,7 @@
 #include <config.h>
 #include "mimehdrline.h"
 #include "rfcdecoder.h"
+using namespace std;
 
 
 const char *wdays[] = {

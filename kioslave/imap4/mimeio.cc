@@ -15,9 +15,10 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <iostream.h>
+#include <iostream>
 
 #include "mimeio.h"
+using namespace std;
 
 mimeIO::mimeIO ()
 {

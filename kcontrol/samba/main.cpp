@@ -73,7 +73,7 @@ SambaContainer::~SambaContainer()
    saveSettings();
 }
 
-#include <iostream.h>
+#include <iostream>
 
 void SambaContainer::loadSettings()
 {

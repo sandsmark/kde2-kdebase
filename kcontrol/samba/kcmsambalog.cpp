@@ -22,8 +22,8 @@
  */
 #include <kapp.h>
 #include <string.h>
-#include <iostream.h>
-#include <fstream.h>
+#include <iostream>
+#include <fstream>
 #include <kmessagebox.h>
 
 #include <qlayout.h>
@@ -35,6 +35,7 @@
 
 #include <klocale.h>
 #include <stdio.h>
+using namespace std;
 
 #define LOG_SCREEN_XY_OFFSET 10
 

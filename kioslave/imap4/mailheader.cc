@@ -18,7 +18,7 @@
 #include "mailheader.h"
 #include "rfcdecoder.h"
 
-#include <iostream.h>
+#include <iostream>
 
 mailHeader::mailHeader ()
 {

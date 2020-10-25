@@ -39,7 +39,7 @@
 #include <kapp.h>
 #include <kprocess.h>
 
-#include <iostream.h>
+#include <iostream>
 
 /*
  * Errors:

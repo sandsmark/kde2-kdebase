@@ -23,7 +23,7 @@
 
 #include <qregexp.h>
 
-// #include <iostream.h>
+// #include <iostream>
 #include <kglobal.h>
 #include <kinstance.h>
 #include <kiconloader.h>

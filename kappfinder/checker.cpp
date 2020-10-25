@@ -19,7 +19,8 @@
 
 
 #include <string.h>
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 
 #include <qfile.h>

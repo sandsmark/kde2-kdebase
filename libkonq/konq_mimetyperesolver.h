@@ -22,6 +22,7 @@
 
 #include <qlist.h>
 #include <qtimer.h>
+#include <qscrollview.h>
 #include <kdebug.h>
 
 /**

@@ -22,7 +22,7 @@
 #include <config.h>
 #endif
 
-#include <iostream.h>
+#include <iostream>
 
 #ifdef HAVE_STRING_H
 #include <string.h>

@@ -47,7 +47,7 @@
 #include <time.h>
 #include <unistd.h>
 
-#include <iostream.h>
+#include <iostream>
 
 #include <qfile.h>
 #include <qdir.h>

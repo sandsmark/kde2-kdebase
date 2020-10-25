@@ -30,7 +30,7 @@
 #include <kstringhandler.h>
 
 #include <assert.h>
-#include <iostream.h>
+#include <iostream>
 
 KonqRun::KonqRun( KonqMainWindow* mainWindow, KonqView *_childView,
                   const KURL & _url, const KonqOpenURLRequest & req, bool trustedSource)

@@ -20,7 +20,7 @@
 */
 
 #include <stdlib.h>
-#include <iostream.h>
+#include <iostream>
 
 #include <qevent.h>
 #include <qapplication.h>

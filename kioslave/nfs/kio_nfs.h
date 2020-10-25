@@ -35,7 +35,8 @@
 #include <netinet/in.h>
 #include <sys/time.h>
 
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 class NFSFileHandle
 {

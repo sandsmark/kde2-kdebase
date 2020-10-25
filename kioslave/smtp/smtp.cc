@@ -65,7 +65,7 @@
 #include <kio/slaveinterface.h>
 #include <kio/kdesasl.h>
 #include <klocale.h>
-#include <iostream.h>
+#include <iostream>
 
 #include "smtp.h"
 

@@ -1,6 +1,6 @@
 #include <syscall.h>
 #include <linux/kernel.h>
-#include <asm/page.h>
+#include <sys/user.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <qfile.h>

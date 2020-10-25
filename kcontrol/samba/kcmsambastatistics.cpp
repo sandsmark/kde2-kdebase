@@ -36,7 +36,7 @@
 #include <klocale.h>
 #include <kdebug.h>
 
-#include <iostream.h>
+#include <iostream>
 
 #define STAT_SCREEN_XY_OFFSET 15
 

@@ -25,7 +25,7 @@
 
 #include "program.h"
 
-#include <iostream.h>
+#include <iostream>
 
 #include <qobject.h>
 #include <qstring.h>

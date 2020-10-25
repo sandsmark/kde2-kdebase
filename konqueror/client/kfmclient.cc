@@ -25,7 +25,7 @@
 #include <signal.h>
 #include <unistd.h>
 
-#include <fstream.h>
+#include <fstream>
 
 #include <qdir.h>
 #include <qstring.h>

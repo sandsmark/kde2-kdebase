@@ -27,6 +27,7 @@
 #include <klocale.h>
 
 #include "liloinfo.moc"
+using namespace std;
 
 /*
  * The constructor. Initialize the internal variables and copy the parameter strings.

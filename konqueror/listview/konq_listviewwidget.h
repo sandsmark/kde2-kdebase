@@ -58,6 +58,7 @@ class ColumnInfo
  * The tree view widget (based on KListView).
  * Most of the functionality is here.
  */
+class KonqListView;
 class KonqBaseListViewWidget : public KListView
 {
    friend class KonqListView;

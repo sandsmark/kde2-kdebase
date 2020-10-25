@@ -49,7 +49,7 @@ class KMemoryWidget:public KCModule {
 
     void update();
 
-    bool KMemoryWidget::Display_Graph(int widgetindex,
+    bool Display_Graph(int widgetindex,
 				      int count,
 				      t_memsize total,
 				      t_memsize *used, 
