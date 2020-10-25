@@ -26,6 +26,7 @@
 #include <qpixmap.h>
 
 #include <kdialogbase.h>
+#include <kinstance.h>
 
 class QComboBox;
 class QPushButton;

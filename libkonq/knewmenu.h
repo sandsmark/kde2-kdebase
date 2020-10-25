@@ -24,6 +24,7 @@
 #include <qstringlist.h>
 
 #include <kaction.h>
+#include <kurl.h>
 
 namespace KIO { class Job; }
 
