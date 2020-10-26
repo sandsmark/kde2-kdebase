@@ -1,0 +1,7 @@
+KDE2_ICON(kde1)
+KDE2_ICON(kde2)
+KDE2_ICON(kde3)
+KDE2_ICON(kde4)
+KDE2_ICON(kde5)
+KDE2_ICON(kde6)
+KDE2_ICON(history_clear)
