@@ -18,10 +18,20 @@
 cmake_minimum_required(VERSION 3.1.0)
 
 project(kdebase VERSION 0.3.0 LANGUAGES C CXX)
-#list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
+list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 #list(APPEND CMAKE_MODULE_PATH /usr/share/cmake-3.18/Modules/)
 
 set(OpenGL_GL_PREFERENCE "LEGACY")
+find_package(PAM)
+
+if (PAM_FOUND)
+    add_definitions(-DHAVE_PAM)
+    add_definitions(-DUSE_PAM)
+
+    # Some things default to xdm, which doesn't exist anymore
+    # TODO: use the config.h crap
+    add_definitions(-DKSCREENSAVER_PAM_SERVICE=\"system-auth\")
+endif()
 
 find_package(Qt2 REQUIRED)
 find_package(DCOP REQUIRED)
@@ -34,6 +44,11 @@ find_package(kio REQUIRED)
 find_package(ksycoca REQUIRED)
 find_package(kfile REQUIRED)
 find_package(kparts REQUIRED)
+find_package(mcop REQUIRED)
+find_package(qtmcop REQUIRED)
+find_package(artsflow REQUIRED)
+find_package(kmedia2 REQUIRED)
+find_package(artskde REQUIRED)
 find_package(ZLIB REQUIRED)
 find_package(Threads REQUIRED)
 

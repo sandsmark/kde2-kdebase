@@ -41,6 +41,7 @@ set(LIBKONQ_SRCS
     konq_historycomm.cc
     konq_pixmapprovider.cc
     konq_faviconmgr.cc
+    konq_sound.cc
 )
 
 set(LIBKONQ_HEADERS
@@ -76,7 +77,7 @@ qt2_wrap_cpp(moc_SRCS
     konq_imagepreviewjob.h
     konq_operations.h
     konq_popupmenu.h
-    #konq_sound.h
+    konq_sound.h
     konq_undo.h
     konq_undo.h
     )
@@ -91,6 +92,7 @@ kde2_library(libkonq
         kde2::kio
         kde2::kfile
         kde2::kparts
+        kde2::artskde
         ZLIB::ZLIB
         Threads::Threads
     VERSION
