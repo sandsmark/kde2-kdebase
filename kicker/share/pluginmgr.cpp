@@ -54,13 +54,13 @@ KPanelApplet* KickerPluginManager::loadApplet(const QString &applnk,
 	lt_dlinit();
     }
 
-    lt_dlhandle handle = lt_dlopen(QFile::encodeName(libStr));
+    void *handle = lt_dlopen(QFile::encodeName(libStr));
     if(!handle){
 	kdWarning() << "cannot open applet: " << libStr << " because of " << lt_dlerror() << endl;
 	return(NULL);
     }
 
-    lt_ptr_t init_func = lt_dlsym(handle, "init");
+    void *init_func = lt_dlsym(handle, "init");
     if(!init_func){
 	kdWarning() << libStr << " is not a kicker applet!" << endl;
 	lt_dlclose(handle);
@@ -105,7 +105,7 @@ KPanelExtension* KickerPluginManager::loadExtension(const QString &applnk,
 	return(NULL);
     }
 
-    lt_ptr_t init_func = lt_dlsym(handle, "init");
+    void *init_func = lt_dlsym(handle, "init");
     if(!init_func){
 	kdWarning() << libStr << " is not a kicker extension!" << endl;
 	lt_dlclose(handle);
