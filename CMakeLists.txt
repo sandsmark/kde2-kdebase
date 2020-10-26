@@ -58,3 +58,4 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 add_subdirectory(libkonq)
 add_subdirectory(kdesktop)
+add_subdirectory(konqueror)
