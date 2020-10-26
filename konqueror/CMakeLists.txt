@@ -15,7 +15,6 @@
 
 # (C) 2018 by Helio Chissini de Castro <helio@kde.org>
 
-
 set(konqueror_SRCS
     konq_main.cc
     KonquerorIface.cc
@@ -76,3 +75,16 @@ install(FILES profile_webbrowsing.desktop DESTINATION ${PROFILEDIR}/webbrowsing)
 install(FILES profile_filemanagement.desktop DESTINATION ${PROFILEDIR}/filemanagement)
 install(FILES profile_midnightcommander.desktop DESTINATION ${PROFILEDIR}/midnightcommander)
 install(FILES profile_filepreview.desktop DESTINATION ${PROFILEDIR}/filepreview)
+
+KDE2_KIDL(KonquerorIface.h)
+add_subdirectory(kfmexec)
+add_subdirectory(client)
+add_subdirectory(iconview)
+add_subdirectory(dirtree)
+#add_subdirectory(listview)
+#add_subdirectory(keditbookmarks)
+#add_subdirectory(kfindpart)
+#add_subdirectory(shellcmdplugin)
+#add_subdirectory(about)
+#add_subdirectory(pics)
+#add_subdirectory(sidebar)

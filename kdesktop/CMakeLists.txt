@@ -19,6 +19,8 @@
 add_subdirectory(pics)
 #add_subdirectory(kwebdesktop)
 
+KDE2_KIDL(KDesktopIface.h)
+
 set(kdesktop_SRCS
     krootwm.cc xautolock.cc kdiconview.cc desktop.cc main.cc
     lockeng.cc lockdlg.cc
