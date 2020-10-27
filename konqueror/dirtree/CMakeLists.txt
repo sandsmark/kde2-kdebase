@@ -27,7 +27,7 @@ kde2_module(libkonqdirtree
         kde2::konq
     )
 
-install(FILES konq_dirtree.desktop konq_multicolumnview.desktop DESTINATION ${KDE2_SERVICESDIR})
+install(FILES konq_dirtree.desktop DESTINATION ${KDE2_SERVICESDIR})
 
 install(FILES
     init/home.desktop
