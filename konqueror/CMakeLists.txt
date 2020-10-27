@@ -53,7 +53,7 @@ kde2_library(libkonqueror
     SOURCES
         ${konqueror_SRCS}
     HEADERS
-        KonquerorIface_stub.h
+        ${CMAKE_CURRENT_BINARY_DIR}/KonquerorIface_stub.h
     LIBS
         kde2::konq
         ZLIB::ZLIB

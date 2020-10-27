@@ -73,7 +73,7 @@ kde2_library(libkdesktop
     SOURCES
         ${libkdesktop_SRCS}
     HEADERS
-        KDesktopIface_stub.h
+        ${CMAKE_CURRENT_BINARY_DIR}/KDesktopIface_stub.h
     LIBS
         kde2::kdecore
         kde2::kdeui
