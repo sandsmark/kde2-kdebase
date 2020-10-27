@@ -21,62 +21,91 @@ add_subdirectory(pics)
 
 KDE2_KIDL(KDesktopIface.h)
 
-set(kdesktop_SRCS
-    krootwm.cc xautolock.cc kdiconview.cc desktop.cc main.cc
-    lockeng.cc lockdlg.cc
-    bgmanager.cc init.cc
-    minicli.cpp pixmapserver.cc kcustommenu.cc
+set(libkdesktop_SRCS
+    xautolock.cc
+    lockeng.cc
+    lockdlg.cc
+    pixmapserver.cc
+    kcustommenu.cc
     startupid.cpp
+    KDesktopIface_stub.cpp
+)
+
+set(kdesktop_SRCS
+    krootwm.cc 
+    init.cc
+    kdiconview.cc
+    minicli.cpp
+    main.cc
+    desktop.cc
+    bgmanager.cc
 
     ../kcontrol/background/bgsettings.cc
     ../kcontrol/background/bgrender.cc
-)
+    )
 
-qt2_wrap_cpp(moc_SRCS
+qt2_wrap_cpp(kdesktop_SRCS
     SOURCES
-    bgmanager.h
-    desktop.h
-    kcustommenu.h
-    kdiconview.h
-    kdmdesktop.h
-    krootwm.h
-    kwebdesktop/kwebdesktop.h
-    kwebdesktop/kwebdesktop.h
-    lockdlg.h
-    lockeng.h
-    minicli.h
-    minicli.h
-    pixmapserver.h
-    startupid.h
-    xautolock.h
+        desktop.h
+        krootwm.h
+        kdiconview.h
+        bgmanager.h
+
+        kwebdesktop/kwebdesktop.h
+        kwebdesktop/kwebdesktop.h
+    )
+
+qt2_wrap_cpp(libkdesktop_SRCS
+    SOURCES
+        kcustommenu.h
+        kdmdesktop.h
+        lockdlg.h
+        lockeng.h
+        minicli.h
+        pixmapserver.h
+        startupid.h
+        xautolock.h
 
     ../kcontrol/background/bgrender.h
     )
 
-add_executable(kdesktop
-    ${moc_SRCS}
-    ${kdesktop_SRCS}
-    ${UI_RESOURCES}
+kde2_library(libkdesktop
+    SOURCES
+        ${libkdesktop_SRCS}
+    HEADERS
+        KDesktopIface_stub.h
+    LIBS
+        kde2::kdecore
+        kde2::kdeui
+        kde2::kio
+        kde2::kfile
+        kde2::konq
+        ZLIB::ZLIB
+        Threads::Threads
     )
 
-target_compile_definitions(kdesktop PUBLIC
-    PACKAGE="kdesktop"
-    VERSION="${PROJECT_VERSION}"
+add_executable(kdesktop ${kdesktop_SRCS})
+target_link_libraries(kdesktop
+    kde2::kdesktop
     )
+#target_compile_definitions(kdesktop PUBLIC
+#    PACKAGE="kdesktop"
+#    VERSION="${PROJECT_VERSION}"
+#    )
 
 target_include_directories(kdesktop PRIVATE
     ../kcontrol/background/
     )
 
-target_link_libraries(kdesktop
-    kde2::kdecore
-    kde2::kdeui
-    kde2::kio
-    kde2::kfile
-    kde2::konq
-    ZLIB::ZLIB
-    Threads::Threads
-    )
+#target_link_libraries(kdesktop
+#    kde2::kdecore
+#    kde2::kdeui
+#    kde2::kio
+#    kde2::kfile
+#    kde2::konq
+#    ZLIB::ZLIB
+#    Threads::Threads
+#    )
 
 # Match everything else, though I don't like the global autostart dir
 install(FILES kdesktop.desktop DESTINATION ${KDEDIR}/share/autostart)

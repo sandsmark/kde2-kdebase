@@ -5,7 +5,6 @@ set(sidebar_bookmark_SRCS
 qt2_wrap_cpp(sidebar_bookmark_SRCS
     SOURCES
         bookmark_module.h
-        bookmark_item.h
     )
 
 kde2_module(libkonqsidebartree_bookmarks

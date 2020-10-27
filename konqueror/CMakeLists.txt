@@ -15,8 +15,9 @@
 
 # (C) 2018 by Helio Chissini de Castro <helio@kde.org>
 
+KDE2_KIDL(KonquerorIface.h)
+
 set(konqueror_SRCS
-    konq_main.cc
     KonquerorIface.cc
     KonqMainWindowIface.cc
     KonqViewIface.cc
@@ -32,6 +33,7 @@ set(konqueror_SRCS
     konq_factory.cc
     konq_combo.cc
     konq_browseriface.cc
+    KonquerorIface_stub.cpp
 )
 qt2_wrap_cpp(konqueror_SRCS
     SOURCES
@@ -47,16 +49,22 @@ qt2_wrap_cpp(konqueror_SRCS
         konq_viewmgr.h
     )
 
-add_executable(konqueror ${konqueror_SRCS})
+kde2_library(libkonqueror
+    SOURCES
+        ${konqueror_SRCS}
+    HEADERS
+        KonquerorIface_stub.h
+    LIBS
+        kde2::konq
+        ZLIB::ZLIB
+        Threads::Threads
+    )
+
+
+add_executable(konqueror konq_main.cc)
 
 target_link_libraries(konqueror
-    kde2::kdecore
-    kde2::kdeui
-    kde2::kio
-    kde2::kfile
-    kde2::konq
-    ZLIB::ZLIB
-    Threads::Threads
+    kde2::konqueror
     )
 
 install(FILES konqueror.rc DESTINATION ${KDE2_DATADIR}/konqueror)
@@ -76,7 +84,6 @@ install(FILES profile_filemanagement.desktop DESTINATION ${PROFILEDIR}/filemanag
 install(FILES profile_midnightcommander.desktop DESTINATION ${PROFILEDIR}/midnightcommander)
 install(FILES profile_filepreview.desktop DESTINATION ${PROFILEDIR}/filepreview)
 
-KDE2_KIDL(KonquerorIface.h)
 add_subdirectory(kfmexec)
 add_subdirectory(client)
 add_subdirectory(iconview)

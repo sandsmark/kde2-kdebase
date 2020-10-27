@@ -4,7 +4,7 @@ set(sidebar_tree_SRCS
 
 qt2_wrap_cpp(sidebar_tree_SRCS
     SOURCES
-        dirtree_module.h dirtree_item.h
+        dirtree_module.h
     )
 
 kde2_module(libkonqsidebartree_dirtree
