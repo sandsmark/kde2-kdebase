@@ -85,6 +85,7 @@ kde2_library(libkdesktop
     )
 
 add_executable(kdesktop ${kdesktop_SRCS})
+install(TARGETS kdesktop RUNTIME DESTINATION ${KDE2_BINDIR})
 target_link_libraries(kdesktop
     kde2::kdesktop
     )

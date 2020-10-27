@@ -82,6 +82,7 @@ add_executable(kicker
         ${kicker_SRCS}
     )
 target_include_directories(kicker PRIVATE ui core share)
+install(TARGETS kicker RUNTIME DESTINATION ${KDE2_BINDIR})
 
 target_link_libraries(kicker
     kde2::konq

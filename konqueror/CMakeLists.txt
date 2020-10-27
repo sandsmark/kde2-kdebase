@@ -62,6 +62,7 @@ kde2_library(libkonqueror
 
 
 add_executable(konqueror konq_main.cc)
+install(TARGETS konqueror RUNTIME DESTINATION ${KDE2_BINDIR})
 
 target_link_libraries(konqueror
     kde2::konqueror

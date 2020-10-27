@@ -13,3 +13,4 @@ add_executable(keditbookmarks
 target_link_libraries(keditbookmarks
     kde2::konq
     )
+install(TARGETS keditbookmarks RUNTIME DESTINATION ${KDE2_BINDIR})

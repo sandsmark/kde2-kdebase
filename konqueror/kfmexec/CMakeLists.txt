@@ -10,3 +10,4 @@ target_link_libraries(kfmexec
     kde2::kdeui
     kde2::kio
     )
+install(TARGETS kfmexec RUNTIME DESTINATION ${KDE2_BINDIR})

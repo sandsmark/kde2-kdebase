@@ -15,6 +15,7 @@ target_link_libraries(kfmclient
     kde2::konqueror
     kde2::kdesktop
     )
+install(TARGETS kfmclient RUNTIME DESTINATION ${KDE2_BINDIR})
 
 target_include_directories(kfmclient PRIVATE ${CMAKE_CURRENT_BINARY_DIRECTORY}/..)
 
