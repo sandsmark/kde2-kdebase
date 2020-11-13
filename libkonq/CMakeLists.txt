@@ -58,6 +58,13 @@ set(LIBKONQ_HEADERS
     konq_faviconmgr.h
     )
 
+kde2_wrap_kidl(LIBKONQ_SRCS
+    SOURCES
+        kbookmarkmanager.h
+        konq_faviconmgr.h
+        konq_historycomm.h
+        konq_undo.h
+)
 qt2_wrap_cpp(moc_SRCS
     SOURCES
     kbookmarkbar.h

@@ -40,6 +40,11 @@ set(kicker_SRCS
         ui/browser_dlg.cpp
     )
 
+kde2_wrap_kidl(kicker_SRCS
+    SOURCES
+        core/panel.h
+    )
+
 qt2_wrap_moc(kicker_SRCS
     SOURCES
         ui/kickermenumanager.h

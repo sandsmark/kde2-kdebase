@@ -34,7 +34,14 @@ set(konqueror_SRCS
     konq_combo.cc
     konq_browseriface.cc
     KonquerorIface_stub.cpp
+    KonquerorIface_skel.cpp
 )
+kde2_wrap_kidl(konqueror_SRCS
+    SOURCES
+        KonqMainWindowIface.h
+        KonqViewIface.h
+    )
+
 qt2_wrap_cpp(konqueror_SRCS
     SOURCES
         konq_actions.h

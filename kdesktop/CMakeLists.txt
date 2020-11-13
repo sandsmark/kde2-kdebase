@@ -44,6 +44,13 @@ set(kdesktop_SRCS
     ../kcontrol/background/bgrender.cc
     )
 
+kde2_wrap_kidl(libkdesktop_SRCS
+    SOURCES
+        KBackgroundIface.h
+        KDesktopIface.h
+        KScreensaverIface.h
+    )
+
 qt2_wrap_cpp(kdesktop_SRCS
     SOURCES
         desktop.h

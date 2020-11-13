@@ -5,6 +5,11 @@ set(dirtree_SRCS
     history_module/history_module.cpp history_module/history_item.cpp history_module/history_settings.cpp
     )
 
+kde2_wrap_kidl(dirtree_SRCS
+    SOURCES
+        history_module/history_settings.h
+    )
+
 qt2_wrap_cpp(dirtree_SRCS
     SOURCES
         konq_tree.h

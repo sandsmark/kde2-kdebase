@@ -3,6 +3,11 @@ set(sidebar_history_SRCS
     history_dlg.ui history_settings.cpp
     )
 
+kde2_wrap_kidl(sidebar_history_SRCS
+    SOURCES
+        history_settings.h
+    )
+
 qt2_wrap_cpp(sidebar_history_SRCS
     SOURCES
         history_module.h
