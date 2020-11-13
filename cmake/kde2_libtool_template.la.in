@@ -14,7 +14,8 @@ library_names='@LAPROP_SONAME@.so @LAPROP_SONAME@.so @LAPROP_SONAME@.so'
 old_library=''
 
 # Libraries that this one depends upon.
-dependency_libs='@LAPROP_DEPENDENCY_LIBS@'
+# TODO: port away from libtool, or if not resolve imported targets from cmake
+# dependency_libs='@LAPROP_DEPENDENCY_LIBS@'
 
 # Version information for @LAPROP_SONAME@.
 current=0
@@ -29,4 +30,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='@CMAKE_INSTALL_FULL_LIBDIR@/kde2`
+libdir='@CMAKE_INSTALL_FULL_LIBDIR@/kde2'
