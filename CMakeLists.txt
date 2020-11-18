@@ -61,7 +61,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 add_subdirectory(libkonq)
 
-#add_subdirectory(applnk)
+add_subdirectory(applnk)
 #add_subdirectory(doc)
 #add_subdirectory(drkonqi)
 #add_subdirectory(kaddressbook)
