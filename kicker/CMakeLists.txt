@@ -1,6 +1,6 @@
 set(kicker_SRCS
-        share/pluginmgr.cpp
-        share/appletinfo.cpp
+    #share/pluginmgr.cpp
+    #    share/appletinfo.cpp
 
         core/panelbutton.cpp
         core/main.cpp
@@ -83,6 +83,19 @@ qt2_wrap_cpp(kicker_SRCS
         ui/service_mnu.h
     )
 
+#set(libkicker_SRCS
+#        share/pluginmgr.cpp
+#        share/appletinfo.cpp
+#    )
+#kde2_library(libkicker
+#    SOURCES
+#    HEADERS
+#        share/appletinfo.h
+#        share/pluginmgr.h
+#    LIBS
+#        kde2::konq
+#   )
+
 add_executable(kicker
         ${kicker_SRCS}
     )
@@ -90,15 +103,16 @@ target_include_directories(kicker PRIVATE ui core share)
 install(TARGETS kicker RUNTIME DESTINATION ${KDE2_BINDIR})
 
 target_link_libraries(kicker
-    kde2::konq
+    kde2::kicker
     )
 
 install(FILES core/default-apps DESTINATION ${KDE2_DATADIR}/kicker)
 install(FILES panel.desktop DESTINATION ${KDEDIR}/share/autostart)
 
-#add_subdirectory(proxy)
-#add_subdirectory(taskmanager)
-#add_subdirectory(taskbar)
+add_subdirectory(share)
+add_subdirectory(proxy)
+add_subdirectory(taskmanager)
+add_subdirectory(taskbar)
 #add_subdirectory(applets)
 #add_subdirectory(extensions)
 #add_subdirectory(data)
