@@ -53,6 +53,10 @@ kde2_module(libkwinkstep
     SOURCES kstep/nextclient.cpp ${kstep_MOC} LIBS kde2::kwin)
 install(FILES kstep/kstep.desktop DESTINATION "${KDE2_DATADIR}/kwin")
 
-#add_subdirectory(kwmtheme)
+qt2_wrap_cpp(kwmtheme_MOC SOURCES kwmtheme/kwmthemeclient.h)
+kde2_module(libkwinkwmtheme
+    SOURCES kwmtheme/kwmthemeclient.cpp ${kwmtheme_MOC} LIBS kde2::kwin)
+install(FILES kwmtheme/kwmtheme.desktop DESTINATION "${KDE2_DATADIR}/kwin")
+
 #add_subdirectory(riscos)
 #add_subdirectory(web)
