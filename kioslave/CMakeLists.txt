@@ -1,4 +1,5 @@
 kde2_module(kio_gopher SOURCES gopher/gopher.cc LIBS kde2::kio kde2::ksycoca)
+install(FILES gopher/gopher.protocol DESTINATION "${KDE2_SERVICESDIR}")
 
 #add_subdirectory(filter)
 #add_subdirectory(info)
