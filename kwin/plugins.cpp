@@ -19,10 +19,6 @@ Copyright (C) 1999, 2000    Daniel M. Duley <mosfet@kde.org>
 
 #include "plugins.h"
 
-#if 0
-#define lt_ptr lt_ptr_t
-#endif
-
 using namespace KWinInternal;
 
 const char* defaultPlugin = "libkwindefault";
@@ -42,7 +38,7 @@ PluginMgr::~PluginMgr()
 {
     if(handle) {
         // Call the plugin's cleanup function
-	lt_ptr_t deinit_func = lt_dlsym(handle, "deinit");
+	lt_ptr deinit_func = lt_dlsym(handle, "deinit");
 	if (deinit_func)
 	    ((void (*)())deinit_func)();
         lt_dlclose(handle);
@@ -114,11 +110,11 @@ void PluginMgr::loadPlugin(QString nameStr)
                           "and could not be loaded!"));
 
     // Call the plugin's initialisation function
-    lt_ptr_t init_func = lt_dlsym(handle, "init");
+    lt_ptr init_func = lt_dlsym(handle, "init");
     if (init_func)
         ((void (*)())init_func)();
 
-    lt_ptr_t alloc_func = lt_dlsym(handle, "allocate");
+    lt_ptr alloc_func = lt_dlsym(handle, "allocate");
     if(alloc_func) {
         alloc_ptr = (Client* (*)(Workspace *ws, WId w, int tool))alloc_func;
     } else {
@@ -132,7 +128,7 @@ void PluginMgr::loadPlugin(QString nameStr)
 
     // Call the old plugin's cleanup function
     if(oldHandle) {
-	lt_ptr_t deinit_func = lt_dlsym(oldHandle, "deinit");
+	lt_ptr deinit_func = lt_dlsym(oldHandle, "deinit");
 	if (deinit_func)
 	    ((void (*)())deinit_func)();
         lt_dlclose(oldHandle);
@@ -141,7 +137,7 @@ void PluginMgr::loadPlugin(QString nameStr)
 
 void PluginMgr::resetPlugin()
 {
-    lt_ptr_t reset_func = lt_dlsym(handle, "reset");
+    lt_ptr reset_func = lt_dlsym(handle, "reset");
     if (reset_func)
        ((void (*)())reset_func)();
 }
