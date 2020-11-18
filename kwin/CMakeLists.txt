@@ -36,3 +36,7 @@ target_link_libraries(kwin kde2::kwin kde2::kdeui)
 
 install(FILES eventsrc DESTINATION "${KDE2_DATADIR}/kwin")
 install(FILES pop.wav DESTINATION "${KDE2_SOUNDDIR}")
+
+add_subdirectory(clients)
+add_subdirectory(pics)
+
