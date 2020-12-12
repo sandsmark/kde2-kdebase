@@ -24,6 +24,6 @@ kde2_module(libkwinweb
     LIBS
         kde2::kwin
     )
-install(FILES web/web.desktop DESTINATION "${KDE2_DATADIR}/kwin")
+install(FILES web.desktop DESTINATION "${KDE2_DATADIR}/kwin")
 
 
