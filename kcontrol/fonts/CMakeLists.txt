@@ -7,7 +7,7 @@ qt2_wrap_cpp(kcm_fonts_SRCS
         fonts.h
 )
 
-kde2_module(kcm_fonts
+kde2_module(libkcm_fonts
     SOURCES
         ${kcm_fonts_SRCS}
     LIBS
