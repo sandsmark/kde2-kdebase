@@ -102,19 +102,17 @@ initLmSensors(void)
 	int nr = 0;
 
 	FILE* input;
-	if ((input = fopen("/etc/sensors.conf", "r")) == NULL)
-	{
-		LmSensorsOk = -1;
-		return;
-	}
+	input = fopen("/etc/sensors.conf", "r");
 
 	if (sensors_init(input))
 	{
 		LmSensorsOk = -1;
-		fclose(input);
+		if (input)
+			fclose(input);
 		return;
 	}
-	fclose(input);
+	if (input)
+		fclose(input);
 
 	LmSensors = new_ctnr(CT_SLL);
 	while ((scn = sensors_get_detected_chips(NULL, &nr)) != NULL)
