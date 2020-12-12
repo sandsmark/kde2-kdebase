@@ -2,6 +2,7 @@ set(kwin_SRCS
     workspace.cpp atoms.cpp  client.cpp main.cpp
     tabbox.cpp options.cpp plugins.cpp events.cpp
     killwindow.cpp kwinbutton.cpp
+    KWinInterface_stub.cpp
     )
 
 kde2_wrap_kidl(kwin_SRCS
