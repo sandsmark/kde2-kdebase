@@ -24,5 +24,5 @@ kde2_module(libkwinriskos
     LIBS
         kde2::kwin
     )
-install(FILES riskos/riskos.desktop DESTINATION "${KDE2_DATADIR}/kwin")
+install(FILES riskos.desktop DESTINATION "${KDE2_DATADIR}/kwin")
 
