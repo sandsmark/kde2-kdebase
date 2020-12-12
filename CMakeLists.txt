@@ -65,7 +65,7 @@ add_subdirectory(libkonq)
 
 add_subdirectory(applnk)
 #add_subdirectory(doc)
-#add_subdirectory(drkonqi)
+add_subdirectory(drkonqi)
 #add_subdirectory(kaddressbook)
 #add_subdirectory(kappfinder)
 #add_subdirectory(kate)
