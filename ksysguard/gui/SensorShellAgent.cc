@@ -75,7 +75,7 @@ SensorShellAgent::start(const QString& host_, const QString& shell_,
 	if (command != "")
 		cmd =  command;
 	else
-		cmd = shell + " " + host + " ksysguardd";
+		cmd = shell + " " + host + " ksysguardd2";
 	*daemon << cmd;
 
 	if (!daemon->start(KProcess::NotifyOnExit, KProcess::All))

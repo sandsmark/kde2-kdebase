@@ -191,7 +191,7 @@ TopLevel::readIntegerSensor(const QString& sensorLocator)
 		kapp->dcopClient()->beginTransaction();
 	dcopFIFO.prepend(dcopTransaction);
 
-	SensorMgr->engage(host, "", "ksysguardd");
+	SensorMgr->engage(host, "", "ksysguardd2");
 	SensorMgr->sendRequest(host, sensor, (SensorClient*) this, 133);
 
 	return (QString::null);
@@ -210,7 +210,7 @@ TopLevel::readListSensor(const QString& sensorLocator)
 		kapp->dcopClient()->beginTransaction();
 	dcopFIFO.prepend(dcopTransaction);
 
-	SensorMgr->engage(host, "", "ksysguardd");
+	SensorMgr->engage(host, "", "ksysguardd2");
 	SensorMgr->sendRequest(host, sensor, (SensorClient*) this, 134);
 
 	return retval;
@@ -273,7 +273,7 @@ TopLevel::showRequestedSheets()
 void
 TopLevel::initStatusBar()
 {
-	SensorMgr->engage("localhost", "", "ksysguardd");
+	SensorMgr->engage("localhost", "", "ksysguardd2");
 	/* Request info about the swap space size and the units it is
 	 * measured in.  The requested info will be received by
 	 * answerReceived(). */
