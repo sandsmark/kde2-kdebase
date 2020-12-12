@@ -18,3 +18,5 @@ target_link_libraries(ksysguardd2
     kde2::ccont
     sensors
     )
+
+install(TARGETS ksysguardd2 RUNTIME DESTINATION ${KDE2_BINDIR})
