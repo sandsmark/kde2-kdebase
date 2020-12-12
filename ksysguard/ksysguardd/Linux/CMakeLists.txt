@@ -5,7 +5,8 @@ add_executable(ksysguardd2
     lmsensors.c netstat.c diskstat.c logfile.c conf.c
     )
 
-add_definitions(-DVERSION=\"2.2.2\" -DKSYSGUARDDRCFILE=\"${CMAKE_INSTALL_FULL_SYSCONFDIR}\")
+include(GNUInstallDirs)
+add_definitions(-DVERSION=\"2.2.2\" -DKSYSGUARDDRCFILE=\"${CMAKE_INSTALL_FULL_SYSCONFDIR}/ksysguardd2rc\")
 
 include(CheckIncludeFiles)
 check_include_files(sensors/sensors.h HAVE_SENSORS_SENSORS_H)
