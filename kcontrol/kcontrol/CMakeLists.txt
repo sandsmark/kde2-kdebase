@@ -61,3 +61,5 @@ kde2_wrap_kidl(kcmshell_SRCS SOURCES kcdialog.h)
 
 add_executable(kcmshell ${kcmshell_SRCS})
 target_link_libraries(kcmshell kde2::kcontrol)
+
+install(TARGETS kcontrol kcminit kcmshell RUNTIME DESTINATION ${KDE2_BINDIR})
