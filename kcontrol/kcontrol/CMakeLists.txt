@@ -1,3 +1,5 @@
+add_subdirectory(pics)
+
 set(kcontrol_SRCS
     toplevel.cpp
     indexwidget.cpp
