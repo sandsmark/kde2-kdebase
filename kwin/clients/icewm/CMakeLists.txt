@@ -9,13 +9,39 @@ kde2_module(libkwinicewm_config
 
 
 install(FILES
-        titleAB.xpm titleAJ.xpm titleAM.xpm titleAP.xpm titleAQ.xpm titleAR.xpm
-        titleAS.xpm titleAT.xpm titleIB.xpm titleIJ.xpm titleIM.xpm titleIQ.xpm
-        titleIR.xpm titleIS.xpm titleIT.xpm titleIP.xpm closeA.xpm closeI.xpm
-        depthA.xpm depthI.xpm maximizeA.xpm maximizeI.xpm menuButtonA.xpm
-        menuButtonI.xpm minimizeA.xpm minimizeI.xpm restoreA.xpm restoreI.xpm
-        rolldownA.xpm rolldownI.xpm rollupA.xpm rollupI.xpm
-        default.theme
+        icewm-themes/titleAB.xpm
+        icewm-themes/titleAJ.xpm
+        icewm-themes/titleAM.xpm
+        icewm-themes/titleAP.xpm
+        icewm-themes/titleAQ.xpm
+        icewm-themes/titleAR.xpm
+        icewm-themes/titleAS.xpm
+        icewm-themes/titleAT.xpm
+        icewm-themes/titleIB.xpm
+        icewm-themes/titleIJ.xpm
+        icewm-themes/titleIM.xpm
+        icewm-themes/titleIQ.xpm
+        icewm-themes/titleIR.xpm
+        icewm-themes/titleIS.xpm
+        icewm-themes/titleIT.xpm
+        icewm-themes/titleIP.xpm
+        icewm-themes/closeA.xpm
+        icewm-themes/closeI.xpm
+        icewm-themes/depthA.xpm
+        icewm-themes/depthI.xpm
+        icewm-themes/maximizeA.xpm
+        icewm-themes/maximizeI.xpm
+        icewm-themes/menuButtonA.xpm
+        icewm-themes/menuButtonI.xpm
+        icewm-themes/minimizeA.xpm
+        icewm-themes/minimizeI.xpm
+        icewm-themes/restoreA.xpm
+        icewm-themes/restoreI.xpm
+        icewm-themes/rolldownA.xpm
+        icewm-themes/rolldownI.xpm
+        icewm-themes/rollupA.xpm
+        icewm-themes/rollupI.xpm
+        icewm-themes/default.theme
     DESTINATION
         "${KDE2_DATADIR}/kwin/icewm-themes"
     )
