@@ -23,6 +23,7 @@
 #include <time.h>
 #include <pwd.h>
 #include <sys/types.h>
+#include <string.h>
 
 #include "ccont.h"
 #include "PWUIDCache.h"
