@@ -47,3 +47,23 @@ set(kvm_SRCS kvm.cpp vm.c vm_random.c)
 qt2_wrap_cpp(kvm_SRCS SOURCES kvm.h)
 add_executable(kvm.kss ${kvm_SRCS})
 target_link_libraries(kvm.kss kde2::kscreensaver)
+
+
+install(FILES
+        KBanner.desktop
+        KBlankscreen.desktop
+        KPolygon.desktop
+        KSlideshow.desktop
+        KLines.desktop
+        KLorenz.desktop
+        KBlob.desktop
+        KVm.desktop
+        KMatrix.desktop
+        KScience.desktop
+    DESTINATION "${KDE2_APPSDIR}/System/ScreenSavers"
+)
+
+install(FILES
+        kscience.png
+    DESTINATION "${KDE2_DATADIR}/kscreensaver"
+)
