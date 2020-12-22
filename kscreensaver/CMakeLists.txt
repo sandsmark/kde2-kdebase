@@ -1,3 +1,5 @@
+add_subdirectory(kdesavers)
+
 add_executable(krandom.kss random.cpp)
 target_link_libraries(krandom.kss
     kde2::kdeui
