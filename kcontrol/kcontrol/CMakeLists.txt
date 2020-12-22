@@ -61,6 +61,13 @@ set(kcmshell_SRCS
 qt2_wrap_cpp(kcmshell_SRCS SOURCES kcmshell.h kcdialog.h)
 kde2_wrap_kidl(kcmshell_SRCS SOURCES kcdialog.h)
 
+kde2_module(kcmshell
+    SOURCES
+        ${kcmshell_SRCS}
+    LIBS
+        kde2::kcontrol
+    )
+
 add_executable(kcmshell ${kcmshell_SRCS})
 target_link_libraries(kcmshell kde2::kcontrol)
 
