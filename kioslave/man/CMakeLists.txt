@@ -6,7 +6,6 @@ qt2_wrap_cpp(kio_man_SRC
     SOURCES
         kio_man.h
     )
-message(STATUS "sorc: ${kio_man_SRC}")
 kde2_module(kio_man SOURCES ${kio_man_SRC} LIBS kde2::kio kde2::ksycoca)
 install(FILES man.protocol DESTINATION "${KDE2_SERVICESDIR}")
 

@@ -49,6 +49,21 @@ add_executable(kvm.kss ${kvm_SRCS})
 target_link_libraries(kvm.kss kde2::kscreensaver)
 
 
+install(TARGETS
+    kbanner.kss
+    kblankscreen.kss
+    kblob.kss
+    klines.kss
+    klorenz.kss
+    kmatrix.kss
+    kpolygon.kss
+    kscience.kss
+    kslideshow.kss
+    kvm.kss
+
+    RUNTIME DESTINATION ${KDE2_BINDIR}
+)
+
 install(FILES
         KBanner.desktop
         KBlankscreen.desktop
