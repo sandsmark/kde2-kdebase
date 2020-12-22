@@ -31,11 +31,14 @@ if (PAM_FOUND)
     # Some things default to xdm, which doesn't exist anymore
     # TODO: use the config.h crap
     add_definitions(-DKSCREENSAVER_PAM_SERVICE=\"system-auth\")
+    add_definitions(-DKCHECKPASS_PAM_SERVICE=\"system-auth\")
 endif()
 find_package(JPEG)
 
 find_package(Qt2 REQUIRED)
+
 find_package(DCOP REQUIRED)
+
 find_package(kdelibs2 REQUIRED)
 find_package(kdecore REQUIRED)
 find_package(kdeui REQUIRED)
@@ -53,6 +56,8 @@ find_package(artskde REQUIRED)
 find_package(kdeprint REQUIRED)
 find_package(kjava REQUIRED)
 find_package(khtml REQUIRED)
+find_package(kdefakes REQUIRED)
+
 find_package(ZLIB REQUIRED)
 find_package(Threads REQUIRED)
 find_package(X11 REQUIRED)
@@ -69,7 +74,7 @@ add_subdirectory(drkonqi)
 #add_subdirectory(kaddressbook)
 #add_subdirectory(kappfinder)
 #add_subdirectory(kate)
-#add_subdirectory(kcheckpass)
+add_subdirectory(kcheckpass)
 add_subdirectory(kcontrol)
 #add_subdirectory(kdcop)
 add_subdirectory(kdebugdialog)
