@@ -1,4 +1,5 @@
 add_subdirectory(pics)
+add_subdirectory(htmlsearch)
 
 set(libkhelpcenter_SRCS
         khc_factory.cc
