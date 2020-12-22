@@ -78,6 +78,8 @@ target_link_libraries(ksysguard2
     kde2::kfile
     )
 
+install(TARGETS ksysguard2 RUNTIME DESTINATION ${KDE2_BINDIR})
+
 install(FILES ksysguard.desktop DESTINATION ${KDE2_APPSDIR}/System)
 install(FILES ksysguardui.rc DESTINATION ${KDE2_DATADIR}/ksysguard)
 install(FILES x-ksysguard.desktop DESTINATION ${KDE2_MIMEDIR}/application)

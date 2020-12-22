@@ -35,6 +35,8 @@ kde2_library(libkwin
 add_executable(kwin kwin_main.cpp)
 target_link_libraries(kwin kde2::kwin kde2::kdeui)
 
+install(TARGETS kwin RUNTIME DESTINATION ${KDE2_BINDIR})
+
 install(FILES eventsrc DESTINATION "${KDE2_DATADIR}/kwin")
 install(FILES pop.wav DESTINATION "${KDE2_SOUNDDIR}")
 
