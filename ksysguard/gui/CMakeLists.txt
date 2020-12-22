@@ -1,21 +1,42 @@
+qt2_wrap_cpp(common_moc_SRCS
+    SOURCES
+        ColorPicker.h
+        FancyPlotter.h
+        SignalPlotter.h
+        SensorDisplay.h
+        StyleEngine.h
+        SensorManager.h
+        SensorAgent.h
+        SensorShellAgent.h
+        SensorSocketAgent.h
+    )
+
 set(ksysguard_SRCS
-	ColorPicker.cc
-	SensorDisplay.cc
-	DummyDisplay.cc
-	FancyPlotter.cc SignalPlotter.cc
-	MultiMeter.cc
-	DancingBars.cc BarGraph.cc
-	ProcessController.cc ProcessList.cc
-	ListView.cc
-	LogFile.cc LogFileSettings.cc
-	StyleEngine.cc
-	SensorLogger.cc
-	SensorBrowser.cc
-	SensorManager.cc
-	SensorAgent.cc SensorShellAgent.cc SensorSocketAgent.cc
-	WorkSheet.cc Workspace.cc
-	ksysguard.cc
+        ColorPicker.cc
+        SensorDisplay.cc
+        DummyDisplay.cc
+        FancyPlotter.cc
+        SignalPlotter.cc
+        MultiMeter.cc
+        DancingBars.cc
+        BarGraph.cc
+        ProcessController.cc
+        ProcessList.cc
+        ListView.cc
+        LogFile.cc
+        LogFileSettings.cc
+        StyleEngine.cc
+        SensorLogger.cc
+        SensorBrowser.cc
+        SensorManager.cc
+        SensorAgent.cc
+        SensorShellAgent.cc
+        SensorSocketAgent.cc
+        WorkSheet.cc
+        Workspace.cc
+        ksysguard.cc
         ksysguard_stub.cpp
+        ${common_moc_SRCS}
 )
 
 qt2_wrap_ui(ksysguard_SRCS
@@ -24,14 +45,11 @@ qt2_wrap_ui(ksysguard_SRCS
 	FancyPlotterSettings.ui HostConnector.ui WorkSheetSettings.ui
 	ListViewSettings.ui BarGraphSettings.ui StyleSettings.ui SensorLoggerDlg.ui SensorLoggerSettings.ui
     )
-
 qt2_wrap_cpp(ksysguard_SRCS
     SOURCES
         BarGraph.h
-        ColorPicker.h
         DancingBars.h
         DummyDisplay.h
-        FancyPlotter.h
         KSysGuardApplet.h
         ListView.h
         LogFile.h
@@ -40,16 +58,9 @@ qt2_wrap_cpp(ksysguard_SRCS
         ProcessController.h
         ProcessList.h
         ReniceDlg.h
-        SensorAgent.h
         SensorBrowser.h
-        SensorDisplay.h
         SensorLogger.h
         SensorLogger.h
-        SensorManager.h
-        SensorShellAgent.h
-        SensorSocketAgent.h
-        SignalPlotter.h
-        StyleEngine.h
         WorkSheet.h
         WorkSheetSetup.h
         Workspace.h
@@ -78,27 +89,22 @@ install(
     )
 
 set(ksysguardapplet_SRCS
-	ColorPicker.cc
-	FancyPlotter.cc SignalPlotter.cc
-	SensorDisplay.cc
-	StyleEngine.cc
-	SensorManager.cc
-	SensorAgent.cc SensorShellAgent.cc SensorSocketAgent.cc
-	KSysGuardApplet.cc
+        ColorPicker.cc
+        FancyPlotter.cc
+        SignalPlotter.cc
+        SensorDisplay.cc
+        StyleEngine.cc
+        SensorManager.cc
+        SensorAgent.cc
+        SensorShellAgent.cc
+        SensorSocketAgent.cc
+        KSysGuardApplet.cc
+        ${common_moc_SRCS}
     )
 
-qt2_wrap_moc(ksysguardapplet_SRCS
-        ColorPicker.h
-        FancyPlotter.h
-        SignalPlotter.h
-        SensorDisplay.h
-        StyleEngine.h
-        SensorManager.h
-        SensorAgent.moc
-        SensorShellAgent.h
-        SensorSocketAgent.h
-        KSysGuardApplet.h
-    )
+qt2_wrap_cpp(ksysguardapplet_SRCS
+    KSysGuardApplet.h
+)
 
 qt2_wrap_ui(ksysguardapplet_SRCS
     SOURCES
