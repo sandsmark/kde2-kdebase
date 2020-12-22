@@ -5,4 +5,4 @@ install(FILES
     kde2.xbm
     DESTINATION ${KDE2_DATADIR}/kdesktop/pics/)
 
-KDE2_ICON(error)
+kde2_icon(hi32-app-error.png)

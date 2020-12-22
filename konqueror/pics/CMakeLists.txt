@@ -1,5 +1,9 @@
-KDE2_ICON(kfm)
-KDE2_ICON(konqueror)
+kde2_icon(hi16-app-kfm.png)
+kde2_icon(hi16-app-konqueror.png)
+kde2_icon(hi32-app-kfm.png)
+kde2_icon(hi32-app-konqueror.png)
+kde2_icon(hi48-app-kfm.png)
+kde2_icon(hi48-app-konqueror.png)
 
 install(FILES
     tiles/bluemorning.png
