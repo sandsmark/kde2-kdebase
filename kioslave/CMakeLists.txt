@@ -8,9 +8,9 @@ kde2_module(kio_tar SOURCES tar/tar.cc LIBS kde2::kio kde2::ksycoca)
 install(FILES tar/tar.protocol DESTINATION "${KDE2_SERVICESDIR}")
 
 add_subdirectory(thumbnail)
+add_subdirectory(man)
 
 #add_subdirectory(info)
-#add_subdirectory(man)
 #add_subdirectory(nfs)
 #add_subdirectory(nntp)
 #add_subdirectory(pop3)
