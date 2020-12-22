@@ -105,7 +105,8 @@ set(ksysguardapplet_SRCS
     )
 
 qt2_wrap_cpp(ksysguardapplet_SRCS
-    KSysGuardApplet.h
+    SOURCES
+        KSysGuardApplet.h
 )
 
 qt2_wrap_ui(ksysguardapplet_SRCS
