@@ -87,6 +87,19 @@ set(ksysguardapplet_SRCS
 	KSysGuardApplet.cc
     )
 
+qt2_wrap_moc(ksysguardapplet_SRCS
+        ColorPicker.h
+        FancyPlotter.h
+        SignalPlotter.h
+        SensorDisplay.h
+        StyleEngine.h
+        SensorManager.h
+        SensorAgent.moc
+        SensorShellAgent.h
+        SensorSocketAgent.h
+        KSysGuardApplet.h
+    )
+
 qt2_wrap_ui(ksysguardapplet_SRCS
     SOURCES
 	FancyPlotterSettings.ui HostConnector.ui KSysGuardAppletSettings.ui
