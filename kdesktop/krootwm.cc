@@ -469,7 +469,7 @@ void KRootWm::slotCascadeWindows() {
 
 
 void KRootWm::slotHelp() {
-    KApplication::kdeinitExec(QString::fromLatin1("khelpcenter"));
+    KApplication::kdeinitExec(QString::fromLatin1("khelpcenter2"));
 }
 
 
