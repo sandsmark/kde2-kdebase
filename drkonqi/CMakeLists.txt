@@ -19,10 +19,11 @@ qt2_wrap_cpp(drkonqi_SRCS
         toplevel.h
         )
 
-add_executable(drkonqi2 ${drkonqi_SRCS})
+kde2_kinit_executable(drkonqi2
+    SOURCES
+        ${drkonqi_SRCS}
+    LIBS
+        kde2::kdeui
+        kde2::kfile
+)
 
-target_link_libraries(drkonqi2
-    kde2::kdeui
-    kde2::kfile
-    )
-install(TARGETS drkonqi2 RUNTIME DESTINATION ${KDE2_BINDIR})

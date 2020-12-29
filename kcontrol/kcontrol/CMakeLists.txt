@@ -47,11 +47,19 @@ kde2_library(libkcontrol
         kde2::kfile
     )
 
-add_executable(kcontrol main.cpp)
-target_link_libraries(kcontrol kde2::kcontrol)
+kde2_kinit_executable(kcontrol
+    SOURCES
+        main.cpp
+    LIBS
+        kde2::kcontrol
+    )
 
-add_executable(kcminit kcminit.cpp)
-target_link_libraries(kcminit kde2::kcontrol)
+kde2_kinit_executable(kcminit
+    SOURCES
+        kcminit.cpp
+    LIBS
+        kde2::kcontrol
+    )
 
 set(kcmshell_SRCS
     kcmshell.cpp
@@ -61,14 +69,9 @@ set(kcmshell_SRCS
 qt2_wrap_cpp(kcmshell_SRCS SOURCES kcmshell.h kcdialog.h)
 kde2_wrap_kidl(kcmshell_SRCS SOURCES kcdialog.h)
 
-kde2_module(kcmshell
+kde2_kinit_executable(kcmshell
     SOURCES
         ${kcmshell_SRCS}
     LIBS
         kde2::kcontrol
     )
-
-add_executable(kcmshell ${kcmshell_SRCS})
-target_link_libraries(kcmshell kde2::kcontrol)
-
-install(TARGETS kcontrol kcminit kcmshell RUNTIME DESTINATION ${KDE2_BINDIR})

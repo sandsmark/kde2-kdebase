@@ -7,10 +7,9 @@ qt2_wrap_cpp(keditbookmarks_SRCS
         commands.h
     )
 
-add_executable(keditbookmarks
-    ${keditbookmarks_SRCS}
+kde2_kinit_executable(keditbookmarks
+    SOURCES
+        ${keditbookmarks_SRCS}
+    LIBS
+        kde2::konq
     )
-target_link_libraries(keditbookmarks
-    kde2::konq
-    )
-install(TARGETS keditbookmarks RUNTIME DESTINATION ${KDE2_BINDIR})

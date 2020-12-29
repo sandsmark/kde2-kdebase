@@ -96,15 +96,13 @@ qt2_wrap_cpp(kicker_SRCS
 #        kde2::konq
 #   )
 
-add_executable(kicker
+kde2_kinit_executable(kicker
+    SOURCES
         ${kicker_SRCS}
+    LIBS
+        kde2::kicker
     )
-target_include_directories(kicker PRIVATE ui core share)
-install(TARGETS kicker RUNTIME DESTINATION ${KDE2_BINDIR})
-
-target_link_libraries(kicker
-    kde2::kicker
-    )
+target_include_directories(kinit_kicker PRIVATE ui core share)
 
 install(FILES core/default-apps DESTINATION ${KDE2_DATADIR}/kicker)
 install(FILES panel.desktop DESTINATION ${KDEDIR}/share/autostart)
