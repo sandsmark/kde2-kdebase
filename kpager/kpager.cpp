@@ -54,6 +54,7 @@
 
 #include "kpager.h"
 #include "desktop.h"
+#include "config.h"
 
 KPagerMainWindow::KPagerMainWindow(QWidget *parent, const char *name)
 	: KMainWindow(parent, name)
