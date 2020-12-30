@@ -39,9 +39,6 @@ set(kdesktop_SRCS
     main.cc
     desktop.cc
     bgmanager.cc
-
-    ../kcontrol/background/bgsettings.cc
-    ../kcontrol/background/bgrender.cc
     )
 
 kde2_wrap_kidl(libkdesktop_SRCS
@@ -94,6 +91,7 @@ add_executable(kdesktop ${kdesktop_SRCS})
 install(TARGETS kdesktop RUNTIME DESTINATION ${KDE2_BINDIR})
 target_link_libraries(kdesktop
     kde2::kdesktop
+    kde2::bgnd
     )
 #target_compile_definitions(kdesktop PUBLIC
 #    PACKAGE="kdesktop"
