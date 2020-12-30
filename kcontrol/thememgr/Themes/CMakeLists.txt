@@ -1,5 +1,5 @@
 function(pack_ktheme THEME_NAME)
-    add_custom_command(OUTPUT ${THEME_NAME}.ktheme
+    add_custom_command(OUTPUT  "${CMAKE_CURRENT_BINARY_DIR}/${THEME_NAME}.ktheme"
         COMMAND ${CMAKE_COMMAND} -E tar "cfvz" "${CMAKE_CURRENT_BINARY_DIR}/${THEME_NAME}.ktheme" "${THEME_NAME}"
             VERBATIM
             DEPENDS ${THEME_NAME}
