@@ -913,6 +913,8 @@ void KSMServer::processData( int /*socket*/ )
 	    deleteClient( it.current() );
 	    SmsCleanUp( smsConn );
 	}
+        // TODO: trinity believes this is a double free, and moved it into the above if block.
+        // Should probably NULL it out after freeing and add a NULL check everywhere.
 	(void) IceCloseConnection( iceConn );
     }
 }
