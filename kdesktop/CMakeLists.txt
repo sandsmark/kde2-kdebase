@@ -88,7 +88,6 @@ kde2_library(libkdesktop
         kde2::kfile
         kde2::konq
         ZLIB::ZLIB
-        Threads::Threads
     )
 
 add_executable(kdesktop ${kdesktop_SRCS})

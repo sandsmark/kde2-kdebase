@@ -64,7 +64,6 @@ kde2_library(libkonqueror
     LIBS
         kde2::konq
         ZLIB::ZLIB
-        Threads::Threads
     )
 
 

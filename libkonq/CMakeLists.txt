@@ -101,7 +101,6 @@ kde2_library(libkonq
         kde2::kparts
         kde2::artskde
         ZLIB::ZLIB
-        Threads::Threads
     VERSION
         2.2.2
     )
