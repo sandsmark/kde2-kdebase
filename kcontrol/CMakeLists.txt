@@ -9,7 +9,7 @@ if (XKBstr_FOUND)
 endif()
 
 #add_subdirectory(bell)
-#add_subdirectory(background)
+add_subdirectory(background)
 #add_subdirectory(filetypes)
 #add_subdirectory(samba)
 add_subdirectory(display)
