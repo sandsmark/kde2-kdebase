@@ -19,9 +19,13 @@ cmake_minimum_required(VERSION 3.1.0)
 
 project(kdebase VERSION 0.3.0 LANGUAGES C CXX)
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
+
 #list(APPEND CMAKE_MODULE_PATH /usr/share/cmake-3.18/Modules/)
 
 set(OpenGL_GL_PREFERENCE "LEGACY")
+find_package(OpenGL COMPONENTS OpenGL GLX)
+find_package(GLUT)
+
 find_package(PAM)
 
 if (PAM_FOUND)
@@ -61,6 +65,12 @@ find_package(kscreensaver REQUIRED)
 
 find_package(ZLIB REQUIRED)
 find_package(X11 REQUIRED)
+find_package(LAME)
+find_package(OggVorbis)
+find_package(OpenSSL)
+
+include(kde2_configure)
+create_kde2_config_header()
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/common/)
 
