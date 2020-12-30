@@ -20,7 +20,7 @@ kde2_library(filetypes
         kde2::kfile
     )
 
-kde2_module(kcm_filetypes SOURCES filetypesview.cpp LIBS kde2::filetypes)
+kde2_module(libkcm_filetypes SOURCES filetypesview.cpp LIBS kde2::filetypes)
 kde2_kinit_executable(keditfiletype SOURCES keditfiletype.cpp LIBS kde2::filetypes)
 
 install(FILES filetypes.desktop DESTINATION "${KDE2_APPSDIR}/Settings/FileBrowsing")
