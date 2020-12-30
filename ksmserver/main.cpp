@@ -99,7 +99,7 @@ void sanity_check( int argc, char* argv[] )
   }
   if (msg.isEmpty())
   {
-     path += "/.ICEauthority";
+     path = IceAuthFileName();
  
      if (access(path.data(), W_OK) && (errno != ENOENT))
         msg = "No write access to '%s'.";
