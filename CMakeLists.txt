@@ -63,6 +63,7 @@ find_package(kjava REQUIRED)
 find_package(khtml REQUIRED)
 find_package(kdefakes REQUIRED)
 find_package(kscreensaver REQUIRED)
+find_package(kspell REQUIRED)
 
 find_package(JPEG)
 find_package(ZLIB REQUIRED)
