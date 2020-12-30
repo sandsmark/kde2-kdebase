@@ -35,6 +35,5 @@ kde2_kinit_executable(kpersonalizer
 
 install(FILES kpersonalizer.desktop DESTINATION ${KDE2_APPSDIR}/System)
 install(FILES kpersonalizer.desktop DESTINATION ${KDEDIR}/share/autostart)
-message(STATUS "kdedir: ${KDEDIR}")
 
 add_subdirectory(pics)
