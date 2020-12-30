@@ -8,8 +8,8 @@ function(pack_ktheme THEME_NAME)
 
         install(FILES "${CMAKE_CURRENT_BINARY_DIR}/${THEME_NAME}.ktheme" DESTINATION "${KDE2_DATADIR}/kthememgr/Themes")
 
-        #add_custom_target(theme_${THEME_NAME} ALL DEPENDS ${THEME_NAME}.ktheme)
-        #add_dependencies(module_libkcm_themes theme_${THEME_NAME})
+        add_custom_target(theme_${THEME_NAME} ALL DEPENDS ${THEME_NAME}.ktheme)
+        add_dependencies(module_libkcm_themes theme_${THEME_NAME})
 endfunction()
 
 pack_ktheme(Default)
