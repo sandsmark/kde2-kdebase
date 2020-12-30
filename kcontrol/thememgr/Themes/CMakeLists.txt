@@ -13,3 +13,6 @@ function(pack_ktheme THEME_NAME)
 endfunction()
 
 pack_ktheme(Default)
+pack_ktheme(MGBreizh)
+pack_ktheme(Nostalgy)
+pack_ktheme(Wood)
