@@ -28,6 +28,9 @@ find_package(GLUT)
 
 find_package(PAM)
 
+#TODO or something
+set(KDEDIR ${CMAKE_INSTALL_PREFIX})
+
 if (PAM_FOUND)
     add_definitions(-DHAVE_PAM)
     add_definitions(-DUSE_PAM)
@@ -37,10 +40,8 @@ if (PAM_FOUND)
     add_definitions(-DKSCREENSAVER_PAM_SERVICE=\"system-auth\")
     add_definitions(-DKCHECKPASS_PAM_SERVICE=\"system-auth\")
 endif()
-find_package(JPEG)
 
 find_package(Qt2 REQUIRED)
-
 find_package(DCOP REQUIRED)
 
 find_package(kdelibs2 REQUIRED)
@@ -63,6 +64,7 @@ find_package(khtml REQUIRED)
 find_package(kdefakes REQUIRED)
 find_package(kscreensaver REQUIRED)
 
+find_package(JPEG)
 find_package(ZLIB REQUIRED)
 find_package(X11 REQUIRED)
 find_package(LAME)
@@ -101,7 +103,7 @@ add_subdirectory(klipper)
 add_subdirectory(konqueror)
 #add_subdirectory(konsole)
 add_subdirectory(kpager)
-#add_subdirectory(kpersonalizer)
+add_subdirectory(kpersonalizer)
 #add_subdirectory(kreadconfig)
 add_subdirectory(kscreensaver)
 add_subdirectory(ksmserver)
