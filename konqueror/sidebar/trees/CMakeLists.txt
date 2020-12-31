@@ -18,6 +18,17 @@ kde2_library(libkonqsidebar_tree
         kde2::konqsidebarplugin
     )
 
+file(TOUCH
+    ${CMAKE_CURRENT_BINARY_DIR}/konqsidebar_dummy.cpp
+    )
+
+kde2_module(libkonqsidebar_tree
+    SOURCES
+        ${CMAKE_CURRENT_BINARY_DIR}/konqsidebar_dummy.cpp
+    LIBS
+        kde2::konqsidebar_tree
+    )
+
 add_subdirectory(dirtree_module)
 add_subdirectory(history_module)
 add_subdirectory(bookmark_module)
