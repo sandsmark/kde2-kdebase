@@ -21,3 +21,4 @@ kde2_library(libkonqsidebar_tree
 add_subdirectory(dirtree_module)
 add_subdirectory(history_module)
 add_subdirectory(bookmark_module)
+add_subdirectory(init)
