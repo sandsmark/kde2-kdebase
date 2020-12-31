@@ -17,5 +17,3 @@ target_link_libraries(kfmclient
     )
 install(TARGETS kfmclient RUNTIME DESTINATION ${KDE2_BINDIR})
 
-target_include_directories(kfmclient PRIVATE ${CMAKE_CURRENT_BINARY_DIRECTORY}/..)
-
