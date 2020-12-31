@@ -1,6 +1,0 @@
-kio_*
-Makefile.in
-Makefile
-*~
-*.core
-spop3.cc

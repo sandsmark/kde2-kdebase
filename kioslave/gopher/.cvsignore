@@ -1,7 +1,0 @@
-kio_*
-*.in
-Makefile
-*~
-*.core
-.libs
-Makefile.in

@@ -1,5 +1,0 @@
-Makefile
-Makefile.in
-*.closure
-childpanelextension_skel.cpp
-childpanelextension.kidl

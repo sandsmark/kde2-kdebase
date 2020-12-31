@@ -1,8 +1,0 @@
-Makefile
-Makefile.in
-nspluginviewer
-NSPluginCallbackIface.kidl
-NSPluginCallbackIface_stub.h
-NSPluginCallbackIface_stub.cpp
-NSPluginClassIface.kidl
-NSPluginClassIface_skel.cpp

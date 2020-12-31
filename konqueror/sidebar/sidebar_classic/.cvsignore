@@ -1,6 +1,0 @@
-*.la
-*.moc
-*.so
-Makefile
-Makefile.in
-konqsidebar_classic_wrap.loT

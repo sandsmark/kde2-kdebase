@@ -1,9 +1,0 @@
-*.moc
-*.la
-*.lo
-Makefile.in
-Makefile
-*_skel.*
-*.kidl
-history_dlg.cpp
-history_dlg.h
