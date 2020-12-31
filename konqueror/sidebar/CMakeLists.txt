@@ -9,26 +9,24 @@ qt2_wrap_cpp(sidebar_SRCS
         sidebar_widget.h
     )
 
-set(sidebarplugin_SRCS
-        konqsidebarplugin.cpp
-    )
-qt2_wrap_cpp(sidebarplugin_SRCS
+qt2_wrap_cpp(sidebarplugin_MOC
     SOURCES
         konqsidebarplugin.h
     )
 
-kde2_library(libkonqsidebar
+kde2_library(libkonqsidebarplugin
     SOURCES
-        ${sidebar_SRCS}
+        konqsidebarplugin.cpp
+        ${sidebarplugin_MOC}
     LIBS
         kde2::konq
     )
 
-kde2_library(libkonqsidebarplugin
+kde2_module(libkonqsidebar
     SOURCES
-        ${sidebarplugin_SRCS}
+        ${sidebar_SRCS}
     LIBS
-        kde2::konqsidebar
+        kde2::konqsidebarplugin
     )
 
 install(FILES konq_sidebartng.desktop DESTINATION ${KDE2_SERVICESDIR})
