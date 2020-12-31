@@ -1,3 +1,5 @@
+kde2_stdicon()
+
 add_subdirectory(pics)
 
 set(kcontrol_SRCS
@@ -75,3 +77,6 @@ kde2_kinit_executable(kcmshell
     LIBS
         kde2::kcontrol
     )
+
+install(FILES kcontrolui.rc DESTINATION ${KDE2_DATADIR}/kcontrol)
+install(FILES KControl.desktop DESTINATION ${KDE2_APPSDIR})
