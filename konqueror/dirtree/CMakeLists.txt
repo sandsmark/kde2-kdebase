@@ -25,7 +25,7 @@ qt2_wrap_ui(dirtree_SRCS
         history_module/history_dlg.ui
     )
 
-kde2_module(libkonqdirtree
+kde2_module(libkonqtree
     SOURCES
         ${dirtree_SRCS}
     LIBS
