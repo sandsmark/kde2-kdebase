@@ -10,8 +10,8 @@
 #add_subdirectory(factory)
 #add_subdirectory(interfaces)
 #add_subdirectory(main)
-#add_subdirectory(data)
-#add_subdirectory(pics)
+add_subdirectory(data)
+add_subdirectory(pics)
 
 set(qt3back_SRCS
     qt3back/qregexp3.cpp
