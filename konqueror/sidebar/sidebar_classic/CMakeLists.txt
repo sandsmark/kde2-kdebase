@@ -7,7 +7,7 @@ qt2_wrap_cpp(sidebar_classic_SRCS
         konqsidebar_classic_wrap.h
     )
 
-kde2_module(libkonqsidebar_classic
+kde2_module(libkonqsidebar_classic_wrap
     SOURCES
         ${sidebar_classic_SRCS}
     LIBS
