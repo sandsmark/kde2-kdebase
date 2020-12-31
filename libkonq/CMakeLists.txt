@@ -106,3 +106,5 @@ kde2_library(libkonq
     )
 
 install(FILES ${LIBKONQ_HEADERS} DESTINATION ${KDE2_INCLUDEDIR}/konq)
+
+add_subdirectory(favicons)

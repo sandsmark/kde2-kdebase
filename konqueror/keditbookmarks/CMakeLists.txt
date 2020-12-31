@@ -1,3 +1,5 @@
+kde2_stdicon()
+
 set(keditbookmarks_SRCS
     main.cpp toplevel.cpp commands.cpp
     )
@@ -13,3 +15,6 @@ kde2_kinit_executable(keditbookmarks
     LIBS
         kde2::konq
     )
+
+install(FILES keditbookmarksui.rc DESTINATION ${KDE2_DATADIR}/keditbookmarks)
+install(FILES keditbookmarks.desktop DESTINATION ${KDE2_APPSDIR}/Internet)

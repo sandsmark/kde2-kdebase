@@ -65,6 +65,7 @@ find_package(kdefakes REQUIRED)
 find_package(kscreensaver REQUIRED)
 find_package(kspell REQUIRED)
 find_package(ktexteditor REQUIRED)
+find_package(kdedmodule REQUIRED)
 
 find_package(JPEG)
 find_package(ZLIB REQUIRED)
