@@ -18,6 +18,10 @@ kde2_library(libkonqsidebar_tree
         kde2::konqsidebarplugin
     )
 
+include(GNUInstallDirs)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/libkonqsidebar_tree.la.in ${CMAKE_CURRENT_BINARY_DIR}/libkonqsidebar_tree.la @ONLY)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libkonqsidebar_tree.la DESTINATION "${CMAKE_INSTALL_LIBDIR}/kde2")
+
 add_subdirectory(dirtree_module)
 add_subdirectory(history_module)
 add_subdirectory(bookmark_module)
