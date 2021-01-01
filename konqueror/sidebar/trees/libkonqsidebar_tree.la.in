@@ -5,10 +5,10 @@
 # It is necessary for linking the library.
 
 # The name that we can dlopen(3).
-dlname='libkonqsidebar_tree.so'
+dlname='@LAPROP_SONAME@.so'
 
 # Names of this library.
-library_names='libkonqsidebar_tree.so libkonqsidebar_tree.so libkonqsidebar_tree.so'
+library_names='@LAPROP_SONAME@.so @LAPROP_SONAME@.so @LAPROP_SONAME@.so'
 
 # The name of the static archive.
 old_library=''
