@@ -329,7 +329,7 @@ void KDesktop::slotShowTaskManager()
     KProcess* p = new KProcess;
     CHECK_PTR(p);
 
-    *p << "ksysguard2";
+    *p << "ksysguard";
     *p << "--showprocesses";
 
     p->start(KProcess::DontCare);

@@ -12,6 +12,6 @@ install(
         waiting.png
         running.png
     DESTINATION
-        ${KDE2_DATADIR}/ksysguard2/pics
+        ${KDE2_DATADIR}/ksysguard/pics
     )
 

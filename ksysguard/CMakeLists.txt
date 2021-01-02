@@ -6,4 +6,4 @@ add_subdirectory(example)
 
 kde2_stdicon(ksysguard)
 
-install(TARGETS ksysguard2 RUNTIME DESTINATION ${KDE2_BINDIR})
+install(TARGETS ksysguard RUNTIME DESTINATION ${KDE2_BINDIR})

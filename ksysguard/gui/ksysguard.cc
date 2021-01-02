@@ -191,7 +191,7 @@ TopLevel::readIntegerSensor(const QString& sensorLocator)
 		kapp->dcopClient()->beginTransaction();
 	dcopFIFO.prepend(dcopTransaction);
 
-	SensorMgr->engage(host, "", "ksysguardd2");
+	SensorMgr->engage(host, "", "ksysguardd");
 	SensorMgr->sendRequest(host, sensor, (SensorClient*) this, 133);
 
 	return (QString::null);
@@ -210,7 +210,7 @@ TopLevel::readListSensor(const QString& sensorLocator)
 		kapp->dcopClient()->beginTransaction();
 	dcopFIFO.prepend(dcopTransaction);
 
-	SensorMgr->engage(host, "", "ksysguardd2");
+	SensorMgr->engage(host, "", "ksysguardd");
 	SensorMgr->sendRequest(host, sensor, (SensorClient*) this, 134);
 
 	return retval;
@@ -273,7 +273,7 @@ TopLevel::showRequestedSheets()
 void
 TopLevel::initStatusBar()
 {
-	SensorMgr->engage("localhost", "", "ksysguardd2");
+	SensorMgr->engage("localhost", "", "ksysguardd");
 	/* Request info about the swap space size and the units it is
 	 * measured in.  The requested info will be received by
 	 * answerReceived(). */
@@ -557,7 +557,7 @@ main(int argc, char** argv)
 	setsid();
 #endif
 
-	KAboutData aboutData("ksysguard2", I18N_NOOP("KDE System Guard"),
+	KAboutData aboutData("ksysguard", I18N_NOOP("KDE System Guard"),
 						 KSYSGUARD_VERSION, Description,
 						 KAboutData::License_GPL,
 						 I18N_NOOP("(c) 1996-2001, "
@@ -604,7 +604,7 @@ main(int argc, char** argv)
 	}
 	else
 	{
-		a->dcopClient()->registerAs("ksysguard2", FALSE);
+		a->dcopClient()->registerAs("ksysguard", FALSE);
 		a->dcopClient()->setDefaultObject("KSysGuardIface");
 
 		Toplevel = new TopLevel("KSysGuard");

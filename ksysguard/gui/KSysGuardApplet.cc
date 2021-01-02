@@ -51,7 +51,6 @@ extern "C"
 	KPanelApplet* init(QWidget *parent, const QString& configFile)
 	{
 		KGlobal::locale()->insertCatalogue("ksysguard");
-		KGlobal::locale()->insertCatalogue("ksysguard2");
 		return new KSysGuardApplet(configFile, KPanelApplet::Normal,
 								   KPanelApplet::Preferences, parent,
 								   "ksysguardapplet");
@@ -307,7 +306,7 @@ bool
 KSysGuardApplet::load()
 {
 	KStandardDirs* kstd = KGlobal::dirs();
-	kstd->addResourceType("data", "share/apps/ksysguard2");
+	kstd->addResourceType("data", "share/apps/ksysguard");
 	QString fileName = kstd->findResource("data", "KSysGuardApplet.xml");
 
 	QFile file(fileName);
@@ -464,7 +463,7 @@ KSysGuardApplet::save()
 		}	
 
 	KStandardDirs* kstd = KGlobal::dirs();
-	kstd->addResourceType("data", "share/apps/ksysguard2");
+	kstd->addResourceType("data", "share/apps/ksysguard");
 	QString fileName = kstd->saveLocation("data", "ksysguard");
 	fileName += "/KSysGuardApplet.xml";
 
