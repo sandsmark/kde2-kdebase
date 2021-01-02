@@ -1,6 +1,6 @@
 qt2_wrap_cpp(taskbarextension_MOC SOURCES taskbarextension.h)
 
-kde2_module(taskbarextension
+kde2_module(libtaskbarextension
     SOURCES
         taskbarextension.cpp
         ${taskbarextension_MOC}

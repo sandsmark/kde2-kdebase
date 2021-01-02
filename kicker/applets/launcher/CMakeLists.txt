@@ -1,11 +1,11 @@
-qt2_wrap_cpp(libquicklauncher_MOC
+qt2_wrap_cpp(quicklauncher_MOC
     SOURCES
         quickaddappsmenu.h
         quickbutton.h
         quicklauncher.h
     )
 
-kde2_module(quicklauncher
+kde2_module(libquicklauncher
     SOURCES
         quicklauncher.cpp quickbutton.cpp quickaddappsmenu.cpp
         ${quicklauncher_MOC}

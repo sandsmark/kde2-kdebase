@@ -4,7 +4,7 @@ qt2_wrap_cpp(dockbarextension_MOC
         dockcontainer.h
     )
 
-kde2_module(dockbarextension
+kde2_module(libdockbarextension
     SOURCES
         dockcontainer.cpp dockbarextension.cpp
         ${dockbarextension_MOC}

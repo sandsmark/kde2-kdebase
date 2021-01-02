@@ -14,7 +14,7 @@ qt2_wrap_cpp(kasbarextension_MOC
         kastaskpopup.h
     )
 
-kde2_module(kasbarextension
+kde2_module(libkasbarextension
     SOURCES
         kasbar.cpp
         kasitem.cpp

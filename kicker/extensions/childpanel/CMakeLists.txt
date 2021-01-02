@@ -7,7 +7,7 @@ kde2_wrap_kidl(childpanelextension_IDL
         childpanelextension.h
     )
 
-kde2_module(childpanelextension
+kde2_module(libchildpanelextension
     SOURCES
         childpanelextension.cpp
         ${childpanelextension_IDL}
