@@ -77,8 +77,8 @@ void KCMKonsole::load()
 
     config = new KConfig("kdeglobals", false, true);
     config->setGroup("General");
-    dialog->terminalLE->setText(config->readEntry("TerminalApplication","konsole"));
-    dialog->terminalCB->setChecked(config->readEntry("TerminalApplication","konsole")!="konsole");
+    dialog->terminalLE->setText(config->readEntry("TerminalApplication","konsole2"));
+    dialog->terminalCB->setChecked(config->readEntry("TerminalApplication","konsole2")!="konsole2");
 
     emit changed(false);
 }
@@ -131,7 +131,7 @@ void KCMKonsole::save()
 
     config = new KConfig("kdeglobals", false, true);
     config->setGroup("General");
-    config->writeEntry("TerminalApplication",dialog->terminalCB->isChecked()?dialog->terminalLE->text():"konsole");
+    config->writeEntry("TerminalApplication",dialog->terminalCB->isChecked()?dialog->terminalLE->text():"konsole2");
     
     config->sync();		//is it necessary ?
 

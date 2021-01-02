@@ -60,7 +60,7 @@
 #define DEFAULT_VERT_ALIGN true
 
 // Default terminal for Open Terminal and for 'run in terminal'
-#define DEFAULT_TERMINAL "konsole"
+#define DEFAULT_TERMINAL "konsole2"
 
 // Confirmations for deletions
 #define DEFAULT_CONFIRMTRASH true

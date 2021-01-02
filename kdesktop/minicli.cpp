@@ -289,7 +289,7 @@ int Minicli::run_command()
         if( m_filterData->hasArgsAndOptions() )
             command += m_filterData->argsAndOptions().local8Bit();
         if (mpAdvanced->terminal())
-            command.prepend("konsole -e /bin/sh -c ");
+            command.prepend("konsole2 -e /bin/sh -c ");
         proc.setCommand(command);
         if (proc.checkInstall(mpAdvanced->password()) < 0)
         {
@@ -312,8 +312,8 @@ int Minicli::run_command()
         QString exec;
         if (mpAdvanced->terminal())
         {
-            exec = QString::fromLatin1("konsole");
-            cmd = QString::fromLatin1("konsole -e ") + cmd;
+            exec = QString::fromLatin1("konsole2");
+            cmd = QString::fromLatin1("konsole2 -e ") + cmd;
             if( m_filterData->hasArgsAndOptions() )
                 cmd += m_filterData->argsAndOptions();
         }

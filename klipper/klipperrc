@@ -49,7 +49,7 @@ Description=Launch &Kmail
 Enabled=true
 
 [Action_2/Command_1]
-Commandline=konsole -e mutt `echo "%s" | sed 's/mailto://g'`
+Commandline=konsole2 -e mutt `echo "%s" | sed 's/mailto://g'`
 Description=Launch &mutt
 Enabled=true
 

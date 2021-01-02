@@ -113,7 +113,7 @@ void PanelKonsoleMenu::slotExec(int id)
             args << "-r";
             args << screenList[id - sessionList.count()];
         }
-        KApplication::kdeinitExec("konsole", args);
+        KApplication::kdeinitExec("konsole2", args);
     }
 }
 

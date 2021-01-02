@@ -350,7 +350,7 @@ void PanelBrowserMenu::slotOpenTerminal()
 {
     KConfig * config = new KConfig("kdeglobals", false, true);
     config->setGroup("General");
-    QString term = config->readEntry("TerminalApplication", "konsole");
+    QString term = config->readEntry("TerminalApplication", "konsole2");
 
     chdir(path().local8Bit());
 

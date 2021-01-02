@@ -741,7 +741,7 @@ void PanelExeButton::dropEvent(QDropEvent *ev)
     if(term){
       KConfig *config = KGlobal::config();
       config->setGroup("misc");
-      QString termStr = config->readEntry("Terminal", "konsole");
+      QString termStr = config->readEntry("Terminal", "konsole2");
       result = KRun::run(termStr + " -e " + pathStr + " " +
                          cmdStr + " " + execStr, blah);
 
@@ -770,7 +770,7 @@ void PanelExeButton::slotExec()
   if(term){
     KConfig *config = KGlobal::config();
     config->setGroup("misc");
-    QString termStr = config->readEntry("Terminal", "konsole");
+    QString termStr = config->readEntry("Terminal", "konsole2");
     result = KRun::run(termStr + " -e " + pathStr + " " + cmdStr, blah);
   }
   else
@@ -991,7 +991,7 @@ void PanelKonsoleButton::slotStopTimer()
 
 void PanelKonsoleButton::slotExec()
 {
-    kapp->kdeinitExec("konsole");
+    kapp->kdeinitExec("konsole2");
 }
 
 void PanelKonsoleButton::slotDelayedPopup()
