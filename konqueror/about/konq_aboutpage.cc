@@ -113,7 +113,7 @@ QString KonqAboutPageFactory::intro()
           .arg( i18n( "To go back to the home directory of your local filesystem press "
                       "<IMG WIDTH=16 HEIGHT=16 SRC=\"%1\"> &nbsp; (\"Home\"). " ).arg("gohome.png") )
           .arg( i18n( "For more detailed documentation on Konqueror click <A HREF=\"%1\">here</A>." )
-                      .arg("exec:/khelpcenter2") )
+                      .arg("exec:/khelpcenter") )
           .arg( i18n( "<I>Tuning Tip:</I> If you want the Konqueror web browser to start faster,"
 			" you can turn off this information screen by clicking <A HREF=\"%1\">here</A>. You can re-enable it"
 			" by choosing the Help -> Konqueror Introduction menu option, and then pressing "

@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=khelpcenter2
+Exec=khelpcenter
 Icon=khelpcenter
 DocPath=khelpcenter/index.html
 Type=Application
