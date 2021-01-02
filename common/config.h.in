@@ -52,3 +52,7 @@
 #cmakedefine HAVE_XKBSETPERCLIENTCONTROLS 1
 #cmakedefine HAVE_XTEST 1
 #cmakedefine HAVE_STRUCT_UCRED
+#cmakedefine HAVE_OPENPTY
+#cmakedefine HAVE_GRANTPT
+#cmakedefine HAVE_PTSNAME
+#cmakedefine HAVE_UTIL_H

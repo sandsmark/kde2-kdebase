@@ -31,6 +31,7 @@ function(create_kde2_config_header)
     check_include_files(termios.h HAVE_TERMIOS_H)
     check_include_files(vfork.h HAVE_VFORK_H)
     check_include_files(shadow.h HAVE_SHADOW)
+    check_include_files(util.h HAVE_UTIL_H)
 
     # TODO: proper Find*
     check_include_files(Xm/Xm.h HAVE_MOTIF)
@@ -42,6 +43,8 @@ function(create_kde2_config_header)
     check_function_exists("vsnprintf" HAVE_VSNPRINTF)
     check_function_exists("usleep" HAVE_USLEEP)
     check_function_exists("setpriority" HAVE_SETPRIORITY)
+    check_function_exists("grantpt" HAVE_GRANTPT)
+    check_function_exists("ptsname" HAVE_PTSNAME)
     check_symbol_exists("mkstemp" "stdlib.h" HAVE_MKSTEMP)
     check_symbol_exists("vsnprintf" "stdio.h" HAVE_VSNPRINTF)
     check_symbol_exists("mmap" "sys/mman.h" HAVE_MMAP)
@@ -58,6 +61,12 @@ function(create_kde2_config_header)
     check_cxx_source_compiles("#include <sys/socket.h>
                                 int main(int argc, char *argv[]) { struct ucred cred; }"
                                 HAVE_STRUCT_UCRED)
+
+    find_library(HAVE_LIBUTIL libutil.so)
+    if (HAVE_LIBUTIL)
+        list(APPEND CMAKE_REQUIRED_LIBRARIES util)
+        check_function_exists("openpty" HAVE_OPENPTY)
+    endif()
 
     if (OPENGL_FOUND)
         set(HAVE_GL True)

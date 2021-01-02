@@ -15,7 +15,9 @@
 
 # (C) 2018 by Helio Chissini de Castro <helio@kde.org>
 
-cmake_minimum_required(VERSION 3.1.0)
+cmake_minimum_required(VERSION 3.12.0)
+
+cmake_policy(SET CMP0075 NEW)
 
 project(kdebase VERSION 0.3.0 LANGUAGES C CXX)
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
