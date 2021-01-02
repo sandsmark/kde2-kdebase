@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Service
-Exec=konsole %i %m -caption "%c"
+Exec=konsole2 %i %m -caption "%c"
 Icon=konsole
 ServiceTypes=KParts/ReadOnlyPart,Browser/View,inode/directory
 

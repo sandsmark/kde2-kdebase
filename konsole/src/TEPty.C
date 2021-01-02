@@ -413,7 +413,7 @@ int TEPty::openPty()
     fprintf(stderr,"       : This means the session can be eavesdroped.\n");
     fprintf(stderr,"       : Make sure konsole_grantpty is installed in\n");
     fprintf(stderr,"       : %s and setuid root.\n",
-            KGlobal::dirs()->findResourceDir("exe", "konsole").local8Bit().data());
+            KGlobal::dirs()->findResourceDir("exe", "konsole2").local8Bit().data());
   }
 
   fcntl(ptyfd,F_SETFL,O_NDELAY);
