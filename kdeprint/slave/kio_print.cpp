@@ -18,9 +18,9 @@
  **/
 
 #include "kio_print.h"
-#include "kmprinter.h"
-#include "kmmanager.h"
-#include "kmfactory.h"
+#include <kmprinter.h>
+#include <kmmanager.h>
+#include <kmfactory.h>
 
 #include <qfile.h>
 #include <qtextstream.h>

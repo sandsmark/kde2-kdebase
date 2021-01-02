@@ -20,7 +20,7 @@
 #include "printpart.h"
 #include "printpartfactory.h"
 
-#include <kdeprint/kmmainview.h>
+#include <kmmainview.h>
 #include <kaction.h>
 #include <klocale.h>
 #include <qwidget.h>

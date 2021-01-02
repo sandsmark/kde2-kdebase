@@ -18,7 +18,7 @@
  **/
 
 #include "kcmprintmgr.h"
-#include "kdeprint/kmmainview.h"
+#include "kmmainview.h"
 
 #include <qlayout.h>
 

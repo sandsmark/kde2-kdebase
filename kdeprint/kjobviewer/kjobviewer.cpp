@@ -18,7 +18,7 @@
  **/
 
 #include "kjobviewer.h"
-#include "kdeprint/kmjobviewer.h"
+#include <kmjobviewer.h>
 
 #include <stdlib.h>
 #include <qtimer.h>
