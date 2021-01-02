@@ -205,6 +205,7 @@ ProcessList::ProcessList(QWidget *parent, const char* name)
 		aliases.insert("kwrited", new QString("kdeapp"));
 		aliases.insert("kxmlrpcd", new QString("kdeapp"));
 		aliases.insert("startkde", new QString("kdeapp"));
+		aliases.insert("startkde2", new QString("kdeapp"));
 		/* other processes */
 		aliases.insert("bash", new QString("shell"));
 		aliases.insert("cat", new QString("tools"));

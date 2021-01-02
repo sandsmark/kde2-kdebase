@@ -121,3 +121,6 @@ add_subdirectory(l10n)
 #add_subdirectory(legacyimport)
 #add_subdirectory(nsplugins)
 add_subdirectory(pics)
+
+install(FILES startkde RUNTIME DESTINATION ${KDE2_BINDIR} RENAME startkde2)
+install(FILES kde2.desktop DESTINATION share/xsessions)
