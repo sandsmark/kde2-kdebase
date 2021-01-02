@@ -54,6 +54,11 @@ function(create_kde2_config_header)
 
     check_symbol_exists("unlockpt" "stdlib.h" HAVE_UNLOCKPT)
 
+    # Couldn't get the more automatic things to work
+    check_cxx_source_compiles("#include <sys/socket.h>
+                                int main(int argc, char *argv[]) { struct ucred cred; }"
+                                HAVE_STRUCT_UCRED)
+
     if (OPENGL_FOUND)
         set(HAVE_GL True)
         check_include_files(GL/xmesa.h HAVE_GL_XMESA_H)

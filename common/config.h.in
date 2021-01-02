@@ -51,3 +51,4 @@
 #cmakedefine HAVE_XKB 1
 #cmakedefine HAVE_XKBSETPERCLIENTCONTROLS 1
 #cmakedefine HAVE_XTEST 1
+#cmakedefine HAVE_STRUCT_UCRED
