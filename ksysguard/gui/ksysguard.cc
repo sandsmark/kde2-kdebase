@@ -557,7 +557,7 @@ main(int argc, char** argv)
 	setsid();
 #endif
 
-	KAboutData aboutData("ksysguard", I18N_NOOP("KDE System Guard"),
+	KAboutData aboutData("ksysguard2", I18N_NOOP("KDE System Guard"),
 						 KSYSGUARD_VERSION, Description,
 						 KAboutData::License_GPL,
 						 I18N_NOOP("(c) 1996-2001, "
@@ -604,7 +604,7 @@ main(int argc, char** argv)
 	}
 	else
 	{
-		a->dcopClient()->registerAs("ksysguard", FALSE);
+		a->dcopClient()->registerAs("ksysguard2", FALSE);
 		a->dcopClient()->setDefaultObject("KSysGuardIface");
 
 		Toplevel = new TopLevel("KSysGuard");
