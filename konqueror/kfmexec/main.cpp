@@ -92,7 +92,7 @@ KFMExec::KFMExec()
             // We must fetch the file
             else
             {
-                // Build the destination filename, in ~/.kde/share/apps/kfmexec/tmp/
+                // Build the destination filename, in ~/.kde/share/apps/kfmexec2/tmp/
                 // Unlike KDE-1.1, we put the filename at the end so that the extension is kept
                 // (Some programs rely on it)
                 QString tmp = locateLocal( "appdata", "tmp/" ) +
@@ -261,7 +261,7 @@ QString KFMExec::shellQuote( const QString & data )
 
 int main( int argc, char **argv )
 {
-    KAboutData aboutData( "kfmexec", I18N_NOOP("KFMExec"),
+    KAboutData aboutData( "kfmexec2", I18N_NOOP("KFMExec"),
         version, description, KAboutData::License_GPL,
         "(c) 1998-2000, The KFM/Konqueror Developers");
     aboutData.addAuthor("David Faure",0, "faure@kde.org");
