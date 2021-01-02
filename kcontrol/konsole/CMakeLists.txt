@@ -14,5 +14,5 @@ kde2_module(libkcm_konsole
     LIBS
         kde2::kfile
     )
-install(FILES kcmkonsole DESTINATION "${KDE2_APPSDIR}/Settings/System")
+install(FILES kcmkonsole.desktop DESTINATION "${KDE2_APPSDIR}/Settings/System")
 
