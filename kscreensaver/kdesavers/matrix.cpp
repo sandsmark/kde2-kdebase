@@ -44,7 +44,7 @@
 // libkscreensaver interface
 extern "C"
 {
-    const char *kss_applicationName = "kmatrix.kss";
+    const char *kss_applicationName = "kmatrix2.kss";
     const char *kss_description =
             I18N_NOOP( "Kmatrix \"The Matrix\" movie style screen saver" );
     const char *kss_version = "2.2.0";

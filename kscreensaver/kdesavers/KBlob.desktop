@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=kblob.kss
+Exec=kblob2.kss
 Icon=kscreensaver
 Type=Application
 Actions=Setup;InWindow;Root
@@ -33,7 +33,7 @@ Name[xh]=Ichaphaza elincinane
 Name[zh_CN.GB2312]=斑点
 
 [Desktop Action Setup]
-Exec=kblob.kss -setup
+Exec=kblob2.kss -setup
 Name=Setup...
 Name[az]=Qurulum...
 Name[bg]=Настройки...
@@ -85,7 +85,7 @@ Name[zh_CN.GB2312]=设置...
 Icon=kscreensaver
  
 [Desktop Action InWindow]
-Exec=kblob.kss -window-id %w
+Exec=kblob2.kss -window-id %w
 Name=Display in specified window
 Name[az]=Bİldirilən pəncərədə göstər
 Name[bg]=Изображение в зададен прозорец
@@ -137,7 +137,7 @@ Name[zh_CN.GB2312]=在指定的窗口中显示
 NoDisplay=true
  
 [Desktop Action Root]
-Exec=kblob.kss -root
+Exec=kblob2.kss -root
 Name=Display in root window
 Name[az]=Kök pəncərədə göstər
 Name[bg]=Изображение в корневия прозорец

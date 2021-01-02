@@ -58,7 +58,7 @@
 // libkscreensaver interface
 extern "C"
 {
-    const char *kss_applicationName = "kscience.kss";
+    const char *kss_applicationName = "kscience2.kss";
     const char *kss_description = I18N_NOOP( "Science Screensaver" );
     const char *kss_version = "2.2.0";
 

@@ -36,7 +36,7 @@
 // libkscreensaver interface
 extern "C"
 {
-    const char *kss_applicationName = "kbanner.kss";
+    const char *kss_applicationName = "kbanner2.kss";
     const char *kss_description = I18N_NOOP( "KBanner" );
     const char *kss_version = "2.2.0";
 

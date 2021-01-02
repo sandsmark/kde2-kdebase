@@ -51,7 +51,7 @@
 // libkscreensaver interface
 extern "C"
 {
-    const char *kss_applicationName = "kblob.kss";
+    const char *kss_applicationName = "kblob2.kss";
     const char *kss_description = I18N_NOOP( "KBlob" );
     const char *kss_version = "2.2.0";
 

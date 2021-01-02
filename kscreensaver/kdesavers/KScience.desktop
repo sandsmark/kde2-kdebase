@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=kscience.kss
+Exec=kscience2.kss
 Icon=kscreensaver
 Type=Application
 Actions=Setup;InWindow;Root
@@ -49,7 +49,7 @@ Name[xh]=Inzulu lwazi
 Name[zh_CN.GB2312]=科学
 
 [Desktop Action Setup]
-Exec=kscience.kss -setup
+Exec=kscience2.kss -setup
 Name=Setup...
 Name[az]=Qurulum...
 Name[bg]=Настройки...
@@ -101,7 +101,7 @@ Name[zh_CN.GB2312]=设置...
 Icon=kscreensaver
  
 [Desktop Action InWindow]
-Exec=kscience.kss -window-id %w
+Exec=kscience2.kss -window-id %w
 Name=Display in specified window
 Name[az]=Bİldirilən pəncərədə göstər
 Name[bg]=Изображение в зададен прозорец
@@ -153,7 +153,7 @@ Name[zh_CN.GB2312]=在指定的窗口中显示
 NoDisplay=true
  
 [Desktop Action Root]
-Exec=kscience.kss -root
+Exec=kscience2.kss -root
 Name=Display in root window
 Name[az]=Kök pəncərədə göstər
 Name[bg]=Изображение в корневия прозорец

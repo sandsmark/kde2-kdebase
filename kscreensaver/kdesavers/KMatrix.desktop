@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=kmatrix.kss
+Exec=kmatrix2.kss
 Icon=kscreensaver
 Type=Application
 Actions=Setup;InWindow;Root
@@ -35,7 +35,7 @@ Name[xh]=Indawo apho into ibhekiswa phambili
 Name[zh_CN.GB2312]=矩阵
 
 [Desktop Action Setup]
-Exec=kmatrix.kss -setup
+Exec=kmatrix2.kss -setup
 Name=Setup...
 Name[az]=Qurulum...
 Name[bg]=Настройки...
@@ -87,7 +87,7 @@ Name[zh_CN.GB2312]=设置...
 Icon=kscreensaver
  
 [Desktop Action InWindow]
-Exec=kmatrix.kss -window-id %w
+Exec=kmatrix2.kss -window-id %w
 Name=Display in specified window
 Name[az]=Bİldirilən pəncərədə göstər
 Name[bg]=Изображение в зададен прозорец
@@ -139,7 +139,7 @@ Name[zh_CN.GB2312]=在指定的窗口中显示
 NoDisplay=true
  
 [Desktop Action Root]
-Exec=kmatrix.kss -root
+Exec=kmatrix2.kss -root
 Name=Display in root window
 Name[az]=Kök pəncərədə göstər
 Name[bg]=Изображение в корневия прозорец

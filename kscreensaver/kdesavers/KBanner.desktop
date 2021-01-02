@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=kbanner.kss
+Exec=kbanner2.kss
 Icon=kscreensaver
 Type=Application
 Actions=Setup;InWindow;Root
@@ -42,7 +42,7 @@ Name[xh]=Isiqwentshu selaphu
 Name[zh_CN.GB2312]=标志
 
 [Desktop Action Setup]
-Exec=kbanner.kss -setup
+Exec=kbanner2.kss -setup
 Name=Setup...
 Name[az]=Qurulum...
 Name[bg]=Настройки...
@@ -94,7 +94,7 @@ Name[zh_CN.GB2312]=设置...
 Icon=kscreensaver
  
 [Desktop Action InWindow]
-Exec=kbanner.kss -window-id %w
+Exec=kbanner2.kss -window-id %w
 Name=Display in specified window
 Name[az]=Bİldirilən pəncərədə göstər
 Name[bg]=Изображение в зададен прозорец
@@ -146,7 +146,7 @@ Name[zh_CN.GB2312]=在指定的窗口中显示
 NoDisplay=true
  
 [Desktop Action Root]
-Exec=kbanner.kss -root
+Exec=kbanner2.kss -root
 Name=Display in root window
 Name[az]=Kök pəncərədə göstər
 Name[bg]=Изображение в корневия прозорец

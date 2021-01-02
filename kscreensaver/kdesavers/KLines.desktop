@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=klines.kss
+Exec=klines2.kss
 Icon=kscreensaver
 Type=Application
 Actions=Setup;InWindow;Root
@@ -51,7 +51,7 @@ Name[xh]=Iilayini
 Name[zh_CN.GB2312]=线条
 
 [Desktop Action Setup]
-Exec=klines.kss -setup
+Exec=klines2.kss -setup
 Name=Setup...
 Name[az]=Qurulum...
 Name[bg]=Настройки...
@@ -103,7 +103,7 @@ Name[zh_CN.GB2312]=设置...
 Icon=kscreensaver
  
 [Desktop Action InWindow]
-Exec=klines.kss -window-id %w
+Exec=klines2.kss -window-id %w
 Name=Display in specified window
 Name[az]=Bİldirilən pəncərədə göstər
 Name[bg]=Изображение в зададен прозорец
@@ -155,7 +155,7 @@ Name[zh_CN.GB2312]=在指定的窗口中显示
 NoDisplay=true
  
 [Desktop Action Root]
-Exec=klines.kss -root
+Exec=klines2.kss -root
 Name=Display in root window
 Name[az]=Kök pəncərədə göstər
 Name[bg]=Изображение в корневия прозорец

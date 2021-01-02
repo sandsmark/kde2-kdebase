@@ -36,7 +36,7 @@ template class QArray<QPoint>;
 // libkscreensaver interface
 extern "C"
 {
-    const char *kss_applicationName = "kpolygon.kss";
+    const char *kss_applicationName = "kpolygon2.kss";
     const char *kss_description = I18N_NOOP( "KPolygon" );
     const char *kss_version = "2.2.0";
 

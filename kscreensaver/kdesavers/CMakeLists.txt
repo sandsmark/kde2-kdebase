@@ -1,7 +1,7 @@
 set(kbanner_SRCS banner.cpp)
 qt2_wrap_cpp(kbanner_SRCS SOURCES banner.h)
-add_executable(kbanner.kss ${kbanner_SRCS})
-target_link_libraries(kbanner.kss kde2::kscreensaver)
+add_executable(kbanner2.kss ${kbanner_SRCS})
+target_link_libraries(kbanner2.kss kde2::kscreensaver)
 
 set(kblankscreen_SRCS blankscrn.cpp)
 qt2_wrap_cpp(kblankscreen_SRCS SOURCES blankscrn.h)
@@ -10,13 +10,13 @@ target_link_libraries(kblankscreen.kss kde2::kscreensaver)
 
 set(kblob_SRCS blob.cpp)
 qt2_wrap_cpp(kblob_SRCS SOURCES blob.h)
-add_executable(kblob.kss ${kblob_SRCS})
-target_link_libraries(kblob.kss kde2::kscreensaver)
+add_executable(kblob2.kss ${kblob_SRCS})
+target_link_libraries(kblob2.kss kde2::kscreensaver)
 
 set(klines_SRCS lines.cpp)
 qt2_wrap_cpp(klines_SRCS SOURCES lines.h)
-add_executable(klines.kss ${klines_SRCS})
-target_link_libraries(klines.kss kde2::kscreensaver)
+add_executable(klines2.kss ${klines_SRCS})
+target_link_libraries(klines2.kss kde2::kscreensaver)
 
 set(klorenz_SRCS lorenz.cpp)
 qt2_wrap_cpp(klorenz_SRCS SOURCES lorenz.h)
@@ -25,18 +25,18 @@ target_link_libraries(klorenz.kss kde2::kscreensaver)
 
 set(kmatrix_SRCS matrix.cpp)
 qt2_wrap_cpp(kmatrix_SRCS SOURCES matrix.h)
-add_executable(kmatrix.kss ${kmatrix_SRCS})
-target_link_libraries(kmatrix.kss kde2::kscreensaver)
+add_executable(kmatrix2.kss ${kmatrix_SRCS})
+target_link_libraries(kmatrix2.kss kde2::kscreensaver)
 
 set(kpolygon_SRCS polygon.cpp)
 qt2_wrap_cpp(kpolygon_SRCS SOURCES polygon.h)
-add_executable(kpolygon.kss ${kpolygon_SRCS})
-target_link_libraries(kpolygon.kss kde2::kscreensaver)
+add_executable(kpolygon2.kss ${kpolygon_SRCS})
+target_link_libraries(kpolygon2.kss kde2::kscreensaver)
 
 set(kscience_SRCS science.cpp)
 qt2_wrap_cpp(kscience_SRCS SOURCES science.h)
-add_executable(kscience.kss ${kscience_SRCS})
-target_link_libraries(kscience.kss kde2::kscreensaver)
+add_executable(kscience2.kss ${kscience_SRCS})
+target_link_libraries(kscience2.kss kde2::kscreensaver)
 
 set(kslideshow_SRCS slideshow.cpp)
 qt2_wrap_cpp(kslideshow_SRCS SOURCES slideshow.h)
@@ -50,14 +50,14 @@ target_link_libraries(kvm.kss kde2::kscreensaver)
 
 
 install(TARGETS
-    kbanner.kss
+    kbanner2.kss
     kblankscreen.kss
-    kblob.kss
-    klines.kss
+    kblob2.kss
+    klines2.kss
     klorenz.kss
-    kmatrix.kss
-    kpolygon.kss
-    kscience.kss
+    kmatrix2.kss
+    kpolygon2.kss
+    kscience2.kss
     kslideshow.kss
     kvm.kss
 
