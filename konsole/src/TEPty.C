@@ -435,9 +435,7 @@ void TEPty::makePty(const char* dev, const char* pgm, QStrList & args, const cha
 
 #ifdef HAVE_UNLOCKPT
   unlockpt(fd);
-#endif
-
-#if defined(TIOCSPTLCK) && 0 //FIXME: obsolete, to removed if no one complains
+#else
   int flag = 0; ioctl(fd,TIOCSPTLCK,&flag); // unlock pty
 #endif
 
