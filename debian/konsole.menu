@@ -1,8 +1,0 @@
-?package(konsole):\
-        needs=x11\
-        section=XShells\
-	hints="KDE"\
-        kderemove="y"\
-	title="Konsole"\
-        command=/usr/bin/konsole
-

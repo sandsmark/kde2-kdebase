@@ -1,8 +1,0 @@
-#!/bin/sh
-# $XConsortium: Xsession /main/10 1995/12/18 18:21:28 gildea $
-#
-#
-# $XFree86$
-
-# invoke global X session script
-. /etc/X11/Xsession

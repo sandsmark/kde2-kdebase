@@ -1,9 +1,0 @@
-usr/share/doc/kdebase
-etc/menu-methods
-etc/pam.d
-usr/bin
-etc/kde2
-etc/kde2/desktop
-usr/share/lintian/overrides
-etc/gdm/Sessions
-var/lib/kde/menu

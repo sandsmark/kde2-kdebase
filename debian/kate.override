@@ -1,6 +1,0 @@
-#
-kate: no-shlibs-control-file usr/lib/libkatecore.so
-kate: no-shlibs-control-file usr/lib/kate.so
-kate: no-shlibs-control-file usr/lib/libkateinterfaces.so
-kate: no-shlibs-control-file usr/lib/kwrite.so
-kate: postinst-must-call-ldconfig usr/lib/kate.so

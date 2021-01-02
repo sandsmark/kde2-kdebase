@@ -1,7 +1,0 @@
-#
-kdebase-audiolibs: no-shlibs-control-file usr/lib/kde2/libkcm_knotify.so
-kdebase-audiolibs: no-shlibs-control-file usr/lib/kde2/libkcm_arts.so
-kdebase-audiolibs: no-shlibs-control-file usr/lib/kde2/kio_audiocd.so
-kdebase-audiolibs: no-shlibs-control-file usr/lib/kde2/libkcm_audiocd.so
-kdebase-audiolibs: no-shlibs-control-file usr/lib/kde2/libkcm_midi.so
-
