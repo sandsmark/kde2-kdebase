@@ -1481,6 +1481,7 @@ void Konsole::doneSession(TESession* s, int )
 
   if (s == se)
   { // pick a new session
+    se = NULL;
     if (sessions.count())
     {
       se = sessions.at(sessionIndex ? sessionIndex - 1 : 0);
