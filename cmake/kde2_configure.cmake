@@ -55,7 +55,13 @@ function(create_kde2_config_header)
 
     check_struct_has_member("struct tm" tm_zone "time.h;sys/time.h" HAVE_TM_ZONE LANGUAGE C)
 
-    check_symbol_exists("unlockpt" "stdlib.h" HAVE_UNLOCKPT)
+    check_cxx_source_compiles(
+        "
+            #define _XOPEN_SOURCE=500
+            #include <stdlib.h>
+            int main(int argc, char *argv[]) { unlockpt(0); }
+        "
+        HAVE_UNLOCKPT)
 
     # Couldn't get the more automatic things to work
     check_cxx_source_compiles("#include <sys/socket.h>
