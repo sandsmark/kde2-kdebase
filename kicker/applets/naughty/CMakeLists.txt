@@ -8,7 +8,7 @@ qt2_wrap_moc(naughtyapplet_MOC
         NaughtyConfigDialog.h
     )
 
-kde2_module(naughtyapplet
+kde2_module(libnaughtyapplet
     SOURCES
         NaughtyProcessMonitor.cpp
         NaughtyConfigDialog.cpp

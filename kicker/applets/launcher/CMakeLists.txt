@@ -1,4 +1,4 @@
-qt2_wrap_cpp(quicklauncher_MOC
+qt2_wrap_cpp(libquicklauncher_MOC
     SOURCES
         quickaddappsmenu.h
         quickbutton.h

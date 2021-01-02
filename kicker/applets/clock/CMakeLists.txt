@@ -1,7 +1,7 @@
 qt2_wrap_cpp(clockapplet_MOC SOURCES clock.h)
 qt2_wrap_ui(clockapplet_UI SOURCES conf.ui)
 
-kde2_module(clockapplet
+kde2_module(libclockapplet
     SOURCES
         clock.cpp
         ${clockapplet_MOC}

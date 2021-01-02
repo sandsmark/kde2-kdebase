@@ -1,5 +1,5 @@
 qt2_wrap_cpp(kminipagerapplet_MOC SOURCES pagerapplet.h)
-kde2_module(kminipagerapplet
+kde2_module(libkminipagerapplet
     SOURCES
         pagerapplet.cpp
         ${kminipagerapplet_MOC}

@@ -1,5 +1,5 @@
 qt2_wrap_cpp(taskbarapplet_MOC SOURCES taskbarapplet.h)
-kde2_module(ktaskbarapplet
+kde2_module(libtaskbarapplet
     SOURCES
         taskbarapplet.cpp
         ${taskbarapplet_MOC}
