@@ -18,7 +18,7 @@ kde2_library(libkonsole
 	TEmulation.C
 	TEHistory.C
 	keytrans.C
-        ${libkonsolepart_MOC}
+        ${libkonsole_MOC}
     INCLUDE_DIRECTORIES
         ${CMAKE_CURRENT_SOURCE_DIR}/../include
     LIBS
@@ -29,6 +29,7 @@ qt2_wrap_cpp(libkonsolepart_MOC SOURCES ../include/konsole_part.h)
 kde2_module(libkonsolepart
     SOURCES
         konsole_part.C
+        ${libkonsolepart_MOC}
     INCLUDE_DIRECTORIES
         ${CMAKE_CURRENT_SOURCE_DIR}/../include
     LIBS
