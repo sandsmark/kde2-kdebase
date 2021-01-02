@@ -59,4 +59,4 @@ Schema=Linux.schema
 #VGA
 Font=6
 Term=linux
-KeyTab=linux
+KeyTab=kde2-linux

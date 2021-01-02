@@ -22,7 +22,6 @@ install(
         XTerm.schema
         default.Keytab
         linux.desktop
-        linux.keytab
         mc.desktop
         shell.desktop
         su.desktop
@@ -33,4 +32,11 @@ install(
         vt420pc.keytab
         x11r5.keytab
     DESTINATION "${KDE2_DATADIR}/konsole"
+    )
+
+# Conflicts with current/normal konsole
+install(
+    FILES linux.keytab
+    DESTINATION "${KDE2_DATADIR}/konsole"
+    RENAME kde2-linux.keytab
     )
