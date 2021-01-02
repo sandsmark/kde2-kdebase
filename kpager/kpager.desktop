@@ -84,7 +84,7 @@ Comment[zh_CN.GB2312]=桌面小程序
 
 Icon=kpager
 Type=Application
-Exec=kpager
+Exec=kpager2
 DocPath=kpager/index.html
 Terminal=0
 X-KDE-StartupNotify=false

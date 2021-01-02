@@ -776,7 +776,7 @@ void KMiniPager::createDesktopPreview()
 
         m_pDesktopPreviewFrame->resize(calculateDesktopPreviewFrameSize());
 
-        QString strAppPath(locate("exe", "kpager"));
+        QString strAppPath(locate("exe", "kpager2"));
         if (!strAppPath.isEmpty())
         {
             KProcess * process = new KProcess();
