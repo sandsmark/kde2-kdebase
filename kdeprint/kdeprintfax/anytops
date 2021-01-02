@@ -45,7 +45,7 @@ if [ -z "$MIMETYPE" ]; then
 	if [ -z "$MAGIC" ]; then
 		MAGIC=/usr
 	fi
-	MAGIC=$MAGIC/share/mimelnk/magic
+	MAGIC=$MAGIC/share/mimelnk/magic2
 
 	if [ ! -f "$MAGIC" ]; then
 		echo "KDE magic file not found. Check your installation."
