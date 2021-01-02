@@ -34,6 +34,6 @@ KRefinePage::~KRefinePage(){
 /** starts kcontrol via krun when the user presses the
 start control center button on page 5. */
 void KRefinePage::startKControl(){
-  KRun::runCommand("kcontrol");
+  KRun::runCommand("kcontrol2");
 }
 #include "krefinepage.moc"

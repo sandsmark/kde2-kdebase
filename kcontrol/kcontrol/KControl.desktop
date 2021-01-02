@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=kcontrol -caption "%c" %i %m
+Exec=kcontrol2 -caption "%c" %i %m
 Icon=kcontrol
 Type=Application
 DocPath=kcontrol/index.html

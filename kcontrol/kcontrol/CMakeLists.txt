@@ -49,7 +49,7 @@ kde2_library(libkcontrol
         kde2::kfile
     )
 
-kde2_kinit_executable(kcontrol
+kde2_kinit_executable(kcontrol2
     SOURCES
         main.cpp
     LIBS
