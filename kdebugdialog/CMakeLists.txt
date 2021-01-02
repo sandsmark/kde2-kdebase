@@ -9,8 +9,8 @@ qt2_wrap_cpp(kdebugdialog_SRCS
         klistdebugdialog.h
     )
 
-add_executable(kdebugdialog2 ${kdebugdialog_SRCS})
-target_link_libraries(kdebugdialog2
+add_executable(kdebugdialog ${kdebugdialog_SRCS})
+target_link_libraries(kdebugdialog
     kde2::kdeui
     )
-install(TARGETS kdebugdialog2 RUNTIME DESTINATION ${KDE2_BINDIR})
+install(TARGETS kdebugdialog RUNTIME DESTINATION ${KDE2_BINDIR})
