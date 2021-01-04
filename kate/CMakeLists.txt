@@ -136,7 +136,7 @@ kde2_library(katecore
     )
 target_include_directories(katecore PRIVATE qt3back)
 
-kde2_kinit_executable(kate
+kde2_kinit_executable(kate2
     SOURCES
         main/katemain.cpp
     LIBS
