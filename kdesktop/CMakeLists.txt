@@ -154,6 +154,9 @@ install(FILES
     init/Templates/HTMLFile.html
     DESTINATION ${KDE2_TEMPLATESDIR}/.source/)
 
+install(DIRECTORY
+    DESTINATION ${KDE2_TEMPLATESDIR}/.source/emptydir)
+
 install(FILES
     patterns/night-rock.desktop
     patterns/night-rock.jpg

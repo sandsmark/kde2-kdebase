@@ -30,7 +30,7 @@ kde2_module(kcmhtmlsearch
         kde2::htmlsearch
 )
 
-install(FILES htmlsearch.desktop DESTINATION ${KDE2_APPSDIR})
+install(FILES htmlsearch.desktop DESTINATION ${KDE2_APPSDIR}/Settings/Help)
 install(FILES
     unchecked.xpm checked.xpm
     star.png star_blank.png
