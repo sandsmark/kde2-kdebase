@@ -1,10 +1,10 @@
 qt2_wrap_cpp(libkonsole_MOC
     SOURCES
-        ../include/session.h
-        ../include/TEmulation.h
-        ../include/TEmuVt102.h
-        ../include/TEPty.h
-        ../include/TEWidget.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/../include/session.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/../include/TEmulation.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/../include/TEmuVt102.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/../include/TEPty.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/../include/TEWidget.h
     )
 kde2_library(libkonsole
     SOURCES
@@ -42,6 +42,7 @@ kde2_kinit_executable(konsole2
     SOURCES
         TEPty.C BlockArray.C main.C konsole.C schema.C session.C TEWidget.C TEmuVt102.C
         TEScreen.C TEmulation.C TEHistory.C keytrans.C
+        ${libkonsolepart_MOC}
         ${konsole_MOC}
     INCLUDE_DIRECTORIES
         ${CMAKE_CURRENT_SOURCE_DIR}/../include
