@@ -43,7 +43,7 @@ KPanelApplet* KickerPluginManager::loadApplet(const QString &applnk,
     config.setDesktopGroup();
     libStr = config.readEntry("X-KDE-Library", "");
     libStr += ".la";
-    libStr = KGlobal::dirs()->findResource("lib", libStr);
+    libStr = KGlobal::dirs()->findResource("module", libStr);
     if(!libStr){
 	kdWarning() << "cannot find " << libStr << endl;
 	return(NULL);
