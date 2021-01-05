@@ -45,7 +45,7 @@ KPanelApplet* KickerPluginManager::loadApplet(const QString &applnk,
     libStr += ".la";
     libStr = KGlobal::dirs()->findResource("module", libStr);
     if(!libStr){
-	kdWarning() << "cannot find " << libStr << endl;
+	kdWarning() << "cannot find " << libStr << " for " << applnk << endl;
 	return(NULL);
     }
 
@@ -90,7 +90,7 @@ KPanelExtension* KickerPluginManager::loadExtension(const QString &applnk,
     libStr += ".la";
     libStr = KGlobal::dirs()->findResource("module", libStr);
     if(!libStr){
-	kdWarning() << "cannot find " << libStr << endl;
+	kdWarning() << "cannot find " << libStr << " for " << applnk << endl;
 	return(NULL);
     }
 

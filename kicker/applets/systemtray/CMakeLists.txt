@@ -1,5 +1,5 @@
 qt2_wrap_cpp(systemtrayapplet_MOC SOURCES systemtrayapplet.h)
-kde2_module(libsystemtrayapplet
+kde2_module(libksystemtrayapplet
     SOURCES
         systemtrayapplet.cpp
         ${systemtrayapplet_MOC}
