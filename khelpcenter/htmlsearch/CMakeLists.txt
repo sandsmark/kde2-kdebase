@@ -23,7 +23,7 @@ qt2_wrap_cpp(kcmhtmlsearch_SRCS
         klangcombo.h
         ktagcombobox.h
 )
-kde2_module(kcmhtmlsearch
+kde2_module(libkcm_htmlsearch
     SOURCES
         ${kcmhtmlsearch_SRCS}
     LIBS
