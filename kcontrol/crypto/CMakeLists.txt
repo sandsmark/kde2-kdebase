@@ -15,4 +15,4 @@ kde2_module(libkcm_crypto
         OpenSSL::SSL
         OpenSSL::Crypto
     )
-install(FILES kcmcrypto.desktop DESTINATION "${KDE2_APPSDIR}/Settings/Personalization")
+install(FILES crypto.desktop DESTINATION "${KDE2_APPSDIR}/Settings/Personalization")
