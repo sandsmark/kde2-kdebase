@@ -1844,13 +1844,14 @@ void KCryptoConfig::slotGeneratePersonal() {
 // This gets all the available ciphers from OpenSSL
 bool KCryptoConfig::loadCiphers() {
 unsigned int i;
-SSL_CTX *ctx;
-SSL *ssl;
-SSL_METHOD *meth;
+SSL_CTX *ctx = NULL;
+SSL *ssl = NULL;
+SSL_METHOD *meth = NULL;
 
   SSLv2Box->clear();
   SSLv3Box->clear();
 
+#if 0
   meth = SSLv2_client_method();
   SSLeay_add_ssl_algorithms();
   ctx = SSL_CTX_new(meth);
@@ -1870,7 +1871,9 @@ SSL_METHOD *meth;
 
     item = new CipherItem( SSLv2Box, sc->name, k, j, this );
   }
+#endif
 
+#if 0
   if (ctx) SSL_CTX_free(ctx);
   if (ssl) SSL_free(ssl);
 
@@ -1896,6 +1899,7 @@ SSL_METHOD *meth;
 
   if (ctx) SSL_CTX_free(ctx);
   if (ssl) SSL_free(ssl);
+#endif
 
 return true;
 }
