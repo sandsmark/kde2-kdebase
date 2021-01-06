@@ -1,6 +1,6 @@
 qt2_wrap_cpp(libkshorturi_MOC SOURCES kshorturifilter.h)
 kde2_kidl(libkshorturi_IDL SOURCES kshorturifilter.h)
-kde2_module(libkshorturi
+kde2_module(libkshorturifilter
     SOURCES
         kshorturifilter.cpp
         kshorturifilter_skel.cpp
