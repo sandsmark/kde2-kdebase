@@ -1,29 +1,29 @@
 install(
     FILES
-        acronym.desktop
-        altavista.desktop
-        austronaut.desktop
+        #acronym.desktop
+        #altavista.desktop
+        #austronaut.desktop
         bugft.desktop
         bugno.desktop
         deja.desktop
-        dmoz.desktop
-        excite.desktop
-        foldoc.desktop
-        freshmeat.desktop
+        #dmoz.desktop
+        #excite.desktop
+        #foldoc.desktop
+        #freshmeat.desktop
         google.desktop
-        hotbot.desktop
-        jeeves.desktop
+        #hotbot.desktop
+        #jeeves.desktop
         leo.desktop
-        lycos.desktop
-        mamma.desktop
-        metacrawler.desktop
-        realnames.desktop
+        #lycos.desktop
+        #mamma.desktop
+        #metacrawler.desktop
+        #realnames.desktop
         rpmfind.desktop
-        seek.desktop
-        thesaurus.desktop
-        vivisimo.desktop
-        voila.desktop
-        webster.desktop
-        whatis.desktop
+        #seek.desktop
+        #thesaurus.desktop
+        #vivisimo.desktop
+        #voila.desktop
+        #webster.desktop
+        #whatis.desktop
     DESTINATION ${KDE2_SERVICESDIR}
     )
