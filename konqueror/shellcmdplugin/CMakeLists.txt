@@ -11,7 +11,7 @@ qt2_wrap_cpp(shellcmdplugin_SRCS
         kshellcmdplugin.h
     )
 
-kde2_module(shellcmdplugin
+kde2_module(libkshellcmdplugin
     SOURCES
         ${shellcmdplugin_SRCS}
     LIBS
