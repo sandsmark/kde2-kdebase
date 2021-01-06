@@ -247,7 +247,8 @@ QString whatstr;
   pcerts = new KSimpleConfig("ksslcertificates", false);
   authcfg = new KSimpleConfig("ksslauthmap", false);
 
-#if defined(HAVE_SSL) && 0
+#ifdef HAVE_SSL
+#if 0
   SSLv3Box = new QListView(tabSSL, "v3ciphers");
   (void) SSLv3Box->addColumn(i18n("SSLv3 Ciphers To Use:"));
   whatstr = i18n("Select the ciphers you wish to enable when using the"
@@ -258,6 +259,7 @@ QString whatstr;
   grid->addWidget(SSLv3Box, 2, 1);
   connect( mUseSSLv3, SIGNAL( toggled( bool ) ),
 	   SSLv3Box, SLOT( setEnabled( bool )));
+#endif
 
   loadCiphers();
 
