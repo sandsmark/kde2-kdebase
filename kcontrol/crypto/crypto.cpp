@@ -221,7 +221,7 @@ QString whatstr;
                 " It is most common to enable v2 and v3.");
   QWhatsThis::add(mUseSSLv3, whatstr);
 
-#ifdef HAVE_SSL
+#if defined(HAVE_SSL) && 0
   SSLv2Box = new QListView(tabSSL, "v2ciphers");
   (void) SSLv2Box->addColumn(i18n("SSLv2 Ciphers To Use:"));
   whatstr = i18n("Select the ciphers you wish to enable when using the"
@@ -247,7 +247,7 @@ QString whatstr;
   pcerts = new KSimpleConfig("ksslcertificates", false);
   authcfg = new KSimpleConfig("ksslauthmap", false);
 
-#ifdef HAVE_SSL
+#if defined(HAVE_SSL) && 0
   SSLv3Box = new QListView(tabSSL, "v3ciphers");
   (void) SSLv3Box->addColumn(i18n("SSLv3 Ciphers To Use:"));
   whatstr = i18n("Select the ciphers you wish to enable when using the"
@@ -763,11 +763,13 @@ void KCryptoConfig::load()
   config->setGroup("TLS");
   mUseTLS->setChecked(config->readBoolEntry("Enabled", true));
 
+#if 0
   config->setGroup("SSLv2");
   mUseSSLv2->setChecked(config->readBoolEntry("Enabled", true));
 
   config->setGroup("SSLv3");
   mUseSSLv3->setChecked(config->readBoolEntry("Enabled", true));
+#endif
 
   config->setGroup("Warnings");
   mWarnOnEnter->setChecked(config->readBoolEntry("OnEnter", false));
@@ -795,6 +797,7 @@ void KCryptoConfig::load()
   mWarnRevoked->setChecked(config->readBoolEntry("WarnRevoked", true));
 #endif
 
+#if 0
   config->setGroup("SSLv2");
   CipherItem *item = static_cast<CipherItem *>(SSLv2Box->firstChild());
   while ( item ) {
@@ -813,6 +816,7 @@ void KCryptoConfig::load()
 
   SSLv2Box->setEnabled( mUseSSLv2->isChecked() );
   SSLv3Box->setEnabled( mUseSSLv3->isChecked() );
+#endif
 
   QStringList groups = policies->groupList();
  
@@ -893,6 +897,7 @@ void KCryptoConfig::load()
 void KCryptoConfig::save()
 {
 #ifdef HAVE_SSL
+#if 0
   if (!mUseSSLv2->isChecked() &&
       !mUseSSLv3->isChecked())
     KMessageBox::information(this, i18n("If you don't select at least one"
@@ -900,15 +905,18 @@ void KCryptoConfig::save()
                                        " work or the application may be"
                                        " forced to choose a suitable default."),
                                    i18n("SSL"));
+#endif
 
   config->setGroup("TLS");
   config->writeEntry("Enabled", mUseTLS->isChecked());
 
+#if 0
   config->setGroup("SSLv2");
   config->writeEntry("Enabled", mUseSSLv2->isChecked());
 
   config->setGroup("SSLv3");
   config->writeEntry("Enabled", mUseSSLv3->isChecked());
+#endif
 
   config->setGroup("Warnings");
   config->writeEntry("OnEnter", mWarnOnEnter->isChecked());
@@ -933,6 +941,7 @@ void KCryptoConfig::save()
   config->writeEntry("WarnRevoked", mWarnRevoked->isChecked());
 #endif
 
+#if 0
   int ciphercount = 0;
   config->setGroup("SSLv2");
   CipherItem *item = static_cast<CipherItem *>(SSLv2Box->firstChild());
@@ -962,12 +971,15 @@ void KCryptoConfig::save()
     item = static_cast<CipherItem *>(item->nextSibling());
   }
 
-  KSSLCertificateCache _cc;
 
   if (mUseSSLv3->isChecked() && ciphercount == 0)
     KMessageBox::information(this, i18n("If you don't select at least one"
                                        " cipher, SSLv3 will not work."),
                                    i18n("SSLv3 Ciphers"));
+#endif
+
+  KSSLCertificateCache _cc;
+
   // SSL Policies code
   for (OtherCertItem *x = otherCertDelList.first(); x != 0; x = otherCertDelList.next()) {
      KSSLX509Map cert(x->configName());
@@ -1061,8 +1073,10 @@ void KCryptoConfig::save()
 void KCryptoConfig::defaults()
 {
   mUseTLS->setChecked(true);
+#if 0
   mUseSSLv2->setChecked(true);
   mUseSSLv3->setChecked(false);  // GS 3/2001 - this seems to be more compatible
+#endif
   mWarnOnEnter->setChecked(false);
   mWarnOnLeave->setChecked(true);
 #if 0  // NOT IMPLEMENTED IN KDE 2.0
@@ -1079,6 +1093,7 @@ void KCryptoConfig::defaults()
     // I have already witnessed OpenSSL negotiate a 0 bit connection
     // on me after tracing the https ioslave on a suspicion.
 
+#if 0
   CipherItem *item;
   for ( item = static_cast<CipherItem *>(SSLv2Box->firstChild()); item;
 	item = static_cast<CipherItem *>(item->nextSibling()) ) {
@@ -1089,6 +1104,7 @@ void KCryptoConfig::defaults()
 	item = static_cast<CipherItem *>(item->nextSibling()) ) {
     item->setOn( item->bits() >= 56 );
   }
+#endif
   mUseEGD->setChecked(false);
   mEGDLabel->setEnabled(false);
   mChooseEGD->setEnabled(false);
@@ -1112,6 +1128,7 @@ QString KCryptoConfig::quickHelp() const
 
 void KCryptoConfig::slotCWcompatible() {
   #ifdef HAVE_SSL
+#if 0
   CipherItem *item;
   for ( item = static_cast<CipherItem *>(SSLv2Box->firstChild()); item;
 	item = static_cast<CipherItem *>(item->nextSibling()) ) {
@@ -1122,10 +1139,15 @@ void KCryptoConfig::slotCWcompatible() {
 	item = static_cast<CipherItem *>(item->nextSibling()) ) {
     item->setOn( item->bits() >= 56 && item->bits() <= 128 );
   }
+#endif
 
   mUseTLS->setChecked(true);
+
+#if 0
   mUseSSLv2->setChecked(true);
   mUseSSLv3->setChecked(true);
+#endif
+
   configChanged();
   #endif
 }
@@ -1133,6 +1155,7 @@ void KCryptoConfig::slotCWcompatible() {
 
 void KCryptoConfig::slotCWus() {
   #ifdef HAVE_SSL
+#if 0
   CipherItem *item;
   for ( item = static_cast<CipherItem *>(SSLv2Box->firstChild()); item;
 	item = static_cast<CipherItem *>(item->nextSibling()) ) {
@@ -1143,6 +1166,7 @@ void KCryptoConfig::slotCWus() {
 	item = static_cast<CipherItem *>(item->nextSibling()) ) {
     item->setOn( item->bits() >= 128 );
   }
+#endif
 
   configChanged();
   #endif
@@ -1151,6 +1175,7 @@ void KCryptoConfig::slotCWus() {
 
 void KCryptoConfig::slotCWexp() {
   #ifdef HAVE_SSL
+#if 0
   CipherItem *item;
   for ( item = static_cast<CipherItem *>(SSLv2Box->firstChild()); item;
 	item = static_cast<CipherItem *>(item->nextSibling()) ) {
@@ -1161,6 +1186,7 @@ void KCryptoConfig::slotCWexp() {
 	item = static_cast<CipherItem *>(item->nextSibling()) ) {
     item->setOn( item->bits() <= 56 && item->bits() > 0);
   }
+#endif
 
   configChanged();
   #endif
@@ -1169,6 +1195,7 @@ void KCryptoConfig::slotCWexp() {
 
 void KCryptoConfig::slotCWall() {
   #ifdef HAVE_SSL
+#if 0
   CipherItem *item;
   for ( item = static_cast<CipherItem *>(SSLv2Box->firstChild()); item;
 	item = static_cast<CipherItem *>(item->nextSibling()) ) {
@@ -1179,10 +1206,11 @@ void KCryptoConfig::slotCWall() {
 	item = static_cast<CipherItem *>(item->nextSibling()) ) {
     item->setOn( true );
   }
-
-  mUseTLS->setChecked(true);
   mUseSSLv2->setChecked(true);
   mUseSSLv3->setChecked(true);
+#endif
+
+  mUseTLS->setChecked(true);
   configChanged();
   #endif
 }
@@ -1848,10 +1876,10 @@ SSL_CTX *ctx = NULL;
 SSL *ssl = NULL;
 SSL_METHOD *meth = NULL;
 
+#if 0
   SSLv2Box->clear();
   SSLv3Box->clear();
 
-#if 0
   meth = SSLv2_client_method();
   SSLeay_add_ssl_algorithms();
   ctx = SSL_CTX_new(meth);
