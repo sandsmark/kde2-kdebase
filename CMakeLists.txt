@@ -22,7 +22,15 @@ cmake_policy(SET CMP0075 NEW)
 project(kdebase VERSION 0.3.0 LANGUAGES C CXX)
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 
-#list(APPEND CMAKE_MODULE_PATH /usr/share/cmake-3.18/Modules/)
+option(ENABLE_SANITIZERS "Enable runtime sanitizing (for development)")
+if (ENABLE_SANITIZERS)
+    message("Enabling asan and ubsan")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=undefined")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=address")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=undefined")
+endif()
+
 
 set(OpenGL_GL_PREFERENCE "LEGACY")
 find_package(OpenGL COMPONENTS OpenGL GLX)
