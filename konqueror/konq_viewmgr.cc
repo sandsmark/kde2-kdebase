@@ -32,6 +32,7 @@
 #include <qapplication.h>
 #include <qfileinfo.h>
 #include <qapplication.h>
+#include <qmetaobject.h>
 
 #include <kaccelgen.h>
 #include <kaction.h>
@@ -308,7 +309,10 @@ void KonqViewManager::removePart( KParts::Part * part )
   // If we were called by PartManager::slotObjectDestroyed, then the inheritance has
   // been deleted already... Can't use inherits().
 
-  KonqView * view = m_pMainWindow->childView( static_cast<KParts::ReadOnlyPart *>(part) );
+  KonqView * view = NULL;
+  if (strcmp(static_cast<QObject*>(part)->metaObject()->className(), "QObject") != 0) {
+      view = m_pMainWindow->childView( static_cast<KParts::ReadOnlyPart *>(part) );
+  }
   if ( view ) // the child view still exists, so we are in case 1
   {
       kdDebug(1202) << "Found a child view" << endl;
