@@ -155,7 +155,7 @@ KThemeListBox::KThemeListBox(QWidget *parent, const char *name)
     addColumn(i18n("Name"));
     addColumn(i18n("Description"));
     setAllColumnsShowFocus(true);
-    KGlobal::dirs()->addResourceType("themes", KStandardDirs::kde_default("data") + "kstyle/themes");
+    KGlobal::dirs()->addResourceType("themes", KStandardDirs::kde_default("data") + "kstyle2/themes");
 
     if (curTheme.isEmpty())
        curTheme = locate("themes", "default.themerc");

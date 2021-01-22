@@ -83,7 +83,7 @@ KStylePage::KStylePage(QWidget *parent, const char *name ) : KStylePageDlg(paren
 
     // Theme file settings
     KGlobal::config()->setGroup("KDE");
-    KGlobal::dirs()->addResourceType("themes", KStandardDirs::kde_default("data") + "kstyle/themes");
+    KGlobal::dirs()->addResourceType("themes", KStandardDirs::kde_default("data") + "kstyle2/themes");
     QString themefile;
     if(QColor::numBitPlanes() > 8)
         themefile=locate("themes","highcolor.themerc");
@@ -109,7 +109,7 @@ void KStylePage::saveTheme(bool curSettings){
   QString themefile;
 
   if(curSettings){
-    KGlobal::dirs()->addResourceType("themes", KStandardDirs::kde_default("data") + "kstyle/themes");
+    KGlobal::dirs()->addResourceType("themes", KStandardDirs::kde_default("data") + "kstyle2/themes");
 
     // set the style
     if(kde->isSelected()){

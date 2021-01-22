@@ -80,7 +80,7 @@ other than where the pixmaps are located enter it here.</QT>"), secondPage);
 
     KGlobal::dirs()->addResourceType("themes",
                                      KStandardDirs::kde_default("data") +
-                                     "kstyle/themes");
+                                     "kstyle2/themes");
 
     setCaption(i18n("Legacy Import"));
 
