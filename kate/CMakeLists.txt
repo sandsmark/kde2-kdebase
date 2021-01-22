@@ -136,6 +136,13 @@ kde2_library(katecore
     )
 target_include_directories(katecore PRIVATE qt3back)
 
+# TODO reuse
+include(GNUInstallDirs)
+get_target_property(LAPROP_SONAME katecore OUTPUT_NAME)
+set(LAPROP_SONAME "lib${LAPROP_SONAME}")
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/libkatecore.la.in ${CMAKE_CURRENT_BINARY_DIR}/libkatecore.la @ONLY)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libkatecore.la DESTINATION "${CMAKE_INSTALL_LIBDIR}/kde2")
+
 kde2_kinit_executable(kate2
     SOURCES
         main/katemain.cpp
