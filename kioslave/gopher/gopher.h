@@ -66,6 +66,10 @@ enum GopherType
   GOPHER_GIF        = 'g',
   GOPHER_IMAGE      = 'I',
   GOPHER_TN3270     = 'T',
+  GOPHER_INFO       = 'i',
+  GOPHER_HTML       = 'h',
+  GOPHER_DOC        = 'd',
+  GOPHER_SOUND      = 's',
   GOPHER_NONE       = '*'
 };
 

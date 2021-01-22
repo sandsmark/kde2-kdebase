@@ -162,7 +162,7 @@ void GopherProtocol::stat (const KURL &url)
   entry.append( atom );
 
   atom.m_uds = KIO::UDS_FILE_TYPE;
-  if ((url.path() == "/") || (_path.at(0) == '1') ) {
+  if ((!url.hasPath()) || (url.path() == "/") || (_path.at(0) == '1') ) {
    kdDebug() << "Is a DIR" << endl;
    atom.m_long = S_IFDIR;
   } else {
@@ -210,22 +210,23 @@ void GopherProtocol::listDir( const KURL &dest )
   UDSEntry entry;
   UDSAtom atom;
   QString line;
-  char buf[128];
-  while (ReadLine(buf, 127)) {
+  char buf[1024];
+  bzero(buf, sizeof buf);
+  UDSEntryList entries;
+  int infoNum = 0;
+  while (ReadLine(buf, sizeof(buf) - 1)) {
+      buf[sizeof(buf) - 1] = 0;
     line = buf+1;
     if (strcmp(buf, ".\r\n")==0) {
-      finished();
-      return;
+    puts("dot done");
+        break;
     }
     entry.clear();
-    atom.m_uds = UDS_NAME;
-    atom.m_long = 0;
-    atom.m_str = line.mid(0,line.find("\t"));
-    entry.append(atom);
 
     atom.m_uds = UDS_FILE_TYPE;
     atom.m_str = "";
     switch ((GopherType)buf[0]) {
+    case GOPHER_INFO:
     case GOPHER_MENU:{
       atom.m_long = S_IFDIR;
       break;
@@ -233,6 +234,17 @@ void GopherProtocol::listDir( const KURL &dest )
     default: {
       atom.m_long = S_IFREG;
     }
+    }
+    entry.append(atom);
+
+    atom.m_uds = UDS_NAME;
+    atom.m_long = 0;
+    atom.m_str = line.mid(0,line.find("\t"));
+
+    if (buf[0] == GOPHER_INFO) {
+        QString prefix;
+        prefix.sprintf("%03d ", ++infoNum);
+        atom.m_str.prepend(prefix);
     }
     entry.append(atom);
 
@@ -247,8 +259,13 @@ void GopherProtocol::listDir( const KURL &dest )
       atom.m_str="image/gif";
       break;
     }
+    case GOPHER_INFO: // idk
     case GOPHER_TEXT:{
       atom.m_str="text/plain";
+      break;
+    }
+    case GOPHER_HTML:{
+      atom.m_str="text/html";
       break;
     }
     default: {
@@ -338,6 +355,13 @@ void GopherProtocol::get(const KURL &usrc)
     }
     break;
   }
+  case GOPHER_HTML: {
+    if (!readRawData(usrc.url(), "text/html")) {
+      error(ERR_INTERNAL, "rawReadData failed");
+      return;
+    }
+    break;
+  }
   case GOPHER_UUENCODE: {
     if (!readRawData(usrc.url(), "text/plain")) {
       error(ERR_INTERNAL, "rawReadData failed");
@@ -345,9 +369,12 @@ void GopherProtocol::get(const KURL &usrc)
     }
     break;
   }
+  case GOPHER_IMAGE:
+  case GOPHER_DOC:
+  case GOPHER_SOUND:
   case GOPHER_BINARY:
   case GOPHER_PCBINARY: {
-    if(!readRawData(usrc.url(), "application/ocet-stream")) {
+    if(!readRawData(usrc.url(), "application/octet-stream")) {
       error(ERR_INTERNAL, "rawReadData failed");
       return;
     }
