@@ -57,6 +57,7 @@ AppletContainer::AppletContainer(const AppletInfo& info, QWidget* parent )
   , _widthForHeightHint(0)
   , _heightForWidthHint(0)
 {
+    _dir = dDown;
     // setup handle
     _handle = new AppletHandle(this);
     _handle->installEventFilter(this);
