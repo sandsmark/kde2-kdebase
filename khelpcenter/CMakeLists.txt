@@ -28,9 +28,9 @@ kde2_library(libkhelpcenter
         kde2::khtml
     )
 
-add_executable(khelpcenter main.cpp khc_main.cc)
-target_link_libraries(khelpcenter kde2::khelpcenter)
-install(TARGETS khelpcenter RUNTIME DESTINATION ${KDE2_BINDIR})
+add_executable(khelpcenter2 main.cpp khc_main.cc)
+target_link_libraries(khelpcenter2 kde2::khelpcenter)
+install(TARGETS khelpcenter2 RUNTIME DESTINATION ${KDE2_BINDIR})
 
 install(FILES
     khelpcenterui.rc intro.html.in glossary.html.in

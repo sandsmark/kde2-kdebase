@@ -70,7 +70,7 @@ void HelpWidget::setBaseText()
 void HelpWidget::urlClicked(const QString & url)
 {
   KProcess process;
-  process << "khelpcenter"
+  process << "khelpcenter2"
           << "help:/" + url;
   process.start(KProcess::DontCare);
 }
