@@ -72,22 +72,22 @@ kde2_wrap_kidl(ksysguard_SRCS
         ksysguard.h
     )
 
-add_executable(ksysguard ${ksysguard_SRCS})
-target_link_libraries(ksysguard
+add_executable(ksysguard2 ${ksysguard_SRCS})
+target_link_libraries(ksysguard2
     kde2::kdeui
     kde2::kfile
     )
 
-install(TARGETS ksysguard RUNTIME DESTINATION ${KDE2_BINDIR})
+install(TARGETS ksysguard2 RUNTIME DESTINATION ${KDE2_BINDIR})
 
 install(FILES ksysguard.desktop DESTINATION ${KDE2_APPSDIR}/System)
-install(FILES ksysguardui.rc DESTINATION ${KDE2_DATADIR}/ksysguard)
+install(FILES ksysguardui.rc DESTINATION ${KDE2_DATADIR}/ksysguard2)
 install(FILES x-ksysguard.desktop DESTINATION ${KDE2_MIMEDIR}/application)
 
 install(
     FILES
         ProcessTable.sgrd SystemLoad.sgrd KSysGuardApplet.xml
-    DESTINATION ${KDE2_DATADIR}/ksysguard
+    DESTINATION ${KDE2_DATADIR}/ksysguard2
     )
 
 set(ksysguardapplet_SRCS
