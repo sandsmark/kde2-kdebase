@@ -1,4 +1,4 @@
-add_executable(ksysguardd
+add_executable(ksysguardd2
     ksysguardd.c Command.c ProcessList.c
     Memory.c stat.c netdev.c PWUIDCache.c apm.c loadavg.c cpuinfo.c
     lmsensors.c netstat.c diskstat.c logfile.c conf.c
@@ -14,9 +14,9 @@ if(${HAVE_SENSORS_SENSORS_H})
 endif()
 
 # TODO: actually use findsensors.cmake
-target_link_libraries(ksysguardd
+target_link_libraries(ksysguardd2
     kde2::ccont
     sensors
     )
 
-install(TARGETS ksysguardd RUNTIME DESTINATION ${KDE2_BINDIR})
+install(TARGETS ksysguardd2 RUNTIME DESTINATION ${KDE2_BINDIR})
