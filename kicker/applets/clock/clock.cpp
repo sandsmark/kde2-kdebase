@@ -1227,7 +1227,7 @@ void ClockApplet::openContextMenu()
     }
     else if( result == 103 ) {
         KProcess proc;
-        proc << locate("exe", "kdesu");
+        proc << locate("exe", "kdesu2");
         proc << locate("exe", "kcmshell");
         proc << "clock";
         proc.start(KProcess::DontCare);

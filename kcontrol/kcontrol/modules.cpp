@@ -155,7 +155,7 @@ void ConfigModule::runAsRoot()
   // prepare the process to run the kcmshell
   QString cmd = service()->exec().stripWhiteSpace();
   bool kdeshell = false;
-  if (cmd.left(5) == "kdesu")
+  if (cmd.left(5) == "kdesu2")
     cmd = cmd.remove(0,5).stripWhiteSpace();
   if (cmd.left(8) == "kcmshell")
     {
@@ -164,7 +164,7 @@ void ConfigModule::runAsRoot()
     }
 
   // run the process
-  QString kdesu = KStandardDirs::findExe("kdesu");
+  QString kdesu = KStandardDirs::findExe("kdesu2");
   if (!kdesu.isEmpty())
     {
       _rootProcess = new KProcess;
