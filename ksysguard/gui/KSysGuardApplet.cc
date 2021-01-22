@@ -307,7 +307,7 @@ bool
 KSysGuardApplet::load()
 {
 	KStandardDirs* kstd = KGlobal::dirs();
-	kstd->addResourceType("data", "share/apps/ksysguard2");
+	kstd->addResourceType("data",  KStandardDirs::kde_default("data") + "ksysguard2");
 	QString fileName = kstd->findResource("data", "KSysGuardApplet.xml");
 
 	QFile file(fileName);
