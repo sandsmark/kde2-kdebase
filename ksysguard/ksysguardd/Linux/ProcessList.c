@@ -229,13 +229,44 @@ updateProcess(int pid)
 	if (fclose(fd))
 		return (-1);
 
+        static const char *fmtString =
+                "%*d " // PID
+                "%*s " // (Comm)
+                "%c " // State
+                "%d " // Ppid
+                "%d " // Pgrp
+                "%*d " // Session
+                "%*d "  // ttyno
+                "%d " // tpgid
+                "%*u " // flags
+                "%*u " // minflt
+                "%*u " // cminflt
+                "%*u " // majflt
+                "%*u " // cmajflt
+                "%d "  // utime
+                "%d "  // stime
+                "%*d " // cutime
+                "%*d " // cstime
+                "%*d " // priority
+                "%d "  // nice
+                "%*u " // numthreads
+                "%*u " // itrealvalue
+                "%*llu " // starttime
+                "%u"   // vsize
+                "%d"   // rss
+                //"%*lu"  // rsslim
+                //"%*lu"  // startcode
+                //"%*lu"  // endcode
+                //"%*lu"  // startstack
+                // ...
+                ;
+
     snprintf(buf, BUFSIZE - 1, "/proc/%d/stat", pid);
 	buf[BUFSIZE - 1] = '\0';
 	if ((fd = fopen(buf, "r")) == 0)
 		return (-1);
 
-	if (fscanf(fd, "%*d %*s %c %d %d %*d %d %*d %*u %*u %*u %*u %*u %d %d"
-			   "%*d %*d %*d %d %*u %*u %*d %u %u",
+	if (fscanf(fd, fmtString,
 			   &status, (int*) &ps->ppid, (int*) &ps->gid, &ps->ttyNo,
 			   &userTime, &sysTime, &ps->niceLevel, &ps->vmSize,
 			   &ps->vmRss) != 9)
