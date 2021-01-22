@@ -115,7 +115,7 @@ qt2_wrap_ui(ksysguardapplet_SRCS
 	StyleSettings.ui
     )
 
-kde2_module(ksysguardapplet
+kde2_module(libksysguardapplet
     SOURCES
         ${ksysguardapplet_SRCS}
     LIBS
