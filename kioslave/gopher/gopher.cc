@@ -297,10 +297,15 @@ void GopherProtocol::listDir( const KURL &dest )
     atom.m_long = 0;
     entry.append(atom);
 
-    listEntry(entry, false);
+    atom.m_uds = KIO::UDS_ACCESS;
+    atom.m_long = S_IRUSR | S_IRGRP | S_IROTH; // readable by everybody
+    entry.append( atom );
+
+    entries.append(entry);
     entry.clear();
+    bzero(buf, sizeof buf);
   }
-  listEntry(entry, true);
+  listEntries(entries);
   finished();
   return;
 }
