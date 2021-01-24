@@ -32,10 +32,6 @@ if (ENABLE_SANITIZERS)
 endif()
 
 
-set(OpenGL_GL_PREFERENCE "LEGACY")
-find_package(OpenGL COMPONENTS OpenGL GLX)
-find_package(GLUT)
-
 find_package(PAM)
 
 #TODO or something
@@ -51,10 +47,12 @@ if (PAM_FOUND)
     add_definitions(-DKCHECKPASS_PAM_SERVICE=\"system-auth\")
 endif()
 
-find_package(Qt2 REQUIRED)
 find_package(DCOP REQUIRED)
 
 find_package(kdelibs2 REQUIRED)
+find_package(arts REQUIRED)
+find_package(qtmcop REQUIRED)
+
 find_package(kdecore REQUIRED)
 find_package(kdeui REQUIRED)
 find_package(kdesu REQUIRED)
@@ -63,11 +61,6 @@ find_package(kio REQUIRED)
 find_package(ksycoca REQUIRED)
 find_package(kfile REQUIRED)
 find_package(kparts REQUIRED)
-find_package(mcop REQUIRED)
-find_package(qtmcop REQUIRED)
-find_package(artsflow REQUIRED)
-find_package(kmedia2 REQUIRED)
-find_package(artskde REQUIRED)
 find_package(kdeprint REQUIRED)
 find_package(kdeprint_management REQUIRED)
 find_package(kjava REQUIRED)
@@ -78,15 +71,10 @@ find_package(kspell REQUIRED)
 find_package(ktexteditor REQUIRED)
 find_package(kdedmodule REQUIRED)
 
-find_package(JPEG)
-find_package(ZLIB REQUIRED)
-find_package(X11 REQUIRED)
+find_package(artskde REQUIRED)
+
 find_package(LAME)
 find_package(OggVorbis)
-find_package(OpenSSL)
-if(OpenSSL_FOUND)
-    add_definitions(-DHAVE_SSL)
-endif()
 
 include(kde2_configure)
 create_kde2_config_header()
