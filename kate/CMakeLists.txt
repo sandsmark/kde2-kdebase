@@ -150,7 +150,7 @@ kde2_kinit_executable(kate2
         kde2::katecore
     )
 
-kde2_kinit_executable(kwrite
+kde2_kinit_executable(kwrite2
     SOURCES
         main/kwritemain.cpp
     LIBS

@@ -64,7 +64,7 @@ Description=Launch K&Edit
 Enabled=true
 
 [Action_3/Command_1]
-Commandline=kwrite "%s"
+Commandline=kwrite2 "%s"
 Description=Launch K&Write
 Enabled=true
 
