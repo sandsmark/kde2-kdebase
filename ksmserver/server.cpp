@@ -749,7 +749,7 @@ extern "C" int _IceTransNoListen(const char * protocol);
 #endif
 
 KSMServer::KSMServer( const QString& windowManager, bool _only_local )
-  : DCOPObject("ksmserver")
+  : DCOPObject("ksmserver2")
 {
     the_server = this;
     clean = false;

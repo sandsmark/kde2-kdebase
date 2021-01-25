@@ -3,7 +3,7 @@ qt2_wrap_cpp(ksmserver_MOC
         server.h
         shutdown.h
     )
-kde2_kinit_executable(ksmserver
+kde2_kinit_executable(ksmserver2
     SOURCES
         server.cpp shutdown.cpp main.cpp
         ${ksmserver_MOC}

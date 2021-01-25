@@ -165,7 +165,7 @@ int main( int argc, char* argv[] )
 {
     sanity_check(argc, argv);
 
-    KAboutData aboutData( "ksmserver", I18N_NOOP("The KDE Session Manager"),
+    KAboutData aboutData( "ksmserver2", I18N_NOOP("The KDE Session Manager"),
        version, description, KAboutData::License_BSD,
        "(C) 2000, The KDE Developers");
     aboutData.addAuthor("Matthias Ettrich",0, "ettrich@kde.org");
@@ -179,7 +179,7 @@ int main( int argc, char* argv[] )
 
     KCmdLineArgs *args = KCmdLineArgs::parsedArgs();
 
-    kapp->dcopClient()->registerAs("ksmserver", false);
+    kapp->dcopClient()->registerAs("ksmserver2", false);
     if (!kapp->dcopClient()->isRegistered())
     {
        qWarning("Could not register with DCOPServer. Aborting.");

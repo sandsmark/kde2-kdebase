@@ -98,6 +98,6 @@ LD_BIND_NOW=true kdeinit +kcminit2 +knotify
 # Syntax:   ksmserver [--restore] [--windowmanager <wm>]
 # if no windowmanager is specified, ksmserver will ensure kwin is started.
 # [--restore] should be controlled by kdm
-ksmserver --restore
+ksmserver2 --restore
 # Clean up
 kdeinit_shutdown

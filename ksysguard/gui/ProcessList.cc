@@ -202,6 +202,7 @@ ProcessList::ProcessList(QWidget *parent, const char* name)
 		aliases.insert("kio_uiserver", new QString("kdeapp"));
 		aliases.insert("klauncher", new QString("kdeapp"));
 		aliases.insert("ksmserver", new QString("kdeapp"));
+		aliases.insert("ksmserver2", new QString("kdeapp"));
 		aliases.insert("kwrited", new QString("kdeapp"));
 		aliases.insert("kxmlrpcd", new QString("kdeapp"));
 		aliases.insert("startkde", new QString("kdeapp"));
