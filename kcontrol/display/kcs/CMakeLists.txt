@@ -6,6 +6,6 @@ install(
         PointReyesGreen.kcsrc KDEOne.kcsrc MediaPeach.kcsrc Windows95.kcsrc
         EveX.kcsrc
     DESTINATION
-        "${KDE2_DATADIR}/kdisplay/color-schemes"
+        "${KDE2_DATADIR}/kdisplay2/color-schemes"
     )
 

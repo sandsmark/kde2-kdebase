@@ -1308,7 +1308,7 @@ void Theme::updateColorScheme(KSimpleConfig *config)
     bool isDefault = config->readEntry( "background").isEmpty(); 
     if (isDefault)
     {
-       QString sCurrentScheme = locateLocal("data", "kdisplay/color-schemes/thememgr.kcsrc");
+       QString sCurrentScheme = locateLocal("data", "kdisplay2/color-schemes/thememgr.kcsrc");
        unlink(QFile::encodeName(sCurrentScheme));
        config->setGroup("KDE");
        config->writeEntry("colorScheme", "<default>", true, true);
@@ -1342,7 +1342,7 @@ void Theme::updateColorScheme(KSimpleConfig *config)
     config->setGroup( "KDE" );
     int contrast = config->readNumEntry( "contrast", 7 );
 
-    QString sCurrentScheme = locateLocal("data", "kdisplay/color-schemes/thememgr.kcsrc");
+    QString sCurrentScheme = locateLocal("data", "kdisplay2/color-schemes/thememgr.kcsrc");
     KSimpleConfig *colorScheme = new KSimpleConfig(sCurrentScheme );
     int i = sCurrentScheme.findRev('/');
     if (i >= 0)

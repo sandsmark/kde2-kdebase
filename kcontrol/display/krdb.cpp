@@ -166,7 +166,8 @@ static void createGtkrc( const QFont& font, const QColorGroup& cg )
 
 void runRdb() {
 
-  KGlobal::dirs()->addResourceType("appdefaults", KStandardDirs::kde_default("data") + "kdisplay/app-defaults/");
+  KGlobal::dirs()->addResourceType("appdefaults", KStandardDirs::kde_default("data") + "kdisplay2/app-defaults/");
+  //KGlobal::dirs()->addResourceType("appdefaults", KStandardDirs::kde_default("data") + "kdisplay/app-defaults/"); // could add the modern ones, but there's never been any more additions
   QColorGroup cg = kapp->palette().normal();
   if ( !kapp->kstyle() || !kapp->kstyle()->inherits("KLegacyStyle") )
       createGtkrc( kapp->font(), cg );

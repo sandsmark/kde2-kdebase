@@ -238,7 +238,7 @@ void KStylePage::getColors(colorSet *set, bool colorfile ){
     KConfig* config;
     // get the color scheme file and go to the color scheme group
     if(colorfile){
-       KGlobal::dirs()->addResourceType("colors", KStandardDirs::kde_default("data")+"kdisplay/color-schemes");
+       KGlobal::dirs()->addResourceType("colors", KStandardDirs::kde_default("data")+"kdisplay2/color-schemes");
        // set the style
        if(kde->isSelected()){
            set->bgMode="VerticalGradient";

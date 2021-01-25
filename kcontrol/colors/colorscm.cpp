@@ -469,7 +469,7 @@ void KColorScheme::slotAdd()
        sList->insertItem(sName);
        sList->setFocus();
        sList->setCurrentItem(sList->count() - 1);
-       sFile = KGlobal::dirs()->saveLocation("data", "kdisplay/color-schemes/") + sFile + ".kcsrc";
+       sFile = KGlobal::dirs()->saveLocation("data", "kdisplay2/color-schemes/") + sFile + ".kcsrc";
        sFileList.append(sFile);
 
        KSimpleConfig *config = new KSimpleConfig(sFile);
@@ -695,7 +695,7 @@ void KColorScheme::readSchemeNames()
 
     // Global + local schemes
     QStringList list = KGlobal::dirs()->findAllResources("data",
-            "kdisplay/color-schemes/*.kcsrc", false, true);
+            "kdisplay2/color-schemes/*.kcsrc", false, true);
 
     // Put local schemes into localList
     QStringList localList;
