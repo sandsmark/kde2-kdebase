@@ -56,7 +56,7 @@ kde2_kinit_executable(kcontrol2
         kde2::kcontrol
     )
 
-kde2_kinit_executable(kcminit
+kde2_kinit_executable(kcminit2
     SOURCES
         kcminit.cpp
     LIBS

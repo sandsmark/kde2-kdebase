@@ -39,7 +39,7 @@ static KCmdLineOptions options[] =
 int main(int argc, char *argv[])
 {
   KLocale::setMainCatalogue("kcontrol");
-  KAboutData aboutData( "kcminit", I18N_NOOP("KCMInit"),
+  KAboutData aboutData( "kcminit2", I18N_NOOP("KCMInit"),
 	"$Id: kcminit.cpp,v 1.14 2001/05/20 14:55:23 mhunter Exp $",
 	I18N_NOOP("KCMInit - runs startups initialization for Control Modules."));
 
@@ -117,7 +117,7 @@ int main(int argc, char *argv[])
 
   if ( !kapp->dcopClient()->isAttached() )
     kapp->dcopClient()->attach();
-  kapp->dcopClient()->send( "ksplash", "", "upAndRunning(QString)",  QString("kcminit"));
+  kapp->dcopClient()->send( "ksplash", "", "upAndRunning(QString)",  QString("kcminit2"));
 
   return 0;
 }

@@ -112,7 +112,7 @@ void KSplash::upAndRunning( QString s )
 	    if (state > 2) return;
 	    else state = 2;
 	}
-    else if ( s == "kcminit" ) {
+    else if ( s == "kcminit2" ) {
 	    if (state > 3) return;
 	    else state = 3;
 	}

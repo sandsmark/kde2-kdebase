@@ -197,7 +197,7 @@ void KStylePage::saveColors(bool curSettings){
     QApplication::setOverrideCursor( waitCursor );
     QStringList args;
     args.append("style");
-    kapp->kdeinitExecWait("kcminit", args);
+    kapp->kdeinitExecWait("kcminit2", args);
     QApplication::restoreOverrideCursor();
     QApplication::flushX();
     // color palette changes
