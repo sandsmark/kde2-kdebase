@@ -37,8 +37,9 @@ static int CpuInfoOK = 0;
 static float* Clocks = 0;
 static int CPUs = 0;
 
-#define CPUINFOBUFSIZE 8192
-static char CpuInfoBuf[CPUINFOBUFSIZE];
+/* Enough for 4-6 virtual cores. Larger values will be tried as needed. */
+static size_t CpuInfoBufSize = 8 * 1024;
+static char* CpuInfoBuf = NULL;
 static int Dirty = 0;
 static int Asleep = 0;
 static time_t lastRequest;
@@ -141,22 +142,44 @@ updateCpuInfo(void)
 		Asleep = 1;
 		return (0);
 	}
-		
-	if ((fd = open("/proc/cpuinfo", O_RDONLY)) < 0)
-	{
-		if (CpuInfoOK != 0)
-			print_error("Cannot open file \'/proc/cpuinfo\'!\n"
-			   "The kernel needs to be compiled with support\n"
-			   "for /proc filesystem enabled!\n");
-		CpuInfoOK = -1;
-		return (-1);
-	}
-	if ((n = read(fd, CpuInfoBuf, CPUINFOBUFSIZE - 1)) == CPUINFOBUFSIZE - 1)
-	{
-		log_error("Internal buffer too small to read \'/proc/cpuinfo\'");
-		CpuInfoOK = 0;
-		return (-1);
-	}
+
+    if ((fd = open("/proc/cpuinfo", O_RDONLY)) < 0) {
+        if (CpuInfoOK != 0)
+            print_error("Cannot open file \'/proc/cpuinfo\'!\n"
+                    "The kernel needs to be compiled with support\n"
+                    "for /proc file system enabled!\n");
+        CpuInfoOK = -1;
+        return -1;
+    }
+
+    if (CpuInfoBuf == NULL)
+    {
+        CpuInfoBuf = malloc(CpuInfoBufSize);
+    }
+    n = 0;
+    for(;;)
+    {
+        ssize_t len = read(fd, CpuInfoBuf + n, CpuInfoBufSize - 1 - n);
+        if(len < 0) {
+            print_error("Failed to read file \'/proc/cpuinfo\'!\n");
+            CpuInfoOK = -1;
+            close(fd);
+            return -1;
+        }
+        n += len;
+        if(len == 0) /* reading finished */
+            break;
+        if(n == CpuInfoBufSize - 1) {
+            /* The buffer was too small. Double its size and keep going. */
+            size_t new_size = CpuInfoBufSize * 2;
+            char* new_buffer = malloc(new_size);
+            memcpy(new_buffer, CpuInfoBuf, n); /* copy read data */
+            free(CpuInfoBuf); /* free old buffer */
+            CpuInfoBuf = new_buffer; /* remember new buffer and size */
+            CpuInfoBufSize = new_size;
+        }
+    }
+
 	close(fd);
 	CpuInfoOK = 1;
 	CpuInfoBuf[n] = '\0';
