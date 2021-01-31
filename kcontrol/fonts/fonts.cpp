@@ -393,7 +393,7 @@ void KFonts::save()
   if (cfg->readBoolEntry("useResourceManager", true)) {
     QApplication::setOverrideCursor( waitCursor );
     KProcess proc;
-    proc.setExecutable("krdb");
+    proc.setExecutable("krdb2");
     proc.start( KProcess::Block );
     QApplication::restoreOverrideCursor();
   }

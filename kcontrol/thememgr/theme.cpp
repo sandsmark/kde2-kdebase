@@ -1271,7 +1271,7 @@ void Theme::runKrdb(void) const
 
   cfg.setGroup("X11");
   if (cfg.readBoolEntry("useResourceManager", true))
-    system("krdb");
+    system("krdb2");
 }
 
 
