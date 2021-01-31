@@ -221,6 +221,8 @@ ProcessList::ProcessList(QWidget *parent, const char* name)
 		aliases.insert("su", new QString("tools"));
 		aliases.insert("tcsh", new QString("shell"));
 		aliases.insert("tee", new QString("tools"));
+		aliases.insert("ksysguardd2", new QString("ksysguardd"));
+		aliases.insert("ksysguard2", new QString("ksysguard"));
 	}
 
 	/* The filter mode is controlled by a combo box of the parent. If
