@@ -7,4 +7,4 @@ install(
         "${KDE2_DATADIR}/kdisplay2/app-defaults"
     )
 
-install(FILES krdb DESTINATION ${KDE2_BINDIR})
+install(FILES krdb DESTINATION ${KDE2_BINDIR} RENAME krdb2)
